@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-flink",
+  "product": "apache/flink README 测试",
+  "commit": "a47e4bf9b9ef287d5ff7f5783df993e4cef2dd1a",
+  "documents": [
+    {
+      "id": "readme-flink-doc",
+      "title": "apache/flink README",
+      "category": "流式计算",
+      "source_url": "https://github.com/apache/flink/blob/a47e4bf9b9ef287d5ff7f5783df993e4cef2dd1a/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:04:22.410695+00:00",
+      "version": "a47e4bf9b9ef287d5ff7f5783df993e4cef2dd1a",
+      "sha256": "84511d5b71efe7add88d8282928b0026cfa3b8283e51e4c5ba4adcecee604493"
+    }
+  ]
+}

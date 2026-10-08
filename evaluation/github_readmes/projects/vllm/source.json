@@ -1,0 +1,16 @@
+{
+  "id": "vllm",
+  "repository": "vllm-project/vllm",
+  "category": "大模型推理",
+  "repository_url": "https://github.com/vllm-project/vllm",
+  "commit": "7436a7f119dedd0c4d5f4d745aa6c2305ee82252",
+  "source_path": "README.md",
+  "source_url": "https://github.com/vllm-project/vllm/blob/7436a7f119dedd0c4d5f4d745aa6c2305ee82252/README.md",
+  "collected_at": "2026-10-07T08:02:40.597908+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE"
+  ],
+  "sha256": "8d2e7cd8d120bcd91ddfa85ef957f7246021b4a3f46f2e1f4ccf084ec6c20026",
+  "bytes": 5708
+}

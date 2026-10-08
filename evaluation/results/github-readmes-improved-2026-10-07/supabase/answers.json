@@ -1,0 +1,818 @@
+{
+  "metadata": {
+    "product_id": "readme-supabase",
+    "product_name": "supabase/supabase README 测试",
+    "corpus_commit": "808322622933f693eb292a986f6a26aba51138a9",
+    "dataset_sha256": "1d081f6f359396a925b8c612c16c854599180e49e2cd6827cf02778bf59fd45b",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "82b4ec57c934290012d5ed8b3591ea1e08f49ef6ab71717e77f41c286d8e58cc",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "supabase",
+    "repository": "supabase/supabase",
+    "index": {
+      "documents": 1,
+      "parents": 15,
+      "children": 111,
+      "fingerprint": "82b4ec57c934290012d5ed8b3591ea1e08f49ef6ab71717e77f41c286d8e58cc"
+    }
+  },
+  "results": [
+    {
+      "id": "supabase-Q01",
+      "question": "Supabase 是否与 Firebase 一对一完全映射？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不是一对一映射，目标是用开源工具提供类似开发体验。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "Supabase is not a 1-to-1 mapping of Firebase. Our aim is to give developers a Firebase-like developer experience using open source tools.",
+          "start": 2604,
+          "end": 2741,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q02",
+      "question": "能把它理解成完全相同的开源 Firebase 吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不是一对一映射，目标是用开源工具提供类似开发体验。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "Supabase is not a 1-to-1 mapping of Firebase. Our aim is to give developers a Firebase-like developer experience using open source tools.",
+          "start": 2604,
+          "end": 2741,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q03",
+      "question": "Supabase 支持托管、自托管和本地开发吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "托管可免安装注册使用；也可 self-host 与 develop locally。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "Supabase is a [hosted platform](https://supabase.com/dashboard). You can sign up and start using Supabase without installing anything.\nYou can also [self-host](https://supabase.com/docs/guides/hosting/overview) and [develop locally](https://supabase.com/docs/guides/local-development).",
+          "start": 2761,
+          "end": 3046,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q04",
+      "question": "一定要自己安装服务器吗，能用云平台或本地开发吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "托管可免安装注册使用；也可 self-host 与 develop locally。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "Supabase is a [hosted platform](https://supabase.com/dashboard). You can sign up and start using Supabase without installing anything.\nYou can also [self-host](https://supabase.com/docs/guides/hosting/overview) and [develop locally](https://supabase.com/docs/guides/local-development).",
+          "start": 2761,
+          "end": 3046,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q05",
+      "question": "Supabase Realtime 如何传递数据库变化？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Elixir server 监听 PostgreSQL变化，轮询内置replication，转JSON，以websockets广播给授权客户端。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Realtime](https://github.com/supabase/realtime) is an Elixir server that allows you to listen to PostgreSQL inserts, updates, and deletes using websockets. Realtime polls Postgres' built-in replication functionality for database changes, converts changes to JSON, then broadcasts the JSON over websockets to authorized clients.",
+          "start": 3329,
+          "end": 3659,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q06",
+      "question": "数据库新增、修改、删除，浏览器怎么实时收到？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Elixir server 监听 PostgreSQL变化，轮询内置replication，转JSON，以websockets广播给授权客户端。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Realtime](https://github.com/supabase/realtime) is an Elixir server that allows you to listen to PostgreSQL inserts, updates, and deletes using websockets. Realtime polls Postgres' built-in replication functionality for database changes, converts changes to JSON, then broadcasts the JSON over websockets to authorized clients.",
+          "start": 3329,
+          "end": 3659,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q07",
+      "question": "Supabase 哪个组件把 PostgreSQL 变成 REST API？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "PostgREST。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [PostgREST](http://postgrest.org/) is a web server that turns your PostgreSQL database directly into a RESTful API.",
+          "start": 3660,
+          "end": 3777,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q08",
+      "question": "不手写接口，哪个服务直接把数据库暴露成 REST？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "PostgREST。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [PostgREST](http://postgrest.org/) is a web server that turns your PostgreSQL database directly into a RESTful API.",
+          "start": 3660,
+          "end": 3777,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q09",
+      "question": "Supabase 的注册、登录与 session 由什么组件负责？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "GoTrue，JWT-based authentication API。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [GoTrue](https://github.com/supabase/gotrue) is a JWT-based authentication API that simplifies user sign-ups, logins, and session management in your applications.",
+          "start": 3778,
+          "end": 3942,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q10",
+      "question": "身份认证底层使用什么，基于哪个令牌机制？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "GoTrue，JWT-based authentication API。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [GoTrue](https://github.com/supabase/gotrue) is a JWT-based authentication API that simplifies user sign-ups, logins, and session management in your applications.",
+          "start": 3778,
+          "end": 3942,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q11",
+      "question": "Supabase Storage 文件和权限分别由什么处理？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "RESTful API 管理 S3 文件，Postgres 管理权限。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Storage](https://github.com/supabase/storage-api) a RESTful API for managing files in S3, with Postgres handling permissions.",
+          "start": 3943,
+          "end": 4071,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q12",
+      "question": "文件放哪里，访问权限由数据库还是存储服务管理？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "RESTful API 管理 S3 文件，Postgres 管理权限。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Storage](https://github.com/supabase/storage-api) a RESTful API for managing files in S3, with Postgres handling permissions.",
+          "start": 3943,
+          "end": 4071,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q13",
+      "question": "Supabase 通过哪个 PostgreSQL 扩展提供 GraphQL？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "pg_graphql。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [pg_graphql](http://github.com/supabase/pg_graphql/) a PostgreSQL extension that exposes a GraphQL API.",
+          "start": 4072,
+          "end": 4177,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q14",
+      "question": "除了 REST，哪个扩展可暴露 GraphQL API？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "pg_graphql。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [pg_graphql](http://github.com/supabase/pg_graphql/) a PostgreSQL extension that exposes a GraphQL API.",
+          "start": 4072,
+          "end": 4177,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q15",
+      "question": "Supabase postgres-meta 有什么管理能力？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "postgres-meta 管理 Postgres，获取表、加角色、运行查询等。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [postgres-meta](https://github.com/supabase/postgres-meta) is a RESTful API for managing your Postgres, allowing you to fetch tables, add roles, and run queries, etc.",
+          "start": 4178,
+          "end": 4346,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q16",
+      "question": "要获取表、加角色和运行查询，用哪个 REST 管理服务？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "postgres-meta 管理 Postgres，获取表、加角色、运行查询等。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [postgres-meta](https://github.com/supabase/postgres-meta) is a RESTful API for managing your Postgres, allowing you to fetch tables, add roles, and run queries, etc.",
+          "start": 4178,
+          "end": 4346,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q17",
+      "question": "Supabase 架构里的 Envoy 是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "云原生高性能 edge and service proxy。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Envoy](https://github.com/envoyproxy/envoy) is a cloud-native, high-performance edge and service proxy.",
+          "start": 4347,
+          "end": 4453,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q18",
+      "question": "README 中 Envoy 负责哪类代理功能？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "云原生高性能 edge and service proxy。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Envoy](https://github.com/envoyproxy/envoy) is a cloud-native, high-performance edge and service proxy.",
+          "start": 4347,
+          "end": 4453,
+          "section": "Supabase / How it works"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q19",
+      "question": "Supabase client libraries 的模块组织原则是什么？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "模块化，每个子库独立实现单个外部系统，支持已有工具。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "Our approach for client libraries is modular. Each sub-library is a standalone implementation for a single external system. This is one of the ways we support existing tools.",
+          "start": 4478,
+          "end": 4652,
+          "section": "Supabase / How it works / Client libraries"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q20",
+      "question": "客户端是全都绑一起还是每个外部系统独立实现？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "模块化，每个子库独立实现单个外部系统，支持已有工具。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "Our approach for client libraries is modular. Each sub-library is a standalone implementation for a single external system. This is one of the ways we support existing tools.",
+          "start": 4478,
+          "end": 4652,
+          "section": "Supabase / How it works / Client libraries"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q21",
+      "question": "Supabase 使用帮助与 bug 应分别走什么入口？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Community Forum帮助开发和数据库实践，GitHub Issues报bugs/errors。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Community Forum](https://github.com/supabase/supabase/discussions). Best for: help with building, discussion about database best practices.",
+          "start": 1758,
+          "end": 1900,
+          "section": "Supabase / Community & Support"
+        },
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [GitHub Issues](https://github.com/supabase/supabase/issues). Best for: bugs and errors you encounter using Supabase.",
+          "start": 1901,
+          "end": 2020,
+          "section": "Supabase / Community & Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q22",
+      "question": "开发过程中需要帮助和发现错误，README 怎样区分渠道？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Community Forum帮助开发和数据库实践，GitHub Issues报bugs/errors。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Community Forum](https://github.com/supabase/supabase/discussions). Best for: help with building, discussion about database best practices.",
+          "start": 1758,
+          "end": 1900,
+          "section": "Supabase / Community & Support"
+        },
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [GitHub Issues](https://github.com/supabase/supabase/issues). Best for: bugs and errors you encounter using Supabase.",
+          "start": 1901,
+          "end": 2020,
+          "section": "Supabase / Community & Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q23",
+      "question": "Supabase 数据库基础设施问题与分享应用分别去哪？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Email Support处理数据库基础设施问题，Discord分享应用和社区交流。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Email Support](https://supabase.com/docs/support#business-support). Best for: problems with your database or infrastructure.",
+          "start": 2021,
+          "end": 2148,
+          "section": "Supabase / Community & Support"
+        },
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Discord](https://discord.supabase.com). Best for: sharing your applications and hanging out with the community.",
+          "start": 2149,
+          "end": 2263,
+          "section": "Supabase / Community & Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q24",
+      "question": "数据库出问题想找支持，或者展示作品，分别去哪？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Email Support处理数据库基础设施问题，Discord分享应用和社区交流。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Email Support](https://supabase.com/docs/support#business-support). Best for: problems with your database or infrastructure.",
+          "start": 2021,
+          "end": 2148,
+          "section": "Supabase / Community & Support"
+        },
+        {
+          "doc_id": "readme-supabase-doc",
+          "quote": "- [Discord](https://discord.supabase.com). Best for: sharing your applications and hanging out with the community.",
+          "start": 2149,
+          "end": 2263,
+          "section": "Supabase / Community & Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q25",
+      "question": "完整自托管 docker-compose.yml 和所有必填 env 是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q26",
+      "question": "怎样写允许某用户读取某表的完整 RLS SQL policy？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q27",
+      "question": "本地 JWT secret 的默认值是多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q28",
+      "question": "如何完成生产 Postgres 数据恢复的全部命令？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q29",
+      "question": "我的 Realtime 事件收不到的实际根因是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    },
+    {
+      "id": "supabase-Q30",
+      "question": "多个地域部署时最优连接池大小是多少？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "supabase"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

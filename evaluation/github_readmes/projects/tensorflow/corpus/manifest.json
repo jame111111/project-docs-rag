@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-tensorflow",
+  "product": "tensorflow/tensorflow README 测试",
+  "commit": "2f3601c5c8586496018bb1a6e14b97bff728d830",
+  "documents": [
+    {
+      "id": "readme-tensorflow-doc",
+      "title": "tensorflow/tensorflow README",
+      "category": "机器学习框架",
+      "source_url": "https://github.com/tensorflow/tensorflow/blob/2f3601c5c8586496018bb1a6e14b97bff728d830/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:09:13.685262+00:00",
+      "version": "2f3601c5c8586496018bb1a6e14b97bff728d830",
+      "sha256": "e2f779cef212fbc54c3f9b1e273583720edac1ac9cc6ce6813b1e0386a968f0d"
+    }
+  ]
+}

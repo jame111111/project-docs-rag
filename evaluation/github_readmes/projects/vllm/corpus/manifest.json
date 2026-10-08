@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-vllm",
+  "product": "vllm-project/vllm README 测试",
+  "commit": "7436a7f119dedd0c4d5f4d745aa6c2305ee82252",
+  "documents": [
+    {
+      "id": "readme-vllm-doc",
+      "title": "vllm-project/vllm README",
+      "category": "大模型推理",
+      "source_url": "https://github.com/vllm-project/vllm/blob/7436a7f119dedd0c4d5f4d745aa6c2305ee82252/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:02:40.597908+00:00",
+      "version": "7436a7f119dedd0c4d5f4d745aa6c2305ee82252",
+      "sha256": "8d2e7cd8d120bcd91ddfa85ef957f7246021b4a3f46f2e1f4ccf084ec6c20026"
+    }
+  ]
+}

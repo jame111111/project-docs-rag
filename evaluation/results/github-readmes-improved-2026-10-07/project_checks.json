@@ -1,0 +1,302 @@
+[
+  {
+    "project": "kubernetes",
+    "documents": 1,
+    "parents": 12,
+    "children": 30,
+    "fingerprint": "dcd86ee51b43e5ce51e2f66f1d4ed66cc8afd28eafcc1f93d76f8641caaffabe",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "etcd",
+    "documents": 1,
+    "parents": 24,
+    "children": 74,
+    "fingerprint": "5e9758ec03de995001363ebed893bb61d129f2e56d2fe59ea3e88b090eb3049d",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "spark",
+    "documents": 1,
+    "parents": 15,
+    "children": 163,
+    "fingerprint": "b0fe45a086cabe848ddd7bd764f64293600951a8445ad751e5ea9eebd3dee10a",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "triton",
+    "documents": 1,
+    "parents": 50,
+    "children": 121,
+    "fingerprint": "11d499da2a150685e1403ed30822218d0fb1f4837726ea3512ccab9fd9d3a198",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "vllm",
+    "documents": 1,
+    "parents": 11,
+    "children": 39,
+    "fingerprint": "9b0394526bdac42d196f602c97154d439eddfa1932de859110cc054b96105ad1",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "pytorch",
+    "documents": 1,
+    "parents": 47,
+    "children": 161,
+    "fingerprint": "f241d76d674f358e4d70f3a44c80ff01804849bb39209d54f2dfbdfa53beda55",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "tensorflow",
+    "documents": 1,
+    "parents": 17,
+    "children": 53,
+    "fingerprint": "8cf69b14ef6366f4b3ef775c391eca81edb8d49d1a3ae2ea09fc03671d373991",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "clickhouse",
+    "documents": 1,
+    "parents": 13,
+    "children": 45,
+    "fingerprint": "c15f1c52657976e5c8e65fd01b77c8e3262a3cb557ba6319d5a1ae4a89b95edc",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "duckdb",
+    "documents": 1,
+    "parents": 9,
+    "children": 19,
+    "fingerprint": "606574f0c75b37f4da2d9c65a23afbffb42b3184e9180754644024a6cbf6b0d4",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "milvus",
+    "documents": 1,
+    "parents": 31,
+    "children": 545,
+    "fingerprint": "694ff32a0583087429110dca8a7d3d87b968a970caa835f687ec4d35a1acd3ff",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "qdrant",
+    "documents": 1,
+    "parents": 31,
+    "children": 86,
+    "fingerprint": "fa2c3886de379f6af2302468a3cd43ccfffb98ca8646633c05065d76699cc48b",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "flink",
+    "documents": 1,
+    "parents": 18,
+    "children": 51,
+    "fingerprint": "e7c7c04d01b48aaa169fa74219692cb3a4b5507e061205a79b6bf075dea68236",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "tidb",
+    "documents": 1,
+    "parents": 21,
+    "children": 75,
+    "fingerprint": "9d7b580b702b87e7b74abfa2554e1cb934852395ec9b163b810bb7fd9a718d22",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "prometheus",
+    "documents": 1,
+    "parents": 22,
+    "children": 68,
+    "fingerprint": "2c6b0fee765017e3c18e3722cb8adacd1092d3d1b69d9d3738623982731e49a8",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "grafana",
+    "documents": 1,
+    "parents": 7,
+    "children": 23,
+    "fingerprint": "1951f1d5ba1f5f6afe51f80a80196fdefc5fbdaacb17e3abf0dd9c1414fdc450",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "argocd",
+    "documents": 1,
+    "parents": 13,
+    "children": 55,
+    "fingerprint": "9c37cc05beaf8e6c59987770ce9e3513f78dfa58f77726b221423e4662ecf849",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "opensearch",
+    "documents": 1,
+    "parents": 10,
+    "children": 24,
+    "fingerprint": "74b742dad162e515ff7ff44ab74f67746f5e164d44258be74a8a5a72bd3215c8",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "temporal",
+    "documents": 1,
+    "parents": 13,
+    "children": 29,
+    "fingerprint": "c7c217a8ce64d38460ca4398364272545cc9e016d08d23a6029c6ea439814f49",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "supabase",
+    "documents": 1,
+    "parents": 15,
+    "children": 111,
+    "fingerprint": "82b4ec57c934290012d5ed8b3591ea1e08f49ef6ab71717e77f41c286d8e58cc",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  },
+  {
+    "project": "airflow",
+    "documents": 1,
+    "parents": 70,
+    "children": 273,
+    "fingerprint": "44d5fdc3290008f4a2d2abaa1a13c92378b1e3d1b6f835c2de464cc8149b174e",
+    "questions": 30,
+    "question_evidence_positions": "passed",
+    "parent_child_offsets": "passed",
+    "sqlite_chroma_count": "passed",
+    "retrieval_rows": 180,
+    "answer_statuses": {
+      "not_run": 30
+    }
+  }
+]

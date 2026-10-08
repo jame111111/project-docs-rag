@@ -1,0 +1,637 @@
+{
+  "version": 3,
+  "product_id": "readme-milvus",
+  "corpus_commit": "0f34d4d512d0a08e7ad297e0d4d5396943420048",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "milvus-Q01",
+      "question": "Milvus 支持什么部署架构和硬件加速？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F01",
+      "reference_points": [
+        "Go/C++，CPU/GPU加速，distributed K8s-native架构，可横向扩展。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "Written in Go and C++, Milvus implements hardware acceleration for CPU/GPU",
+          "start": 1958,
+          "end": 2032,
+          "section": "What is Milvus?"
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "Thanks to its [fully-distributed and K8s-native architecture](https://milvus.io/docs/overview.md#What-Makes-Milvus-so-Scalable), Milvus can scale horizontally",
+          "start": 2085,
+          "end": 2243,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q02",
+      "question": "向量多了能横向扩展吗，CPU/GPU 都能加速吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F01",
+      "reference_points": [
+        "Go/C++，CPU/GPU加速，distributed K8s-native架构，可横向扩展。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "Written in Go and C++, Milvus implements hardware acceleration for CPU/GPU",
+          "start": 1958,
+          "end": 2032,
+          "section": "What is Milvus?"
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "Thanks to its [fully-distributed and K8s-native architecture](https://milvus.io/docs/overview.md#What-Makes-Milvus-so-Scalable), Milvus can scale horizontally",
+          "start": 2085,
+          "end": 2243,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q03",
+      "question": "Milvus 在单机和 Python 快速试用有哪些版本？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F02",
+      "reference_points": [
+        "Standalone单机，Milvus Lite轻量Python pip快速试用。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "Milvus also supports [Standalone mode](https://milvus.io/docs/install_standalone-docker.md) for single machine deployment. [Milvus Lite](https://milvus.io/docs/milvus_lite.md) is a lightweight version good for quickstart in python with `pip install`.",
+          "start": 2366,
+          "end": 2616,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q04",
+      "question": "不建分布式集群，单机或轻量试用怎么选？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F02",
+      "reference_points": [
+        "Standalone单机，Milvus Lite轻量Python pip快速试用。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "Milvus also supports [Standalone mode](https://milvus.io/docs/install_standalone-docker.md) for single machine deployment. [Milvus Lite](https://milvus.io/docs/milvus_lite.md) is a lightweight version good for quickstart in python with `pip install`.",
+          "start": 2366,
+          "end": 2616,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q05",
+      "question": "Milvus Python SDK 如何安装，客户端类叫什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F03",
+      "reference_points": [
+        "pip install -U pymilvus，from pymilvus import MilvusClient。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "$ pip install -U pymilvus",
+          "start": 3880,
+          "end": 3905,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "from pymilvus import MilvusClient",
+          "start": 4012,
+          "end": 4045,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q06",
+      "question": "用 Python 接入，先安装什么，import 哪个类？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F03",
+      "reference_points": [
+        "pip install -U pymilvus，from pymilvus import MilvusClient。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "$ pip install -U pymilvus",
+          "start": 3880,
+          "end": 3905,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "from pymilvus import MilvusClient",
+          "start": 4012,
+          "end": 4045,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q07",
+      "question": "Milvus Lite 怎样建立本地持久化数据库？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F04",
+      "reference_points": [
+        "安装 pymilvus[milvus-lite]，MilvusClient(\"milvus_demo.db\")。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "* You can also try Milvus Lite for quickstart by installing `pymilvus[milvus-lite]`. To create a local vector database, simply instantiate a client with a local file name for persisting data:",
+          "start": 4051,
+          "end": 4242,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "client = MilvusClient(\"milvus_demo.db\")",
+          "start": 4258,
+          "end": 4297,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q08",
+      "question": "不连接远端，数据库写到本地文件怎么办？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F04",
+      "reference_points": [
+        "安装 pymilvus[milvus-lite]，MilvusClient(\"milvus_demo.db\")。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "* You can also try Milvus Lite for quickstart by installing `pymilvus[milvus-lite]`. To create a local vector database, simply instantiate a client with a local file name for persisting data:",
+          "start": 4051,
+          "end": 4242,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "client = MilvusClient(\"milvus_demo.db\")",
+          "start": 4258,
+          "end": 4297,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q09",
+      "question": "连接远端 Milvus 或 Zilliz Cloud 的参数是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F05",
+      "reference_points": [
+        "MilvusClient uri 为endpoint，token 为用户密码或Cloud API key。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "client = MilvusClient(\n    uri=\"<endpoint_of_self_hosted_milvus_or_zilliz_cloud>\",\n    token=\"<username_and_password_or_zilliz_cloud_api_key>\")",
+          "start": 4515,
+          "end": 4658,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q10",
+      "question": "服务器已经部署了，客户端地址和凭证传哪个字段？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F05",
+      "reference_points": [
+        "MilvusClient uri 为endpoint，token 为用户密码或Cloud API key。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "client = MilvusClient(\n    uri=\"<endpoint_of_self_hosted_milvus_or_zilliz_cloud>\",\n    token=\"<username_and_password_or_zilliz_cloud_api_key>\")",
+          "start": 4515,
+          "end": 4658,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q11",
+      "question": "Milvus 示例集合名称和向量维数是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F06",
+      "reference_points": [
+        "demo_collection，dimension=768。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "client.create_collection(\n    collection_name=\"demo_collection\",\n    dimension=768,  # The vectors we will use in this demo have 768 dimensions\n)",
+          "start": 4720,
+          "end": 4865,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q12",
+      "question": "create_collection 那个例子怎么指定名字和维度？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F06",
+      "reference_points": [
+        "demo_collection，dimension=768。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "client.create_collection(\n    collection_name=\"demo_collection\",\n    dimension=768,  # The vectors we will use in this demo have 768 dimensions\n)",
+          "start": 4720,
+          "end": 4865,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q13",
+      "question": "Milvus 示例怎样插入数据？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F07",
+      "reference_points": [
+        "client.insert(collection_name=\"demo_collection\", data=data)。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "res = client.insert(collection_name=\"demo_collection\", data=data)",
+          "start": 4894,
+          "end": 4959,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q14",
+      "question": "向那个 demo collection 写数据用什么调用？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F07",
+      "reference_points": [
+        "client.insert(collection_name=\"demo_collection\", data=data)。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "res = client.insert(collection_name=\"demo_collection\", data=data)",
+          "start": 4894,
+          "end": 4959,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q15",
+      "question": "Milvus 查询示例支持批量吗，返回多少条和哪些字段？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F08",
+      "reference_points": [
+        "data列表支持批量，limit=2，返回vector/text/subject。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "data=query_vectors,  # a list of one or more query vectors, supports batch\n    limit=2,  # how many results to return (topK)\n    output_fields=[\"vector\", \"text\", \"subject\"],  # what fields to return",
+          "start": 5168,
+          "end": 5366,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q16",
+      "question": "多条 query vectors 能一起查吗，topK 和 output_fields 是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F08",
+      "reference_points": [
+        "data列表支持批量，limit=2，返回vector/text/subject。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "data=query_vectors,  # a list of one or more query vectors, supports batch\n    limit=2,  # how many results to return (topK)\n    output_fields=[\"vector\", \"text\", \"subject\"],  # what fields to return",
+          "start": 5168,
+          "end": 5366,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q17",
+      "question": "Milvus 读多和写多时分别扩展哪些节点？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "milvus-F09",
+      "reference_points": [
+        "读多增加query nodes，写多增加data node。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "achieving optimal performance by independently increasing query nodes for read-heavy workload and data node for write-heavy workload.",
+          "start": 6141,
+          "end": 6274,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q18",
+      "question": "计算存储分离后，读取重和写入重该增加哪个节点？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "milvus-F09",
+      "reference_points": [
+        "读多增加query nodes，写多增加data node。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "achieving optimal performance by independently increasing query nodes for read-heavy workload and data node for write-heavy workload.",
+          "start": 6141,
+          "end": 6274,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q19",
+      "question": "Milvus 混合检索的全文和学习式稀疏表示是什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "milvus-F10",
+      "reference_points": [
+        "原生全文BM25，学习稀疏SPLADE/BGE-M3，同集合存稀疏和稠密向量。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "Milvus also natively supports [full text search](https://milvus.io/docs/full-text-search.md) with BM25 as well as learned sparse embeddings such as SPLADE and BGE-M3. Users can store sparse vectors and dense vectors in the same collection",
+          "start": 8333,
+          "end": 8571,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q20",
+      "question": "除了dense语义搜索，还有什么全文或稀疏模型支持？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "milvus-F10",
+      "reference_points": [
+        "原生全文BM25，学习稀疏SPLADE/BGE-M3，同集合存稀疏和稠密向量。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "Milvus also natively supports [full text search](https://milvus.io/docs/full-text-search.md) with BM25 as well as learned sparse embeddings such as SPLADE and BGE-M3. Users can store sparse vectors and dense vectors in the same collection",
+          "start": 8333,
+          "end": 8571,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q21",
+      "question": "Linux 编译 Milvus 对 CMake、GCC、Python 有什么要求？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "milvus-F11",
+      "reference_points": [
+        "Ubuntu20.04+推荐，Go1.21+，CMake3.26.4+且<4，GCC11+，Python>3.8且<=3.11。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "* Linux systems (Ubuntu 20.04 or later recommended):\n  ```bash\n  Go: >= 1.21\n  CMake: >= 3.26.4 && CMake < 4\n  GCC: >= 11\n  Python: > 3.8 and  <= 3.11\n  ```",
+          "start": 14802,
+          "end": 14958,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q22",
+      "question": "Ubuntu 源码构建，具体工具版本范围是什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "milvus-F11",
+      "reference_points": [
+        "Ubuntu20.04+推荐，Go1.21+，CMake3.26.4+且<4，GCC11+，Python>3.8且<=3.11。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "* Linux systems (Ubuntu 20.04 or later recommended):\n  ```bash\n  Go: >= 1.21\n  CMake: >= 3.26.4 && CMake < 4\n  GCC: >= 11\n  Python: > 3.8 and  <= 3.11\n  ```",
+          "start": 14802,
+          "end": 14958,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q23",
+      "question": "Milvus 从 clone 到构建的基本顺序是什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "milvus-F12",
+      "reference_points": [
+        "git clone，cd milvus/，./scripts/install_deps.sh，make。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "$ git clone https://github.com/milvus-io/milvus.git",
+          "start": 15390,
+          "end": 15441,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "$ cd milvus/\n$ ./scripts/install_deps.sh",
+          "start": 15479,
+          "end": 15519,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "$ make",
+          "start": 15539,
+          "end": 15545,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q24",
+      "question": "拉下代码后，装依赖和编译分别执行什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "milvus-F12",
+      "reference_points": [
+        "git clone，cd milvus/，./scripts/install_deps.sh，make。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "$ git clone https://github.com/milvus-io/milvus.git",
+          "start": 15390,
+          "end": 15441,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "$ cd milvus/\n$ ./scripts/install_deps.sh",
+          "start": 15479,
+          "end": 15519,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-milvus-doc",
+          "quote": "$ make",
+          "start": 15539,
+          "end": 15545,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "milvus-Q25",
+      "question": "生产鉴权与 TLS 的完整配置文件是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "milvus-Q26",
+      "question": "一亿个768维向量应配置多少查询节点内存？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "milvus-Q27",
+      "question": "HNSW 的最佳 M、efConstruction 和 ef 参数是多少？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "milvus-Q28",
+      "question": "从指定旧版到新版集群无停机迁移的完整步骤是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "milvus-Q29",
+      "question": "当前服务器所有 REST 错误码和重试规则是什么？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "milvus-Q30",
+      "question": "如何配置多地域灾难恢复的完整 Helm values？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

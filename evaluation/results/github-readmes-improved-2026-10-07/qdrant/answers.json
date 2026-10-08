@@ -1,0 +1,790 @@
+{
+  "metadata": {
+    "product_id": "readme-qdrant",
+    "product_name": "qdrant/qdrant README 测试",
+    "corpus_commit": "016542aa5deb6c66380bb137badf73d54f742bde",
+    "dataset_sha256": "0c74710e9ffd848ee091acc76c3d2a2f0df057885f200bac4db51ef8e5f5c854",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "fa2c3886de379f6af2302468a3cd43ccfffb98ca8646633c05065d76699cc48b",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "qdrant",
+    "repository": "qdrant/qdrant",
+    "index": {
+      "documents": 1,
+      "parents": 31,
+      "children": 86,
+      "fingerprint": "fa2c3886de379f6af2302468a3cd43ccfffb98ca8646633c05065d76699cc48b"
+    }
+  },
+  "results": [
+    {
+      "id": "qdrant-Q01",
+      "question": "Qdrant 的 point 包含哪些内容？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "vector 加额外 payload，API 可存储、搜索、管理。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "It provides a production-ready service with a convenient API to store, search, and manage points—vectors with an additional payload.",
+          "start": 1609,
+          "end": 1741,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q02",
+      "question": "它存的是纯向量，还是能附带业务数据？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "vector 加额外 payload，API 可存储、搜索、管理。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "It provides a production-ready service with a convenient API to store, search, and manage points—vectors with an additional payload.",
+          "start": 1609,
+          "end": 1741,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q03",
+      "question": "Qdrant 使用什么语言开发？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Rust。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Qdrant is written in Rust 🦀, which makes it fast and reliable even under high load.",
+          "start": 1911,
+          "end": 1994,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q04",
+      "question": "这个高负载向量引擎主要用什么语言写？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Rust。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Qdrant is written in Rust 🦀, which makes it fast and reliable even under high load.",
+          "start": 1911,
+          "end": 1994,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q05",
+      "question": "本地启动 Qdrant 的 Docker 命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "docker run -p 6333:6333 qdrant/qdrant。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "docker run -p 6333:6333 qdrant/qdrant",
+          "start": 3188,
+          "end": 3225,
+          "section": "Getting Started / Client-Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q06",
+      "question": "想先起个容器试试，应该映射哪个端口？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "docker run -p 6333:6333 qdrant/qdrant。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "docker run -p 6333:6333 qdrant/qdrant",
+          "start": 3188,
+          "end": 3225,
+          "section": "Getting Started / Client-Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q07",
+      "question": "README 的简单 Docker 启动命令有什么安全注意事项？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "无认证，开放所有网络接口，不安全；应参考 secure your instance。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Note that this starts an insecure deployment without authentication, open to all network interfaces. Please refer to [secure your instance](https://qdrant.tech/documentation/security/#secure-your-instance).",
+          "start": 3231,
+          "end": 3437,
+          "section": "Getting Started / Client-Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q08",
+      "question": "首页这个容器直接放生产安全吗，有没有认证？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "无认证，开放所有网络接口，不安全；应参考 secure your instance。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Note that this starts an insecure deployment without authentication, open to all network interfaces. Please refer to [secure your instance](https://qdrant.tech/documentation/security/#secure-your-instance).",
+          "start": 3231,
+          "end": 3437,
+          "section": "Getting Started / Client-Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q09",
+      "question": "Python 示例怎样连接本地 Qdrant？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "QdrantClient(url=\"http://localhost:6333\")。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "from qdrant_client import QdrantClient\n\nclient = QdrantClient(url=\"http://localhost:6333\")",
+          "start": 3540,
+          "end": 3630,
+          "section": "Getting Started / Client-Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q10",
+      "question": "容器起来后，Python client 要用哪个地址？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "QdrantClient(url=\"http://localhost:6333\")。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "from qdrant_client import QdrantClient\n\nclient = QdrantClient(url=\"http://localhost:6333\")",
+          "start": 3540,
+          "end": 3630,
+          "section": "Getting Started / Client-Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q11",
+      "question": "生产部署前必须阅读哪两份指南？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "installation 与 security guides。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Before deploying Qdrant to production, be sure to read our [installation](https://qdrant.tech/documentation/installation/) and [security](https://qdrant.tech/documentation/security/) guides.",
+          "start": 3636,
+          "end": 3826,
+          "section": "Getting Started / Client-Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q12",
+      "question": "从试用切到线上前，README 提醒看什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "installation 与 security guides。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Before deploying Qdrant to production, be sure to read our [installation](https://qdrant.tech/documentation/installation/) and [security](https://qdrant.tech/documentation/security/) guides.",
+          "start": 3636,
+          "end": 3826,
+          "section": "Getting Started / Client-Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q13",
+      "question": "Qdrant Edge 和 Server 的运行方式有何区别？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Edge 在应用进程内运行，数据本地存储查询，可与 Server 同步。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Unlike Qdrant Server, which uses a client-server architecture, Qdrant Edge runs inside the application process. Data is stored and queried locally and can be synchronized with a Qdrant server.",
+          "start": 4606,
+          "end": 4798,
+          "section": "Getting Started / Qdrant Edge"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q14",
+      "question": "离线边缘设备是否必须连独立服务器？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Edge 在应用进程内运行，数据本地存储查询，可与 Server 同步。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Unlike Qdrant Server, which uses a client-server architecture, Qdrant Edge runs inside the application process. Data is stored and queried locally and can be synchronized with a Qdrant server.",
+          "start": 4606,
+          "end": 4798,
+          "section": "Getting Started / Qdrant Edge"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q15",
+      "question": "Qdrant REST 接口使用什么规范？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "OpenAPI 3.0 specification，可生成多数语言和框架客户端。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Qdrant provides a REST API with an [OpenAPI 3.0 specification](https://api.qdrant.tech/), enabling client generation for virtually any framework or programming language.",
+          "start": 7169,
+          "end": 7338,
+          "section": "API / REST"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q16",
+      "question": "能根据 API 描述自动生成客户端吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "OpenAPI 3.0 specification，可生成多数语言和框架客户端。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Qdrant provides a REST API with an [OpenAPI 3.0 specification](https://api.qdrant.tech/), enabling client generation for virtually any framework or programming language.",
+          "start": 7169,
+          "end": 7338,
+          "section": "API / REST"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q17",
+      "question": "Qdrant 稠密、稀疏和多向量各用于什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "dense 语义，sparse 全文，multivector 多嵌入或 ColBERT 晚交互。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Qdrant supports dense vectors for semantic similarity, sparse vectors for full-text search, and multivector search for objects with multiple embeddings or late interaction models like ColBERT.",
+          "start": 7680,
+          "end": 7872,
+          "section": "Features / Dense, Sparse, and Multi Vector Search"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q18",
+      "question": "语义搜索、全文搜索和 ColBERT 分别属于哪种向量支持？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "dense 语义，sparse 全文，multivector 多嵌入或 ColBERT 晚交互。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Qdrant supports dense vectors for semantic similarity, sparse vectors for full-text search, and multivector search for objects with multiple embeddings or late interaction models like ColBERT.",
+          "start": 7680,
+          "end": 7872,
+          "section": "Features / Dense, Sparse, and Multi Vector Search"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q19",
+      "question": "payload 过滤有哪些条件和布尔组合？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "关键词、全文、数值范围、地理位置等，结合 should/must/must_not。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Attach any JSON payload to your vectors and filter on it using a rich set of conditions—keyword matching, full-text, numeric ranges, geo-locations, and more—combined with `should`, `must`, and `must_not` clauses.",
+          "start": 7900,
+          "end": 8112,
+          "section": "Features / Filtering on Payload"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q20",
+      "question": "向量带 JSON 业务字段，怎么限制搜索范围？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "关键词、全文、数值范围、地理位置等，结合 should/must/must_not。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Attach any JSON payload to your vectors and filter on it using a rich set of conditions—keyword matching, full-text, numeric ranges, geo-locations, and more—combined with `should`, `must`, and `must_not` clauses.",
+          "start": 7900,
+          "end": 8112,
+          "section": "Features / Filtering on Payload"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q21",
+      "question": "Qdrant 分布式部署支持哪些扩缩容能力？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "分片和复制横向扩展，集合更新与调整大小零停机。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Scale horizontally with sharding and replication, and update or resize collections with zero downtime.",
+          "start": 8571,
+          "end": 8673,
+          "section": "Features / Distributed Deployment"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q22",
+      "question": "集合调整大小会停机吗，如何横向扩展？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "分片和复制横向扩展，集合更新与调整大小零停机。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Scale horizontally with sharding and replication, and update or resize collections with zero downtime.",
+          "start": 8571,
+          "end": 8673,
+          "section": "Features / Distributed Deployment"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q23",
+      "question": "给 Qdrant 提交 PR 应基于和目标到哪个分支？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "从 dev 建分支并向 dev 提 PR；master 目标将要求修改。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Our development branch is `dev`, not `master`. Please fork the repo, branch from `dev`, and open your pull request against `dev`. PRs targeting `master` will be asked to retarget.",
+          "start": 10771,
+          "end": 10950,
+          "section": "Contributing"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q24",
+      "question": "我往 master 提 PR 可以吗，正确分支是哪一个？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "从 dev 建分支并向 dev 提 PR；master 目标将要求修改。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-qdrant-doc",
+          "quote": "Our development branch is `dev`, not `master`. Please fork the repo, branch from `dev`, and open your pull request against `dev`. PRs targeting `master` will be asked to retarget.",
+          "start": 10771,
+          "end": 10950,
+          "section": "Contributing"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q25",
+      "question": "如何配置生产 TLS、API key 与防火墙的完整步骤？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q26",
+      "question": "一亿向量的最优 HNSW m 和 ef_construct 参数是多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q27",
+      "question": "完整 Kubernetes 多地域高可用 Helm values 文件是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q28",
+      "question": "从生产备份恢复整个分布式集群的全部命令是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q29",
+      "question": "默认写一致性因子的具体值是多少？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    },
+    {
+      "id": "qdrant-Q30",
+      "question": "我的线上搜索 P99 延迟骤增的实际原因是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "qdrant"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

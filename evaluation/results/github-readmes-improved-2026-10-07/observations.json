@@ -1,0 +1,16 @@
+{
+  "top_k": 5,
+  "positive_question_changes": {
+    "hybrid_gain": 32,
+    "hybrid_loss": 25,
+    "parent_gain": 84,
+    "parent_loss": 20,
+    "parent_miss": 158
+  },
+  "empty_positive_contexts": {
+    "vector_child": 0,
+    "hybrid_child": 0,
+    "hybrid_parent": 3
+  },
+  "source_run": "run-github-readmes-20261007-164550-cd4913"
+}

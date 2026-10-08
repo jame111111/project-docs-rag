@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-triton",
+  "product": "triton-inference-server/server README 测试",
+  "commit": "920fc893d21019ada670624623ffc0b7a47442bb",
+  "documents": [
+    {
+      "id": "readme-triton-doc",
+      "title": "triton-inference-server/server README",
+      "category": "模型推理服务",
+      "source_url": "https://github.com/triton-inference-server/server/blob/920fc893d21019ada670624623ffc0b7a47442bb/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:02:36.605115+00:00",
+      "version": "920fc893d21019ada670624623ffc0b7a47442bb",
+      "sha256": "2d59921bdb95c63e3f75fd7b98aefa114dfb98ebcbca22b9aeb0951949242808"
+    }
+  ]
+}

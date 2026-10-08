@@ -1,0 +1,10 @@
+{
+  "id": "readme-opensearch",
+  "name": "opensearch-project/OpenSearch README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/opensearch-project/OpenSearch/blob/d2da1efc2b9aef893e7481921c28a2201f7cebd1/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

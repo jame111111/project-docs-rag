@@ -1,0 +1,804 @@
+{
+  "metadata": {
+    "product_id": "readme-clickhouse",
+    "product_name": "ClickHouse/ClickHouse README 测试",
+    "corpus_commit": "2c8a93b209e7ab712da907a194d440adfe99da54",
+    "dataset_sha256": "40cc91f44b0a21efad487ac3209610fa7f6f98089fe24399dc4653415e029ef1",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "c15f1c52657976e5c8e65fd01b77c8e3262a3cb557ba6319d5a1ae4a89b95edc",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "clickhouse",
+    "repository": "ClickHouse/ClickHouse",
+    "index": {
+      "documents": 1,
+      "parents": 13,
+      "children": 45,
+      "fingerprint": "c15f1c52657976e5c8e65fd01b77c8e3262a3cb557ba6319d5a1ae4a89b95edc"
+    }
+  },
+  "results": [
+    {
+      "id": "clickhouse-Q01",
+      "question": "ClickHouse 是什么类型的数据库，主要面向什么任务？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "开源列式 DBMS，用于实时分析报表。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "ClickHouse® is an open-source column-oriented database management system that allows generating analytical data reports in real-time.",
+          "start": 836,
+          "end": 969,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q02",
+      "question": "它按行还是按列存，适合做什么报表？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "开源列式 DBMS，用于实时分析报表。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "ClickHouse® is an open-source column-oriented database management system that allows generating analytical data reports in real-time.",
+          "start": 836,
+          "end": 969,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q03",
+      "question": "README 安装指引列出了哪些操作系统？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Linux、macOS、FreeBSD。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "## How To Install (Linux, macOS, FreeBSD)",
+          "start": 984,
+          "end": 1025,
+          "section": "How To Install (Linux, macOS, FreeBSD)"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q04",
+      "question": "首页那条安装命令适用于哪些系统？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Linux、macOS、FreeBSD。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "## How To Install (Linux, macOS, FreeBSD)",
+          "start": 984,
+          "end": 1025,
+          "section": "How To Install (Linux, macOS, FreeBSD)"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q05",
+      "question": "README 展示的 ClickHouse 安装命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "curl https://clickhouse.com/ | sh；仅为原文命令，不在测试中执行。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "curl https://clickhouse.com/ | sh",
+          "start": 1031,
+          "end": 1064,
+          "section": "How To Install (Linux, macOS, FreeBSD)"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q06",
+      "question": "本机安装的那条命令怎么写？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "curl https://clickhouse.com/ | sh；仅为原文命令，不在测试中执行。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "curl https://clickhouse.com/ | sh",
+          "start": 1031,
+          "end": 1064,
+          "section": "How To Install (Linux, macOS, FreeBSD)"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q07",
+      "question": "不安装本地 ClickHouse 能怎样试用？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "可免费试用 ClickHouse Cloud。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "Or skip the install: try [ClickHouse Cloud](https://console.clickhouse.cloud/signUp?utm_medium=referral&utm_source=github) for free and start querying in minutes.",
+          "start": 1069,
+          "end": 1231,
+          "section": "How To Install (Linux, macOS, FreeBSD)"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q08",
+      "question": "只想先试着查点数据，能用什么托管入口？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "可免费试用 ClickHouse Cloud。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "Or skip the install: try [ClickHouse Cloud](https://console.clickhouse.cloud/signUp?utm_medium=referral&utm_source=github) for free and start querying in minutes.",
+          "start": 1069,
+          "end": 1231,
+          "section": "How To Install (Linux, macOS, FreeBSD)"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q09",
+      "question": "小型 ClickHouse 集群的搭建查询教程入口在哪？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Tutorial 链接，说明搭建和查询 small ClickHouse cluster。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Tutorial](https://clickhouse.com/docs/getting_started/tutorial/) shows how to set up and query a small ClickHouse cluster.",
+          "start": 1475,
+          "end": 1600,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q10",
+      "question": "想从小集群跑通查询，首页指向哪份教程？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Tutorial 链接，说明搭建和查询 small ClickHouse cluster。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Tutorial](https://clickhouse.com/docs/getting_started/tutorial/) shows how to set up and query a small ClickHouse cluster.",
+          "start": 1475,
+          "end": 1600,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q11",
+      "question": "深入文档和产品概览分别在哪查看？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Official website 看概览，Documentation 看深入资料。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Official website](https://clickhouse.com/) has a quick high-level overview of ClickHouse on the main page.",
+          "start": 1250,
+          "end": 1359,
+          "section": "Useful Links"
+        },
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Documentation](https://clickhouse.com/docs/) provides more in-depth information.",
+          "start": 1601,
+          "end": 1684,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q12",
+      "question": "想先了解整体再读细节，应点首页的哪些入口？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Official website 看概览，Documentation 看深入资料。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Official website](https://clickhouse.com/) has a quick high-level overview of ClickHouse on the main page.",
+          "start": 1250,
+          "end": 1359,
+          "section": "Useful Links"
+        },
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Documentation](https://clickhouse.com/docs/) provides more in-depth information.",
+          "start": 1601,
+          "end": 1684,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q13",
+      "question": "ClickHouse 用户实时交流渠道有哪些？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Slack 和 Telegram。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Slack](https://clickhouse.com/slack) and [Telegram](https://telegram.me/clickhouse_en) allow chatting with ClickHouse users in real-time.",
+          "start": 1800,
+          "end": 1940,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q14",
+      "question": "我想找其他用户聊使用问题，README 提到哪里？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Slack 和 Telegram。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Slack](https://clickhouse.com/slack) and [Telegram](https://telegram.me/clickhouse_en) allow chatting with ClickHouse users in real-time.",
+          "start": 1800,
+          "end": 1940,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q15",
+      "question": "ClickHouse 博客提供哪类内容？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Blog 有相关文章、公告与活动报告。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Blog](https://clickhouse.com/blog/) contains various ClickHouse-related articles, as well as announcements and reports about events.",
+          "start": 1941,
+          "end": 2076,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q16",
+      "question": "想看技术文章、公告和活动回顾，哪个入口合适？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Blog 有相关文章、公告与活动报告。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Blog](https://clickhouse.com/blog/) contains various ClickHouse-related articles, as well as announcements and reports about events.",
+          "start": 1941,
+          "end": 2076,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q17",
+      "question": "如何在浏览器中带语法高亮查看 ClickHouse 源码？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "github.dev Code Browser。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Code Browser (github.dev)](https://github.dev/ClickHouse/ClickHouse) with syntax highlighting, powered by github.dev.",
+          "start": 2191,
+          "end": 2311,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q18",
+      "question": "不 clone 仓库，首页有在线代码浏览器吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "github.dev Code Browser。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Code Browser (github.dev)](https://github.dev/ClickHouse/ClickHouse) with syntax highlighting, powered by github.dev.",
+          "start": 2191,
+          "end": 2311,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q19",
+      "question": "怎样与 ClickHouse 专家讨论自己的用例？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Contact us 链接用于讨论 use case。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Contact us](https://clickhouse.com/company/contact) to discuss your use case with a ClickHouse expert.",
+          "start": 2312,
+          "end": 2417,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q20",
+      "question": "想请项目专家看看我的业务场景，README 提供什么入口？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Contact us 链接用于讨论 use case。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "* [Contact us](https://clickhouse.com/company/contact) to discuss your use case with a ClickHouse expert.",
+          "start": 2312,
+          "end": 2417,
+          "section": "Useful Links"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q21",
+      "question": "在哪里集中查看 ClickHouse 发布演示与视频？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "ClickHouse Theater 和 YouTube Playlist。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "Watch all release presentations and videos at [ClickHouse Theater](https://presentations.clickhouse.com/) and [YouTube Playlist](https://www.youtube.com/playlist?list=PL0Z2YDlm0b3jAlSy1JxyP8zluvXaN3nxU).",
+          "start": 3290,
+          "end": 3493,
+          "section": "Monthly Release & Community Call"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q22",
+      "question": "错过发布讲解了，去哪补录像和演示？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "ClickHouse Theater 和 YouTube Playlist。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "Watch all release presentations and videos at [ClickHouse Theater](https://presentations.clickhouse.com/) and [YouTube Playlist](https://www.youtube.com/playlist?list=PL0Z2YDlm0b3jAlSy1JxyP8zluvXaN3nxU).",
+          "start": 3290,
+          "end": 3493,
+          "section": "Monthly Release & Community Call"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q23",
+      "question": "想申请在 ClickHouse 活动分享，可以通过哪里？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Upcoming Events 的 speaking apply 表单。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "Want to speak? Apply [here](https://forms.gle/3h4XCEENJZ3eaVGy7)",
+          "start": 3581,
+          "end": 3645,
+          "section": "Upcoming Events"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q24",
+      "question": "有个主题想去 meetup 演讲，README 有没有报名入口？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Upcoming Events 的 speaking apply 表单。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-clickhouse-doc",
+          "quote": "Want to speak? Apply [here](https://forms.gle/3h4XCEENJZ3eaVGy7)",
+          "start": 3581,
+          "end": 3645,
+          "section": "Upcoming Events"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q25",
+      "question": "怎样为三分片两副本生产集群编写完整 XML 配置？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q26",
+      "question": "MergeTree 表的所有建表字段及分区策略该如何写？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q27",
+      "question": "默认 HTTP 和 native 端口分别是多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q28",
+      "question": "怎样生成 TLS 证书并为用户授予最小权限？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q29",
+      "question": "我这条 SQL 执行很慢的实际执行计划原因是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    },
+    {
+      "id": "clickhouse-Q30",
+      "question": "如何执行从某个具体旧版本到26.9的完整升级步骤？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "clickhouse"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

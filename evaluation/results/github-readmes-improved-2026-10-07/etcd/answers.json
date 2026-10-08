@@ -1,0 +1,804 @@
+{
+  "metadata": {
+    "product_id": "readme-etcd",
+    "product_name": "etcd-io/etcd README 测试",
+    "corpus_commit": "76d58e32b30d57a540821c9c5bbcb651fd89994c",
+    "dataset_sha256": "297f5e739161d8c751d0e8e9ebebd9081d0f29ad27c964b56ebe3256799058a6",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "5e9758ec03de995001363ebed893bb61d129f2e56d2fe59ea3e88b090eb3049d",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "etcd",
+    "repository": "etcd-io/etcd",
+    "index": {
+      "documents": 1,
+      "parents": 24,
+      "children": 74,
+      "fingerprint": "5e9758ec03de995001363ebed893bb61d129f2e56d2fe59ea3e88b090eb3049d"
+    }
+  },
+  "results": [
+    {
+      "id": "etcd-Q01",
+      "question": "main 分支能视为稳定版吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "main 开发期间可能不稳定甚至损坏，稳定版应查看 releases。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "**Note**: The `main` branch may be in an *unstable or even broken state* during development. For stable versions, see [releases][github-release].",
+          "start": 1241,
+          "end": 1386,
+          "section": "etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q02",
+      "question": "线上部署能直接把主分支当稳定版本吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "main 开发期间可能不稳定甚至损坏，稳定版应查看 releases。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "**Note**: The `main` branch may be in an *unstable or even broken state* during development. For stable versions, see [releases][github-release].",
+          "start": 1241,
+          "end": 1386,
+          "section": "etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q03",
+      "question": "etcd 的用户 API 使用什么协议？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "用户 API 使用 gRPC。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "* *Simple*: well-defined, user-facing API (gRPC)",
+          "start": 1899,
+          "end": 1947,
+          "section": "etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q04",
+      "question": "客户端和它交互，README 说用哪种 RPC 接口？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "用户 API 使用 gRPC。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "* *Simple*: well-defined, user-facing API (gRPC)",
+          "start": 1899,
+          "end": 1947,
+          "section": "etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q05",
+      "question": "etcd 的 TLS 和客户端认证能力如何？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "自动 TLS，可选客户端证书认证。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "* *Secure*: automatic TLS with optional client cert authentication",
+          "start": 1948,
+          "end": 2014,
+          "section": "etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q06",
+      "question": "通信加密能配客户端证书认证吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "自动 TLS，可选客户端证书认证。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "* *Secure*: automatic TLS with optional client cert authentication",
+          "start": 1948,
+          "end": 2014,
+          "section": "etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q07",
+      "question": "etcd 使用什么语言和一致性算法？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Go 编写，Raft 管理高可用复制日志。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "etcd is written in Go and uses the [Raft][] consensus algorithm to manage a highly-available replicated log.",
+          "start": 2102,
+          "end": 2210,
+          "section": "etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q08",
+      "question": "它用什么写的，又怎样维护高可用复制日志？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Go 编写，Raft 管理高可用复制日志。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "etcd is written in Go and uses the [Raft][] consensus algorithm to manage a highly-available replicated log.",
+          "start": 2102,
+          "end": 2210,
+          "section": "etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q09",
+      "question": "预编译 etcd 支持哪些平台，从哪里获取？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "release page 提供 OSX、Linux、Windows、Docker 预编译发行。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "The easiest way to get etcd is to use one of the pre-built release binaries which are available for OSX, Linux, Windows, and Docker on the [release page][github-release].",
+          "start": 4108,
+          "end": 4278,
+          "section": "etcd / Getting started / Getting etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q10",
+      "question": "不想自己编译，Windows 和 Linux 能下载现成程序吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "release page 提供 OSX、Linux、Windows、Docker 预编译发行。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "The easiest way to get etcd is to use one of the pre-built release binaries which are available for OSX, Linux, Windows, and Docker on the [release page][github-release].",
+          "start": 4108,
+          "end": 4278,
+          "section": "etcd / Getting started / Getting etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q11",
+      "question": "发行二进制移动到系统路径后怎样启动？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "移到 /usr/local/bin/ 后执行 etcd。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "mv /tmp/etcd-download-test/etcd /usr/local/bin/\netcd",
+          "start": 4772,
+          "end": 4824,
+          "section": "etcd / Getting started / Running etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q12",
+      "question": "已经下载程序，怎样以后直接敲 etcd 启动？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "移到 /usr/local/bin/ 后执行 etcd。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "mv /tmp/etcd-download-test/etcd /usr/local/bin/\netcd",
+          "start": 4772,
+          "end": 4824,
+          "section": "etcd / Getting started / Running etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q13",
+      "question": "etcd 客户端和节点通信端口分别是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "2379 客户端，2380 peer 节点通信。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "The [official etcd ports][iana-ports] are 2379 for client requests, and 2380 for peer communication.",
+          "start": 5233,
+          "end": 5333,
+          "section": "etcd / Getting started / etcd TCP ports"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q14",
+      "question": "2379 和 2380 哪个给客户端，哪个给节点用？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "2379 客户端，2380 peer 节点通信。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "The [official etcd ports][iana-ports] are 2379 for client requests, and 2380 for peer communication.",
+          "start": 5233,
+          "end": 5333,
+          "section": "etcd / Getting started / etcd TCP ports"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q15",
+      "question": "怎样用 etcdctl 写入并读取 mykey？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "etcdctl put mykey \"this is awesome\"，然后 etcdctl get mykey。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "etcdctl put mykey \"this is awesome\"\netcdctl get mykey",
+          "start": 5017,
+          "end": 5070,
+          "section": "etcd / Getting started / Running etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q16",
+      "question": "想先存一句话再拿出来，有什么命令示例？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "etcdctl put mykey \"this is awesome\"，然后 etcdctl get mykey。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "etcdctl put mykey \"this is awesome\"\netcdctl get mykey",
+          "start": 5017,
+          "end": 5070,
+          "section": "etcd / Getting started / Running etcd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q17",
+      "question": "启动本地示例集群需要先装什么，运行什么命令？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "先装 goreman，再 goreman start，使用 Procfile 示例。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "First install [goreman](https://github.com/mattn/goreman), which manages Procfile-based applications.",
+          "start": 5474,
+          "end": 5575,
+          "section": "etcd / Getting started / Running a local etcd cluster"
+        },
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "goreman start",
+          "start": 5672,
+          "end": 5685,
+          "section": "etcd / Getting started / Running a local etcd cluster"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q18",
+      "question": "想在本机拉起几个节点，先准备哪个工具？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "先装 goreman，再 goreman start，使用 Procfile 示例。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "First install [goreman](https://github.com/mattn/goreman), which manages Procfile-based applications.",
+          "start": 5474,
+          "end": 5575,
+          "section": "etcd / Getting started / Running a local etcd cluster"
+        },
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "goreman start",
+          "start": 5672,
+          "end": 5685,
+          "section": "etcd / Getting started / Running a local etcd cluster"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q19",
+      "question": "本地示例集群有几个成员，代理是否必需？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "三个成员 infra1、infra2、infra3，grpc-proxy 可选。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "This will bring up 3 etcd members `infra1`, `infra2` and `infra3` and optionally etcd `grpc-proxy`, which runs locally and composes a cluster.",
+          "start": 5691,
+          "end": 5833,
+          "section": "etcd / Getting started / Running a local etcd cluster"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q20",
+      "question": "这个本地演示会启动哪些节点，grpc-proxy 必须开吗？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "三个成员 infra1、infra2、infra3，grpc-proxy 可选。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "This will bring up 3 etcd members `infra1`, `infra2` and `infra3` and optionally etcd `grpc-proxy`, which runs locally and composes a cluster.",
+          "start": 5691,
+          "end": 5833,
+          "section": "etcd / Getting started / Running a local etcd cluster"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q21",
+      "question": "Go 程序怎样安装 etcd v3 客户端？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "go get go.etcd.io/etcd/client/v3。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "go get go.etcd.io/etcd/client/v3",
+          "start": 6041,
+          "end": 6073,
+          "section": "etcd / Getting started / Install etcd client v3"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q22",
+      "question": "我的 Go 项目要连它，应该 go get 哪个包？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "go get go.etcd.io/etcd/client/v3。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "go get go.etcd.io/etcd/client/v3",
+          "start": 6041,
+          "end": 6073,
+          "section": "etcd / Getting started / Install etcd client v3"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q23",
+      "question": "提交 etcd bug 前应检查什么资料？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "先检查 FAQ 是否已覆盖问题，再参考 reporting bugs 指南。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "See [reporting bugs](https://github.com/etcd-io/etcd/blob/main/Documentation/contributor-guide/reporting_bugs.md) for details about reporting any issues. Before opening an issue please check it is not covered in our [frequently asked questions].",
+          "start": 8999,
+          "end": 9244,
+          "section": "etcd / Reporting bugs"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q24",
+      "question": "准备提 issue，README 要求先确认什么？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "先检查 FAQ 是否已覆盖问题，再参考 reporting bugs 指南。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-etcd-doc",
+          "quote": "See [reporting bugs](https://github.com/etcd-io/etcd/blob/main/Documentation/contributor-guide/reporting_bugs.md) for details about reporting any issues. Before opening an issue please check it is not covered in our [frequently asked questions].",
+          "start": 8999,
+          "end": 9244,
+          "section": "etcd / Reporting bugs"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q25",
+      "question": "怎样完整生成 CA、服务器证书和客户端证书并配置 mTLS？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q26",
+      "question": "怎样用 etcdutl 从快照恢复一个三节点集群？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q27",
+      "question": "我的 500GB 数据库自动压缩保留时间应该设置多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q28",
+      "question": "怎样安全移除故障成员再添加替代节点？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q29",
+      "question": "etcd 中某个租约的 TTL 完整续租调用示例是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    },
+    {
+      "id": "etcd-Q30",
+      "question": "生产集群跨三个地域的最佳选举超时时间是多少？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "etcd"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

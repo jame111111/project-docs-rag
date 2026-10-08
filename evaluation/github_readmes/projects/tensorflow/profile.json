@@ -1,0 +1,10 @@
+{
+  "id": "readme-tensorflow",
+  "name": "tensorflow/tensorflow README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/tensorflow/tensorflow/blob/2f3601c5c8586496018bb1a6e14b97bff728d830/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

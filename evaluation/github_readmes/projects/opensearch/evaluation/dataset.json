@@ -1,0 +1,595 @@
+{
+  "version": 3,
+  "product_id": "readme-opensearch",
+  "corpus_commit": "d2da1efc2b9aef893e7481921c28a2201f7cebd1",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "opensearch-Q01",
+      "question": "OpenSearch 面向什么数据和功能？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F01",
+      "reference_points": [
+        "开源搜索与 observability suite，处理大规模非结构化数据。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "OpenSearch is an open-source, enterprise-grade search and observability suite that brings order to unstructured data at scale.",
+          "start": 1378,
+          "end": 1504,
+          "section": "Welcome!"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q02",
+      "question": "大量非结构化数据，能做什么搜索和观测？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F01",
+      "reference_points": [
+        "开源搜索与 observability suite，处理大规模非结构化数据。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "OpenSearch is an open-source, enterprise-grade search and observability suite that brings order to unstructured data at scale.",
+          "start": 1378,
+          "end": 1504,
+          "section": "Welcome!"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q03",
+      "question": "OpenSearch 的下载入口在哪？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F02",
+      "reference_points": [
+        "opensearch.org/downloads/。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Downloads](https://opensearch.org/downloads/)",
+          "start": 1573,
+          "end": 1621,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q04",
+      "question": "想获取安装包，首页给了什么链接？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F02",
+      "reference_points": [
+        "opensearch.org/downloads/。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Downloads](https://opensearch.org/downloads/)",
+          "start": 1573,
+          "end": 1621,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q05",
+      "question": "OpenSearch 完整文档在哪里？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F03",
+      "reference_points": [
+        "docs.opensearch.org。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Documentation](https://docs.opensearch.org/)",
+          "start": 1622,
+          "end": 1669,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q06",
+      "question": "首页没展开配置，完整资料地址是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F03",
+      "reference_points": [
+        "docs.opensearch.org。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Documentation](https://docs.opensearch.org/)",
+          "start": 1622,
+          "end": 1669,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q07",
+      "question": "OpenSearch 用户支持渠道有哪些？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F04",
+      "reference_points": [
+        "Forums 和 Slack。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* Need help? Try [Forums](https://discuss.opendistrocommunity.dev/) or [Slack](https://opensearch.org/slack/)",
+          "start": 1670,
+          "end": 1779,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q08",
+      "question": "需要使用帮助，README 提到论坛和什么渠道？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F04",
+      "reference_points": [
+        "Forums 和 Slack。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* Need help? Try [Forums](https://discuss.opendistrocommunity.dev/) or [Slack](https://opensearch.org/slack/)",
+          "start": 1670,
+          "end": 1779,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q09",
+      "question": "OpenSearch 贡献指引在哪个文件？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F05",
+      "reference_points": [
+        "CONTRIBUTING.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Contributing to OpenSearch](CONTRIBUTING.md)",
+          "start": 1780,
+          "end": 1827,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q10",
+      "question": "准备参与开发，该先读哪个本地指南？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F05",
+      "reference_points": [
+        "CONTRIBUTING.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Contributing to OpenSearch](CONTRIBUTING.md)",
+          "start": 1780,
+          "end": 1827,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q11",
+      "question": "OpenSearch 维护者和管理员职责在哪查看？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F06",
+      "reference_points": [
+        "MAINTAINERS.md、ADMINS.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Maintainer Responsibilities](MAINTAINERS.md)",
+          "start": 1828,
+          "end": 1875,
+          "section": "Project Resources"
+        },
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Admin Responsibilities](ADMINS.md)",
+          "start": 1913,
+          "end": 1950,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q12",
+      "question": "maintainer 和 admin 的规范分别在哪？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F06",
+      "reference_points": [
+        "MAINTAINERS.md、ADMINS.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Maintainer Responsibilities](MAINTAINERS.md)",
+          "start": 1828,
+          "end": 1875,
+          "section": "Project Resources"
+        },
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Admin Responsibilities](ADMINS.md)",
+          "start": 1913,
+          "end": 1950,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q13",
+      "question": "OpenSearch 的发布管理和测试资料在哪？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F07",
+      "reference_points": [
+        "RELEASING.md、TESTING.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Release Management](RELEASING.md)",
+          "start": 1876,
+          "end": 1912,
+          "section": "Project Resources"
+        },
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Testing](TESTING.md)",
+          "start": 1951,
+          "end": 1974,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q14",
+      "question": "想查发布流程与测试要求，应看哪两个文件？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F07",
+      "reference_points": [
+        "RELEASING.md、TESTING.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Release Management](RELEASING.md)",
+          "start": 1876,
+          "end": 1912,
+          "section": "Project Resources"
+        },
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "* [Testing](TESTING.md)",
+          "start": 1951,
+          "end": 1974,
+          "section": "Project Resources"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q15",
+      "question": "对 OpenSearch 行为准则有疑问应联系哪里？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F08",
+      "reference_points": [
+        "conduct@opensearch.foundation。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "Please contact [conduct@opensearch.foundation](mailto:conduct@opensearch.foundation) with any additional questions or comments.",
+          "start": 2223,
+          "end": 2350,
+          "section": "Code of Conduct"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q16",
+      "question": "社区参与规则不清楚，README 提供什么联系地址？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F08",
+      "reference_points": [
+        "conduct@opensearch.foundation。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "Please contact [conduct@opensearch.foundation](mailto:conduct@opensearch.foundation) with any additional questions or comments.",
+          "start": 2223,
+          "end": 2350,
+          "section": "Code of Conduct"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q17",
+      "question": "发现 OpenSearch 安全问题怎样报告，能公开提 issue 吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "opensearch-F09",
+      "reference_points": [
+        "邮件 security@opensearch.org；不要公开创建 GitHub issue。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "If you discover a potential security issue in this project we ask that you notify OpenSearch Security directly via email to security@opensearch.org. Please do **not** create a public GitHub issue.",
+          "start": 2364,
+          "end": 2560,
+          "section": "Security"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q18",
+      "question": "怀疑有漏洞，是发公开 GitHub issue 还是私下联系？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F09",
+      "reference_points": [
+        "邮件 security@opensearch.org；不要公开创建 GitHub issue。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "If you discover a potential security issue in this project we ask that you notify OpenSearch Security directly via email to security@opensearch.org. Please do **not** create a public GitHub issue.",
+          "start": 2364,
+          "end": 2560,
+          "section": "Security"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q19",
+      "question": "OpenSearch 使用什么许可？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "opensearch-F10",
+      "reference_points": [
+        "Apache v2.0 License，LICENSE.txt。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "This project is licensed under the [Apache v2.0 License](LICENSE.txt).",
+          "start": 2574,
+          "end": 2644,
+          "section": "License"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q20",
+      "question": "这个项目按什么开源协议分发？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F10",
+      "reference_points": [
+        "Apache v2.0 License，LICENSE.txt。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "This project is licensed under the [Apache v2.0 License](LICENSE.txt).",
+          "start": 2574,
+          "end": 2644,
+          "section": "License"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q21",
+      "question": "OpenSearch 的版权归属和详细声明在哪？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "opensearch-F11",
+      "reference_points": [
+        "OpenSearch Contributors；NOTICE.txt。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "Copyright OpenSearch Contributors. See [NOTICE](NOTICE.txt) for details.",
+          "start": 2660,
+          "end": 2732,
+          "section": "Copyright"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q22",
+      "question": "版权标给谁，NOTICE 是哪个文件？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F11",
+      "reference_points": [
+        "OpenSearch Contributors；NOTICE.txt。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "Copyright OpenSearch Contributors. See [NOTICE](NOTICE.txt) for details.",
+          "start": 2660,
+          "end": 2732,
+          "section": "Copyright"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q23",
+      "question": "OpenSearch 商标归谁所有？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "opensearch-F12",
+      "reference_points": [
+        "LF Projects, LLC。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "OpenSearch is a registered trademark of LF Projects, LLC.",
+          "start": 2748,
+          "end": 2805,
+          "section": "Trademark"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q24",
+      "question": "OpenSearch 注册商标属于哪家公司或组织？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "opensearch-F12",
+      "reference_points": [
+        "LF Projects, LLC。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-opensearch-doc",
+          "quote": "OpenSearch is a registered trademark of LF Projects, LLC.",
+          "start": 2748,
+          "end": 2805,
+          "section": "Trademark"
+        }
+      ]
+    },
+    {
+      "id": "opensearch-Q25",
+      "question": "生产三节点集群的完整 opensearch.yml 怎么写？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "opensearch-Q26",
+      "question": "默认管理员用户名和密码是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "opensearch-Q27",
+      "question": "如何设置 TLS 证书和最小权限角色的完整 JSON？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "opensearch-Q28",
+      "question": "索引五亿条日志的最佳分片数量是多少？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "opensearch-Q29",
+      "question": "我的 red cluster 的实际 allocation 故障原因是什么？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "opensearch-Q30",
+      "question": "从某个 Elasticsearch 版本迁移的完整兼容步骤是什么？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

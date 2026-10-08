@@ -1,0 +1,91 @@
+{
+  "product_id": "open-source-fixture",
+  "product": "开源项目文档测试集",
+  "commit": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+  "documents": [
+    {
+      "id": "fixture-b33563055168",
+      "title": "README.md",
+      "category": "固定测试文档",
+      "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/README.md",
+      "source_label": "上游原文（仅测试）",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-05",
+      "version": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+      "sha256": "d30654f9a6813518a4647a230fbb541150211e7c4cf11597060c0376c6ffd7b0"
+    },
+    {
+      "id": "fixture-a8a79d0841d4",
+      "title": "development.md",
+      "category": "固定测试文档",
+      "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+      "source_label": "上游原文（仅测试）",
+      "source_path": "development.md",
+      "snapshot_file": "development.md",
+      "collected_at": "2026-10-05",
+      "version": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+      "sha256": "1066d5e5ad8f092e3e2ef7bb465bfd1cfb008905c178de578aa24b310571eee7"
+    },
+    {
+      "id": "fixture-46128d29935e",
+      "title": "deployment.md",
+      "category": "固定测试文档",
+      "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/deployment.md",
+      "source_label": "上游原文（仅测试）",
+      "source_path": "deployment.md",
+      "snapshot_file": "deployment.md",
+      "collected_at": "2026-10-05",
+      "version": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+      "sha256": "1d02af9be5688eceefd0087f842b4a2972c4f4b280a221ee7f52c1989f12de4e"
+    },
+    {
+      "id": "fixture-a54d2dad1be5",
+      "title": "backend/README.md",
+      "category": "固定测试文档",
+      "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/backend/README.md",
+      "source_label": "上游原文（仅测试）",
+      "source_path": "backend/README.md",
+      "snapshot_file": "backend/README.md",
+      "collected_at": "2026-10-05",
+      "version": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+      "sha256": "d703ced15f5b5158f6517ba3bfba2b687b1ed65ed5ec235cdcf17f25950ce46a"
+    },
+    {
+      "id": "fixture-35aa98d245b2",
+      "title": "frontend/README.md",
+      "category": "固定测试文档",
+      "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/frontend/README.md",
+      "source_label": "上游原文（仅测试）",
+      "source_path": "frontend/README.md",
+      "snapshot_file": "frontend/README.md",
+      "collected_at": "2026-10-05",
+      "version": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+      "sha256": "1b15161f15e6ba29fce6558f7e890abd6fd65e937235284bdb9ea8424d3a7ece"
+    },
+    {
+      "id": "fixture-eca12c0a30e2",
+      "title": "CONTRIBUTING.md",
+      "category": "固定测试文档",
+      "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/CONTRIBUTING.md",
+      "source_label": "上游原文（仅测试）",
+      "source_path": "CONTRIBUTING.md",
+      "snapshot_file": "CONTRIBUTING.md",
+      "collected_at": "2026-10-05",
+      "version": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+      "sha256": "03e747b1cdd5f16c83adc4d52135cae9cf87cb19c6cdd57f7cf4880961e1ba60"
+    },
+    {
+      "id": "fixture-4ecdeb0638f1",
+      "title": "deployment-docker-compose.md",
+      "category": "固定测试文档",
+      "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/deployment-docker-compose.md",
+      "source_label": "上游原文（仅测试）",
+      "source_path": "deployment-docker-compose.md",
+      "snapshot_file": "deployment-docker-compose.md",
+      "collected_at": "2026-10-05",
+      "version": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+      "sha256": "f5e5683fdfd7ae34fac04f3ef0895caf65761e32eaa66b794a140a4f330e0f5c"
+    }
+  ]
+}

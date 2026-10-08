@@ -1,0 +1,16 @@
+{
+  "id": "duckdb",
+  "repository": "duckdb/duckdb",
+  "category": "嵌入式分析数据库",
+  "repository_url": "https://github.com/duckdb/duckdb",
+  "commit": "fa93ada028b1258926e827be7af3627979093d47",
+  "source_path": "README.md",
+  "source_url": "https://github.com/duckdb/duckdb/blob/fa93ada028b1258926e827be7af3627979093d47/README.md",
+  "collected_at": "2026-10-07T08:04:08.961819+00:00",
+  "license_spdx": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "sha256": "907b44f4727089c4475a5f9342e76ed2cdb39cac5619feb4ed9c5c065f5cc559",
+  "bytes": 3480
+}

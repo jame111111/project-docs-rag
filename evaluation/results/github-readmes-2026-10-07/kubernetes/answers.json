@@ -1,0 +1,818 @@
+{
+  "metadata": {
+    "product_id": "readme-kubernetes",
+    "product_name": "kubernetes/kubernetes README 测试",
+    "corpus_commit": "803a939a87ba8afc927a46bca983b856b03febf0",
+    "dataset_sha256": "24c8994cdd1ade68b8ed573fcf0db6ccb51e0242890ff87636877412e0e191a3",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "dc86769e5f8b92ea1d8f8655534b7400181260f2ddbd366d4629e9efb39a34fd",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "kubernetes",
+    "repository": "kubernetes/kubernetes",
+    "index": {
+      "documents": 1,
+      "parents": 12,
+      "children": 30,
+      "fingerprint": "dc86769e5f8b92ea1d8f8655534b7400181260f2ddbd366d4629e9efb39a34fd"
+    }
+  },
+  "results": [
+    {
+      "id": "kubernetes-Q01",
+      "question": "Kubernetes 管理什么，覆盖单机还是多主机？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "跨多个主机管理容器化应用，提供部署、维护和扩缩容机制。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "Kubernetes, also known as K8s, is an open source system for managing [containerized applications]\nacross multiple hosts. It provides basic mechanisms for the deployment, maintenance,\nand scaling of applications.",
+          "start": 375,
+          "end": 586,
+          "section": "Kubernetes (K8s)"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q02",
+      "question": "好几台机器上的容器应用能用这个项目管理吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "跨多个主机管理容器化应用，提供部署、维护和扩缩容机制。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "Kubernetes, also known as K8s, is an open source system for managing [containerized applications]\nacross multiple hosts. It provides basic mechanisms for the deployment, maintenance,\nand scaling of applications.",
+          "start": 375,
+          "end": 586,
+          "section": "Kubernetes (K8s)"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q03",
+      "question": "Kubernetes 借鉴了 Google 的哪个系统？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "借鉴 Google 使用 Borg 运行大规模生产负载的经验和社区实践。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "Kubernetes builds upon a decade and a half of experience at Google running\nproduction workloads at scale using a system called [Borg],\ncombined with best-of-breed ideas and practices from the community.",
+          "start": 588,
+          "end": 790,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q04",
+      "question": "它的生产集群经验来自哪里？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "借鉴 Google 使用 Borg 运行大规模生产负载的经验和社区实践。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "Kubernetes builds upon a decade and a half of experience at Google running\nproduction workloads at scale using a system called [Borg],\ncombined with best-of-breed ideas and practices from the community.",
+          "start": 588,
+          "end": 790,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q05",
+      "question": "Kubernetes 由哪个基金会托管？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Cloud Native Computing Foundation，CNCF。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "Kubernetes is hosted by the Cloud Native Computing Foundation ([CNCF]).",
+          "start": 792,
+          "end": 863,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q06",
+      "question": "这个项目归哪个云原生基金会托管？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Cloud Native Computing Foundation，CNCF。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "Kubernetes is hosted by the Cloud Native Computing Foundation ([CNCF]).",
+          "start": 792,
+          "end": 863,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q07",
+      "question": "能把 k8s.io/kubernetes 模块直接当作第三方库使用吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不支持把该模块及其子包当库使用；应查看已发布组件列表。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "To use Kubernetes code as a library in other applications, see the [list of published components](https://git.k8s.io/kubernetes/staging/README.md).\nUse of the `k8s.io/kubernetes` module or `k8s.io/kubernetes/...` packages as libraries is not supported.",
+          "start": 1271,
+          "end": 1523,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q08",
+      "question": "我想直接 import Kubernetes 主仓库里的包，这受到支持吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不支持把该模块及其子包当库使用；应查看已发布组件列表。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "To use Kubernetes code as a library in other applications, see the [list of published components](https://git.k8s.io/kubernetes/staging/README.md).\nUse of the `k8s.io/kubernetes` module or `k8s.io/kubernetes/...` packages as libraries is not supported.",
+          "start": 1271,
+          "end": 1523,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q09",
+      "question": "具备 Go 环境时如何从源码构建 Kubernetes？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "有可用 Go 环境后 clone、进入 kubernetes、运行 make。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "##### You have a working [Go environment].",
+          "start": 1783,
+          "end": 1825,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "git clone https://github.com/kubernetes/kubernetes\ncd kubernetes\nmake\n",
+          "start": 1831,
+          "end": 1901,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q10",
+      "question": "我已经装好 Go，拉代码以后要执行什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "有可用 Go 环境后 clone、进入 kubernetes、运行 make。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "##### You have a working [Go environment].",
+          "start": 1783,
+          "end": 1825,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "git clone https://github.com/kubernetes/kubernetes\ncd kubernetes\nmake\n",
+          "start": 1831,
+          "end": 1901,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q11",
+      "question": "具备 Docker 环境时如何构建 Kubernetes？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "clone、进入 kubernetes，执行 make quick-release。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "##### You have a working [Docker environment].",
+          "start": 1906,
+          "end": 1952,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "git clone https://github.com/kubernetes/kubernetes\ncd kubernetes\nmake quick-release",
+          "start": 1958,
+          "end": 2041,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q12",
+      "question": "只有可用的 Docker 环境，该怎么构建？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "clone、进入 kubernetes，执行 make quick-release。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "##### You have a working [Docker environment].",
+          "start": 1906,
+          "end": 1952,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "git clone https://github.com/kubernetes/kubernetes\ncd kubernetes\nmake quick-release",
+          "start": 1958,
+          "end": 2041,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q13",
+      "question": "源码构建和贡献流程的入口在哪个仓库？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "community repository，集中提供构建、贡献和联系人信息。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [community repository] hosts all information about\nbuilding Kubernetes from source, how to contribute code\nand documentation, who to contact about what, etc.",
+          "start": 1553,
+          "end": 1714,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q14",
+      "question": "想找编译和提交代码的说明，README 指向哪里？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "community repository，集中提供构建、贡献和联系人信息。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [community repository] hosts all information about\nbuilding Kubernetes from source, how to contribute code\nand documentation, who to contact about what, etc.",
+          "start": 1553,
+          "end": 1714,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q15",
+      "question": "遇到 Kubernetes 使用问题应先查什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "从 troubleshooting guide 开始，按指南流程排查。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "If you need support, start with the [troubleshooting guide],\nand work your way through the process that we've outlined.",
+          "start": 2126,
+          "end": 2245,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q16",
+      "question": "服务出问题了，README 建议先从哪份资料排查？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "从 troubleshooting guide 开始，按指南流程排查。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "If you need support, start with the [troubleshooting guide],\nand work your way through the process that we've outlined.",
+          "start": 2126,
+          "end": 2245,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q17",
+      "question": "在哪里集中查看 Kubernetes 社区会议？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Kubernetes 社区 Calendar。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [Calendar](https://www.kubernetes.dev/resources/calendar/) has the list of all the meetings in the Kubernetes community in a single location.",
+          "start": 3201,
+          "end": 3346,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q18",
+      "question": "我想参加社区会议，要去哪里看安排？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Kubernetes 社区 Calendar。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [Calendar](https://www.kubernetes.dev/resources/calendar/) has the list of all the meetings in the Kubernetes community in a single location.",
+          "start": 3201,
+          "end": 3346,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q19",
+      "question": "实际采用 Kubernetes 的案例在哪查看？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "User Case Studies 网站展示真实部署、迁移案例。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [User Case Studies](https://kubernetes.io/case-studies/) website has real-world use cases of organizations across industries that are deploying/migrating to Kubernetes.",
+          "start": 3361,
+          "end": 3533,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q20",
+      "question": "想看看别的组织怎么迁移和部署它，README 有入口吗？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "User Case Studies 网站展示真实部署、迁移案例。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [User Case Studies](https://kubernetes.io/case-studies/) website has real-world use cases of organizations across industries that are deploying/migrating to Kubernetes.",
+          "start": 3361,
+          "end": 3533,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q21",
+      "question": "哪个委员会监督 Kubernetes 的治理？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Kubernetes Steering Committee，参考 steering 仓库。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [Kubernetes Steering community repo](https://github.com/kubernetes/steering) is used by the Kubernetes Steering Committee, which oversees governance of the Kubernetes project.",
+          "start": 3873,
+          "end": 4052,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q22",
+      "question": "项目治理由谁监督，相关仓库是什么？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Kubernetes Steering Committee，参考 steering 仓库。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [Kubernetes Steering community repo](https://github.com/kubernetes/steering) is used by the Kubernetes Steering Committee, which oversees governance of the Kubernetes project.",
+          "start": 3873,
+          "end": 4052,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q23",
+      "question": "Kubernetes 发布、功能跟踪和待办信息在哪里？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Kubernetes Enhancements 仓库。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [Kubernetes Enhancements repo](https://github.com/kubernetes/enhancements) provides information about Kubernetes releases, as well as feature tracking and backlogs.",
+          "start": 4067,
+          "end": 4235,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q24",
+      "question": "想追踪新功能和版本路线，应查看哪个仓库？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Kubernetes Enhancements 仓库。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-kubernetes-doc",
+          "quote": "The [Kubernetes Enhancements repo](https://github.com/kubernetes/enhancements) provides information about Kubernetes releases, as well as feature tracking and backlogs.",
+          "start": 4067,
+          "end": 4235,
+          "section": ""
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q25",
+      "question": "三台控制平面的完整 kubeadm 高可用部署配置是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q26",
+      "question": "集群默认 DNS 镜像版本和完整配置是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q27",
+      "question": "怎样编写拒绝特权容器的 admission policy YAML？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q28",
+      "question": "我公司的 2000 节点集群 apiserver 最佳限流参数是多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q29",
+      "question": "怎样配置双栈 CNI 的完整网络参数？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    },
+    {
+      "id": "kubernetes-Q30",
+      "question": "生产集群 etcd 备份恢复的完整命令是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "kubernetes"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

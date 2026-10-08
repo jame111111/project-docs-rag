@@ -1,0 +1,567 @@
+{
+  "version": 3,
+  "product_id": "readme-tidb",
+  "corpus_commit": "7a3dacb52efe58d28db360ae8639d8838c376544",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "tidb-Q01",
+      "question": "TiDB 的 Ti 代表什么，数据库定位是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F01",
+      "reference_points": [
+        "Titanium，开源云原生分布式SQL，HA、横纵扩展、强一致、高性能。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB (/’taɪdiːbi:/, \"Ti\" stands for Titanium) is an open-source, cloud-native, distributed SQL database designed for high availability, horizontal and vertical scalability, strong consistency, and high performance.",
+          "start": 833,
+          "end": 1047,
+          "section": "TiDB"
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q02",
+      "question": "TiDB 是哪种数据库，名字中的 Ti 有什么含义？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F01",
+      "reference_points": [
+        "Titanium，开源云原生分布式SQL，HA、横纵扩展、强一致、高性能。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB (/’taɪdiːbi:/, \"Ti\" stands for Titanium) is an open-source, cloud-native, distributed SQL database designed for high availability, horizontal and vertical scalability, strong consistency, and high performance.",
+          "start": 833,
+          "end": 1047,
+          "section": "TiDB"
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q03",
+      "question": "TiDB 分布式事务通过什么协议保证 ACID？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F02",
+      "reference_points": [
+        "two-phase commit，两阶段提交保证ACID和强一致。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB uses a two-phase commit protocol to ensure ACID compliance, providing strong consistency. Transactions span multiple nodes",
+          "start": 1432,
+          "end": 1559,
+          "section": "TiDB / Key Features"
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q04",
+      "question": "跨多个节点的事务用什么提交方法？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F02",
+      "reference_points": [
+        "two-phase commit，两阶段提交保证ACID和强一致。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB uses a two-phase commit protocol to ensure ACID compliance, providing strong consistency. Transactions span multiple nodes",
+          "start": 1432,
+          "end": 1559,
+          "section": "TiDB / Key Features"
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q05",
+      "question": "TiDB 横向与纵向扩展有何区别，会停机吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F03",
+      "reference_points": [
+        "横向加节点，纵向增加现有节点资源，无停机。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB can be scaled horizontally by adding more nodes or vertically by increasing resources of existing nodes, all without downtime.",
+          "start": 1817,
+          "end": 1948,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q06",
+      "question": "加机器和给旧机器加资源，都能在线完成吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F03",
+      "reference_points": [
+        "横向加节点，纵向增加现有节点资源，无停机。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB can be scaled horizontally by adding more nodes or vertically by increasing resources of existing nodes, all without downtime.",
+          "start": 1817,
+          "end": 1948,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q07",
+      "question": "TiDB 的计算和存储可分别调整吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F04",
+      "reference_points": [
+        "计算存储分离，可独立调整。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB's architecture separates computing from storage, enabling you to adjust both independently as needed for flexibility and growth.",
+          "start": 1949,
+          "end": 2082,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q08",
+      "question": "只想扩计算或只扩存储，架构允许吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F04",
+      "reference_points": [
+        "计算存储分离，可独立调整。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB's architecture separates computing from storage, enabling you to adjust both independently as needed for flexibility and growth.",
+          "start": 1949,
+          "end": 2082,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q09",
+      "question": "TiDB 副本提交的条件和共识协议是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F05",
+      "reference_points": [
+        "Raft，写多数副本后提交。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "Built-in Raft consensus protocol ensures reliability and automated failover. Data is stored in multiple replicas, and transactions are committed only after writing to the majority of replicas",
+          "start": 2213,
+          "end": 2404,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q10",
+      "question": "数据要写到多少副本才提交，用哪个算法？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F05",
+      "reference_points": [
+        "Raft，写多数副本后提交。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "Built-in Raft consensus protocol ensures reliability and automated failover. Data is stored in multiple replicas, and transactions are committed only after writing to the majority of replicas",
+          "start": 2213,
+          "end": 2404,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q11",
+      "question": "TiKV 与 TiFlash 的存储类型分别是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F06",
+      "reference_points": [
+        "TiKV行存，TiFlash列存。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB provides two storage engines: TiKV, a row-based storage engine, and TiFlash, a columnar storage engine.",
+          "start": 2756,
+          "end": 2864,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q12",
+      "question": "做 HTAP 时，行存和列存分别由谁提供？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F06",
+      "reference_points": [
+        "TiKV行存，TiFlash列存。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB provides two storage engines: TiKV, a row-based storage engine, and TiFlash, a columnar storage engine.",
+          "start": 2756,
+          "end": 2864,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q13",
+      "question": "TiFlash 怎样从 TiKV 同步数据，谁协调查询？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F07",
+      "reference_points": [
+        "Multi-Raft Learner实时复制，TiDB Server协调两引擎查询。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiFlash uses the Multi-Raft Learner protocol to replicate data from TiKV in real time, ensuring consistent data between the TiKV row-based storage engine and the TiFlash columnar storage engine. The TiDB Server coordinates query execution across both TiKV and TiFlash to optimize performance.",
+          "start": 2865,
+          "end": 3157,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q14",
+      "question": "分析副本如何保持和事务数据一致，查询哪个组件调度？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F07",
+      "reference_points": [
+        "Multi-Raft Learner实时复制，TiDB Server协调两引擎查询。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiFlash uses the Multi-Raft Learner protocol to replicate data from TiKV in real time, ensuring consistent data between the TiKV row-based storage engine and the TiFlash columnar storage engine. The TiDB Server coordinates query execution across both TiKV and TiFlash to optimize performance.",
+          "start": 2865,
+          "end": 3157,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q15",
+      "question": "Kubernetes 上哪个组件管理 TiDB，托管服务叫什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F08",
+      "reference_points": [
+        "TiDB Operator自动化K8s集群操作，TiDB Cloud fully-managed。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "[TiDB Operator](https://docs.pingcap.com/tidb-in-kubernetes/stable/tidb-operator-overview/?utm_source=github&utm_medium=tidb) helps manage TiDB on Kubernetes, automating cluster operations, while [TiDB Cloud](https://tidbcloud.com/?utm_source=github&utm_medium=tidb) provides a fully-managed service",
+          "start": 3332,
+          "end": 3631,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q16",
+      "question": "不手动管集群，有什么 Operator 或云服务？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F08",
+      "reference_points": [
+        "TiDB Operator自动化K8s集群操作，TiDB Cloud fully-managed。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "[TiDB Operator](https://docs.pingcap.com/tidb-in-kubernetes/stable/tidb-operator-overview/?utm_source=github&utm_medium=tidb) helps manage TiDB on Kubernetes, automating cluster operations, while [TiDB Cloud](https://tidbcloud.com/?utm_source=github&utm_medium=tidb) provides a fully-managed service",
+          "start": 3332,
+          "end": 3631,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q17",
+      "question": "TiDB 兼容哪个 MySQL 版本，迁移应用是否要重写？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tidb-F09",
+      "reference_points": [
+        "兼容MySQL8.0，可熟悉协议框架工具；无需或只需少量修改。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB is compatible with MySQL 8.0, allowing you to use familiar protocols, frameworks and tools. You can migrate applications to TiDB without changing any code, or with minimal modifications.",
+          "start": 3848,
+          "end": 4039,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q18",
+      "question": "已有 MySQL 应用迁过去，协议工具和代码变化如何？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tidb-F09",
+      "reference_points": [
+        "兼容MySQL8.0，可熟悉协议框架工具；无需或只需少量修改。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB is compatible with MySQL 8.0, allowing you to use familiar protocols, frameworks and tools. You can migrate applications to TiDB without changing any code, or with minimal modifications.",
+          "start": 3848,
+          "end": 4039,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q19",
+      "question": "TiDB README 推荐的免费起步方案是否要求信用卡？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "tidb-F10",
+      "reference_points": [
+        "TiDB Cloud推荐，free plan，no credit card required。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB Cloud offers a fully managed version of TiDB with a free plan, no credit card required",
+          "start": 5472,
+          "end": 5563,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q20",
+      "question": "想先开免费测试集群，推荐云方案需要绑卡吗？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "tidb-F10",
+      "reference_points": [
+        "TiDB Cloud推荐，free plan，no credit card required。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "TiDB Cloud offers a fully managed version of TiDB with a free plan, no credit card required",
+          "start": 5472,
+          "end": 5563,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q21",
+      "question": "与 TiDB 构建应用可用什么驱动或抽象？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "tidb-F11",
+      "reference_points": [
+        "MySQL driver 或 ORM。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "3. Use a MySQL driver or an ORM to [Build an App with TiDB](https://docs.pingcap.com/tidbcloud/dev-guide-overview?utm_source=github&utm_medium=tidb).",
+          "start": 5920,
+          "end": 6069,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q22",
+      "question": "连上数据库后，写业务时可以沿用什么客户端方式？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "tidb-F11",
+      "reference_points": [
+        "MySQL driver 或 ORM。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "3. Use a MySQL driver or an ORM to [Build an App with TiDB](https://docs.pingcap.com/tidbcloud/dev-guide-overview?utm_source=github&utm_medium=tidb).",
+          "start": 5920,
+          "end": 6069,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q23",
+      "question": "TiDB 故障排查文档入口是什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "tidb-F12",
+      "reference_points": [
+        "Troubleshooting documentation链接。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "- To troubleshoot TiDB, refer to [Troubleshooting documentation](https://docs.pingcap.com/tidb/stable/tidb-troubleshooting-map?utm_source=github&utm_medium=tidb).",
+          "start": 7424,
+          "end": 7586,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q24",
+      "question": "数据库出问题，首页提供哪份 troubleshooting 资料？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "tidb-F12",
+      "reference_points": [
+        "Troubleshooting documentation链接。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tidb-doc",
+          "quote": "- To troubleshoot TiDB, refer to [Troubleshooting documentation](https://docs.pingcap.com/tidb/stable/tidb-troubleshooting-map?utm_source=github&utm_medium=tidb).",
+          "start": 7424,
+          "end": 7586,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "tidb-Q25",
+      "question": "部署三地域 TiDB 的完整 TiUP topology YAML 是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tidb-Q26",
+      "question": "root 用户的默认密码是多少？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tidb-Q27",
+      "question": "我的慢查询为何没有选择 TiFlash，实际执行计划原因是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tidb-Q28",
+      "question": "指定旧版本到当前版的全部无停机升级步骤是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tidb-Q29",
+      "question": "GC lifetime 和 region split 最优阈值应该设多少？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tidb-Q30",
+      "question": "如何为生产实例配置完整 TLS 与审计策略？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

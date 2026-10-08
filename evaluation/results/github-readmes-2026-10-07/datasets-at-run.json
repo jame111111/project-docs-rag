@@ -1,0 +1,162 @@
+[
+  {
+    "project": "kubernetes",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "24c8994cdd1ade68b8ed573fcf0db6ccb51e0242890ff87636877412e0e191a3"
+  },
+  {
+    "project": "etcd",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "8894412b2a5447b31cb8d9297cf8002d0b7f9c3dab61b9d38baf1507e5e99e4e"
+  },
+  {
+    "project": "spark",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "8d13cbe7d3a0a9d799ebab516ba05c1bafb83d70aee9c0a7d14a90171001a556"
+  },
+  {
+    "project": "triton",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "96bf0171389ac51f1801e594adc49804e22b50f8b23d5a71dcd5fa2434f37f59"
+  },
+  {
+    "project": "vllm",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "44e556527139f562fccab2839facb78c8acd6c3e8dcd07f8578525c60a7f466d"
+  },
+  {
+    "project": "pytorch",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "e5c3f2f1d34b8bb13b7f4025985d3b815ca15305eb83a60179838a49ea7fddd1"
+  },
+  {
+    "project": "tensorflow",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "7477c6ff7a2cfc5b6eaf0909a8b384594455a40ed55fcc09d24c8bfa76ad0c33"
+  },
+  {
+    "project": "clickhouse",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "6a8f56f4dfd3c9cd325a7a2e47906386ddea56c298cade50f9eb26679b982c98"
+  },
+  {
+    "project": "duckdb",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "e1c2619d94196e9b2624152793db242db659ac6d4bf0da89ee615c49b69cab74"
+  },
+  {
+    "project": "milvus",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "e7a274eb1bfe42e127fce41c93eb43c6cecba8c8d22fa742aa8eac9e85b1d9d9"
+  },
+  {
+    "project": "qdrant",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "8b26d0759298ff35437690e754ee77964f3a3360e266bed58ae5ee2a6598171a"
+  },
+  {
+    "project": "flink",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "cabcfd5a131467105f5383f5b0ad3c3652055dbb5c2030c8557ad4e79a56f06c"
+  },
+  {
+    "project": "tidb",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "02d3cf022253b1d98330985c8cdd4f3c9aeb6632d6f82825354b0be5776aab67"
+  },
+  {
+    "project": "prometheus",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "219c45200b7bd6d8274426f88a4ec86caffe460add4fea38310402db676925a9"
+  },
+  {
+    "project": "grafana",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "1eeb57bb67563fd2193166d0323d0cc8f1bef21f10c84fb853bd11848291baec"
+  },
+  {
+    "project": "argocd",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "9b02a1605d6dcf9fad6a9e9461fde838dc27fba300627f1223205f8f69b56315"
+  },
+  {
+    "project": "opensearch",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "2d24923d31c528d7f57fabeda062158b595a5c9bb58ab7f4476537161faa8a6f"
+  },
+  {
+    "project": "temporal",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "50ca5ff464a1612627115242ce954787c2a5aacf556eceaeed9810b9f03d0be0"
+  },
+  {
+    "project": "supabase",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "b9ba00672c981b39d2bf29b4c8797490eb58fcae682b8abc1435fe4058f91876"
+  },
+  {
+    "project": "airflow",
+    "questions": 30,
+    "answerable": 24,
+    "unanswerable": 6,
+    "distinct_positive_fact_groups": 12,
+    "dataset_sha256": "7abb302a101a58cce54b792edcb6c57c4e6690175b78e5faed5022d5e4b59ae8"
+  }
+]

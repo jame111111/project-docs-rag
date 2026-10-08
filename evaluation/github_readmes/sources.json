@@ -1,0 +1,331 @@
+{
+  "sources": [
+    {
+      "id": "airflow",
+      "repository": "apache/airflow",
+      "category": "任务调度平台",
+      "repository_url": "https://github.com/apache/airflow",
+      "commit": "508267cda9b510013f1a8b83541472cef09ef9a1",
+      "source_path": "README.md",
+      "source_url": "https://github.com/apache/airflow/blob/508267cda9b510013f1a8b83541472cef09ef9a1/README.md",
+      "collected_at": "2026-10-07T08:09:18.106519+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE",
+        "NOTICE"
+      ],
+      "sha256": "ed42ef8038420c3e20116e40cb38751989aa90fd69632e200d3766e21aab00a0",
+      "bytes": 41637
+    },
+    {
+      "id": "argocd",
+      "repository": "argoproj/argo-cd",
+      "category": "GitOps 持续交付",
+      "repository_url": "https://github.com/argoproj/argo-cd",
+      "commit": "2f3711241f94959924650c9ef554f58a7fbd4d26",
+      "source_path": "README.md",
+      "source_url": "https://github.com/argoproj/argo-cd/blob/2f3711241f94959924650c9ef554f58a7fbd4d26/README.md",
+      "collected_at": "2026-10-07T08:06:05.636394+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "da0adc25870375979e2f5c3b2bcf6656b44ddf6a1bf848087bc756d7a326daae",
+      "bytes": 7517
+    },
+    {
+      "id": "clickhouse",
+      "repository": "ClickHouse/ClickHouse",
+      "category": "分析数据库",
+      "repository_url": "https://github.com/ClickHouse/ClickHouse",
+      "commit": "2c8a93b209e7ab712da907a194d440adfe99da54",
+      "source_path": "README.md",
+      "source_url": "https://github.com/ClickHouse/ClickHouse/blob/2c8a93b209e7ab712da907a194d440adfe99da54/README.md",
+      "collected_at": "2026-10-07T08:02:40.424704+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "0b87cd0c5b91d4b8812fed3f1234804afe4e5fe463e67ab9decd8fcfa839a203",
+      "bytes": 6017
+    },
+    {
+      "id": "duckdb",
+      "repository": "duckdb/duckdb",
+      "category": "嵌入式分析数据库",
+      "repository_url": "https://github.com/duckdb/duckdb",
+      "commit": "fa93ada028b1258926e827be7af3627979093d47",
+      "source_path": "README.md",
+      "source_url": "https://github.com/duckdb/duckdb/blob/fa93ada028b1258926e827be7af3627979093d47/README.md",
+      "collected_at": "2026-10-07T08:04:08.961819+00:00",
+      "license_spdx": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "907b44f4727089c4475a5f9342e76ed2cdb39cac5619feb4ed9c5c065f5cc559",
+      "bytes": 3480
+    },
+    {
+      "id": "etcd",
+      "repository": "etcd-io/etcd",
+      "category": "分布式一致性存储",
+      "repository_url": "https://github.com/etcd-io/etcd",
+      "commit": "76d58e32b30d57a540821c9c5bbcb651fd89994c",
+      "source_path": "README.md",
+      "source_url": "https://github.com/etcd-io/etcd/blob/76d58e32b30d57a540821c9c5bbcb651fd89994c/README.md",
+      "collected_at": "2026-10-07T08:02:36.400582+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "d78b5f4555f76984a161a824a06722f8ed5b00e7cf9d845a75ccda1d134deae1",
+      "bytes": 10197
+    },
+    {
+      "id": "flink",
+      "repository": "apache/flink",
+      "category": "流式计算",
+      "repository_url": "https://github.com/apache/flink",
+      "commit": "a47e4bf9b9ef287d5ff7f5783df993e4cef2dd1a",
+      "source_path": "README.md",
+      "source_url": "https://github.com/apache/flink/blob/a47e4bf9b9ef287d5ff7f5783df993e4cef2dd1a/README.md",
+      "collected_at": "2026-10-07T08:04:22.410695+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE",
+        "NOTICE"
+      ],
+      "sha256": "84511d5b71efe7add88d8282928b0026cfa3b8283e51e4c5ba4adcecee604493",
+      "bytes": 7662
+    },
+    {
+      "id": "grafana",
+      "repository": "grafana/grafana",
+      "category": "可观测性平台",
+      "repository_url": "https://github.com/grafana/grafana",
+      "commit": "8012057edda4c5f3298b774076f0665812a1e630",
+      "source_path": "README.md",
+      "source_url": "https://github.com/grafana/grafana/blob/8012057edda4c5f3298b774076f0665812a1e630/README.md",
+      "collected_at": "2026-10-07T08:09:13.864084+00:00",
+      "license_spdx": "AGPL-3.0 (see upstream terms)",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "fc8a867bf09f319b9288746ab0148faff2e92ed39cd702252ce59161e576c019",
+      "bytes": 3114
+    },
+    {
+      "id": "kubernetes",
+      "repository": "kubernetes/kubernetes",
+      "category": "容器编排",
+      "repository_url": "https://github.com/kubernetes/kubernetes",
+      "commit": "803a939a87ba8afc927a46bca983b856b03febf0",
+      "source_path": "README.md",
+      "source_url": "https://github.com/kubernetes/kubernetes/blob/803a939a87ba8afc927a46bca983b856b03febf0/README.md",
+      "collected_at": "2026-10-07T08:02:36.461128+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "0c1159ea384aa0855eaad87f4595da8fd776553830297f3a7c43db81c7708fbd",
+      "bytes": 4236
+    },
+    {
+      "id": "milvus",
+      "repository": "milvus-io/milvus",
+      "category": "向量数据库",
+      "repository_url": "https://github.com/milvus-io/milvus",
+      "commit": "0f34d4d512d0a08e7ad297e0d4d5396943420048",
+      "source_path": "README.md",
+      "source_url": "https://github.com/milvus-io/milvus/blob/0f34d4d512d0a08e7ad297e0d4d5396943420048/README.md",
+      "collected_at": "2026-10-07T08:04:14.729121+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "8fedcdc9023fcd061a54405bf0d83afb4516c7ec053b2efd22476473ce10153f",
+      "bytes": 70771
+    },
+    {
+      "id": "opensearch",
+      "repository": "opensearch-project/OpenSearch",
+      "category": "分布式搜索",
+      "repository_url": "https://github.com/opensearch-project/OpenSearch",
+      "commit": "d2da1efc2b9aef893e7481921c28a2201f7cebd1",
+      "source_path": "README.md",
+      "source_url": "https://github.com/opensearch-project/OpenSearch/blob/d2da1efc2b9aef893e7481921c28a2201f7cebd1/README.md",
+      "collected_at": "2026-10-07T08:06:12.446579+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE.txt",
+        "NOTICE.txt"
+      ],
+      "sha256": "8bac2d530323f045148b14d9d5f6616bf7c20038ce1b956ade75fd0aaa30c517",
+      "bytes": 3044
+    },
+    {
+      "id": "prometheus",
+      "repository": "prometheus/prometheus",
+      "category": "监控系统",
+      "repository_url": "https://github.com/prometheus/prometheus",
+      "commit": "97541926b9e99ce298c285e67e71ebf993e9f2ff",
+      "source_path": "README.md",
+      "source_url": "https://github.com/prometheus/prometheus/blob/97541926b9e99ce298c285e67e71ebf993e9f2ff/README.md",
+      "collected_at": "2026-10-07T08:04:58.558839+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE",
+        "NOTICE"
+      ],
+      "sha256": "0d2f3f6f3d19ed74c6302168f95d18f12a7e1041e89dcceadca6f2de860f828d",
+      "bytes": 9689
+    },
+    {
+      "id": "pytorch",
+      "repository": "pytorch/pytorch",
+      "category": "深度学习框架",
+      "repository_url": "https://github.com/pytorch/pytorch",
+      "commit": "df9918af07c403c4dfe32230637e88b5fd94ccd6",
+      "source_path": "README.md",
+      "source_url": "https://github.com/pytorch/pytorch/blob/df9918af07c403c4dfe32230637e88b5fd94ccd6/README.md",
+      "collected_at": "2026-10-07T08:09:13.924224+00:00",
+      "license_spdx": "BSD-style (see full upstream license)",
+      "license_files": [
+        "LICENSE",
+        "NOTICE"
+      ],
+      "sha256": "c839137f1d406e0ba4f641222471a5cbfabb2141b39491f7267f57cf5e2107b9",
+      "bytes": 23629
+    },
+    {
+      "id": "qdrant",
+      "repository": "qdrant/qdrant",
+      "category": "向量搜索",
+      "repository_url": "https://github.com/qdrant/qdrant",
+      "commit": "016542aa5deb6c66380bb137badf73d54f742bde",
+      "source_path": "README.md",
+      "source_url": "https://github.com/qdrant/qdrant/blob/016542aa5deb6c66380bb137badf73d54f742bde/README.md",
+      "collected_at": "2026-10-07T08:04:14.600204+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "f1455d12252bf40235ad0128d8e98b2cd6d42583e441ac832b01f4daf08df2e4",
+      "bytes": 11560
+    },
+    {
+      "id": "spark",
+      "repository": "apache/spark",
+      "category": "分布式计算",
+      "repository_url": "https://github.com/apache/spark",
+      "commit": "6d020ca9295ea5121a831e98ded48dc60061b5f5",
+      "source_path": "README.md",
+      "source_url": "https://github.com/apache/spark/blob/6d020ca9295ea5121a831e98ded48dc60061b5f5/README.md",
+      "collected_at": "2026-10-07T08:02:36.505160+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE",
+        "NOTICE"
+      ],
+      "sha256": "29f014aae8b7a9f0f146188a73619d260a375fcfda1eb8e6b0fe28a74b357612",
+      "bytes": 23367
+    },
+    {
+      "id": "supabase",
+      "repository": "supabase/supabase",
+      "category": "后端服务平台",
+      "repository_url": "https://github.com/supabase/supabase",
+      "commit": "808322622933f693eb292a986f6a26aba51138a9",
+      "source_path": "README.md",
+      "source_url": "https://github.com/supabase/supabase/blob/808322622933f693eb292a986f6a26aba51138a9/README.md",
+      "collected_at": "2026-10-07T08:09:17.571755+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "c1a23ddcd6f67625de1bdad0be99dccf59e80c9e772e52a5c855072e783c15d4",
+      "bytes": 16831
+    },
+    {
+      "id": "temporal",
+      "repository": "temporalio/temporal",
+      "category": "持久化工作流",
+      "repository_url": "https://github.com/temporalio/temporal",
+      "commit": "e161e3bc28d4e86ce76ae5f83d12c2443e76cb8d",
+      "source_path": "README.md",
+      "source_url": "https://github.com/temporalio/temporal/blob/e161e3bc28d4e86ce76ae5f83d12c2443e76cb8d/README.md",
+      "collected_at": "2026-10-07T08:06:47.952188+00:00",
+      "license_spdx": "MIT",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "269838d3de5da90d4c2c0b45bf7fc745b384a5a05c0932582e923638e8994189",
+      "bytes": 3888
+    },
+    {
+      "id": "tensorflow",
+      "repository": "tensorflow/tensorflow",
+      "category": "机器学习框架",
+      "repository_url": "https://github.com/tensorflow/tensorflow",
+      "commit": "2f3601c5c8586496018bb1a6e14b97bff728d830",
+      "source_path": "README.md",
+      "source_url": "https://github.com/tensorflow/tensorflow/blob/2f3601c5c8586496018bb1a6e14b97bff728d830/README.md",
+      "collected_at": "2026-10-07T08:09:13.685262+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "e2f779cef212fbc54c3f9b1e273583720edac1ac9cc6ce6813b1e0386a968f0d",
+      "bytes": 7738
+    },
+    {
+      "id": "tidb",
+      "repository": "pingcap/tidb",
+      "category": "分布式 SQL 数据库",
+      "repository_url": "https://github.com/pingcap/tidb",
+      "commit": "7a3dacb52efe58d28db360ae8639d8838c376544",
+      "source_path": "README.md",
+      "source_url": "https://github.com/pingcap/tidb/blob/7a3dacb52efe58d28db360ae8639d8838c376544/README.md",
+      "collected_at": "2026-10-07T08:09:13.864084+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "4988138b06f27ec24f2853882e7bfa7cec7a52efae9137313fec7d8f4ce9d5b0",
+      "bytes": 10844
+    },
+    {
+      "id": "triton",
+      "repository": "triton-inference-server/server",
+      "category": "模型推理服务",
+      "repository_url": "https://github.com/triton-inference-server/server",
+      "commit": "920fc893d21019ada670624623ffc0b7a47442bb",
+      "source_path": "README.md",
+      "source_url": "https://github.com/triton-inference-server/server/blob/920fc893d21019ada670624623ffc0b7a47442bb/README.md",
+      "collected_at": "2026-10-07T08:02:36.605115+00:00",
+      "license_spdx": "BSD-3-Clause",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "2d59921bdb95c63e3f75fd7b98aefa114dfb98ebcbca22b9aeb0951949242808",
+      "bytes": 14714
+    },
+    {
+      "id": "vllm",
+      "repository": "vllm-project/vllm",
+      "category": "大模型推理",
+      "repository_url": "https://github.com/vllm-project/vllm",
+      "commit": "7436a7f119dedd0c4d5f4d745aa6c2305ee82252",
+      "source_path": "README.md",
+      "source_url": "https://github.com/vllm-project/vllm/blob/7436a7f119dedd0c4d5f4d745aa6c2305ee82252/README.md",
+      "collected_at": "2026-10-07T08:02:40.597908+00:00",
+      "license_spdx": "Apache-2.0",
+      "license_files": [
+        "LICENSE"
+      ],
+      "sha256": "8d2e7cd8d120bcd91ddfa85ef957f7246021b4a3f46f2e1f4ccf084ec6c20026",
+      "bytes": 5708
+    }
+  ],
+  "errors": []
+}

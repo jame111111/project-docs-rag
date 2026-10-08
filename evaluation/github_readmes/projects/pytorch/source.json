@@ -1,0 +1,17 @@
+{
+  "id": "pytorch",
+  "repository": "pytorch/pytorch",
+  "category": "深度学习框架",
+  "repository_url": "https://github.com/pytorch/pytorch",
+  "commit": "df9918af07c403c4dfe32230637e88b5fd94ccd6",
+  "source_path": "README.md",
+  "source_url": "https://github.com/pytorch/pytorch/blob/df9918af07c403c4dfe32230637e88b5fd94ccd6/README.md",
+  "collected_at": "2026-10-07T08:09:13.924224+00:00",
+  "license_spdx": "BSD-style (see full upstream license)",
+  "license_files": [
+    "LICENSE",
+    "NOTICE"
+  ],
+  "sha256": "c839137f1d406e0ba4f641222471a5cbfabb2141b39491f7267f57cf5e2107b9",
+  "bytes": 23629
+}

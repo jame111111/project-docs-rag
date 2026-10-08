@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-milvus",
+  "product": "milvus-io/milvus README 测试",
+  "commit": "0f34d4d512d0a08e7ad297e0d4d5396943420048",
+  "documents": [
+    {
+      "id": "readme-milvus-doc",
+      "title": "milvus-io/milvus README",
+      "category": "向量数据库",
+      "source_url": "https://github.com/milvus-io/milvus/blob/0f34d4d512d0a08e7ad297e0d4d5396943420048/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:04:14.729121+00:00",
+      "version": "0f34d4d512d0a08e7ad297e0d4d5396943420048",
+      "sha256": "8fedcdc9023fcd061a54405bf0d83afb4516c7ec053b2efd22476473ce10153f"
+    }
+  ]
+}

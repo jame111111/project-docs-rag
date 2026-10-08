@@ -1,0 +1,581 @@
+{
+  "version": 3,
+  "product_id": "readme-tensorflow",
+  "corpus_commit": "2f3601c5c8586496018bb1a6e14b97bff728d830",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "tensorflow-Q01",
+      "question": "TensorFlow 哪些语言 API 稳定，其他语言怎样承诺兼容性？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F01",
+      "reference_points": [
+        "Python、C++ 稳定；其他语言 API 不保证向后兼容。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "TensorFlow provides stable [Python](https://www.tensorflow.org/api_docs/python)\nand [C++](https://www.tensorflow.org/api_docs/cc) APIs, as well as a\nnon-guaranteed backward compatible API for\n[other languages](https://www.tensorflow.org/api_docs).",
+          "start": 2207,
+          "end": 2454,
+          "section": "正文"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q02",
+      "question": "Python 和 C++ 接口稳定吗，其他语言也保证向后兼容吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F01",
+      "reference_points": [
+        "Python、C++ 稳定；其他语言 API 不保证向后兼容。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "TensorFlow provides stable [Python](https://www.tensorflow.org/api_docs/python)\nand [C++](https://www.tensorflow.org/api_docs/cc) APIs, as well as a\nnon-guaranteed backward compatible API for\n[other languages](https://www.tensorflow.org/api_docs).",
+          "start": 2207,
+          "end": 2454,
+          "section": "正文"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q03",
+      "question": "TensorFlow 当前发行版如何通过 pip 安装？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F02",
+      "reference_points": [
+        "pip install tensorflow。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": " pip install tensorflow\n",
+          "start": 3209,
+          "end": 3233,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q04",
+      "question": "初次安装正常版，包名是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F02",
+      "reference_points": [
+        "pip install tensorflow。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": " pip install tensorflow\n",
+          "start": 3209,
+          "end": 3233,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q05",
+      "question": "CPU-only TensorFlow 包如何安装？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F03",
+      "reference_points": [
+        "pip install tensorflow-cpu。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "A smaller CPU-only TensorFlow package is also available:",
+          "start": 3383,
+          "end": 3439,
+          "section": "Install"
+        },
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": " pip install tensorflow-cpu",
+          "start": 3445,
+          "end": 3472,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q06",
+      "question": "没有 GPU，想装小一些的 CPU 版怎么敲？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F03",
+      "reference_points": [
+        "pip install tensorflow-cpu。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "A smaller CPU-only TensorFlow package is also available:",
+          "start": 3383,
+          "end": 3439,
+          "section": "Install"
+        },
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": " pip install tensorflow-cpu",
+          "start": 3445,
+          "end": 3472,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q07",
+      "question": "TensorFlow 如何升级到最新版本？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F04",
+      "reference_points": [
+        "在安装命令加 --upgrade。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "To update TensorFlow to the latest version, add the `--upgrade` flag to the\ncommands above.",
+          "start": 3478,
+          "end": 3569,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q08",
+      "question": "之前已经装了，pip 命令要加什么参数更新？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F04",
+      "reference_points": [
+        "在安装命令加 --upgrade。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "To update TensorFlow to the latest version, add the `--upgrade` flag to the\ncommands above.",
+          "start": 3478,
+          "end": 3569,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q09",
+      "question": "TensorFlow nightly 测试包有哪些？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F05",
+      "reference_points": [
+        "tf-nightly 和 tf-nightly-cpu。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "[tf-nightly](https://pypi.python.org/pypi/tf-nightly) and\n[tf-nightly-cpu](https://pypi.python.org/pypi/tf-nightly-cpu) packages on PyPI.",
+          "start": 3625,
+          "end": 3762,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q10",
+      "question": "想试最新每夜构建，普通和 CPU 包叫什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F05",
+      "reference_points": [
+        "tf-nightly 和 tf-nightly-cpu。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "[tf-nightly](https://pypi.python.org/pypi/tf-nightly) and\n[tf-nightly-cpu](https://pypi.python.org/pypi/tf-nightly-cpu) packages on PyPI.",
+          "start": 3625,
+          "end": 3762,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q11",
+      "question": "DirectX 和 MacOS-metal 的 TensorFlow 支持通过什么提供？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F06",
+      "reference_points": [
+        "Device Plugins。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "Other devices (DirectX and MacOS-metal) are supported using\n[Device Plugins](https://www.tensorflow.org/install/gpu_plugins#available_devices).",
+          "start": 3238,
+          "end": 3381,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q12",
+      "question": "不是 CUDA 的这两类设备，首页说怎样支持？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F06",
+      "reference_points": [
+        "Device Plugins。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "Other devices (DirectX and MacOS-metal) are supported using\n[Device Plugins](https://www.tensorflow.org/install/gpu_plugins#available_devices).",
+          "start": 3238,
+          "end": 3381,
+          "section": "Install"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q13",
+      "question": "第一个 TensorFlow 加法程序如何验证安装？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F07",
+      "reference_points": [
+        "import tensorflow as tf；tf.add(1,2).numpy() 返回3。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": ">>> import tensorflow as tf\n>>> tf.add(1, 2).numpy()\n3",
+          "start": 3840,
+          "end": 3894,
+          "section": "Install / *Try your first TensorFlow program*"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q14",
+      "question": "装好后想算 1+2，调用什么，返回多少？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F07",
+      "reference_points": [
+        "import tensorflow as tf；tf.add(1,2).numpy() 返回3。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": ">>> import tensorflow as tf\n>>> tf.add(1, 2).numpy()\n3",
+          "start": 3840,
+          "end": 3894,
+          "section": "Install / *Try your first TensorFlow program*"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q15",
+      "question": "TensorFlow 字符串常量示例返回什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F08",
+      "reference_points": [
+        "tf.constant，hello.numpy() 得到字节串 b'Hello, TensorFlow!'。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": ">>> hello = tf.constant('Hello, TensorFlow!')\n>>> hello.numpy()\nb'Hello, TensorFlow!'",
+          "start": 3895,
+          "end": 3980,
+          "section": "Install / *Try your first TensorFlow program*"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q16",
+      "question": "Hello 常量转 numpy 后是什么结果？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F08",
+      "reference_points": [
+        "tf.constant，hello.numpy() 得到字节串 b'Hello, TensorFlow!'。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": ">>> hello = tf.constant('Hello, TensorFlow!')\n>>> hello.numpy()\nb'Hello, TensorFlow!'",
+          "start": 3895,
+          "end": 3980,
+          "section": "Install / *Try your first TensorFlow program*"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q17",
+      "question": "参与 TensorFlow 贡献前需要遵循什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "tensorflow-F09",
+      "reference_points": [
+        "Contribution Guidelines、Code of Conduct。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "**If you want to contribute to TensorFlow, be sure to review the\n[Contribution Guidelines](CONTRIBUTING.md). This project adheres to TensorFlow's\n[Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to\nuphold this code.**",
+          "start": 4105,
+          "end": 4347,
+          "section": "Contribution guidelines"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q18",
+      "question": "提交贡献前应读哪些指南和参与规则？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F09",
+      "reference_points": [
+        "Contribution Guidelines、Code of Conduct。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "**If you want to contribute to TensorFlow, be sure to review the\n[Contribution Guidelines](CONTRIBUTING.md). This project adheres to TensorFlow's\n[Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to\nuphold this code.**",
+          "start": 4105,
+          "end": 4347,
+          "section": "Contribution guidelines"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q19",
+      "question": "TensorFlow bug、一般讨论、具体问题分别在哪？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "tensorflow-F10",
+      "reference_points": [
+        "GitHub Issues 跟踪请求和bugs；Forum一般讨论；Stack Overflow具体问题。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "**We use [GitHub Issues](https://github.com/tensorflow/tensorflow/issues) for\ntracking requests and bugs, please see\n[TensorFlow Forum](https://discuss.tensorflow.org/) for general questions and\ndiscussion, and please direct specific questions to\n[Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow).**",
+          "start": 4349,
+          "end": 4670,
+          "section": "Contribution guidelines"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q20",
+      "question": "提缺陷、聊天和问具体技术题，要去哪些平台？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F10",
+      "reference_points": [
+        "GitHub Issues 跟踪请求和bugs；Forum一般讨论；Stack Overflow具体问题。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "**We use [GitHub Issues](https://github.com/tensorflow/tensorflow/issues) for\ntracking requests and bugs, please see\n[TensorFlow Forum](https://discuss.tensorflow.org/) for general questions and\ndiscussion, and please direct specific questions to\n[Stack Overflow](https://stackoverflow.com/questions/tagged/tensorflow).**",
+          "start": 4349,
+          "end": 4670,
+          "section": "Contribution guidelines"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q21",
+      "question": "为指定 TensorFlow 版本打补丁的顺序是什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "tensorflow-F11",
+      "reference_points": [
+        "切对应分支、应用变化解决冲突、通过测试、从源码构建pip包。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "*   Clone the TensorFlow repository and switch to the appropriate branch for\n    your desired version—for example, `r2.8` for version 2.8.\n*   Apply the desired changes (i.e., cherry-pick them) and resolve any code\n    conflicts.\n*   Run TensorFlow tests and ensure they pass.\n*   [Build](https://www.tensorflow.org/install/source) the TensorFlow pip\n    package from source.",
+          "start": 4939,
+          "end": 5314,
+          "section": "Patching guidelines"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q22",
+      "question": "要回补安全修复到某个版本，不能只 cherry-pick 就结束吧？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F11",
+      "reference_points": [
+        "切对应分支、应用变化解决冲突、通过测试、从源码构建pip包。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "*   Clone the TensorFlow repository and switch to the appropriate branch for\n    your desired version—for example, `r2.8` for version 2.8.\n*   Apply the desired changes (i.e., cherry-pick them) and resolve any code\n    conflicts.\n*   Run TensorFlow tests and ensure they pass.\n*   [Build](https://www.tensorflow.org/install/source) the TensorFlow pip\n    package from source.",
+          "start": 4939,
+          "end": 5314,
+          "section": "Patching guidelines"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q23",
+      "question": "TensorFlow 发布和安全更新公告在哪订阅？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "tensorflow-F12",
+      "reference_points": [
+        "announce@tensorflow.org。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "Keep up-to-date with release announcements and security updates by subscribing\nto\n[announce@tensorflow.org](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce).",
+          "start": 2456,
+          "end": 2631,
+          "section": "正文"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q24",
+      "question": "想及时获知版本和安全消息，README 给什么订阅入口？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "tensorflow-F12",
+      "reference_points": [
+        "announce@tensorflow.org。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-tensorflow-doc",
+          "quote": "Keep up-to-date with release announcements and security updates by subscribing\nto\n[announce@tensorflow.org](https://groups.google.com/a/tensorflow.org/forum/#!forum/announce).",
+          "start": 2456,
+          "end": 2631,
+          "section": "正文"
+        }
+      ]
+    },
+    {
+      "id": "tensorflow-Q25",
+      "question": "当前发行版与我的具体 CUDA、驱动、cuDNN 的完整兼容矩阵是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tensorflow-Q26",
+      "question": "如何配置多 TPU 分布式训练的完整启动参数？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tensorflow-Q27",
+      "question": "训练私有图像数据集的最佳学习率是多少？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tensorflow-Q28",
+      "question": "这个模型转 TensorFlow Lite 的全部优化代码是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tensorflow-Q29",
+      "question": "我的 pip 安装日志里 DLL 加载失败的根因是什么？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "tensorflow-Q30",
+      "question": "如何实现完整的 differential privacy 训练步骤？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

@@ -1,0 +1,7 @@
+﻿mode,top_k,answerable_count,complete_evidence_coverage,mean_context_chars,median_retrieval_ms,negative_coverage,answer_accuracy
+vector_child,1,6,0.0,312,13.12,not_applicable,unverified
+hybrid_child,1,6,0.0,304,13.02,not_applicable,unverified
+hybrid_parent,1,6,0.3333,782.8,13.04,not_applicable,unverified
+vector_child,5,6,0.3333,1397.4,12.79,not_applicable,unverified
+hybrid_child,5,6,0.5,1408.6,13.23,not_applicable,unverified
+hybrid_parent,5,6,0.6667,1566,13.36,not_applicable,unverified

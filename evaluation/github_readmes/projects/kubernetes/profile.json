@@ -1,0 +1,10 @@
+{
+  "id": "readme-kubernetes",
+  "name": "kubernetes/kubernetes README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/kubernetes/kubernetes/blob/803a939a87ba8afc927a46bca983b856b03febf0/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-spark",
+  "product": "apache/spark README 测试",
+  "commit": "6d020ca9295ea5121a831e98ded48dc60061b5f5",
+  "documents": [
+    {
+      "id": "readme-spark-doc",
+      "title": "apache/spark README",
+      "category": "分布式计算",
+      "source_url": "https://github.com/apache/spark/blob/6d020ca9295ea5121a831e98ded48dc60061b5f5/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:02:36.505160+00:00",
+      "version": "6d020ca9295ea5121a831e98ded48dc60061b5f5",
+      "sha256": "29f014aae8b7a9f0f146188a73619d260a375fcfda1eb8e6b0fe28a74b357612"
+    }
+  ]
+}

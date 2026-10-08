@@ -1,0 +1,860 @@
+{
+  "metadata": {
+    "product_id": "readme-pytorch",
+    "product_name": "pytorch/pytorch README 测试",
+    "corpus_commit": "df9918af07c403c4dfe32230637e88b5fd94ccd6",
+    "dataset_sha256": "fadacec78f31f280ed1cdb546cca0b7cc27b7961dddb66b8bd55cd74c69a5399",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "f241d76d674f358e4d70f3a44c80ff01804849bb39209d54f2dfbdfa53beda55",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "pytorch",
+    "repository": "pytorch/pytorch",
+    "index": {
+      "documents": 1,
+      "parents": 47,
+      "children": 161,
+      "fingerprint": "f241d76d674f358e4d70f3a44c80ff01804849bb39209d54f2dfbdfa53beda55"
+    }
+  },
+  "results": [
+    {
+      "id": "pytorch-Q01",
+      "question": "torch、torch.autograd、torch.nn 分别负责什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "torch 张量库，autograd tape-based 自动微分，nn 神经网络并深度集成 autograd。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "A Tensor library like NumPy, with strong GPU support",
+          "start": 2640,
+          "end": 2692,
+          "section": "More About PyTorch"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "A tape-based automatic differentiation library that supports all differentiable Tensor operations in torch",
+          "start": 2767,
+          "end": 2873,
+          "section": "More About PyTorch"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "A neural networks library deeply integrated with autograd designed for maximum flexibility",
+          "start": 2936,
+          "end": 3026,
+          "section": "More About PyTorch"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q02",
+      "question": "张量、自动求导和神经网络在它里面怎么分工？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "torch 张量库，autograd tape-based 自动微分，nn 神经网络并深度集成 autograd。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "A Tensor library like NumPy, with strong GPU support",
+          "start": 2640,
+          "end": 2692,
+          "section": "More About PyTorch"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "A tape-based automatic differentiation library that supports all differentiable Tensor operations in torch",
+          "start": 2767,
+          "end": 2873,
+          "section": "More About PyTorch"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "A neural networks library deeply integrated with autograd designed for maximum flexibility",
+          "start": 2936,
+          "end": 3026,
+          "section": "More About PyTorch"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q03",
+      "question": "torch.multiprocessing 与普通 multiprocessing 有什么特点？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "跨进程共享 torch Tensor 内存，适合数据加载与 Hogwild。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "Python multiprocessing, but with magical memory sharing of torch Tensors across processes. Useful for data loading and Hogwild training",
+          "start": 3115,
+          "end": 3250,
+          "section": "More About PyTorch"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q04",
+      "question": "跨进程加载数据，PyTorch 怎么处理 Tensor 内存？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "跨进程共享 torch Tensor 内存，适合数据加载与 Hogwild。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "Python multiprocessing, but with magical memory sharing of torch Tensors across processes. Useful for data loading and Hogwild training",
+          "start": 3115,
+          "end": 3250,
+          "section": "More About PyTorch"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q05",
+      "question": "PyTorch Tensor 可以放在哪些设备？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "CPU 或 GPU。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "PyTorch provides Tensors that can live either on the CPU or the GPU and accelerates the\ncomputation by a huge amount.",
+          "start": 3782,
+          "end": 3899,
+          "section": "More About PyTorch / A GPU-Ready Tensor Library"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q06",
+      "question": "张量必须在显卡上吗，也能放 CPU 吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "CPU 或 GPU。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "PyTorch provides Tensors that can live either on the CPU or the GPU and accelerates the\ncomputation by a huge amount.",
+          "start": 3782,
+          "end": 3899,
+          "section": "More About PyTorch / A GPU-Ready Tensor Library"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q07",
+      "question": "PyTorch 使用什么自动微分方式，网络行为能动态变化吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "reverse-mode auto-differentiation，支持动态变化网络行为。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "With PyTorch, we use a technique called reverse-mode auto-differentiation, which allows you to\nchange the way your network behaves arbitrarily with zero lag or overhead.",
+          "start": 4497,
+          "end": 4666,
+          "section": "More About PyTorch / Dynamic Neural Networks: Tape-Based Autograd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q08",
+      "question": "前向逻辑变化是否必须重新固定整个网络结构？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "reverse-mode auto-differentiation，支持动态变化网络行为。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "With PyTorch, we use a technique called reverse-mode auto-differentiation, which allows you to\nchange the way your network behaves arbitrarily with zero lag or overhead.",
+          "start": 4497,
+          "end": 4666,
+          "section": "More About PyTorch / Dynamic Neural Networks: Tape-Based Autograd"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q09",
+      "question": "PyTorch 自定义 C/C++ 层是否需要手写 wrapper？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "提供便捷 extension API，无需 wrapper code。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "If you want to write your layers in C/C++, we provide a convenient extension API that is efficient and with minimal boilerplate.\nNo wrapper code needs to be written.",
+          "start": 7349,
+          "end": 7514,
+          "section": "More About PyTorch / Extensions Without Pain"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q10",
+      "question": "想用 C++ 扩展自己的层，有什么接口，包装代码要自己写吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "提供便捷 extension API，无需 wrapper code。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "If you want to write your layers in C/C++, we provide a convenient extension API that is efficient and with minimal boilerplate.\nNo wrapper code needs to be written.",
+          "start": 7349,
+          "end": 7514,
+          "section": "More About PyTorch / Extensions Without Pain"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q11",
+      "question": "源码构建 PyTorch 的 Python、编译器、磁盘条件是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Python3.10+，完整 C++20 编译器；Linux gcc11.3+；Windows VS工具；至少10GB；首次30–60分钟。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "- Python 3.10 or later\n- A compiler that fully supports C++20, such as clang or gcc (gcc 11.3.0 or newer is required, on Linux)\n- Visual Studio or Visual Studio Build Tool (Windows only)\n- At least 10 GB of free disk space\n- 30-60 minutes for the initial build (subsequent rebuilds are much faster)",
+          "start": 8444,
+          "end": 8742,
+          "section": "Installation / From Source / Prerequisites"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q12",
+      "question": "从零编译该准备哪些版本，至少留多少空间？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Python3.10+，完整 C++20 编译器；Linux gcc11.3+；Windows VS工具；至少10GB；首次30–60分钟。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "- Python 3.10 or later\n- A compiler that fully supports C++20, such as clang or gcc (gcc 11.3.0 or newer is required, on Linux)\n- Visual Studio or Visual Studio Build Tool (Windows only)\n- At least 10 GB of free disk space\n- 30-60 minutes for the initial build (subsequent rebuilds are much faster)",
+          "start": 8444,
+          "end": 8742,
+          "section": "Installation / From Source / Prerequisites"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q13",
+      "question": "Visual Studio Code 是否默认包含 PyTorch 需要的构建工具？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不包含，需要 Visual C++ BuildTools 或对应 VS版本。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "The build tools *do not*\ncome with Visual Studio Code by default.",
+          "start": 8967,
+          "end": 9032,
+          "section": "Installation / From Source / Prerequisites"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q14",
+      "question": "已经装 VS Code，Windows 编译工具就齐了吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不包含，需要 Visual C++ BuildTools 或对应 VS版本。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "The build tools *do not*\ncome with Visual Studio Code by default.",
+          "start": 8967,
+          "end": 9032,
+          "section": "Installation / From Source / Prerequisites"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q15",
+      "question": "PyTorch 源码构建必须使用 Conda 环境吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不必须，可标准虚拟环境如 uv，但系统要装 CUDA/MKL 等非 pip 依赖。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "A conda environment is not required.  You can also do a PyTorch build in a\nstandard virtual environment, e.g., created with tools like `uv`, provided\nyour system has installed all the necessary dependencies unavailable as pip\npackages (e.g., CUDA, MKL.)",
+          "start": 9457,
+          "end": 9710,
+          "section": "Installation / From Source / Prerequisites"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q16",
+      "question": "我只有 uv 虚拟环境，不用 Conda 能编译吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不必须，可标准虚拟环境如 uv，但系统要装 CUDA/MKL 等非 pip 依赖。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "A conda environment is not required.  You can also do a PyTorch build in a\nstandard virtual environment, e.g., created with tools like `uv`, provided\nyour system has installed all the necessary dependencies unavailable as pip\npackages (e.g., CUDA, MKL.)",
+          "start": 9457,
+          "end": 9710,
+          "section": "Installation / From Source / Prerequisites"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q17",
+      "question": "CUDA 构建需要哪些额外依赖？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "受支持 CUDA，cuDNN9.0+，与 CUDA 兼容的编译器。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "- [NVIDIA CUDA](https://developer.nvidia.com/cuda-downloads)\n- [NVIDIA cuDNN](https://developer.nvidia.com/cudnn) v9.0 or above\n- [Compiler](https://gist.github.com/ax3l/9489132) compatible with CUDA",
+          "start": 9912,
+          "end": 10111,
+          "section": "Installation / From Source / Prerequisites / NVIDIA CUDA Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q18",
+      "question": "想让编译后的 PyTorch 用 NVIDIA GPU，要装什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "受支持 CUDA，cuDNN9.0+，与 CUDA 兼容的编译器。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "- [NVIDIA CUDA](https://developer.nvidia.com/cuda-downloads)\n- [NVIDIA cuDNN](https://developer.nvidia.com/cudnn) v9.0 or above\n- [Compiler](https://gist.github.com/ax3l/9489132) compatible with CUDA",
+          "start": 9912,
+          "end": 10111,
+          "section": "Installation / From Source / Prerequisites / NVIDIA CUDA Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q19",
+      "question": "ROCm 构建的平台和自定义路径要求是什么？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "ROCm4.0+，仅 Linux；不同目录设 ROCM_PATH。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "- [AMD ROCm](https://rocm.docs.amd.com/en/latest/deploy/linux/quick_start.html) 4.0 and above installation\n- ROCm is currently supported only for Linux systems.",
+          "start": 11032,
+          "end": 11192,
+          "section": "Installation / From Source / Prerequisites / AMD ROCm Support"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "By default the build system expects ROCm to be installed in `/opt/rocm`. If ROCm is installed in a different directory, the `ROCM_PATH` environment variable must be set to the ROCm installation directory.",
+          "start": 11194,
+          "end": 11398,
+          "section": "Installation / From Source / Prerequisites / AMD ROCm Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q20",
+      "question": "AMD 环境只支持哪些系统，没装 /opt/rocm 怎么指定？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "ROCm4.0+，仅 Linux；不同目录设 ROCM_PATH。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "- [AMD ROCm](https://rocm.docs.amd.com/en/latest/deploy/linux/quick_start.html) 4.0 and above installation\n- ROCm is currently supported only for Linux systems.",
+          "start": 11032,
+          "end": 11192,
+          "section": "Installation / From Source / Prerequisites / AMD ROCm Support"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "By default the build system expects ROCm to be installed in `/opt/rocm`. If ROCm is installed in a different directory, the `ROCM_PATH` environment variable must be set to the ROCm installation directory.",
+          "start": 11194,
+          "end": 11398,
+          "section": "Installation / From Source / Prerequisites / AMD ROCm Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q21",
+      "question": "PyTorch 如何在构建时关闭 CUDA、ROCm、Intel GPU？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "USE_CUDA=0、USE_ROCM=0、USE_XPU=0。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "If you want to disable CUDA support, export the environment variable `USE_CUDA=0`.",
+          "start": 10341,
+          "end": 10423,
+          "section": "Installation / From Source / Prerequisites / NVIDIA CUDA Support"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "If you want to disable ROCm support, export the environment variable `USE_ROCM=0`.",
+          "start": 11710,
+          "end": 11792,
+          "section": "Installation / From Source / Prerequisites / AMD ROCm Support"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "If you want to disable Intel GPU support, export the environment variable `USE_XPU=0`.",
+          "start": 12219,
+          "end": 12305,
+          "section": "Installation / From Source / Prerequisites / Intel GPU Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q22",
+      "question": "只想编 CPU 版，这三种 GPU 支持分别怎么关？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "USE_CUDA=0、USE_ROCM=0、USE_XPU=0。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "If you want to disable CUDA support, export the environment variable `USE_CUDA=0`.",
+          "start": 10341,
+          "end": 10423,
+          "section": "Installation / From Source / Prerequisites / NVIDIA CUDA Support"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "If you want to disable ROCm support, export the environment variable `USE_ROCM=0`.",
+          "start": 11710,
+          "end": 11792,
+          "section": "Installation / From Source / Prerequisites / AMD ROCm Support"
+        },
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "If you want to disable Intel GPU support, export the environment variable `USE_XPU=0`.",
+          "start": 12219,
+          "end": 12305,
+          "section": "Installation / From Source / Prerequisites / Intel GPU Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q23",
+      "question": "更新已有 PyTorch checkout 后如何同步子模块？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "git submodule sync，git submodule update --init --recursive。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "# if you are updating an existing checkout\ngit submodule sync\ngit submodule update --init --recursive",
+          "start": 12531,
+          "end": 12632,
+          "section": "Installation / From Source / Get the PyTorch Source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q24",
+      "question": "已经拉过仓库，再更新时子模块应该执行哪两步？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "git submodule sync，git submodule update --init --recursive。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-pytorch-doc",
+          "quote": "# if you are updating an existing checkout\ngit submodule sync\ngit submodule update --init --recursive",
+          "start": 12531,
+          "end": 12632,
+          "section": "Installation / From Source / Get the PyTorch Source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q25",
+      "question": "怎样为我这份私有数据集选择学习率和 batch size？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q26",
+      "question": "torch distributed 多机训练的完整初始化与故障恢复代码是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q27",
+      "question": "我这张显卡与指定 CUDA 驱动的完整兼容矩阵是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q28",
+      "question": "我的训练损失一直 NaN 的实际根因是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q29",
+      "question": "怎样配置生产 Kubernetes 训练任务的完整 YAML？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    },
+    {
+      "id": "pytorch-Q30",
+      "question": "这个模型在我电脑上准确需要多少显存和训练时间？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "pytorch"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

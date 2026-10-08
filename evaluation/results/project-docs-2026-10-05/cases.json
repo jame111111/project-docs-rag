@@ -1,0 +1,1271 @@
+[
+  {
+    "question": {
+      "id": "Q02",
+      "question": "第一次启动后端，要先启动哪些配套服务？用什么命令？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "condition",
+      "reference_points": [
+        "在项目根目录启动 PostgreSQL 和 Mailcatcher",
+        "docker compose up -d db mailcatcher"
+      ],
+      "evidence": [
+        {
+          "doc_id": "fixture-a54d2dad1be5",
+          "quote": "From the project root, start PostgreSQL and Mailcatcher:",
+          "start": 261,
+          "end": 317,
+          "section": "FastAPI Project - Backend / Local Development"
+        },
+        {
+          "doc_id": "fixture-a54d2dad1be5",
+          "quote": "$ docker compose up -d db mailcatcher",
+          "start": 330,
+          "end": 367,
+          "section": "FastAPI Project - Backend / Local Development"
+        }
+      ]
+    },
+    "top_k": 5,
+    "description": "父块回补补齐证据",
+    "modes": {
+      "vector_child": {
+        "id": "Q02",
+        "question": "第一次启动后端，要先启动哪些配套服务？用什么命令？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "vector_child",
+        "top_k": 5,
+        "complete_evidence_covered": false,
+        "context_chars": 1652,
+        "retrieval_ms": 25.745,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:c14",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p5",
+            "section": "FastAPI Project - Development / Full Stack with Docker Compose",
+            "start": 1937,
+            "end": 2140,
+            "text": "**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n",
+            "kind": "child",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / Full Stack with Docker Compose\n**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n\n"
+          },
+          {
+            "id": "fixture-a8a79d0841d4:c34",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p11",
+            "section": "FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically",
+            "start": 4539,
+            "end": 4740,
+            "text": "runs automatically before each commit.\n\nUsing `uv`, you could do it with (make sure you are inside `backend` folder):\n\n```bash\n❯ uv run prek install -f\nprek installed at `../.git/hooks/pre-commit`\n```\n",
+            "kind": "child",
+            "ref": 2,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[2] 文档：development.md\n章节：FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically\nruns automatically before each commit.\n\nUsing `uv`, you could do it with (make sure you are inside `backend` folder):\n\n```bash\n❯ uv run prek install -f\nprek installed at `../.git/hooks/pre-commit`\n```\n\n"
+          },
+          {
+            "id": "fixture-a54d2dad1be5:c3",
+            "doc_id": "fixture-a54d2dad1be5",
+            "parent_id": "fixture-a54d2dad1be5:p2",
+            "section": "FastAPI Project - Backend / Local Development",
+            "start": 328,
+            "end": 536,
+            "text": "e\n$ docker compose up -d db mailcatcher\n```\n\nThen, from `./backend/`, install the dependencies, prepare the database, and start the development server:\n\n```console\n$ uv sync\n$ uv run bash scripts/prestart.sh\n",
+            "kind": "child",
+            "ref": 3,
+            "title": "backend/README.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/backend/README.md",
+            "formatted": "[3] 文档：backend/README.md\n章节：FastAPI Project - Backend / Local Development\ne\n$ docker compose up -d db mailcatcher\n```\n\nThen, from `./backend/`, install the dependencies, prepare the database, and start the development server:\n\n```console\n$ uv sync\n$ uv run bash scripts/prestart.sh\n\n"
+          },
+          {
+            "id": "fixture-a8a79d0841d4:c33",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p11",
+            "section": "FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically",
+            "start": 4384,
+            "end": 4579,
+            "text": "rt of the dependencies of the project.\n\nAfter having the `prek` tool installed and available, you need to \"install\" it in the local repository, so that it runs automatically before each commit.\n\n",
+            "kind": "child",
+            "ref": 4,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[4] 文档：development.md\n章节：FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically\nrt of the dependencies of the project.\n\nAfter having the `prek` tool installed and available, you need to \"install\" it in the local repository, so that it runs automatically before each commit.\n\n\n"
+          },
+          {
+            "id": "fixture-4ecdeb0638f1:c29",
+            "doc_id": "fixture-4ecdeb0638f1",
+            "parent_id": "fixture-4ecdeb0638f1:p10",
+            "section": "FastAPI Project - Docker Compose Deployment / Deploy with GitHub Actions / Install a Self-Hosted Runner",
+            "start": 4156,
+            "end": 4447,
+            "text": "See GitHub's guides for [adding a self-hosted runner](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners) and [configuring the runner as a service](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/configure-the-application?",
+            "kind": "child",
+            "ref": 5,
+            "title": "deployment-docker-compose.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/deployment-docker-compose.md",
+            "formatted": "[5] 文档：deployment-docker-compose.md\n章节：FastAPI Project - Docker Compose Deployment / Deploy with GitHub Actions / Install a Self-Hosted Runner\nSee GitHub's guides for [adding a self-hosted runner](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners) and [configuring the runner as a service](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/configure-the-application?\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c14",
+          "fixture-a8a79d0841d4:c34",
+          "fixture-a54d2dad1be5:c3",
+          "fixture-a8a79d0841d4:c33",
+          "fixture-4ecdeb0638f1:c29"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c34",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a8a79d0841d4:c33",
+            "fixture-4ecdeb0638f1:c29",
+            "fixture-a8a79d0841d4:c35",
+            "fixture-a8a79d0841d4:c5",
+            "fixture-4ecdeb0638f1:c27",
+            "fixture-a54d2dad1be5:c13",
+            "fixture-35aa98d245b2:c13"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c34",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a8a79d0841d4:c33",
+            "fixture-4ecdeb0638f1:c29",
+            "fixture-a8a79d0841d4:c35",
+            "fixture-a8a79d0841d4:c5",
+            "fixture-4ecdeb0638f1:c27",
+            "fixture-a54d2dad1be5:c13",
+            "fixture-35aa98d245b2:c13"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c14": 0.01639344262295082,
+            "fixture-a8a79d0841d4:c34": 0.016129032258064516,
+            "fixture-a54d2dad1be5:c3": 0.015873015873015872,
+            "fixture-a8a79d0841d4:c33": 0.015625,
+            "fixture-4ecdeb0638f1:c29": 0.015384615384615385,
+            "fixture-a8a79d0841d4:c35": 0.015151515151515152,
+            "fixture-a8a79d0841d4:c5": 0.014925373134328358,
+            "fixture-4ecdeb0638f1:c27": 0.014705882352941176,
+            "fixture-a54d2dad1be5:c13": 0.014492753623188406,
+            "fixture-35aa98d245b2:c13": 0.014285714285714285
+          },
+          "vector_ms": 23.43190007377416,
+          "keyword_ms": 1.4331999700516462,
+          "distances": [
+            0.47017335891723633,
+            0.4833918809890747,
+            0.48987799882888794,
+            0.5022549629211426,
+            0.5030143857002258,
+            0.5051127672195435,
+            0.5053036212921143,
+            0.5060694217681885,
+            0.5066465139389038,
+            0.5068659782409668
+          ]
+        }
+      },
+      "hybrid_child": {
+        "id": "Q02",
+        "question": "第一次启动后端，要先启动哪些配套服务？用什么命令？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "hybrid_child",
+        "top_k": 5,
+        "complete_evidence_covered": false,
+        "context_chars": 1652,
+        "retrieval_ms": 27.019,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:c14",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p5",
+            "section": "FastAPI Project - Development / Full Stack with Docker Compose",
+            "start": 1937,
+            "end": 2140,
+            "text": "**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n",
+            "kind": "child",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / Full Stack with Docker Compose\n**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n\n"
+          },
+          {
+            "id": "fixture-a8a79d0841d4:c34",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p11",
+            "section": "FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically",
+            "start": 4539,
+            "end": 4740,
+            "text": "runs automatically before each commit.\n\nUsing `uv`, you could do it with (make sure you are inside `backend` folder):\n\n```bash\n❯ uv run prek install -f\nprek installed at `../.git/hooks/pre-commit`\n```\n",
+            "kind": "child",
+            "ref": 2,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[2] 文档：development.md\n章节：FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically\nruns automatically before each commit.\n\nUsing `uv`, you could do it with (make sure you are inside `backend` folder):\n\n```bash\n❯ uv run prek install -f\nprek installed at `../.git/hooks/pre-commit`\n```\n\n"
+          },
+          {
+            "id": "fixture-a54d2dad1be5:c3",
+            "doc_id": "fixture-a54d2dad1be5",
+            "parent_id": "fixture-a54d2dad1be5:p2",
+            "section": "FastAPI Project - Backend / Local Development",
+            "start": 328,
+            "end": 536,
+            "text": "e\n$ docker compose up -d db mailcatcher\n```\n\nThen, from `./backend/`, install the dependencies, prepare the database, and start the development server:\n\n```console\n$ uv sync\n$ uv run bash scripts/prestart.sh\n",
+            "kind": "child",
+            "ref": 3,
+            "title": "backend/README.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/backend/README.md",
+            "formatted": "[3] 文档：backend/README.md\n章节：FastAPI Project - Backend / Local Development\ne\n$ docker compose up -d db mailcatcher\n```\n\nThen, from `./backend/`, install the dependencies, prepare the database, and start the development server:\n\n```console\n$ uv sync\n$ uv run bash scripts/prestart.sh\n\n"
+          },
+          {
+            "id": "fixture-a8a79d0841d4:c33",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p11",
+            "section": "FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically",
+            "start": 4384,
+            "end": 4579,
+            "text": "rt of the dependencies of the project.\n\nAfter having the `prek` tool installed and available, you need to \"install\" it in the local repository, so that it runs automatically before each commit.\n\n",
+            "kind": "child",
+            "ref": 4,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[4] 文档：development.md\n章节：FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically\nrt of the dependencies of the project.\n\nAfter having the `prek` tool installed and available, you need to \"install\" it in the local repository, so that it runs automatically before each commit.\n\n\n"
+          },
+          {
+            "id": "fixture-4ecdeb0638f1:c29",
+            "doc_id": "fixture-4ecdeb0638f1",
+            "parent_id": "fixture-4ecdeb0638f1:p10",
+            "section": "FastAPI Project - Docker Compose Deployment / Deploy with GitHub Actions / Install a Self-Hosted Runner",
+            "start": 4156,
+            "end": 4447,
+            "text": "See GitHub's guides for [adding a self-hosted runner](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners) and [configuring the runner as a service](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/configure-the-application?",
+            "kind": "child",
+            "ref": 5,
+            "title": "deployment-docker-compose.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/deployment-docker-compose.md",
+            "formatted": "[5] 文档：deployment-docker-compose.md\n章节：FastAPI Project - Docker Compose Deployment / Deploy with GitHub Actions / Install a Self-Hosted Runner\nSee GitHub's guides for [adding a self-hosted runner](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners) and [configuring the runner as a service](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/configure-the-application?\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c14",
+          "fixture-a8a79d0841d4:c34",
+          "fixture-a54d2dad1be5:c3",
+          "fixture-a8a79d0841d4:c33",
+          "fixture-4ecdeb0638f1:c29"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c34",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a8a79d0841d4:c33",
+            "fixture-4ecdeb0638f1:c29",
+            "fixture-a8a79d0841d4:c35",
+            "fixture-a8a79d0841d4:c5",
+            "fixture-4ecdeb0638f1:c27",
+            "fixture-a54d2dad1be5:c13",
+            "fixture-35aa98d245b2:c13"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c34",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a8a79d0841d4:c33",
+            "fixture-4ecdeb0638f1:c29",
+            "fixture-a8a79d0841d4:c35",
+            "fixture-a8a79d0841d4:c5",
+            "fixture-4ecdeb0638f1:c27",
+            "fixture-a54d2dad1be5:c13",
+            "fixture-35aa98d245b2:c13"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c14": 0.01639344262295082,
+            "fixture-a8a79d0841d4:c34": 0.016129032258064516,
+            "fixture-a54d2dad1be5:c3": 0.015873015873015872,
+            "fixture-a8a79d0841d4:c33": 0.015625,
+            "fixture-4ecdeb0638f1:c29": 0.015384615384615385,
+            "fixture-a8a79d0841d4:c35": 0.015151515151515152,
+            "fixture-a8a79d0841d4:c5": 0.014925373134328358,
+            "fixture-4ecdeb0638f1:c27": 0.014705882352941176,
+            "fixture-a54d2dad1be5:c13": 0.014492753623188406,
+            "fixture-35aa98d245b2:c13": 0.014285714285714285
+          },
+          "vector_ms": 23.43190007377416,
+          "keyword_ms": 1.4331999700516462,
+          "distances": [
+            0.47017335891723633,
+            0.4833918809890747,
+            0.48987799882888794,
+            0.5022549629211426,
+            0.5030143857002258,
+            0.5051127672195435,
+            0.5053036212921143,
+            0.5060694217681885,
+            0.5066465139389038,
+            0.5068659782409668
+          ]
+        }
+      },
+      "hybrid_parent": {
+        "id": "Q02",
+        "question": "第一次启动后端，要先启动哪些配套服务？用什么命令？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "hybrid_parent",
+        "top_k": 5,
+        "complete_evidence_covered": true,
+        "context_chars": 1747,
+        "retrieval_ms": 27.101,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:p5",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": null,
+            "section": "FastAPI Project - Development / Full Stack with Docker Compose",
+            "start": 1937,
+            "end": 2141,
+            "text": "**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n\n",
+            "kind": "parent",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / Full Stack with Docker Compose\n**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n\n\n"
+          },
+          {
+            "id": "fixture-a8a79d0841d4:p11",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": null,
+            "section": "FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically",
+            "start": 4324,
+            "end": 5069,
+            "text": "#### Install prek to run automatically\n\n`prek` is already part of the dependencies of the project.\n\nAfter having the `prek` tool installed and available, you need to \"install\" it in the local repository, so that it runs automatically before each commit.\n\nUsing `uv`, you could do it with (make sure you are inside `backend` folder):\n\n```bash\n❯ uv run prek install -f\nprek installed at `../.git/hooks/pre-commit`\n```\n\nThe `-f` flag forces the installation, in case there was already a `pre-commit` hook previously installed.\n\nNow whenever you try to commit, e.g. with:\n\n```bash\ngit commit\n```\n\n...prek will run and check and format the code you are about to commit, and will ask you to add that code (stage it) with git again before committing.\n\n",
+            "kind": "parent",
+            "ref": 2,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[2] 文档：development.md\n章节：FastAPI Project - Development / Pre-commits and code linting / Install prek to run automatically\n#### Install prek to run automatically\n\n`prek` is already part of the dependencies of the project.\n\nAfter having the `prek` tool installed and available, you need to \"install\" it in the local repository, so that it runs automatically before each commit.\n\nUsing `uv`, you could do it with (make sure you are inside `backend` folder):\n\n```bash\n❯ uv run prek install -f\nprek installed at `../.git/hooks/pre-commit`\n```\n\nThe `-f` flag forces the installation, in case there was already a `pre-commit` hook previously installed.\n\nNow whenever you try to commit, e.g. with:\n\n```bash\ngit commit\n```\n\n...prek will run and check and format the code you are about to commit, and will ask you to add that code (stage it) with git again before committing.\n\n\n"
+          },
+          {
+            "id": "fixture-a54d2dad1be5:p2",
+            "doc_id": "fixture-a54d2dad1be5",
+            "parent_id": null,
+            "section": "FastAPI Project - Backend / Local Development",
+            "start": 166,
+            "end": 677,
+            "text": "## Local Development\n\nRun the backend locally and connect it to PostgreSQL in Docker Compose.\n\nFrom the project root, start PostgreSQL and Mailcatcher:\n\n```console\n$ docker compose up -d db mailcatcher\n```\n\nThen, from `./backend/`, install the dependencies, prepare the database, and start the development server:\n\n```console\n$ uv sync\n$ uv run bash scripts/prestart.sh\n$ uv run fastapi dev\n```\n\nThe API is available at `http://localhost:8000`, with automatic interactive docs at `http://localhost:8000/docs`.\n\n",
+            "kind": "parent",
+            "ref": 3,
+            "title": "backend/README.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/backend/README.md",
+            "formatted": "[3] 文档：backend/README.md\n章节：FastAPI Project - Backend / Local Development\n## Local Development\n\nRun the backend locally and connect it to PostgreSQL in Docker Compose.\n\nFrom the project root, start PostgreSQL and Mailcatcher:\n\n```console\n$ docker compose up -d db mailcatcher\n```\n\nThen, from `./backend/`, install the dependencies, prepare the database, and start the development server:\n\n```console\n$ uv sync\n$ uv run bash scripts/prestart.sh\n$ uv run fastapi dev\n```\n\nThe API is available at `http://localhost:8000`, with automatic interactive docs at `http://localhost:8000/docs`.\n\n\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c14",
+          "fixture-a8a79d0841d4:c34",
+          "fixture-a54d2dad1be5:c3",
+          "fixture-a8a79d0841d4:c33",
+          "fixture-4ecdeb0638f1:c29"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c34",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a8a79d0841d4:c33",
+            "fixture-4ecdeb0638f1:c29",
+            "fixture-a8a79d0841d4:c35",
+            "fixture-a8a79d0841d4:c5",
+            "fixture-4ecdeb0638f1:c27",
+            "fixture-a54d2dad1be5:c13",
+            "fixture-35aa98d245b2:c13"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c34",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a8a79d0841d4:c33",
+            "fixture-4ecdeb0638f1:c29",
+            "fixture-a8a79d0841d4:c35",
+            "fixture-a8a79d0841d4:c5",
+            "fixture-4ecdeb0638f1:c27",
+            "fixture-a54d2dad1be5:c13",
+            "fixture-35aa98d245b2:c13"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c14": 0.01639344262295082,
+            "fixture-a8a79d0841d4:c34": 0.016129032258064516,
+            "fixture-a54d2dad1be5:c3": 0.015873015873015872,
+            "fixture-a8a79d0841d4:c33": 0.015625,
+            "fixture-4ecdeb0638f1:c29": 0.015384615384615385,
+            "fixture-a8a79d0841d4:c35": 0.015151515151515152,
+            "fixture-a8a79d0841d4:c5": 0.014925373134328358,
+            "fixture-4ecdeb0638f1:c27": 0.014705882352941176,
+            "fixture-a54d2dad1be5:c13": 0.014492753623188406,
+            "fixture-35aa98d245b2:c13": 0.014285714285714285
+          },
+          "vector_ms": 23.43190007377416,
+          "keyword_ms": 1.4331999700516462,
+          "distances": [
+            0.47017335891723633,
+            0.4833918809890747,
+            0.48987799882888794,
+            0.5022549629211426,
+            0.5030143857002258,
+            0.5051127672195435,
+            0.5053036212921143,
+            0.5060694217681885,
+            0.5066465139389038,
+            0.5068659782409668
+          ]
+        }
+      }
+    },
+    "generated_answers": [
+      {
+        "id": "Q02",
+        "question": "第一次启动后端，要先启动哪些配套服务？用什么命令？",
+        "answerable": true,
+        "mode": "vector_child",
+        "top_k": 5,
+        "reference_points": [
+          "在项目根目录启动 PostgreSQL 和 Mailcatcher",
+          "docker compose up -d db mailcatcher"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "From the project root, start PostgreSQL and Mailcatcher:",
+            "start": 261,
+            "end": 317,
+            "section": "FastAPI Project - Backend / Local Development"
+          },
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "$ docker compose up -d db mailcatcher",
+            "start": 330,
+            "end": 367,
+            "section": "FastAPI Project - Backend / Local Development"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      },
+      {
+        "id": "Q02",
+        "question": "第一次启动后端，要先启动哪些配套服务？用什么命令？",
+        "answerable": true,
+        "mode": "hybrid_child",
+        "top_k": 5,
+        "reference_points": [
+          "在项目根目录启动 PostgreSQL 和 Mailcatcher",
+          "docker compose up -d db mailcatcher"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "From the project root, start PostgreSQL and Mailcatcher:",
+            "start": 261,
+            "end": 317,
+            "section": "FastAPI Project - Backend / Local Development"
+          },
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "$ docker compose up -d db mailcatcher",
+            "start": 330,
+            "end": 367,
+            "section": "FastAPI Project - Backend / Local Development"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      },
+      {
+        "id": "Q02",
+        "question": "第一次启动后端，要先启动哪些配套服务？用什么命令？",
+        "answerable": true,
+        "mode": "hybrid_parent",
+        "top_k": 5,
+        "reference_points": [
+          "在项目根目录启动 PostgreSQL 和 Mailcatcher",
+          "docker compose up -d db mailcatcher"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "From the project root, start PostgreSQL and Mailcatcher:",
+            "start": 261,
+            "end": 317,
+            "section": "FastAPI Project - Backend / Local Development"
+          },
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "$ docker compose up -d db mailcatcher",
+            "start": 330,
+            "end": 367,
+            "section": "FastAPI Project - Backend / Local Development"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      }
+    ]
+  },
+  {
+    "question": {
+      "id": "Q01",
+      "question": "本地开发后端需要哪些工具？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "reference_points": [
+        "Docker",
+        "uv 用于 Python 包和环境管理"
+      ],
+      "evidence": [
+        {
+          "doc_id": "fixture-a54d2dad1be5",
+          "quote": "* [Docker](https://www.docker.com/).\n* [uv](https://docs.astral.sh/uv/) for Python package and environment management.",
+          "start": 46,
+          "end": 164,
+          "section": "FastAPI Project - Backend / Requirements"
+        }
+      ]
+    },
+    "top_k": 1,
+    "description": "父块回补没有改善覆盖",
+    "modes": {
+      "vector_child": {
+        "id": "Q01",
+        "question": "本地开发后端需要哪些工具？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "vector_child",
+        "top_k": 1,
+        "complete_evidence_covered": false,
+        "context_chars": 349,
+        "retrieval_ms": 24.765,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:c27",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p9",
+            "section": "FastAPI Project - Development / The .env file",
+            "start": 3524,
+            "end": 3801,
+            "text": "rver with their Compose service names.\n\nDepending on your workflow, you could want to exclude it from Git, for example if your project is public. In that case, you would have to make sure to set up a way for your CI tools to obtain it while building or deploying your project.\n",
+            "kind": "child",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / The .env file\nrver with their Compose service names.\n\nDepending on your workflow, you could want to exclude it from Git, for example if your project is public. In that case, you would have to make sure to set up a way for your CI tools to obtain it while building or deploying your project.\n\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c27"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c27",
+            "fixture-a8a79d0841d4:c6",
+            "fixture-a8a79d0841d4:c11",
+            "fixture-b33563055168:c10",
+            "fixture-35aa98d245b2:c1",
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c1",
+            "fixture-a8a79d0841d4:c21",
+            "fixture-a8a79d0841d4:c12",
+            "fixture-a8a79d0841d4:c45"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c27",
+            "fixture-a8a79d0841d4:c6",
+            "fixture-a8a79d0841d4:c11",
+            "fixture-b33563055168:c10",
+            "fixture-35aa98d245b2:c1",
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c1",
+            "fixture-a8a79d0841d4:c21",
+            "fixture-a8a79d0841d4:c12",
+            "fixture-a8a79d0841d4:c45"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c27": 0.01639344262295082,
+            "fixture-a8a79d0841d4:c6": 0.016129032258064516,
+            "fixture-a8a79d0841d4:c11": 0.015873015873015872,
+            "fixture-b33563055168:c10": 0.015625,
+            "fixture-35aa98d245b2:c1": 0.015384615384615385,
+            "fixture-a8a79d0841d4:c14": 0.015151515151515152,
+            "fixture-a8a79d0841d4:c1": 0.014925373134328358,
+            "fixture-a8a79d0841d4:c21": 0.014705882352941176,
+            "fixture-a8a79d0841d4:c12": 0.014492753623188406,
+            "fixture-a8a79d0841d4:c45": 0.014285714285714285
+          },
+          "vector_ms": 20.325399935245514,
+          "keyword_ms": 1.1202000314369798,
+          "distances": [
+            0.4651946425437927,
+            0.4774252772331238,
+            0.4817315936088562,
+            0.48623067140579224,
+            0.4868050217628479,
+            0.48947978019714355,
+            0.49178123474121094,
+            0.4942992925643921,
+            0.4948209524154663,
+            0.4973942041397095
+          ]
+        }
+      },
+      "hybrid_child": {
+        "id": "Q01",
+        "question": "本地开发后端需要哪些工具？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "hybrid_child",
+        "top_k": 1,
+        "complete_evidence_covered": false,
+        "context_chars": 349,
+        "retrieval_ms": 25.614,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:c27",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p9",
+            "section": "FastAPI Project - Development / The .env file",
+            "start": 3524,
+            "end": 3801,
+            "text": "rver with their Compose service names.\n\nDepending on your workflow, you could want to exclude it from Git, for example if your project is public. In that case, you would have to make sure to set up a way for your CI tools to obtain it while building or deploying your project.\n",
+            "kind": "child",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / The .env file\nrver with their Compose service names.\n\nDepending on your workflow, you could want to exclude it from Git, for example if your project is public. In that case, you would have to make sure to set up a way for your CI tools to obtain it while building or deploying your project.\n\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c27"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c27",
+            "fixture-a8a79d0841d4:c6",
+            "fixture-a8a79d0841d4:c11",
+            "fixture-b33563055168:c10",
+            "fixture-35aa98d245b2:c1",
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c1",
+            "fixture-a8a79d0841d4:c21",
+            "fixture-a8a79d0841d4:c12",
+            "fixture-a8a79d0841d4:c45"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c27",
+            "fixture-a8a79d0841d4:c6",
+            "fixture-a8a79d0841d4:c11",
+            "fixture-b33563055168:c10",
+            "fixture-35aa98d245b2:c1",
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c1",
+            "fixture-a8a79d0841d4:c21",
+            "fixture-a8a79d0841d4:c12",
+            "fixture-a8a79d0841d4:c45"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c27": 0.01639344262295082,
+            "fixture-a8a79d0841d4:c6": 0.016129032258064516,
+            "fixture-a8a79d0841d4:c11": 0.015873015873015872,
+            "fixture-b33563055168:c10": 0.015625,
+            "fixture-35aa98d245b2:c1": 0.015384615384615385,
+            "fixture-a8a79d0841d4:c14": 0.015151515151515152,
+            "fixture-a8a79d0841d4:c1": 0.014925373134328358,
+            "fixture-a8a79d0841d4:c21": 0.014705882352941176,
+            "fixture-a8a79d0841d4:c12": 0.014492753623188406,
+            "fixture-a8a79d0841d4:c45": 0.014285714285714285
+          },
+          "vector_ms": 20.325399935245514,
+          "keyword_ms": 1.1202000314369798,
+          "distances": [
+            0.4651946425437927,
+            0.4774252772331238,
+            0.4817315936088562,
+            0.48623067140579224,
+            0.4868050217628479,
+            0.48947978019714355,
+            0.49178123474121094,
+            0.4942992925643921,
+            0.4948209524154663,
+            0.4973942041397095
+          ]
+        }
+      },
+      "hybrid_parent": {
+        "id": "Q01",
+        "question": "本地开发后端需要哪些工具？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "hybrid_parent",
+        "top_k": 1,
+        "complete_evidence_covered": false,
+        "context_chars": 690,
+        "retrieval_ms": 25.453,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:p9",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": null,
+            "section": "FastAPI Project - Development / The .env file",
+            "start": 3266,
+            "end": 3884,
+            "text": "## The .env file\n\nThe `.env` file contains the shared local defaults, generated keys, passwords, and other configuration. Its hostnames use `localhost` for processes running on your machine. Docker Compose overrides hostnames such as the database and SMTP server with their Compose service names.\n\nDepending on your workflow, you could want to exclude it from Git, for example if your project is public. In that case, you would have to make sure to set up a way for your CI tools to obtain it while building or deploying your project.\n\nOne way to do it could be to add each environment variable to your CI/CD system.\n\n",
+            "kind": "parent",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / The .env file\n## The .env file\n\nThe `.env` file contains the shared local defaults, generated keys, passwords, and other configuration. Its hostnames use `localhost` for processes running on your machine. Docker Compose overrides hostnames such as the database and SMTP server with their Compose service names.\n\nDepending on your workflow, you could want to exclude it from Git, for example if your project is public. In that case, you would have to make sure to set up a way for your CI tools to obtain it while building or deploying your project.\n\nOne way to do it could be to add each environment variable to your CI/CD system.\n\n\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c27"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c27",
+            "fixture-a8a79d0841d4:c6",
+            "fixture-a8a79d0841d4:c11",
+            "fixture-b33563055168:c10",
+            "fixture-35aa98d245b2:c1",
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c1",
+            "fixture-a8a79d0841d4:c21",
+            "fixture-a8a79d0841d4:c12",
+            "fixture-a8a79d0841d4:c45"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c27",
+            "fixture-a8a79d0841d4:c6",
+            "fixture-a8a79d0841d4:c11",
+            "fixture-b33563055168:c10",
+            "fixture-35aa98d245b2:c1",
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a8a79d0841d4:c1",
+            "fixture-a8a79d0841d4:c21",
+            "fixture-a8a79d0841d4:c12",
+            "fixture-a8a79d0841d4:c45"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c27": 0.01639344262295082,
+            "fixture-a8a79d0841d4:c6": 0.016129032258064516,
+            "fixture-a8a79d0841d4:c11": 0.015873015873015872,
+            "fixture-b33563055168:c10": 0.015625,
+            "fixture-35aa98d245b2:c1": 0.015384615384615385,
+            "fixture-a8a79d0841d4:c14": 0.015151515151515152,
+            "fixture-a8a79d0841d4:c1": 0.014925373134328358,
+            "fixture-a8a79d0841d4:c21": 0.014705882352941176,
+            "fixture-a8a79d0841d4:c12": 0.014492753623188406,
+            "fixture-a8a79d0841d4:c45": 0.014285714285714285
+          },
+          "vector_ms": 20.325399935245514,
+          "keyword_ms": 1.1202000314369798,
+          "distances": [
+            0.4651946425437927,
+            0.4774252772331238,
+            0.4817315936088562,
+            0.48623067140579224,
+            0.4868050217628479,
+            0.48947978019714355,
+            0.49178123474121094,
+            0.4942992925643921,
+            0.4948209524154663,
+            0.4973942041397095
+          ]
+        }
+      }
+    },
+    "generated_answers": [
+      {
+        "id": "Q01",
+        "question": "本地开发后端需要哪些工具？",
+        "answerable": true,
+        "mode": "vector_child",
+        "top_k": 1,
+        "reference_points": [
+          "Docker",
+          "uv 用于 Python 包和环境管理"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "* [Docker](https://www.docker.com/).\n* [uv](https://docs.astral.sh/uv/) for Python package and environment management.",
+            "start": 46,
+            "end": 164,
+            "section": "FastAPI Project - Backend / Requirements"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      },
+      {
+        "id": "Q01",
+        "question": "本地开发后端需要哪些工具？",
+        "answerable": true,
+        "mode": "hybrid_child",
+        "top_k": 1,
+        "reference_points": [
+          "Docker",
+          "uv 用于 Python 包和环境管理"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "* [Docker](https://www.docker.com/).\n* [uv](https://docs.astral.sh/uv/) for Python package and environment management.",
+            "start": 46,
+            "end": 164,
+            "section": "FastAPI Project - Backend / Requirements"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      },
+      {
+        "id": "Q01",
+        "question": "本地开发后端需要哪些工具？",
+        "answerable": true,
+        "mode": "hybrid_parent",
+        "top_k": 1,
+        "reference_points": [
+          "Docker",
+          "uv 用于 Python 包和环境管理"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "* [Docker](https://www.docker.com/).\n* [uv](https://docs.astral.sh/uv/) for Python package and environment management.",
+            "start": 46,
+            "end": 164,
+            "section": "FastAPI Project - Backend / Requirements"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      }
+    ]
+  },
+  {
+    "question": {
+      "id": "Q03",
+      "question": "后端安装依赖、准备数据库和启动服务的顺序是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "reference_points": [
+        "在 backend 目录依次运行 uv sync、prestart.sh、fastapi dev"
+      ],
+      "evidence": [
+        {
+          "doc_id": "fixture-a54d2dad1be5",
+          "quote": "Then, from `./backend/`, install the dependencies, prepare the database, and start the development server:",
+          "start": 373,
+          "end": 479,
+          "section": "FastAPI Project - Backend / Local Development"
+        },
+        {
+          "doc_id": "fixture-a54d2dad1be5",
+          "quote": "$ uv sync\n$ uv run bash scripts/prestart.sh\n$ uv run fastapi dev",
+          "start": 492,
+          "end": 556,
+          "section": "FastAPI Project - Backend / Local Development"
+        }
+      ]
+    },
+    "top_k": 1,
+    "description": "父块回补没有改善覆盖",
+    "modes": {
+      "vector_child": {
+        "id": "Q03",
+        "question": "后端安装依赖、准备数据库和启动服务的顺序是什么？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "vector_child",
+        "top_k": 1,
+        "complete_evidence_covered": false,
+        "context_chars": 292,
+        "retrieval_ms": 23.966,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:c14",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p5",
+            "section": "FastAPI Project - Development / Full Stack with Docker Compose",
+            "start": 1937,
+            "end": 2140,
+            "text": "**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n",
+            "kind": "child",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / Full Stack with Docker Compose\n**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c14"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a54d2dad1be5:c6",
+            "fixture-a54d2dad1be5:c2",
+            "fixture-a54d2dad1be5:c22",
+            "fixture-a54d2dad1be5:c21",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a54d2dad1be5:c24",
+            "fixture-a54d2dad1be5:c17",
+            "fixture-b33563055168:c7",
+            "fixture-b33563055168:c9"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a54d2dad1be5:c6",
+            "fixture-a54d2dad1be5:c2",
+            "fixture-a54d2dad1be5:c22",
+            "fixture-a54d2dad1be5:c21",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a54d2dad1be5:c24",
+            "fixture-a54d2dad1be5:c17",
+            "fixture-b33563055168:c7",
+            "fixture-b33563055168:c9"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c14": 0.01639344262295082,
+            "fixture-a54d2dad1be5:c6": 0.016129032258064516,
+            "fixture-a54d2dad1be5:c2": 0.015873015873015872,
+            "fixture-a54d2dad1be5:c22": 0.015625,
+            "fixture-a54d2dad1be5:c21": 0.015384615384615385,
+            "fixture-a54d2dad1be5:c3": 0.015151515151515152,
+            "fixture-a54d2dad1be5:c24": 0.014925373134328358,
+            "fixture-a54d2dad1be5:c17": 0.014705882352941176,
+            "fixture-b33563055168:c7": 0.014492753623188406,
+            "fixture-b33563055168:c9": 0.014285714285714285
+          },
+          "vector_ms": 19.004200003109872,
+          "keyword_ms": 1.666199997998774,
+          "distances": [
+            0.43301331996917725,
+            0.4364280104637146,
+            0.4435725808143616,
+            0.44363391399383545,
+            0.454160213470459,
+            0.45620107650756836,
+            0.45746201276779175,
+            0.45873165130615234,
+            0.45957016944885254,
+            0.4596022367477417
+          ]
+        }
+      },
+      "hybrid_child": {
+        "id": "Q03",
+        "question": "后端安装依赖、准备数据库和启动服务的顺序是什么？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "hybrid_child",
+        "top_k": 1,
+        "complete_evidence_covered": false,
+        "context_chars": 292,
+        "retrieval_ms": 22.696,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:c14",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": "fixture-a8a79d0841d4:p5",
+            "section": "FastAPI Project - Development / Full Stack with Docker Compose",
+            "start": 1937,
+            "end": 2140,
+            "text": "**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n",
+            "kind": "child",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / Full Stack with Docker Compose\n**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c14"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a54d2dad1be5:c6",
+            "fixture-a54d2dad1be5:c2",
+            "fixture-a54d2dad1be5:c22",
+            "fixture-a54d2dad1be5:c21",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a54d2dad1be5:c24",
+            "fixture-a54d2dad1be5:c17",
+            "fixture-b33563055168:c7",
+            "fixture-b33563055168:c9"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a54d2dad1be5:c6",
+            "fixture-a54d2dad1be5:c2",
+            "fixture-a54d2dad1be5:c22",
+            "fixture-a54d2dad1be5:c21",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a54d2dad1be5:c24",
+            "fixture-a54d2dad1be5:c17",
+            "fixture-b33563055168:c7",
+            "fixture-b33563055168:c9"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c14": 0.01639344262295082,
+            "fixture-a54d2dad1be5:c6": 0.016129032258064516,
+            "fixture-a54d2dad1be5:c2": 0.015873015873015872,
+            "fixture-a54d2dad1be5:c22": 0.015625,
+            "fixture-a54d2dad1be5:c21": 0.015384615384615385,
+            "fixture-a54d2dad1be5:c3": 0.015151515151515152,
+            "fixture-a54d2dad1be5:c24": 0.014925373134328358,
+            "fixture-a54d2dad1be5:c17": 0.014705882352941176,
+            "fixture-b33563055168:c7": 0.014492753623188406,
+            "fixture-b33563055168:c9": 0.014285714285714285
+          },
+          "vector_ms": 19.004200003109872,
+          "keyword_ms": 1.666199997998774,
+          "distances": [
+            0.43301331996917725,
+            0.4364280104637146,
+            0.4435725808143616,
+            0.44363391399383545,
+            0.454160213470459,
+            0.45620107650756836,
+            0.45746201276779175,
+            0.45873165130615234,
+            0.45957016944885254,
+            0.4596022367477417
+          ]
+        }
+      },
+      "hybrid_parent": {
+        "id": "Q03",
+        "question": "后端安装依赖、准备数据库和启动服务的顺序是什么？",
+        "split": "dev",
+        "answerable": true,
+        "mode": "hybrid_parent",
+        "top_k": 1,
+        "complete_evidence_covered": false,
+        "context_chars": 293,
+        "retrieval_ms": 22.845,
+        "context": [
+          {
+            "id": "fixture-a8a79d0841d4:p5",
+            "doc_id": "fixture-a8a79d0841d4",
+            "parent_id": null,
+            "section": "FastAPI Project - Development / Full Stack with Docker Compose",
+            "start": 1937,
+            "end": 2141,
+            "text": "**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n\n",
+            "kind": "parent",
+            "ref": 1,
+            "title": "development.md",
+            "source_url": "https://github.com/fastapi/full-stack-fastapi-template/blob/84c5a9e11a9e58262599e3d772f5386924e02ca7/development.md",
+            "formatted": "[1] 文档：development.md\n章节：FastAPI Project - Development / Full Stack with Docker Compose\n**Note**: The first time you start the stack, it might take a minute for all the services to be ready. To monitor it, use `docker compose logs`, or `docker compose logs backend` for the backend service.\n\n\n"
+          }
+        ],
+        "selected_child_ids": [
+          "fixture-a8a79d0841d4:c14"
+        ],
+        "diagnostics": {
+          "vector_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a54d2dad1be5:c6",
+            "fixture-a54d2dad1be5:c2",
+            "fixture-a54d2dad1be5:c22",
+            "fixture-a54d2dad1be5:c21",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a54d2dad1be5:c24",
+            "fixture-a54d2dad1be5:c17",
+            "fixture-b33563055168:c7",
+            "fixture-b33563055168:c9"
+          ],
+          "keyword_ids": [],
+          "fused_ids": [
+            "fixture-a8a79d0841d4:c14",
+            "fixture-a54d2dad1be5:c6",
+            "fixture-a54d2dad1be5:c2",
+            "fixture-a54d2dad1be5:c22",
+            "fixture-a54d2dad1be5:c21",
+            "fixture-a54d2dad1be5:c3",
+            "fixture-a54d2dad1be5:c24",
+            "fixture-a54d2dad1be5:c17",
+            "fixture-b33563055168:c7",
+            "fixture-b33563055168:c9"
+          ],
+          "rrf_scores": {
+            "fixture-a8a79d0841d4:c14": 0.01639344262295082,
+            "fixture-a54d2dad1be5:c6": 0.016129032258064516,
+            "fixture-a54d2dad1be5:c2": 0.015873015873015872,
+            "fixture-a54d2dad1be5:c22": 0.015625,
+            "fixture-a54d2dad1be5:c21": 0.015384615384615385,
+            "fixture-a54d2dad1be5:c3": 0.015151515151515152,
+            "fixture-a54d2dad1be5:c24": 0.014925373134328358,
+            "fixture-a54d2dad1be5:c17": 0.014705882352941176,
+            "fixture-b33563055168:c7": 0.014492753623188406,
+            "fixture-b33563055168:c9": 0.014285714285714285
+          },
+          "vector_ms": 19.004200003109872,
+          "keyword_ms": 1.666199997998774,
+          "distances": [
+            0.43301331996917725,
+            0.4364280104637146,
+            0.4435725808143616,
+            0.44363391399383545,
+            0.454160213470459,
+            0.45620107650756836,
+            0.45746201276779175,
+            0.45873165130615234,
+            0.45957016944885254,
+            0.4596022367477417
+          ]
+        }
+      }
+    },
+    "generated_answers": [
+      {
+        "id": "Q03",
+        "question": "后端安装依赖、准备数据库和启动服务的顺序是什么？",
+        "answerable": true,
+        "mode": "vector_child",
+        "top_k": 1,
+        "reference_points": [
+          "在 backend 目录依次运行 uv sync、prestart.sh、fastapi dev"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "Then, from `./backend/`, install the dependencies, prepare the database, and start the development server:",
+            "start": 373,
+            "end": 479,
+            "section": "FastAPI Project - Backend / Local Development"
+          },
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "$ uv sync\n$ uv run bash scripts/prestart.sh\n$ uv run fastapi dev",
+            "start": 492,
+            "end": 556,
+            "section": "FastAPI Project - Backend / Local Development"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      },
+      {
+        "id": "Q03",
+        "question": "后端安装依赖、准备数据库和启动服务的顺序是什么？",
+        "answerable": true,
+        "mode": "hybrid_child",
+        "top_k": 1,
+        "reference_points": [
+          "在 backend 目录依次运行 uv sync、prestart.sh、fastapi dev"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "Then, from `./backend/`, install the dependencies, prepare the database, and start the development server:",
+            "start": 373,
+            "end": 479,
+            "section": "FastAPI Project - Backend / Local Development"
+          },
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "$ uv sync\n$ uv run bash scripts/prestart.sh\n$ uv run fastapi dev",
+            "start": 492,
+            "end": 556,
+            "section": "FastAPI Project - Backend / Local Development"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      },
+      {
+        "id": "Q03",
+        "question": "后端安装依赖、准备数据库和启动服务的顺序是什么？",
+        "answerable": true,
+        "mode": "hybrid_parent",
+        "top_k": 1,
+        "reference_points": [
+          "在 backend 目录依次运行 uv sync、prestart.sh、fastapi dev"
+        ],
+        "evidence": [
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "Then, from `./backend/`, install the dependencies, prepare the database, and start the development server:",
+            "start": 373,
+            "end": 479,
+            "section": "FastAPI Project - Backend / Local Development"
+          },
+          {
+            "doc_id": "fixture-a54d2dad1be5",
+            "quote": "$ uv sync\n$ uv run bash scripts/prestart.sh\n$ uv run fastapi dev",
+            "start": 492,
+            "end": 556,
+            "section": "FastAPI Project - Backend / Local Development"
+          }
+        ],
+        "review": "unverified",
+        "review_notes": "",
+        "run_status": "not_run",
+        "reason": "model_not_configured",
+        "answer": "",
+        "citations": []
+      }
+    ]
+  }
+]

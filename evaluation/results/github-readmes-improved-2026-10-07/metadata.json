@@ -1,0 +1,36 @@
+{
+  "suite": "20-github-readmes",
+  "phase": "all",
+  "split": "all",
+  "project_count": 20,
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "device": "cpu",
+  "llm_model": "not_configured",
+  "context_budget": 4000,
+  "candidates_per_route": 10,
+  "rrf_k": 60,
+  "top_k": [
+    1,
+    5
+  ],
+  "warmup_seconds": 4.514,
+  "index_version": "chunking-v2-keywords-v2",
+  "evaluation_purpose": "regression_seen_questions",
+  "dataset_inventory_sha256": "4fef3b3b1e74bf4889f563f67c88fe0e57a4ea0c8e52eea74770ffa458c6a7a0",
+  "code_sha256": {
+    "backend/app/chunking.py": "9c72b116a4acbf0529c57ee63f480ece5e9e6281e62facde2e7c944a09d12de8",
+    "backend/app/retrieval.py": "7e2e81a20acdc2334dc11db930b70a5e978ab9117c50c0d610378d33e5b2c154",
+    "backend/app/indexing.py": "e21ec7df023654d714cb15de0c7c11f3f64e1b0a65d7a94d7e7c5df1e542932b",
+    "backend/app/answering.py": "f1b5a39e2b303af698a48795b3a55fcfd2841bb8208d662360b3c6e58a053a56"
+  },
+  "timing_method": "CPU模型预热；每题候选共享，各模式计算对应路耗时加上下文组织耗时；不含生成耗时，不作生产性能承诺。",
+  "limitations": [
+    "中文问题对英文原文",
+    "每组正例有两种措辞，只有240组不同事实",
+    "独立项目索引，不是20个仓库混合检索",
+    "参考答案与负例的独立人工复核待完成",
+    "题目已在基线测试中查看；本次为回归测试，非未见过的最终验证",
+    "无模型或未人工核对时，回答准确率与拒答质量未验证"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "temporal",
+  "repository": "temporalio/temporal",
+  "category": "持久化工作流",
+  "repository_url": "https://github.com/temporalio/temporal",
+  "commit": "e161e3bc28d4e86ce76ae5f83d12c2443e76cb8d",
+  "source_path": "README.md",
+  "source_url": "https://github.com/temporalio/temporal/blob/e161e3bc28d4e86ce76ae5f83d12c2443e76cb8d/README.md",
+  "collected_at": "2026-10-07T08:06:47.952188+00:00",
+  "license_spdx": "MIT",
+  "license_files": [
+    "LICENSE"
+  ],
+  "sha256": "269838d3de5da90d4c2c0b45bf7fc745b384a5a05c0932582e923638e8994189",
+  "bytes": 3888
+}

@@ -1,0 +1,818 @@
+{
+  "metadata": {
+    "product_id": "readme-grafana",
+    "product_name": "grafana/grafana README 测试",
+    "corpus_commit": "8012057edda4c5f3298b774076f0665812a1e630",
+    "dataset_sha256": "17905135fd80ae1f77e177a666bfe7bdc3d4f15c848604f28576661bba4fbeed",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "1951f1d5ba1f5f6afe51f80a80196fdefc5fbdaacb17e3abf0dd9c1414fdc450",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "grafana",
+    "repository": "grafana/grafana",
+    "index": {
+      "documents": 1,
+      "parents": 7,
+      "children": 23,
+      "fingerprint": "1951f1d5ba1f5f6afe51f80a80196fdefc5fbdaacb17e3abf0dd9c1414fdc450"
+    }
+  },
+  "results": [
+    {
+      "id": "grafana-Q01",
+      "question": "Grafana 对指标数据提供哪些基本能力？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "查询、可视化、告警、理解指标，创建探索共享 dashboard。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "Grafana allows you to query, visualize, alert on and understand your metrics no matter where they are stored.",
+          "start": 279,
+          "end": 388,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q02",
+      "question": "数据在别处存着，也能查询、画图、报警吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "查询、可视化、告警、理解指标，创建探索共享 dashboard。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "Grafana allows you to query, visualize, alert on and understand your metrics no matter where they are stored.",
+          "start": 279,
+          "end": 388,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q03",
+      "question": "Grafana panel plugins 可展示什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "panel plugins 提供多种指标、日志可视化。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "Panel plugins offer many different ways to visualize metrics and logs.",
+          "start": 565,
+          "end": 635,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q04",
+      "question": "除了普通折线图，还有扩展面板画指标和日志吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "panel plugins 提供多种指标、日志可视化。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "Panel plugins offer many different ways to visualize metrics and logs.",
+          "start": 565,
+          "end": 635,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q05",
+      "question": "Grafana 动态 dashboard 的模板变量怎样显示？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "template variables 在顶部显示为下拉列表。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Dynamic Dashboards:** Create dynamic & reusable dashboards with template variables that appear as dropdowns at the top of the dashboard.",
+          "start": 636,
+          "end": 776,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q06",
+      "question": "怎样做能复用的看板，让用户下拉选择变量？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "template variables 在顶部显示为下拉列表。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Dynamic Dashboards:** Create dynamic & reusable dashboards with template variables that appear as dropdowns at the top of the dashboard.",
+          "start": 636,
+          "end": 776,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q07",
+      "question": "Grafana Explore Metrics 如何比较数据？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "ad-hoc 查询、动态钻取，split view 并排比较。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Explore Metrics:** Explore your data through ad-hoc queries and dynamic drilldown. Split view and compare different time ranges, queries and data sources side by side.",
+          "start": 777,
+          "end": 948,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q08",
+      "question": "想并排比较不同时间、查询和数据源，有什么能力？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "ad-hoc 查询、动态钻取，split view 并排比较。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Explore Metrics:** Explore your data through ad-hoc queries and dynamic drilldown. Split view and compare different time ranges, queries and data sources side by side.",
+          "start": 777,
+          "end": 948,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q09",
+      "question": "Grafana 从指标切到日志时会保留什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "保留 label filters，可快速搜索日志或实时流式查看。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Explore Logs:** Experience the magic of switching from metrics to logs with preserved label filters. Quickly search through all your logs or streaming them live.",
+          "start": 949,
+          "end": 1114,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q10",
+      "question": "查完指标再查日志，标签筛选还在吗，能看实时流吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "保留 label filters，可快速搜索日志或实时流式查看。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Explore Logs:** Experience the magic of switching from metrics to logs with preserved label filters. Quickly search through all your logs or streaming them live.",
+          "start": 949,
+          "end": 1114,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q11",
+      "question": "Grafana 如何定义告警，通知哪些系统？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "可视化定义规则，持续评估，通知 Slack/PagerDuty/VictorOps/OpsGenie。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Alerting:** Visually define alert rules for your most important metrics. Grafana will continuously evaluate and send notifications to systems like Slack, PagerDuty, VictorOps, OpsGenie.",
+          "start": 1115,
+          "end": 1304,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q12",
+      "question": "规则能图形化配置并自动持续判断吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "可视化定义规则，持续评估，通知 Slack/PagerDuty/VictorOps/OpsGenie。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Alerting:** Visually define alert rules for your most important metrics. Grafana will continuously evaluate and send notifications to systems like Slack, PagerDuty, VictorOps, OpsGenie.",
+          "start": 1115,
+          "end": 1304,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q13",
+      "question": "Grafana 单张图能混合不同数据源吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "可在同一图按 query 指定数据源，也支持自定义源。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Mixed Data Sources:** Mix different data sources in the same graph! You can specify a data source on a per-query basis. This works for even custom datasources.",
+          "start": 1305,
+          "end": 1468,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q14",
+      "question": "每条查询使用不同来源，甚至自定义源，行不行？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "可在同一图按 query 指定数据源，也支持自定义源。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- **Mixed Data Sources:** Mix different data sources in the same graph! You can specify a data source on a per-query basis. This works for even custom datasources.",
+          "start": 1305,
+          "end": 1468,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q15",
+      "question": "Grafana 在哪可以先体验演示？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "play.grafana.org。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "Unsure if Grafana is for you? Watch Grafana in action on [play.grafana.org](https://play.grafana.org/)!",
+          "start": 1621,
+          "end": 1724,
+          "section": "Get started"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q16",
+      "question": "不安装先看它工作，有什么 demo 地址？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "play.grafana.org。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "Unsure if Grafana is for you? Watch Grafana in action on [play.grafana.org](https://play.grafana.org/)!",
+          "start": 1621,
+          "end": 1724,
+          "section": "Get started"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q17",
+      "question": "Grafana 贡献前和本地开发应分别读什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Contributing guide，Developer guide。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- Start by reading the [Contributing guide](https://github.com/grafana/grafana/blob/HEAD/CONTRIBUTING.md).",
+          "start": 1913,
+          "end": 2019,
+          "section": "Contributing"
+        },
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- Learn how to set up your local environment, in our [Developer guide](https://github.com/grafana/grafana/blob/HEAD/contribute/developer-guide.md).",
+          "start": 2020,
+          "end": 2167,
+          "section": "Contributing"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q18",
+      "question": "想参与项目，贡献流程与环境配置入口在哪？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Contributing guide，Developer guide。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- Start by reading the [Contributing guide](https://github.com/grafana/grafana/blob/HEAD/CONTRIBUTING.md).",
+          "start": 1913,
+          "end": 2019,
+          "section": "Contributing"
+        },
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- Learn how to set up your local environment, in our [Developer guide](https://github.com/grafana/grafana/blob/HEAD/contribute/developer-guide.md).",
+          "start": 2020,
+          "end": 2167,
+          "section": "Contributing"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q19",
+      "question": "Grafana 新手任务通过哪个标签查找？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "beginner friendly 标签的开放 issue。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- Explore our [beginner-friendly issues](https://github.com/grafana/grafana/issues?q=is%3Aopen+is%3Aissue+label%3A%22beginner+friendly%22).",
+          "start": 2168,
+          "end": 2307,
+          "section": "Contributing"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q20",
+      "question": "刚开始参与，README 给了什么新手 issue 入口？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "beginner friendly 标签的开放 issue。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- Explore our [beginner-friendly issues](https://github.com/grafana/grafana/issues?q=is%3Aopen+is%3Aissue+label%3A%22beginner+friendly%22).",
+          "start": 2168,
+          "end": 2307,
+          "section": "Contributing"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q21",
+      "question": "Grafana 具体问题与一般讨论各去哪里？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "具体问题 discussion forums，一般讨论 official Slack。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- If you have a specific question, check out our [discussion forums](https://community.grafana.com/).",
+          "start": 2670,
+          "end": 2771,
+          "section": "Get involved"
+        },
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- For general discussions, join us on the [official Slack](https://slack.grafana.com) team.",
+          "start": 2772,
+          "end": 2863,
+          "section": "Get involved"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q22",
+      "question": "有问题问论坛，还是加入 Slack，README 怎么分？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "具体问题 discussion forums，一般讨论 official Slack。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- If you have a specific question, check out our [discussion forums](https://community.grafana.com/).",
+          "start": 2670,
+          "end": 2771,
+          "section": "Get involved"
+        },
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "- For general discussions, join us on the [official Slack](https://slack.grafana.com) team.",
+          "start": 2772,
+          "end": 2863,
+          "section": "Get involved"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q23",
+      "question": "Grafana 默认许可和例外说明是什么？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "AGPL-3.0-only，Apache-2.0 例外见 LICENSING.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "Grafana is distributed under [AGPL-3.0-only](LICENSE). For Apache-2.0 exceptions, see [LICENSING.md](https://github.com/grafana/grafana/blob/HEAD/LICENSING.md).",
+          "start": 2953,
+          "end": 3113,
+          "section": "License"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q24",
+      "question": "它整体是什么开源协议，Apache 例外在哪里看？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "AGPL-3.0-only，Apache-2.0 例外见 LICENSING.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-grafana-doc",
+          "quote": "Grafana is distributed under [AGPL-3.0-only](LICENSE). For Apache-2.0 exceptions, see [LICENSING.md](https://github.com/grafana/grafana/blob/HEAD/LICENSING.md).",
+          "start": 2953,
+          "end": 3113,
+          "section": "License"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q25",
+      "question": "首次登录的默认用户名和密码是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q26",
+      "question": "完整 provisioning datasource YAML 应该怎么写？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q27",
+      "question": "如何配置我的公司 OIDC 服务的全部认证字段？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q28",
+      "question": "给特定组织配置最小权限 RBAC 的全部步骤是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q29",
+      "question": "我这个 dashboard 的具体 JSON model 是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    },
+    {
+      "id": "grafana-Q30",
+      "question": "从指定旧版升级到当前版的数据库迁移命令是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "grafana"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

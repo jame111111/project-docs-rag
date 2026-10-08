@@ -1,0 +1,16 @@
+{
+  "id": "supabase",
+  "repository": "supabase/supabase",
+  "category": "后端服务平台",
+  "repository_url": "https://github.com/supabase/supabase",
+  "commit": "808322622933f693eb292a986f6a26aba51138a9",
+  "source_path": "README.md",
+  "source_url": "https://github.com/supabase/supabase/blob/808322622933f693eb292a986f6a26aba51138a9/README.md",
+  "collected_at": "2026-10-07T08:09:17.571755+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE"
+  ],
+  "sha256": "c1a23ddcd6f67625de1bdad0be99dccf59e80c9e772e52a5c855072e783c15d4",
+  "bytes": 16831
+}

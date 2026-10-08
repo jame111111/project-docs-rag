@@ -1,0 +1,10 @@
+{
+  "id": "readme-clickhouse",
+  "name": "ClickHouse/ClickHouse README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/ClickHouse/ClickHouse/blob/2c8a93b209e7ab712da907a194d440adfe99da54/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

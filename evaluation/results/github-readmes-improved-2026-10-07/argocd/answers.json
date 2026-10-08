@@ -1,0 +1,804 @@
+{
+  "metadata": {
+    "product_id": "readme-argocd",
+    "product_name": "argoproj/argo-cd README 测试",
+    "corpus_commit": "2f3711241f94959924650c9ef554f58a7fbd4d26",
+    "dataset_sha256": "94ae6bcb6542f0d64f1db55b795aeefbbc5dd1b53abccfa17a3d4af42d013cc4",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "9c37cc05beaf8e6c59987770ce9e3513f78dfa58f77726b221423e4662ecf849",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "argocd",
+    "repository": "argoproj/argo-cd",
+    "index": {
+      "documents": 1,
+      "parents": 13,
+      "children": 55,
+      "fingerprint": "9c37cc05beaf8e6c59987770ce9e3513f78dfa58f77726b221423e4662ecf849"
+    }
+  },
+  "results": [
+    {
+      "id": "argocd-Q01",
+      "question": "Argo CD 是什么类型的工具，目标平台是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Kubernetes 的声明式 GitOps continuous delivery 工具。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "Argo CD is a declarative GitOps continuous delivery tool for Kubernetes.",
+          "start": 1648,
+          "end": 1720,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / What is Argo CD?"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q02",
+      "question": "这工具负责 Kubernetes 的什么交付方式？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Kubernetes 的声明式 GitOps continuous delivery 工具。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "Argo CD is a declarative GitOps continuous delivery tool for Kubernetes.",
+          "start": 1648,
+          "end": 1720,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / What is Argo CD?"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q03",
+      "question": "Argo CD 对应用定义、配置和环境提出什么原则？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "应该声明式且版本控制。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "1. Application definitions, configurations, and environments should be declarative and version controlled.",
+          "start": 1876,
+          "end": 1982,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Why Argo CD?"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q04",
+      "question": "应用配置应该手改，还是声明并纳入版本管理？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "应该声明式且版本控制。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "1. Application definitions, configurations, and environments should be declarative and version controlled.",
+          "start": 1876,
+          "end": 1982,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Why Argo CD?"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q05",
+      "question": "Argo CD 希望部署和生命周期管理具备什么特点？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "自动化、可审计、易理解。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "1. Application deployment and lifecycle management should be automated, auditable, and easy to understand.",
+          "start": 1983,
+          "end": 2089,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Why Argo CD?"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q06",
+      "question": "发布过程应该怎么管，能追溯吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "自动化、可审计、易理解。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "1. Application deployment and lifecycle management should be automated, auditable, and easy to understand.",
+          "start": 1983,
+          "end": 2089,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Why Argo CD?"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q07",
+      "question": "Argo CD 正式用户列表在哪个文件？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "USERS.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "[Official Argo CD user list](USERS.md)",
+          "start": 2113,
+          "end": 2151,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Who uses Argo CD?"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q08",
+      "question": "想看有哪些用户用了它，README 指向哪里？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "USERS.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "[Official Argo CD user list](USERS.md)",
+          "start": 2113,
+          "end": 2151,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Who uses Argo CD?"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q09",
+      "question": "Argo CD 的完整文档和在线 demo 分别在哪？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "argo-cd.readthedocs.io，cd.apps.argoproj.io。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "To learn more about Argo CD [go to the complete documentation](https://argo-cd.readthedocs.io/).",
+          "start": 2171,
+          "end": 2267,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Documentation"
+        },
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "Check live demo at https://cd.apps.argoproj.io/.",
+          "start": 2268,
+          "end": 2316,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Documentation"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q10",
+      "question": "详细资料去哪读，想在线体验又去哪个地址？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "argo-cd.readthedocs.io，cd.apps.argoproj.io。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "To learn more about Argo CD [go to the complete documentation](https://argo-cd.readthedocs.io/).",
+          "start": 2171,
+          "end": 2267,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Documentation"
+        },
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "Check live demo at https://cd.apps.argoproj.io/.",
+          "start": 2268,
+          "end": 2316,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Documentation"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q11",
+      "question": "Argo CD 的问答渠道是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "GitHub Discussions。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "* Q & A : [GitHub Discussions](https://github.com/argoproj/argo-cd/discussions)",
+          "start": 2455,
+          "end": 2534,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q12",
+      "question": "遇到疑问想正式讨论，用哪个 GitHub 功能？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "GitHub Discussions。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "* Q & A : [GitHub Discussions](https://github.com/argoproj/argo-cd/discussions)",
+          "start": 2455,
+          "end": 2534,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q13",
+      "question": "Argo CD 即时聊天频道是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "The #argo-cd Slack channel。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "* Chat : [The #argo-cd Slack channel](https://argoproj.github.io/community/join-slack)",
+          "start": 2535,
+          "end": 2621,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q14",
+      "question": "要和开发者实时聊，Slack 的什么频道？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "The #argo-cd Slack channel。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "* Chat : [The #argo-cd Slack channel](https://argoproj.github.io/community/join-slack)",
+          "start": 2535,
+          "end": 2621,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q15",
+      "question": "Argo CD 贡献者办公时间是什么频率？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Every Thursday。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "* Contributors Office Hours: [Every Thursday](https://calendar.google.com/calendar/u/0/embed?src=argoproj@gmail.com)",
+          "start": 2622,
+          "end": 2738,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q16",
+      "question": "想参加 Contributors Office Hours，哪天举办？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Every Thursday。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "* Contributors Office Hours: [Every Thursday](https://calendar.google.com/calendar/u/0/embed?src=argoproj@gmail.com)",
+          "start": 2622,
+          "end": 2738,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q17",
+      "question": "Argo CD 用户社区会议什么时候？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "每月第一个星期三。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "* User Community meeting: [First Wednesday of the month](https://calendar.google.com/calendar/u/0/embed?src=argoproj@gmail.com)",
+          "start": 2831,
+          "end": 2958,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q18",
+      "question": "用户交流会每个月哪一天？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "每月第一个星期三。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "* User Community meeting: [First Wednesday of the month](https://calendar.google.com/calendar/u/0/embed?src=argoproj@gmail.com)",
+          "start": 2831,
+          "end": 2958,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q19",
+      "question": "参与 Argo CD 项目遵循什么行为准则？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "CNCF Code of Conduct。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "Participation in the Argo CD project is governed by the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md)",
+          "start": 3053,
+          "end": 3198,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q20",
+      "question": "加入社区要按哪个基金会的 Code of Conduct？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "CNCF Code of Conduct。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "Participation in the Argo CD project is governed by the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md)",
+          "start": 3053,
+          "end": 3198,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Contribution, Discussion and Support"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q21",
+      "question": "Argo 相关项目和资源合集入口是什么？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Awesome-Argo Curated List。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "1. [Awesome-Argo: A Curated List of Awesome Projects and Resources Related to Argo](https://github.com/terrytangyuan/awesome-argo)",
+          "start": 3230,
+          "end": 3360,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Blogs and Presentations"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q22",
+      "question": "有没有整理好的 Awesome 列表可继续学习？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Awesome-Argo Curated List。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "1. [Awesome-Argo: A Curated List of Awesome Projects and Resources Related to Argo](https://github.com/terrytangyuan/awesome-argo)",
+          "start": 3230,
+          "end": 3360,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Blogs and Presentations"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q23",
+      "question": "README 列出多长的 GitOps Ninja 教程？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "90 分钟；README 只给视频链接，不包含教程内容。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "1. [Tutorial: Everything You Need To Become A GitOps Ninja](https://www.youtube.com/watch?v=r50tRQjisxw) 90m tutorial on GitOps and Argo CD.",
+          "start": 4553,
+          "end": 4693,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Blogs and Presentations"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q24",
+      "question": "想看那个 GitOps 和 Argo CD 系统教程，时长是多少？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "90 分钟；README 只给视频链接，不包含教程内容。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-argocd-doc",
+          "quote": "1. [Tutorial: Everything You Need To Become A GitOps Ninja](https://www.youtube.com/watch?v=r50tRQjisxw) 90m tutorial on GitOps and Argo CD.",
+          "start": 4553,
+          "end": 4693,
+          "section": "Argo CD - Declarative Continuous Delivery for Kubernetes / Community / Blogs and Presentations"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q25",
+      "question": "Argo CD 安装到集群的完整 kubectl 命令是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q26",
+      "question": "完整的 Application CRD 同步策略 YAML 怎么写？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q27",
+      "question": "如何取出首次管理员登录密码？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q28",
+      "question": "怎样配置生产 OIDC 和 RBAC 的完整配置文件？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q29",
+      "question": "这个 app 一直 OutOfSync 的实际 diff 根因是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    },
+    {
+      "id": "argocd-Q30",
+      "question": "零停机升级指定旧版本到当前版的全部步骤是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "argocd"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

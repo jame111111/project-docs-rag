@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-clickhouse",
+  "product": "ClickHouse/ClickHouse README 测试",
+  "commit": "2c8a93b209e7ab712da907a194d440adfe99da54",
+  "documents": [
+    {
+      "id": "readme-clickhouse-doc",
+      "title": "ClickHouse/ClickHouse README",
+      "category": "分析数据库",
+      "source_url": "https://github.com/ClickHouse/ClickHouse/blob/2c8a93b209e7ab712da907a194d440adfe99da54/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:02:40.424704+00:00",
+      "version": "2c8a93b209e7ab712da907a194d440adfe99da54",
+      "sha256": "0b87cd0c5b91d4b8812fed3f1234804afe4e5fe463e67ab9decd8fcfa839a203"
+    }
+  ]
+}

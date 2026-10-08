@@ -1,0 +1,595 @@
+{
+  "version": 3,
+  "product_id": "readme-vllm",
+  "corpus_commit": "7436a7f119dedd0c4d5f4d745aa6c2305ee82252",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "vllm-Q01",
+      "question": "vLLM 的主要用途是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F01",
+      "reference_points": [
+        "快速易用的 LLM inference and serving 库。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "vLLM is a fast and easy-to-use library for LLM inference and serving.",
+          "start": 1052,
+          "end": 1121,
+          "section": "About"
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q02",
+      "question": "这个项目是训练模型还是提供大模型推理服务？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F01",
+      "reference_points": [
+        "快速易用的 LLM inference and serving 库。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "vLLM is a fast and easy-to-use library for LLM inference and serving.",
+          "start": 1052,
+          "end": 1121,
+          "section": "About"
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q03",
+      "question": "vLLM 怎样管理 attention 的 key/value 内存？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F02",
+      "reference_points": [
+        "PagedAttention。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Efficient management of attention key and value memory with [**PagedAttention**](https://blog.vllm.ai/2023/06/20/vllm.html)",
+          "start": 1469,
+          "end": 1594,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q04",
+      "question": "KV cache 用什么机制提高内存管理效率？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F02",
+      "reference_points": [
+        "PagedAttention。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Efficient management of attention key and value memory with [**PagedAttention**](https://blog.vllm.ai/2023/06/20/vllm.html)",
+          "start": 1469,
+          "end": 1594,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q05",
+      "question": "vLLM 支持哪些请求批处理和缓存能力？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F03",
+      "reference_points": [
+        "Continuous batching、chunked prefill、prefix caching。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Continuous batching of incoming requests, chunked prefill, prefix caching",
+          "start": 1595,
+          "end": 1670,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q06",
+      "question": "不断进来的请求可以持续拼批，能缓存相同前缀吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F03",
+      "reference_points": [
+        "Continuous batching、chunked prefill、prefix caching。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Continuous batching of incoming requests, chunked prefill, prefix caching",
+          "start": 1595,
+          "end": 1670,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q07",
+      "question": "vLLM 支持哪些分布式并行形式？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F04",
+      "reference_points": [
+        "Tensor、pipeline、data、expert、context parallelism。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Tensor, pipeline, data, expert, and context parallelism for distributed inference",
+          "start": 2520,
+          "end": 2603,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q08",
+      "question": "模型太大想分机器推理，可以按哪些维度并行？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F04",
+      "reference_points": [
+        "Tensor、pipeline、data、expert、context parallelism。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Tensor, pipeline, data, expert, and context parallelism for distributed inference",
+          "start": 2520,
+          "end": 2603,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q09",
+      "question": "vLLM 结构化输出使用哪些库？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F05",
+      "reference_points": [
+        "xgrammar 或 guidance。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Generation of structured outputs using xgrammar or guidance",
+          "start": 2624,
+          "end": 2685,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q10",
+      "question": "希望生成 JSON 等受约束结果，README 提到什么实现？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F05",
+      "reference_points": [
+        "xgrammar 或 guidance。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Generation of structured outputs using xgrammar or guidance",
+          "start": 2624,
+          "end": 2685,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q11",
+      "question": "vLLM 服务接口兼容哪些 API 协议？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F06",
+      "reference_points": [
+        "OpenAI-compatible API、Anthropic Messages API、gRPC。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- OpenAI-compatible API server, plus Anthropic Messages API and gRPC support",
+          "start": 2723,
+          "end": 2799,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q12",
+      "question": "现有 OpenAI 客户端能连吗，另外还支持什么协议？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F06",
+      "reference_points": [
+        "OpenAI-compatible API、Anthropic Messages API、gRPC。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- OpenAI-compatible API server, plus Anthropic Messages API and gRPC support",
+          "start": 2723,
+          "end": 2799,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q13",
+      "question": "vLLM 支持哪些 CPU 架构和主要 GPU？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F07",
+      "reference_points": [
+        "NVIDIA、AMD、Intel GPU；x86/ARM/PowerPC CPU，另有硬件插件。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Support for NVIDIA GPUs, AMD GPUs, Intel GPUs, and x86/ARM/PowerPC CPUs.",
+          "start": 2856,
+          "end": 2930,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q14",
+      "question": "没有 NVIDIA 卡，AMD、Intel 或 ARM 机器是否列为支持？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F07",
+      "reference_points": [
+        "NVIDIA、AMD、Intel GPU；x86/ARM/PowerPC CPU，另有硬件插件。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Support for NVIDIA GPUs, AMD GPUs, Intel GPUs, and x86/ARM/PowerPC CPUs.",
+          "start": 2856,
+          "end": 2930,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q15",
+      "question": "vLLM multi-LoRA 支持哪些层？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F08",
+      "reference_points": [
+        "dense 和 MoE layers 的 efficient multi-LoRA。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Efficient multi-LoRA support for dense and MoE layers",
+          "start": 2800,
+          "end": 2855,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q16",
+      "question": "想同时服务多套 LoRA，MoE 层也支持吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F08",
+      "reference_points": [
+        "dense 和 MoE layers 的 efficient multi-LoRA。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Efficient multi-LoRA support for dense and MoE layers",
+          "start": 2800,
+          "end": 2855,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q17",
+      "question": "vLLM 是否支持检索嵌入模型，有哪些例子？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "vllm-F09",
+      "reference_points": [
+        "支持 E5-Mistral、GTE、ColBERT 等 embedding and retrieval models。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Embedding and retrieval models (e.g., E5-Mistral, GTE, ColBERT)",
+          "start": 3400,
+          "end": 3465,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q18",
+      "question": "不生成文本，只做向量检索的模型能跑吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "vllm-F09",
+      "reference_points": [
+        "支持 E5-Mistral、GTE、ColBERT 等 embedding and retrieval models。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- Embedding and retrieval models (e.g., E5-Mistral, GTE, ColBERT)",
+          "start": 3400,
+          "end": 3465,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q19",
+      "question": "安装 vLLM 推荐哪种工具，命令是什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "vllm-F10",
+      "reference_points": [
+        "推荐 uv，也可 pip；uv pip install vllm。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "Install vLLM with [`uv`](https://docs.astral.sh/uv/) (recommended) or `pip`:",
+          "start": 3649,
+          "end": 3725,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "uv pip install vllm",
+          "start": 3735,
+          "end": 3754,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q20",
+      "question": "第一次安装，README 推荐 uv 还是 pip，具体怎么敲？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "vllm-F10",
+      "reference_points": [
+        "推荐 uv，也可 pip；uv pip install vllm。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "Install vLLM with [`uv`](https://docs.astral.sh/uv/) (recommended) or `pip`:",
+          "start": 3649,
+          "end": 3725,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "uv pip install vllm",
+          "start": 3735,
+          "end": 3754,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q21",
+      "question": "vLLM 的技术问题与用户交流分别在哪里？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "vllm-F11",
+      "reference_points": [
+        "技术问题和功能请求用 GitHub Issues，用户交流用 vLLM Forum。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- For technical questions and feature requests, please use GitHub [Issues](https://github.com/vllm-project/vllm/issues)",
+          "start": 4992,
+          "end": 5111,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- For discussing with fellow users, please use the [vLLM Forum](https://discuss.vllm.ai)",
+          "start": 5112,
+          "end": 5200,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q22",
+      "question": "遇到 bug 要去哪提，想和其他使用者讨论去哪里？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "vllm-F11",
+      "reference_points": [
+        "技术问题和功能请求用 GitHub Issues，用户交流用 vLLM Forum。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- For technical questions and feature requests, please use GitHub [Issues](https://github.com/vllm-project/vllm/issues)",
+          "start": 4992,
+          "end": 5111,
+          "section": ""
+        },
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- For discussing with fellow users, please use the [vLLM Forum](https://discuss.vllm.ai)",
+          "start": 5112,
+          "end": 5200,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q23",
+      "question": "vLLM 安全漏洞应通过哪个入口报告？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "vllm-F12",
+      "reference_points": [
+        "GitHub Security Advisories。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- For security disclosures, please use GitHub's [Security Advisories](https://github.com/vllm-project/vllm/security/advisories) feature",
+          "start": 5293,
+          "end": 5428,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q24",
+      "question": "发现安全问题，README 指定哪个通道？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "vllm-F12",
+      "reference_points": [
+        "GitHub Security Advisories。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-vllm-doc",
+          "quote": "- For security disclosures, please use GitHub's [Security Advisories](https://github.com/vllm-project/vllm/security/advisories) feature",
+          "start": 5293,
+          "end": 5428,
+          "section": ""
+        }
+      ]
+    },
+    {
+      "id": "vllm-Q25",
+      "question": "启动私有 Qwen 模型并开启鉴权的完整 serve 命令是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "vllm-Q26",
+      "question": "8张H100运行70B模型的最优并行和显存参数是多少？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "vllm-Q27",
+      "question": "当前版本与某个具体 NVIDIA 驱动的兼容表是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "vllm-Q28",
+      "question": "如何设置 TLS 证书及私有网关的完整配置？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "vllm-Q29",
+      "question": "我的特定请求为什么产生乱码，日志根因是什么？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "vllm-Q30",
+      "question": "怎样从旧版本生产实例无停机迁移 KV cache？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

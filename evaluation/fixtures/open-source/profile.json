@@ -1,0 +1,10 @@
+{
+  "id": "open-source-fixture",
+  "name": "开源项目文档测试集",
+  "description": "固定本地文档，仅用于检索评测和浏览器流程测试。",
+  "source_label": "开源文档快照（仅测试）",
+  "source_url": "",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

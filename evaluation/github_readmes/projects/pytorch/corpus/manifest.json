@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-pytorch",
+  "product": "pytorch/pytorch README 测试",
+  "commit": "df9918af07c403c4dfe32230637e88b5fd94ccd6",
+  "documents": [
+    {
+      "id": "readme-pytorch-doc",
+      "title": "pytorch/pytorch README",
+      "category": "深度学习框架",
+      "source_url": "https://github.com/pytorch/pytorch/blob/df9918af07c403c4dfe32230637e88b5fd94ccd6/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:09:13.924224+00:00",
+      "version": "df9918af07c403c4dfe32230637e88b5fd94ccd6",
+      "sha256": "c839137f1d406e0ba4f641222471a5cbfabb2141b39491f7267f57cf5e2107b9"
+    }
+  ]
+}

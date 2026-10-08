@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-duckdb",
+  "product": "duckdb/duckdb README 测试",
+  "commit": "fa93ada028b1258926e827be7af3627979093d47",
+  "documents": [
+    {
+      "id": "readme-duckdb-doc",
+      "title": "duckdb/duckdb README",
+      "category": "嵌入式分析数据库",
+      "source_url": "https://github.com/duckdb/duckdb/blob/fa93ada028b1258926e827be7af3627979093d47/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:04:08.961819+00:00",
+      "version": "fa93ada028b1258926e827be7af3627979093d47",
+      "sha256": "907b44f4727089c4475a5f9342e76ed2cdb39cac5619feb4ed9c5c065f5cc559"
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "version": 3,
+  "product_id": "readme-duckdb",
+  "corpus_commit": "fa93ada028b1258926e827be7af3627979093d47",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "duckdb-Q01",
+      "question": "DuckDB 主要是什么数据库？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F01",
+      "reference_points": [
+        "高性能分析数据库，追求快速、可靠、可移植、易用。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "DuckDB is a high-performance analytical database system. It is designed to be fast, reliable, portable, and easy to use.",
+          "start": 874,
+          "end": 994,
+          "section": "DuckDB"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q02",
+      "question": "它适合做事务还是分析，首页怎样定位？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F01",
+      "reference_points": [
+        "高性能分析数据库，追求快速、可靠、可移植、易用。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "DuckDB is a high-performance analytical database system. It is designed to be fast, reliable, portable, and easy to use.",
+          "start": 874,
+          "end": 994,
+          "section": "DuckDB"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q03",
+      "question": "DuckDB 支持哪些复杂 SQL 能力？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F02",
+      "reference_points": [
+        "任意及嵌套相关子查询、窗口函数、collations、arrays/structs/maps。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "DuckDB supports arbitrary and nested correlated subqueries, window functions, collations, complex types (arrays, structs, maps)",
+          "start": 1065,
+          "end": 1192,
+          "section": "DuckDB"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q04",
+      "question": "相关子查询、窗口函数和复杂类型都支持吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F02",
+      "reference_points": [
+        "任意及嵌套相关子查询、窗口函数、collations、arrays/structs/maps。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "DuckDB supports arbitrary and nested correlated subqueries, window functions, collations, complex types (arrays, structs, maps)",
+          "start": 1065,
+          "end": 1192,
+          "section": "DuckDB"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q05",
+      "question": "DuckDB 有哪些客户端形式？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F03",
+      "reference_points": [
+        "独立 CLI 及 Python、R、Java、Wasm 等客户端。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "DuckDB is available as a [standalone CLI application](https://duckdb.org/docs/current/clients/cli/overview) and has clients for [Python](https://duckdb.org/docs/current/clients/python/overview), [R](https://duckdb.org/docs/current/clients/r), [Java](https://duckdb.org/docs/current/clients/java), [Wasm](https://duckdb.org/docs/current/clients/wasm/overview), etc.",
+          "start": 1319,
+          "end": 1683,
+          "section": "DuckDB"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q06",
+      "question": "除了终端，Python、Java 和浏览器能用吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F03",
+      "reference_points": [
+        "独立 CLI 及 Python、R、Java、Wasm 等客户端。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "DuckDB is available as a [standalone CLI application](https://duckdb.org/docs/current/clients/cli/overview) and has clients for [Python](https://duckdb.org/docs/current/clients/python/overview), [R](https://duckdb.org/docs/current/clients/r), [Java](https://duckdb.org/docs/current/clients/java), [Wasm](https://duckdb.org/docs/current/clients/wasm/overview), etc.",
+          "start": 1319,
+          "end": 1683,
+          "section": "DuckDB"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q07",
+      "question": "DuckDB 与哪些数据分析包深度集成？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F04",
+      "reference_points": [
+        "pandas 和 dplyr。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "with deep integrations with packages such as [pandas](https://duckdb.org/docs/guides/python/sql_on_pandas) and [dplyr](https://duckdb.org/docs/current/clients/r#duckplyr-dplyr-api).",
+          "start": 1685,
+          "end": 1866,
+          "section": "DuckDB"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q08",
+      "question": "已经用 pandas 或 dplyr，README 提到能集成吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F04",
+      "reference_points": [
+        "pandas 和 dplyr。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "with deep integrations with packages such as [pandas](https://duckdb.org/docs/guides/python/sql_on_pandas) and [dplyr](https://duckdb.org/docs/current/clients/r#duckplyr-dplyr-api).",
+          "start": 1685,
+          "end": 1866,
+          "section": "DuckDB"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q09",
+      "question": "查询 CSV 文件的示例 SQL 是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F05",
+      "reference_points": [
+        "SELECT * FROM 'myfile.csv';，FROM 引用文件。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "For CSV files and Parquet files, data import is as simple as referencing the file in the FROM clause:",
+          "start": 2142,
+          "end": 2243,
+          "section": "Data Import"
+        },
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "SELECT * FROM 'myfile.csv';",
+          "start": 2252,
+          "end": 2279,
+          "section": "Data Import"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q10",
+      "question": "不先建表，怎么直接读取 myfile.csv？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F05",
+      "reference_points": [
+        "SELECT * FROM 'myfile.csv';，FROM 引用文件。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "For CSV files and Parquet files, data import is as simple as referencing the file in the FROM clause:",
+          "start": 2142,
+          "end": 2243,
+          "section": "Data Import"
+        },
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "SELECT * FROM 'myfile.csv';",
+          "start": 2252,
+          "end": 2279,
+          "section": "Data Import"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q11",
+      "question": "查询 Parquet 文件的示例 SQL 是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F06",
+      "reference_points": [
+        "SELECT * FROM 'myfile.parquet';。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "SELECT * FROM 'myfile.parquet';",
+          "start": 2280,
+          "end": 2311,
+          "section": "Data Import"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q12",
+      "question": "myfile.parquet 能直接查吗，怎么写？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F06",
+      "reference_points": [
+        "SELECT * FROM 'myfile.parquet';。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "SELECT * FROM 'myfile.parquet';",
+          "start": 2280,
+          "end": 2311,
+          "section": "Data Import"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q13",
+      "question": "开发 DuckDB 需要哪些工具和语言标准？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F07",
+      "reference_points": [
+        "CMake、Python 3、兼容 C++17 的编译器。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "For development, DuckDB requires [CMake](https://cmake.org), Python 3 and a `C++17` compliant compiler.",
+          "start": 2570,
+          "end": 2673,
+          "section": "Development"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q14",
+      "question": "想从源码编译，要先装什么版本的工具？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F07",
+      "reference_points": [
+        "CMake、Python 3、兼容 C++17 的编译器。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "For development, DuckDB requires [CMake](https://cmake.org), Python 3 and a `C++17` compliant compiler.",
+          "start": 2570,
+          "end": 2673,
+          "section": "Development"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q15",
+      "question": "源码普通构建与调试构建命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F08",
+      "reference_points": [
+        "根目录 make，调试版 make debug。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "In the root directory, run `make` to compile the sources. For development, use `make debug` to build a non-optimized debug version.",
+          "start": 2674,
+          "end": 2805,
+          "section": "Development"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q16",
+      "question": "正常编译和不优化的 debug 版分别怎么构建？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F08",
+      "reference_points": [
+        "根目录 make，调试版 make debug。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "In the root directory, run `make` to compile the sources. For development, use `make debug` to build a non-optimized debug version.",
+          "start": 2674,
+          "end": 2805,
+          "section": "Development"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q17",
+      "question": "修改 DuckDB 后应运行哪些单元验证命令？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "duckdb-F09",
+      "reference_points": [
+        "make unit 和 make allunit。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "You should run `make unit` and `make allunit` to verify that your version works properly after making changes.",
+          "start": 2806,
+          "end": 2916,
+          "section": "Development"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q18",
+      "question": "改了代码，README 要求用什么命令确认没问题？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F09",
+      "reference_points": [
+        "make unit 和 make allunit。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "You should run `make unit` and `make allunit` to verify that your version works properly after making changes.",
+          "start": 2806,
+          "end": 2916,
+          "section": "Development"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q19",
+      "question": "DuckDB 性能测试如何构建和执行？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "duckdb-F10",
+      "reference_points": [
+        "BUILD_BENCHMARK=1 BUILD_TPCH=1 make，根目录执行 benchmark_runner。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "To test performance, you can run `BUILD_BENCHMARK=1 BUILD_TPCH=1 make` and then perform several standard benchmarks from the root directory by executing `./build/release/benchmark/benchmark_runner`.",
+          "start": 2917,
+          "end": 3115,
+          "section": "Development"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q20",
+      "question": "想跑它的标准 benchmark，需要开什么构建开关？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F10",
+      "reference_points": [
+        "BUILD_BENCHMARK=1 BUILD_TPCH=1 make，根目录执行 benchmark_runner。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "To test performance, you can run `BUILD_BENCHMARK=1 BUILD_TPCH=1 make` and then perform several standard benchmarks from the root directory by executing `./build/release/benchmark/benchmark_runner`.",
+          "start": 2917,
+          "end": 3115,
+          "section": "Development"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q21",
+      "question": "DuckDB 安装详细步骤在哪查看？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "duckdb-F11",
+      "reference_points": [
+        "installation page。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "If you want to install DuckDB, please see [our installation page](https://duckdb.org/docs/installation/) for instructions.",
+          "start": 2002,
+          "end": 2124,
+          "section": "Installation"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q22",
+      "question": "README 没列安装命令，它指向哪里？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F11",
+      "reference_points": [
+        "installation page。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "If you want to install DuckDB, please see [our installation page](https://duckdb.org/docs/installation/) for instructions.",
+          "start": 2002,
+          "end": 2124,
+          "section": "Installation"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q23",
+      "question": "DuckDB 的支持与生命周期信息入口是什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "duckdb-F12",
+      "reference_points": [
+        "Support Options 和 endoflife.date 专页。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "See the [Support Options](https://ducklabs.com/support/) page and the dedicated [`endoflife.date`](https://endoflife.date/duckdb) page.",
+          "start": 3344,
+          "end": 3479,
+          "section": "Support"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q24",
+      "question": "需要支持服务或查版本停止维护时间，该点哪里？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "duckdb-F12",
+      "reference_points": [
+        "Support Options 和 endoflife.date 专页。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-duckdb-doc",
+          "quote": "See the [Support Options](https://ducklabs.com/support/) page and the dedicated [`endoflife.date`](https://endoflife.date/duckdb) page.",
+          "start": 3344,
+          "end": 3479,
+          "section": "Support"
+        }
+      ]
+    },
+    {
+      "id": "duckdb-Q25",
+      "question": "完整的 S3 secret 创建语句和凭证参数是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "duckdb-Q26",
+      "question": "这个大型 join 该设置多少 memory_limit 和 threads？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "duckdb-Q27",
+      "question": "怎样为远程多用户服务配置 RBAC 和 TLS？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "duckdb-Q28",
+      "question": "DuckDB 在我的实际机器上处理100GB数据需要多久？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "duckdb-Q29",
+      "question": "我的损坏数据库文件怎样恢复所有表？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "duckdb-Q30",
+      "question": "某个 Python wheel 与指定系统 ABI 是否兼容？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "triton",
+  "repository": "triton-inference-server/server",
+  "category": "模型推理服务",
+  "repository_url": "https://github.com/triton-inference-server/server",
+  "commit": "920fc893d21019ada670624623ffc0b7a47442bb",
+  "source_path": "README.md",
+  "source_url": "https://github.com/triton-inference-server/server/blob/920fc893d21019ada670624623ffc0b7a47442bb/README.md",
+  "collected_at": "2026-10-07T08:02:36.605115+00:00",
+  "license_spdx": "BSD-3-Clause",
+  "license_files": [
+    "LICENSE"
+  ],
+  "sha256": "2d59921bdb95c63e3f75fd7b98aefa114dfb98ebcbca22b9aeb0951949242808",
+  "bytes": 14714
+}

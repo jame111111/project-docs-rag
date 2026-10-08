@@ -1,0 +1,16 @@
+{
+  "id": "kubernetes",
+  "repository": "kubernetes/kubernetes",
+  "category": "容器编排",
+  "repository_url": "https://github.com/kubernetes/kubernetes",
+  "commit": "803a939a87ba8afc927a46bca983b856b03febf0",
+  "source_path": "README.md",
+  "source_url": "https://github.com/kubernetes/kubernetes/blob/803a939a87ba8afc927a46bca983b856b03febf0/README.md",
+  "collected_at": "2026-10-07T08:02:36.461128+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE"
+  ],
+  "sha256": "0c1159ea384aa0855eaad87f4595da8fd776553830297f3a7c43db81c7708fbd",
+  "bytes": 4236
+}

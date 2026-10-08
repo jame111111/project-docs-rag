@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "projects": 20,
+  "questions": 600,
+  "retrieval_comparisons": 3600,
+  "answer_records": 600,
+  "model_configured": false
+}

@@ -1,0 +1,17 @@
+{
+  "id": "opensearch",
+  "repository": "opensearch-project/OpenSearch",
+  "category": "分布式搜索",
+  "repository_url": "https://github.com/opensearch-project/OpenSearch",
+  "commit": "d2da1efc2b9aef893e7481921c28a2201f7cebd1",
+  "source_path": "README.md",
+  "source_url": "https://github.com/opensearch-project/OpenSearch/blob/d2da1efc2b9aef893e7481921c28a2201f7cebd1/README.md",
+  "collected_at": "2026-10-07T08:06:12.446579+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE.txt",
+    "NOTICE.txt"
+  ],
+  "sha256": "8bac2d530323f045148b14d9d5f6616bf7c20038ce1b956ade75fd0aaa30c517",
+  "bytes": 3044
+}

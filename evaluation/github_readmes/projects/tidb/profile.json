@@ -1,0 +1,10 @@
+{
+  "id": "readme-tidb",
+  "name": "pingcap/tidb README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/pingcap/tidb/blob/7a3dacb52efe58d28db360ae8639d8838c376544/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

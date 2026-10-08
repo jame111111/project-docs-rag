@@ -1,0 +1,17 @@
+{
+  "id": "spark",
+  "repository": "apache/spark",
+  "category": "分布式计算",
+  "repository_url": "https://github.com/apache/spark",
+  "commit": "6d020ca9295ea5121a831e98ded48dc60061b5f5",
+  "source_path": "README.md",
+  "source_url": "https://github.com/apache/spark/blob/6d020ca9295ea5121a831e98ded48dc60061b5f5/README.md",
+  "collected_at": "2026-10-07T08:02:36.505160+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE",
+    "NOTICE"
+  ],
+  "sha256": "29f014aae8b7a9f0f146188a73619d260a375fcfda1eb8e6b0fe28a74b357612",
+  "bytes": 23367
+}

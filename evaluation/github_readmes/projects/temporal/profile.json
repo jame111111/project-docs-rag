@@ -1,0 +1,10 @@
+{
+  "id": "readme-temporal",
+  "name": "temporalio/temporal README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/temporalio/temporal/blob/e161e3bc28d4e86ce76ae5f83d12c2443e76cb8d/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

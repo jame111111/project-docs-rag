@@ -1,0 +1,10 @@
+{
+  "id": "knowledge-base",
+  "name": "项目文档知识库",
+  "description": "上传 README、部署文档或贡献指南，查询环境要求、启动步骤和注意事项，并查看回答依据。",
+  "source_label": "用户上传的 Markdown 文档",
+  "source_url": "",
+  "question_placeholder": "例如：第一次启动项目，需要先配置哪些服务？",
+  "corpus": "corpus",
+  "examples": []
+}

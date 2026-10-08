@@ -1,0 +1,10 @@
+{
+  "id": "readme-grafana",
+  "name": "grafana/grafana README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/grafana/grafana/blob/8012057edda4c5f3298b774076f0665812a1e630/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

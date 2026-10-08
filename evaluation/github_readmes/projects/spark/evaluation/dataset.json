@@ -1,0 +1,623 @@
+{
+  "version": 3,
+  "product_id": "readme-spark",
+  "corpus_commit": "6d020ca9295ea5121a831e98ded48dc60061b5f5",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "spark-Q01",
+      "question": "Spark 提供哪些语言的高层 API，哪个已弃用？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F01",
+      "reference_points": [
+        "Scala、Java、Python、R；R 标为 Deprecated。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "high-level APIs in Scala, Java, Python, and R (Deprecated)",
+          "start": 97,
+          "end": 155,
+          "section": "Apache Spark"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q02",
+      "question": "会 Python、Java 或 R 能用它吗，R 有什么状态说明？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F01",
+      "reference_points": [
+        "Scala、Java、Python、R；R 标为 Deprecated。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "high-level APIs in Scala, Java, Python, and R (Deprecated)",
+          "start": 97,
+          "end": 155,
+          "section": "Apache Spark"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q03",
+      "question": "Spark 的 SQL、机器学习和流处理工具分别是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F02",
+      "reference_points": [
+        "Spark SQL，MLlib，Structured Streaming。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "rich set of higher-level tools including Spark SQL for SQL and DataFrames,\npandas API on Spark for pandas workloads, MLlib for machine learning, GraphX for graph processing,\nand Structured Streaming for stream processing.",
+          "start": 260,
+          "end": 481,
+          "section": "Apache Spark"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q04",
+      "question": "做表查询、训练算法、持续处理数据，各用哪个模块？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F02",
+      "reference_points": [
+        "Spark SQL，MLlib，Structured Streaming。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "rich set of higher-level tools including Spark SQL for SQL and DataFrames,\npandas API on Spark for pandas workloads, MLlib for machine learning, GraphX for graph processing,\nand Structured Streaming for stream processing.",
+          "start": 260,
+          "end": 481,
+          "section": "Apache Spark"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q05",
+      "question": "如何通过 Maven 构建 Spark，预编译包还要构建吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F03",
+      "reference_points": [
+        "./build/mvn -DskipTests clean package；预编译包不需要此步骤。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "./build/mvn -DskipTests clean package",
+          "start": 20339,
+          "end": 20376,
+          "section": "Apache Spark / Building Spark"
+        },
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "(You do not need to do this if you downloaded a pre-built package.)",
+          "start": 20382,
+          "end": 20449,
+          "section": "Apache Spark / Building Spark"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q06",
+      "question": "下了现成包还需要再编译吗，源码构建命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F03",
+      "reference_points": [
+        "./build/mvn -DskipTests clean package；预编译包不需要此步骤。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "./build/mvn -DskipTests clean package",
+          "start": 20339,
+          "end": 20376,
+          "section": "Apache Spark / Building Spark"
+        },
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "(You do not need to do this if you downloaded a pre-built package.)",
+          "start": 20382,
+          "end": 20449,
+          "section": "Apache Spark / Building Spark"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q07",
+      "question": "如何启动 Spark 的 Scala 交互环境？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F04",
+      "reference_points": [
+        "./bin/spark-shell。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "./bin/spark-shell",
+          "start": 20858,
+          "end": 20875,
+          "section": "Apache Spark / Interactive Scala Shell"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q08",
+      "question": "想直接进入 Scala 命令行试一下，敲什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F04",
+      "reference_points": [
+        "./bin/spark-shell。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "./bin/spark-shell",
+          "start": 20858,
+          "end": 20875,
+          "section": "Apache Spark / Interactive Scala Shell"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q09",
+      "question": "如何启动 Spark 的 Python 交互环境？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F05",
+      "reference_points": [
+        "./bin/pyspark。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "./bin/pyspark",
+          "start": 21110,
+          "end": 21123,
+          "section": "Apache Spark / Interactive Python Shell"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q10",
+      "question": "习惯 Python，有没有现成的交互终端命令？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F05",
+      "reference_points": [
+        "./bin/pyspark。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "./bin/pyspark",
+          "start": 21110,
+          "end": 21123,
+          "section": "Apache Spark / Interactive Python Shell"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q11",
+      "question": "Scala shell 中 range 示例的预期计数是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F06",
+      "reference_points": [
+        "spark.range(1000 * 1000 * 1000).count() 返回 1,000,000,000。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "Try the following command, which should return 1,000,000,000:",
+          "start": 20881,
+          "end": 20942,
+          "section": "Apache Spark / Interactive Scala Shell"
+        },
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "scala> spark.range(1000 * 1000 * 1000).count()",
+          "start": 20953,
+          "end": 20999,
+          "section": "Apache Spark / Interactive Scala Shell"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q12",
+      "question": "那个十亿范围的 count 示例应该输出多少？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F06",
+      "reference_points": [
+        "spark.range(1000 * 1000 * 1000).count() 返回 1,000,000,000。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "Try the following command, which should return 1,000,000,000:",
+          "start": 20881,
+          "end": 20942,
+          "section": "Apache Spark / Interactive Scala Shell"
+        },
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "scala> spark.range(1000 * 1000 * 1000).count()",
+          "start": 20953,
+          "end": 20999,
+          "section": "Apache Spark / Interactive Scala Shell"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q13",
+      "question": "怎样在本地运行 SparkPi 示例？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F07",
+      "reference_points": [
+        "./bin/run-example SparkPi。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "\n./bin/run-example SparkPi\n",
+          "start": 21439,
+          "end": 21466,
+          "section": "Apache Spark / Example Programs"
+        },
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "will run the Pi example locally.",
+          "start": 21471,
+          "end": 21503,
+          "section": "Apache Spark / Example Programs"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q14",
+      "question": "想先跑一遍算圆周率的例子，启动命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F07",
+      "reference_points": [
+        "./bin/run-example SparkPi。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "\n./bin/run-example SparkPi\n",
+          "start": 21439,
+          "end": 21466,
+          "section": "Apache Spark / Example Programs"
+        },
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "will run the Pi example locally.",
+          "start": 21471,
+          "end": 21503,
+          "section": "Apache Spark / Example Programs"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q15",
+      "question": "示例程序目录和通用运行形式是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F08",
+      "reference_points": [
+        "examples 目录；./bin/run-example <class> [params]。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "Spark also comes with several sample programs in the `examples` directory.\nTo run one of them, use `./bin/run-example <class> [params]`.",
+          "start": 21281,
+          "end": 21417,
+          "section": "Apache Spark / Example Programs"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q16",
+      "question": "例子放哪，带参数启动某个例子怎么写？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F08",
+      "reference_points": [
+        "examples 目录；./bin/run-example <class> [params]。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "Spark also comes with several sample programs in the `examples` directory.\nTo run one of them, use `./bin/run-example <class> [params]`.",
+          "start": 21281,
+          "end": 21417,
+          "section": "Apache Spark / Example Programs"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q17",
+      "question": "运行示例时 MASTER 有哪些模式？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "spark-F09",
+      "reference_points": [
+        "spark:// URL、yarn、local 单线程、local[N] N 线程。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "examples to a cluster. This can be spark:// URL,\n\"yarn\" to run on YARN, and \"local\" to run\nlocally with one thread, or \"local[N]\" to run locally with N threads.",
+          "start": 21581,
+          "end": 21741,
+          "section": "Apache Spark / Example Programs"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q18",
+      "question": "想指定集群或本地线程数量，MASTER 可以填什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "spark-F09",
+      "reference_points": [
+        "spark:// URL、yarn、local 单线程、local[N] N 线程。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "examples to a cluster. This can be spark:// URL,\n\"yarn\" to run on YARN, and \"local\" to run\nlocally with one thread, or \"local[N]\" to run locally with N threads.",
+          "start": 21581,
+          "end": 21741,
+          "section": "Apache Spark / Example Programs"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q19",
+      "question": "怎样把 SparkPi 示例提交到 host:7077？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "spark-F10",
+      "reference_points": [
+        "MASTER=spark://host:7077 ./bin/run-example SparkPi。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "MASTER=spark://host:7077 ./bin/run-example SparkPi",
+          "start": 21851,
+          "end": 21901,
+          "section": "Apache Spark / Example Programs"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q20",
+      "question": "不在本地跑，要交给这个 Spark 主节点，命令如何写？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "spark-F10",
+      "reference_points": [
+        "MASTER=spark://host:7077 ./bin/run-example SparkPi。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "MASTER=spark://host:7077 ./bin/run-example SparkPi",
+          "start": 21851,
+          "end": 21901,
+          "section": "Apache Spark / Example Programs"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q21",
+      "question": "运行 Spark 测试有哪些前置步骤和命令？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "spark-F11",
+      "reference_points": [
+        "先 building Spark，再 ./dev/run-tests。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "Testing first requires [building Spark](#building-spark). Once Spark is built, tests\ncan be run using:",
+          "start": 21996,
+          "end": 22098,
+          "section": "Apache Spark / Running Tests"
+        },
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "./dev/run-tests",
+          "start": 22108,
+          "end": 22123,
+          "section": "Apache Spark / Running Tests"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q22",
+      "question": "想跑测试，能不构建就直接运行吗？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "spark-F11",
+      "reference_points": [
+        "先 building Spark，再 ./dev/run-tests。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "Testing first requires [building Spark](#building-spark). Once Spark is built, tests\ncan be run using:",
+          "start": 21996,
+          "end": 22098,
+          "section": "Apache Spark / Running Tests"
+        },
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "./dev/run-tests",
+          "start": 22108,
+          "end": 22123,
+          "section": "Apache Spark / Running Tests"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q23",
+      "question": "README 是否包含完整编程指南，应到哪里查？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "spark-F12",
+      "reference_points": [
+        "README 仅基本安装说明，完整文档和编程指南在项目文档页面。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "You can find the latest Spark documentation, including a programming\nguide, on the [project web page](https://spark.apache.org/documentation.html).\nThis README file only contains basic setup instructions.",
+          "start": 1515,
+          "end": 1719,
+          "section": "Apache Spark / Online Documentation"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q24",
+      "question": "这份首页能查所有开发细节吗，完整资料在哪？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "spark-F12",
+      "reference_points": [
+        "README 仅基本安装说明，完整文档和编程指南在项目文档页面。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-spark-doc",
+          "quote": "You can find the latest Spark documentation, including a programming\nguide, on the [project web page](https://spark.apache.org/documentation.html).\nThis README file only contains basic setup instructions.",
+          "start": 1515,
+          "end": 1719,
+          "section": "Apache Spark / Online Documentation"
+        }
+      ]
+    },
+    {
+      "id": "spark-Q25",
+      "question": "十亿条数据的 join 应设置多少 executor 内存和 shuffle partitions？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "spark-Q26",
+      "question": "连接 MySQL JDBC 时完整的读写 options 和驱动版本是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "spark-Q27",
+      "question": "Structured Streaming 的 watermark 和 checkpoint 完整示例代码是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "spark-Q28",
+      "question": "某个 stage 频繁 OOM 的实际原因是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "spark-Q29",
+      "question": "怎样为生产 Spark 集群配置 Kerberos 的所有步骤？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "spark-Q30",
+      "question": "我这组硬件运行 SparkPi 的准确耗时是多少？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

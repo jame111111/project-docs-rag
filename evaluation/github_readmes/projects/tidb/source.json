@@ -1,0 +1,16 @@
+{
+  "id": "tidb",
+  "repository": "pingcap/tidb",
+  "category": "分布式 SQL 数据库",
+  "repository_url": "https://github.com/pingcap/tidb",
+  "commit": "7a3dacb52efe58d28db360ae8639d8838c376544",
+  "source_path": "README.md",
+  "source_url": "https://github.com/pingcap/tidb/blob/7a3dacb52efe58d28db360ae8639d8838c376544/README.md",
+  "collected_at": "2026-10-07T08:09:13.864084+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE"
+  ],
+  "sha256": "4988138b06f27ec24f2853882e7bfa7cec7a52efae9137313fec7d8f4ce9d5b0",
+  "bytes": 10844
+}

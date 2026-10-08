@@ -1,0 +1,601 @@
+﻿id,question,answerable,split,mode,top_k,reference_points,review,review_notes,run_status,reason,answer,citations,project
+kubernetes-Q01,Kubernetes 管理什么，覆盖单机还是多主机？,True,dev,hybrid_parent,5,"[""跨多个主机管理容器化应用，提供部署、维护和扩缩容机制。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q02,好几台机器上的容器应用能用这个项目管理吗？,True,dev,hybrid_parent,5,"[""跨多个主机管理容器化应用，提供部署、维护和扩缩容机制。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q03,Kubernetes 借鉴了 Google 的哪个系统？,True,dev,hybrid_parent,5,"[""借鉴 Google 使用 Borg 运行大规模生产负载的经验和社区实践。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q04,它的生产集群经验来自哪里？,True,dev,hybrid_parent,5,"[""借鉴 Google 使用 Borg 运行大规模生产负载的经验和社区实践。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q05,Kubernetes 由哪个基金会托管？,True,dev,hybrid_parent,5,"[""Cloud Native Computing Foundation，CNCF。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q06,这个项目归哪个云原生基金会托管？,True,dev,hybrid_parent,5,"[""Cloud Native Computing Foundation，CNCF。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q07,能把 k8s.io/kubernetes 模块直接当作第三方库使用吗？,True,dev,hybrid_parent,5,"[""不支持把该模块及其子包当库使用；应查看已发布组件列表。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q08,我想直接 import Kubernetes 主仓库里的包，这受到支持吗？,True,dev,hybrid_parent,5,"[""不支持把该模块及其子包当库使用；应查看已发布组件列表。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q09,具备 Go 环境时如何从源码构建 Kubernetes？,True,dev,hybrid_parent,5,"[""有可用 Go 环境后 clone、进入 kubernetes、运行 make。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q10,我已经装好 Go，拉代码以后要执行什么？,True,dev,hybrid_parent,5,"[""有可用 Go 环境后 clone、进入 kubernetes、运行 make。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q11,具备 Docker 环境时如何构建 Kubernetes？,True,dev,hybrid_parent,5,"[""clone、进入 kubernetes，执行 make quick-release。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q12,只有可用的 Docker 环境，该怎么构建？,True,dev,hybrid_parent,5,"[""clone、进入 kubernetes，执行 make quick-release。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q13,源码构建和贡献流程的入口在哪个仓库？,True,dev,hybrid_parent,5,"[""community repository，集中提供构建、贡献和联系人信息。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q14,想找编译和提交代码的说明，README 指向哪里？,True,dev,hybrid_parent,5,"[""community repository，集中提供构建、贡献和联系人信息。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q15,遇到 Kubernetes 使用问题应先查什么？,True,dev,hybrid_parent,5,"[""从 troubleshooting guide 开始，按指南流程排查。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q16,服务出问题了，README 建议先从哪份资料排查？,True,dev,hybrid_parent,5,"[""从 troubleshooting guide 开始，按指南流程排查。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q17,在哪里集中查看 Kubernetes 社区会议？,True,dev,hybrid_parent,5,"[""Kubernetes 社区 Calendar。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q18,我想参加社区会议，要去哪里看安排？,True,dev,hybrid_parent,5,"[""Kubernetes 社区 Calendar。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q19,实际采用 Kubernetes 的案例在哪查看？,True,final,hybrid_parent,5,"[""User Case Studies 网站展示真实部署、迁移案例。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q20,想看看别的组织怎么迁移和部署它，README 有入口吗？,True,final,hybrid_parent,5,"[""User Case Studies 网站展示真实部署、迁移案例。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q21,哪个委员会监督 Kubernetes 的治理？,True,final,hybrid_parent,5,"[""Kubernetes Steering Committee，参考 steering 仓库。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q22,项目治理由谁监督，相关仓库是什么？,True,final,hybrid_parent,5,"[""Kubernetes Steering Committee，参考 steering 仓库。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q23,Kubernetes 发布、功能跟踪和待办信息在哪里？,True,final,hybrid_parent,5,"[""Kubernetes Enhancements 仓库。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q24,想追踪新功能和版本路线，应查看哪个仓库？,True,final,hybrid_parent,5,"[""Kubernetes Enhancements 仓库。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q25,三台控制平面的完整 kubeadm 高可用部署配置是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q26,集群默认 DNS 镜像版本和完整配置是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q27,怎样编写拒绝特权容器的 admission policy YAML？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q28,我公司的 2000 节点集群 apiserver 最佳限流参数是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q29,怎样配置双栈 CNI 的完整网络参数？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+kubernetes-Q30,生产集群 etcd 备份恢复的完整命令是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],kubernetes
+etcd-Q01,main 分支能视为稳定版吗？,True,dev,hybrid_parent,5,"[""main 开发期间可能不稳定甚至损坏，稳定版应查看 releases。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q02,线上部署能直接把主分支当稳定版本吗？,True,dev,hybrid_parent,5,"[""main 开发期间可能不稳定甚至损坏，稳定版应查看 releases。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q03,etcd 的用户 API 使用什么协议？,True,dev,hybrid_parent,5,"[""用户 API 使用 gRPC。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q04,客户端和它交互，README 说用哪种 RPC 接口？,True,dev,hybrid_parent,5,"[""用户 API 使用 gRPC。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q05,etcd 的 TLS 和客户端认证能力如何？,True,dev,hybrid_parent,5,"[""自动 TLS，可选客户端证书认证。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q06,通信加密能配客户端证书认证吗？,True,dev,hybrid_parent,5,"[""自动 TLS，可选客户端证书认证。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q07,etcd 使用什么语言和一致性算法？,True,dev,hybrid_parent,5,"[""Go 编写，Raft 管理高可用复制日志。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q08,它用什么写的，又怎样维护高可用复制日志？,True,dev,hybrid_parent,5,"[""Go 编写，Raft 管理高可用复制日志。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q09,预编译 etcd 支持哪些平台，从哪里获取？,True,dev,hybrid_parent,5,"[""release page 提供 OSX、Linux、Windows、Docker 预编译发行。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q10,不想自己编译，Windows 和 Linux 能下载现成程序吗？,True,dev,hybrid_parent,5,"[""release page 提供 OSX、Linux、Windows、Docker 预编译发行。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q11,发行二进制移动到系统路径后怎样启动？,True,dev,hybrid_parent,5,"[""移到 /usr/local/bin/ 后执行 etcd。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q12,已经下载程序，怎样以后直接敲 etcd 启动？,True,dev,hybrid_parent,5,"[""移到 /usr/local/bin/ 后执行 etcd。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q13,etcd 客户端和节点通信端口分别是什么？,True,dev,hybrid_parent,5,"[""2379 客户端，2380 peer 节点通信。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q14,2379 和 2380 哪个给客户端，哪个给节点用？,True,dev,hybrid_parent,5,"[""2379 客户端，2380 peer 节点通信。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q15,怎样用 etcdctl 写入并读取 mykey？,True,dev,hybrid_parent,5,"[""etcdctl put mykey \""this is awesome\""，然后 etcdctl get mykey。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q16,想先存一句话再拿出来，有什么命令示例？,True,dev,hybrid_parent,5,"[""etcdctl put mykey \""this is awesome\""，然后 etcdctl get mykey。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q17,启动本地示例集群需要先装什么，运行什么命令？,True,dev,hybrid_parent,5,"[""先装 goreman，再 goreman start，使用 Procfile 示例。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q18,想在本机拉起几个节点，先准备哪个工具？,True,dev,hybrid_parent,5,"[""先装 goreman，再 goreman start，使用 Procfile 示例。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q19,本地示例集群有几个成员，代理是否必需？,True,final,hybrid_parent,5,"[""三个成员 infra1、infra2、infra3，grpc-proxy 可选。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q20,这个本地演示会启动哪些节点，grpc-proxy 必须开吗？,True,final,hybrid_parent,5,"[""三个成员 infra1、infra2、infra3，grpc-proxy 可选。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q21,Go 程序怎样安装 etcd v3 客户端？,True,final,hybrid_parent,5,"[""go get go.etcd.io/etcd/client/v3。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q22,我的 Go 项目要连它，应该 go get 哪个包？,True,final,hybrid_parent,5,"[""go get go.etcd.io/etcd/client/v3。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q23,提交 etcd bug 前应检查什么资料？,True,final,hybrid_parent,5,"[""先检查 FAQ 是否已覆盖问题，再参考 reporting bugs 指南。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q24,准备提 issue，README 要求先确认什么？,True,final,hybrid_parent,5,"[""先检查 FAQ 是否已覆盖问题，再参考 reporting bugs 指南。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q25,怎样完整生成 CA、服务器证书和客户端证书并配置 mTLS？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q26,怎样用 etcdutl 从快照恢复一个三节点集群？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q27,我的 500GB 数据库自动压缩保留时间应该设置多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q28,怎样安全移除故障成员再添加替代节点？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q29,etcd 中某个租约的 TTL 完整续租调用示例是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],etcd
+etcd-Q30,生产集群跨三个地域的最佳选举超时时间是多少？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],etcd
+spark-Q01,Spark 提供哪些语言的高层 API，哪个已弃用？,True,dev,hybrid_parent,5,"[""Scala、Java、Python、R；R 标为 Deprecated。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q02,会 Python、Java 或 R 能用它吗，R 有什么状态说明？,True,dev,hybrid_parent,5,"[""Scala、Java、Python、R；R 标为 Deprecated。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q03,Spark 的 SQL、机器学习和流处理工具分别是什么？,True,dev,hybrid_parent,5,"[""Spark SQL，MLlib，Structured Streaming。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q04,做表查询、训练算法、持续处理数据，各用哪个模块？,True,dev,hybrid_parent,5,"[""Spark SQL，MLlib，Structured Streaming。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q05,如何通过 Maven 构建 Spark，预编译包还要构建吗？,True,dev,hybrid_parent,5,"[""./build/mvn -DskipTests clean package；预编译包不需要此步骤。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q06,下了现成包还需要再编译吗，源码构建命令是什么？,True,dev,hybrid_parent,5,"[""./build/mvn -DskipTests clean package；预编译包不需要此步骤。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q07,如何启动 Spark 的 Scala 交互环境？,True,dev,hybrid_parent,5,"[""./bin/spark-shell。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q08,想直接进入 Scala 命令行试一下，敲什么？,True,dev,hybrid_parent,5,"[""./bin/spark-shell。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q09,如何启动 Spark 的 Python 交互环境？,True,dev,hybrid_parent,5,"[""./bin/pyspark。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q10,习惯 Python，有没有现成的交互终端命令？,True,dev,hybrid_parent,5,"[""./bin/pyspark。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q11,Scala shell 中 range 示例的预期计数是什么？,True,dev,hybrid_parent,5,"[""spark.range(1000 * 1000 * 1000).count() 返回 1,000,000,000。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q12,那个十亿范围的 count 示例应该输出多少？,True,dev,hybrid_parent,5,"[""spark.range(1000 * 1000 * 1000).count() 返回 1,000,000,000。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q13,怎样在本地运行 SparkPi 示例？,True,dev,hybrid_parent,5,"[""./bin/run-example SparkPi。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q14,想先跑一遍算圆周率的例子，启动命令是什么？,True,dev,hybrid_parent,5,"[""./bin/run-example SparkPi。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q15,示例程序目录和通用运行形式是什么？,True,dev,hybrid_parent,5,"[""examples 目录；./bin/run-example <class> [params]。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q16,例子放哪，带参数启动某个例子怎么写？,True,dev,hybrid_parent,5,"[""examples 目录；./bin/run-example <class> [params]。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q17,运行示例时 MASTER 有哪些模式？,True,dev,hybrid_parent,5,"[""spark:// URL、yarn、local 单线程、local[N] N 线程。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q18,想指定集群或本地线程数量，MASTER 可以填什么？,True,dev,hybrid_parent,5,"[""spark:// URL、yarn、local 单线程、local[N] N 线程。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q19,怎样把 SparkPi 示例提交到 host:7077？,True,final,hybrid_parent,5,"[""MASTER=spark://host:7077 ./bin/run-example SparkPi。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q20,不在本地跑，要交给这个 Spark 主节点，命令如何写？,True,final,hybrid_parent,5,"[""MASTER=spark://host:7077 ./bin/run-example SparkPi。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q21,运行 Spark 测试有哪些前置步骤和命令？,True,final,hybrid_parent,5,"[""先 building Spark，再 ./dev/run-tests。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q22,想跑测试，能不构建就直接运行吗？,True,final,hybrid_parent,5,"[""先 building Spark，再 ./dev/run-tests。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q23,README 是否包含完整编程指南，应到哪里查？,True,final,hybrid_parent,5,"[""README 仅基本安装说明，完整文档和编程指南在项目文档页面。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q24,这份首页能查所有开发细节吗，完整资料在哪？,True,final,hybrid_parent,5,"[""README 仅基本安装说明，完整文档和编程指南在项目文档页面。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q25,十亿条数据的 join 应设置多少 executor 内存和 shuffle partitions？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q26,连接 MySQL JDBC 时完整的读写 options 和驱动版本是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q27,Structured Streaming 的 watermark 和 checkpoint 完整示例代码是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q28,某个 stage 频繁 OOM 的实际原因是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q29,怎样为生产 Spark 集群配置 Kerberos 的所有步骤？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],spark
+spark-Q30,我这组硬件运行 SparkPi 的准确耗时是多少？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],spark
+triton-Q01,Triton 可服务哪些框架的模型？,True,dev,hybrid_parent,5,"[""支持 TensorRT、PyTorch、ONNX、OpenVINO、Python、RAPIDS FIL 等。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q02,PyTorch、ONNX 和 TensorRT 模型能交给它部署吗？,True,dev,hybrid_parent,5,"[""支持 TensorRT、PyTorch、ONNX、OpenVINO、Python、RAPIDS FIL 等。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q03,Triton 支持哪些硬件和部署环境？,True,dev,hybrid_parent,5,"[""云、数据中心、边缘、嵌入式；NVIDIA GPU、x86/ARM CPU、AWS Inferentia。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q04,只在 NVIDIA GPU 上能用，还是 CPU、边缘设备也支持？,True,dev,hybrid_parent,5,"[""云、数据中心、边缘、嵌入式；NVIDIA GPU、x86/ARM CPU、AWS Inferentia。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q05,Triton 对有状态模型提供哪些机制？,True,dev,hybrid_parent,5,"[""Sequence batching 和 implicit state management。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q06,模型需要保持状态时，有什么批处理和状态管理能力？,True,dev,hybrid_parent,5,"[""Sequence batching 和 implicit state management。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q07,怎样扩展 Triton 后端及前后处理？,True,dev,hybrid_parent,5,"[""Backend API 可添加自定义后端和前后处理。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q08,有自定义模型和前处理，README 指向哪种扩展接口？,True,dev,hybrid_parent,5,"[""Backend API 可添加自定义后端和前后处理。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q09,Triton 模型流水线有哪些组织方式？,True,dev,hybrid_parent,5,"[""Ensembling 或 Business Logic Scripting BLS。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q10,多个模型串起来，README 说支持哪两种方法？,True,dev,hybrid_parent,5,"[""Ensembling 或 Business Logic Scripting BLS。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q11,Triton 网络推理协议基于什么标准？,True,dev,hybrid_parent,5,"[""HTTP/REST、GRPC，基于 KServe protocol。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q12,用 HTTP 或 gRPC 调用模型，README 提到哪个社区协议？,True,dev,hybrid_parent,5,"[""HTTP/REST、GRPC，基于 KServe protocol。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q13,能把 Triton 直接嵌入应用进程吗？,True,dev,hybrid_parent,5,"[""C API 和 Java API 可直接链接进应用。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q14,边缘设备不想单独起服务器，有什么进程内 API？,True,dev,hybrid_parent,5,"[""C API 和 Java API 可直接链接进应用。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q15,Triton 的 Metrics 可观察哪些指标？,True,dev,hybrid_parent,5,"[""GPU 利用率、服务器吞吐和延迟等。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q16,想看显卡利用率、延迟和吞吐，README 支持吗？,True,dev,hybrid_parent,5,"[""GPU 利用率、服务器吞吐和延迟等。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q17,快速示例如何准备模型仓库？,True,dev,hybrid_parent,5,"[""clone r26.09，进入 server/docs/examples，执行 fetch_models.sh。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q18,第一次跑示例，需要拉哪个分支并执行什么脚本？,True,dev,hybrid_parent,5,"[""clone r26.09，进入 server/docs/examples，执行 fetch_models.sh。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q19,快速示例启动服务时挂载什么目录，加载什么模型？,True,final,hybrid_parent,5,"[""model_repository 挂 /models，模型仓库 /models，explicit 模式加载 densenet_onnx。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q20,那条 docker 命令把模型映射到哪里，实际加载哪个模型？,True,final,hybrid_parent,5,"[""model_repository 挂 /models，模型仓库 /models，explicit 模式加载 densenet_onnx。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q21,README 推荐怎样构建和使用 Triton？,True,final,hybrid_parent,5,"[""推荐 Docker images。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q22,源码部署和 Docker 部署，首页推荐哪个方式？,True,final,hybrid_parent,5,"[""推荐 Docker images。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q23,自己的模型交给 Triton 前需要准备什么？,True,final,hybrid_parent,5,"[""模型放进 model repository；按模型类型和能力需要可能建立 model configuration。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q24,不是官方例子，部署模型前先放哪里，还可能要建什么配置？,True,final,hybrid_parent,5,"[""模型放进 model repository；按模型类型和能力需要可能建立 model configuration。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q25,这个示例模型的完整 config.pbtxt 每个字段是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q26,如何配置生产 TLS 和身份认证网关的完整文件？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q27,8张A100服务私有70B模型的最佳动态拼批参数是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q28,我上传的 ONNX 权重是否与当前 Triton 版本兼容？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q29,完整的 Kubernetes 多租户资源隔离 YAML 是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],triton
+triton-Q30,在我公司的网络下推理请求的 P99 延迟是多少？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],triton
+vllm-Q01,vLLM 的主要用途是什么？,True,dev,hybrid_parent,5,"[""快速易用的 LLM inference and serving 库。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q02,这个项目是训练模型还是提供大模型推理服务？,True,dev,hybrid_parent,5,"[""快速易用的 LLM inference and serving 库。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q03,vLLM 怎样管理 attention 的 key/value 内存？,True,dev,hybrid_parent,5,"[""PagedAttention。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q04,KV cache 用什么机制提高内存管理效率？,True,dev,hybrid_parent,5,"[""PagedAttention。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q05,vLLM 支持哪些请求批处理和缓存能力？,True,dev,hybrid_parent,5,"[""Continuous batching、chunked prefill、prefix caching。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q06,不断进来的请求可以持续拼批，能缓存相同前缀吗？,True,dev,hybrid_parent,5,"[""Continuous batching、chunked prefill、prefix caching。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q07,vLLM 支持哪些分布式并行形式？,True,dev,hybrid_parent,5,"[""Tensor、pipeline、data、expert、context parallelism。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q08,模型太大想分机器推理，可以按哪些维度并行？,True,dev,hybrid_parent,5,"[""Tensor、pipeline、data、expert、context parallelism。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q09,vLLM 结构化输出使用哪些库？,True,dev,hybrid_parent,5,"[""xgrammar 或 guidance。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q10,希望生成 JSON 等受约束结果，README 提到什么实现？,True,dev,hybrid_parent,5,"[""xgrammar 或 guidance。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q11,vLLM 服务接口兼容哪些 API 协议？,True,dev,hybrid_parent,5,"[""OpenAI-compatible API、Anthropic Messages API、gRPC。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q12,现有 OpenAI 客户端能连吗，另外还支持什么协议？,True,dev,hybrid_parent,5,"[""OpenAI-compatible API、Anthropic Messages API、gRPC。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q13,vLLM 支持哪些 CPU 架构和主要 GPU？,True,dev,hybrid_parent,5,"[""NVIDIA、AMD、Intel GPU；x86/ARM/PowerPC CPU，另有硬件插件。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q14,没有 NVIDIA 卡，AMD、Intel 或 ARM 机器是否列为支持？,True,dev,hybrid_parent,5,"[""NVIDIA、AMD、Intel GPU；x86/ARM/PowerPC CPU，另有硬件插件。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q15,vLLM multi-LoRA 支持哪些层？,True,dev,hybrid_parent,5,"[""dense 和 MoE layers 的 efficient multi-LoRA。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q16,想同时服务多套 LoRA，MoE 层也支持吗？,True,dev,hybrid_parent,5,"[""dense 和 MoE layers 的 efficient multi-LoRA。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q17,vLLM 是否支持检索嵌入模型，有哪些例子？,True,dev,hybrid_parent,5,"[""支持 E5-Mistral、GTE、ColBERT 等 embedding and retrieval models。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q18,不生成文本，只做向量检索的模型能跑吗？,True,dev,hybrid_parent,5,"[""支持 E5-Mistral、GTE、ColBERT 等 embedding and retrieval models。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q19,安装 vLLM 推荐哪种工具，命令是什么？,True,final,hybrid_parent,5,"[""推荐 uv，也可 pip；uv pip install vllm。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q20,第一次安装，README 推荐 uv 还是 pip，具体怎么敲？,True,final,hybrid_parent,5,"[""推荐 uv，也可 pip；uv pip install vllm。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q21,vLLM 的技术问题与用户交流分别在哪里？,True,final,hybrid_parent,5,"[""技术问题和功能请求用 GitHub Issues，用户交流用 vLLM Forum。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q22,遇到 bug 要去哪提，想和其他使用者讨论去哪里？,True,final,hybrid_parent,5,"[""技术问题和功能请求用 GitHub Issues，用户交流用 vLLM Forum。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q23,vLLM 安全漏洞应通过哪个入口报告？,True,final,hybrid_parent,5,"[""GitHub Security Advisories。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q24,发现安全问题，README 指定哪个通道？,True,final,hybrid_parent,5,"[""GitHub Security Advisories。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q25,启动私有 Qwen 模型并开启鉴权的完整 serve 命令是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q26,8张H100运行70B模型的最优并行和显存参数是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q27,当前版本与某个具体 NVIDIA 驱动的兼容表是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q28,如何设置 TLS 证书及私有网关的完整配置？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q29,我的特定请求为什么产生乱码，日志根因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],vllm
+vllm-Q30,怎样从旧版本生产实例无停机迁移 KV cache？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],vllm
+pytorch-Q01,torch、torch.autograd、torch.nn 分别负责什么？,True,dev,hybrid_parent,5,"[""torch 张量库，autograd tape-based 自动微分，nn 神经网络并深度集成 autograd。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q02,张量、自动求导和神经网络在它里面怎么分工？,True,dev,hybrid_parent,5,"[""torch 张量库，autograd tape-based 自动微分，nn 神经网络并深度集成 autograd。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q03,torch.multiprocessing 与普通 multiprocessing 有什么特点？,True,dev,hybrid_parent,5,"[""跨进程共享 torch Tensor 内存，适合数据加载与 Hogwild。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q04,跨进程加载数据，PyTorch 怎么处理 Tensor 内存？,True,dev,hybrid_parent,5,"[""跨进程共享 torch Tensor 内存，适合数据加载与 Hogwild。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q05,PyTorch Tensor 可以放在哪些设备？,True,dev,hybrid_parent,5,"[""CPU 或 GPU。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q06,张量必须在显卡上吗，也能放 CPU 吗？,True,dev,hybrid_parent,5,"[""CPU 或 GPU。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q07,PyTorch 使用什么自动微分方式，网络行为能动态变化吗？,True,dev,hybrid_parent,5,"[""reverse-mode auto-differentiation，支持动态变化网络行为。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q08,前向逻辑变化是否必须重新固定整个网络结构？,True,dev,hybrid_parent,5,"[""reverse-mode auto-differentiation，支持动态变化网络行为。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q09,PyTorch 自定义 C/C++ 层是否需要手写 wrapper？,True,dev,hybrid_parent,5,"[""提供便捷 extension API，无需 wrapper code。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q10,想用 C++ 扩展自己的层，有什么接口，包装代码要自己写吗？,True,dev,hybrid_parent,5,"[""提供便捷 extension API，无需 wrapper code。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q11,源码构建 PyTorch 的 Python、编译器、磁盘条件是什么？,True,dev,hybrid_parent,5,"[""Python3.10+，完整 C++20 编译器；Linux gcc11.3+；Windows VS工具；至少10GB；首次30–60分钟。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q12,从零编译该准备哪些版本，至少留多少空间？,True,dev,hybrid_parent,5,"[""Python3.10+，完整 C++20 编译器；Linux gcc11.3+；Windows VS工具；至少10GB；首次30–60分钟。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q13,Visual Studio Code 是否默认包含 PyTorch 需要的构建工具？,True,dev,hybrid_parent,5,"[""不包含，需要 Visual C++ BuildTools 或对应 VS版本。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q14,已经装 VS Code，Windows 编译工具就齐了吗？,True,dev,hybrid_parent,5,"[""不包含，需要 Visual C++ BuildTools 或对应 VS版本。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q15,PyTorch 源码构建必须使用 Conda 环境吗？,True,dev,hybrid_parent,5,"[""不必须，可标准虚拟环境如 uv，但系统要装 CUDA/MKL 等非 pip 依赖。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q16,我只有 uv 虚拟环境，不用 Conda 能编译吗？,True,dev,hybrid_parent,5,"[""不必须，可标准虚拟环境如 uv，但系统要装 CUDA/MKL 等非 pip 依赖。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q17,CUDA 构建需要哪些额外依赖？,True,dev,hybrid_parent,5,"[""受支持 CUDA，cuDNN9.0+，与 CUDA 兼容的编译器。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q18,想让编译后的 PyTorch 用 NVIDIA GPU，要装什么？,True,dev,hybrid_parent,5,"[""受支持 CUDA，cuDNN9.0+，与 CUDA 兼容的编译器。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q19,ROCm 构建的平台和自定义路径要求是什么？,True,final,hybrid_parent,5,"[""ROCm4.0+，仅 Linux；不同目录设 ROCM_PATH。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q20,AMD 环境只支持哪些系统，没装 /opt/rocm 怎么指定？,True,final,hybrid_parent,5,"[""ROCm4.0+，仅 Linux；不同目录设 ROCM_PATH。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q21,PyTorch 如何在构建时关闭 CUDA、ROCm、Intel GPU？,True,final,hybrid_parent,5,"[""USE_CUDA=0、USE_ROCM=0、USE_XPU=0。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q22,只想编 CPU 版，这三种 GPU 支持分别怎么关？,True,final,hybrid_parent,5,"[""USE_CUDA=0、USE_ROCM=0、USE_XPU=0。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q23,更新已有 PyTorch checkout 后如何同步子模块？,True,final,hybrid_parent,5,"[""git submodule sync，git submodule update --init --recursive。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q24,已经拉过仓库，再更新时子模块应该执行哪两步？,True,final,hybrid_parent,5,"[""git submodule sync，git submodule update --init --recursive。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q25,怎样为我这份私有数据集选择学习率和 batch size？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q26,torch distributed 多机训练的完整初始化与故障恢复代码是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q27,我这张显卡与指定 CUDA 驱动的完整兼容矩阵是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q28,我的训练损失一直 NaN 的实际根因是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q29,怎样配置生产 Kubernetes 训练任务的完整 YAML？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],pytorch
+pytorch-Q30,这个模型在我电脑上准确需要多少显存和训练时间？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],pytorch
+tensorflow-Q01,TensorFlow 哪些语言 API 稳定，其他语言怎样承诺兼容性？,True,dev,hybrid_parent,5,"[""Python、C++ 稳定；其他语言 API 不保证向后兼容。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q02,Python 和 C++ 接口稳定吗，其他语言也保证向后兼容吗？,True,dev,hybrid_parent,5,"[""Python、C++ 稳定；其他语言 API 不保证向后兼容。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q03,TensorFlow 当前发行版如何通过 pip 安装？,True,dev,hybrid_parent,5,"[""pip install tensorflow。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q04,初次安装正常版，包名是什么？,True,dev,hybrid_parent,5,"[""pip install tensorflow。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q05,CPU-only TensorFlow 包如何安装？,True,dev,hybrid_parent,5,"[""pip install tensorflow-cpu。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q06,没有 GPU，想装小一些的 CPU 版怎么敲？,True,dev,hybrid_parent,5,"[""pip install tensorflow-cpu。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q07,TensorFlow 如何升级到最新版本？,True,dev,hybrid_parent,5,"[""在安装命令加 --upgrade。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q08,之前已经装了，pip 命令要加什么参数更新？,True,dev,hybrid_parent,5,"[""在安装命令加 --upgrade。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q09,TensorFlow nightly 测试包有哪些？,True,dev,hybrid_parent,5,"[""tf-nightly 和 tf-nightly-cpu。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q10,想试最新每夜构建，普通和 CPU 包叫什么？,True,dev,hybrid_parent,5,"[""tf-nightly 和 tf-nightly-cpu。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q11,DirectX 和 MacOS-metal 的 TensorFlow 支持通过什么提供？,True,dev,hybrid_parent,5,"[""Device Plugins。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q12,不是 CUDA 的这两类设备，首页说怎样支持？,True,dev,hybrid_parent,5,"[""Device Plugins。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q13,第一个 TensorFlow 加法程序如何验证安装？,True,dev,hybrid_parent,5,"[""import tensorflow as tf；tf.add(1,2).numpy() 返回3。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q14,装好后想算 1+2，调用什么，返回多少？,True,dev,hybrid_parent,5,"[""import tensorflow as tf；tf.add(1,2).numpy() 返回3。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q15,TensorFlow 字符串常量示例返回什么？,True,dev,hybrid_parent,5,"[""tf.constant，hello.numpy() 得到字节串 b'Hello, TensorFlow!'。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q16,Hello 常量转 numpy 后是什么结果？,True,dev,hybrid_parent,5,"[""tf.constant，hello.numpy() 得到字节串 b'Hello, TensorFlow!'。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q17,参与 TensorFlow 贡献前需要遵循什么？,True,dev,hybrid_parent,5,"[""Contribution Guidelines、Code of Conduct。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q18,提交贡献前应读哪些指南和参与规则？,True,dev,hybrid_parent,5,"[""Contribution Guidelines、Code of Conduct。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q19,TensorFlow bug、一般讨论、具体问题分别在哪？,True,final,hybrid_parent,5,"[""GitHub Issues 跟踪请求和bugs；Forum一般讨论；Stack Overflow具体问题。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q20,提缺陷、聊天和问具体技术题，要去哪些平台？,True,final,hybrid_parent,5,"[""GitHub Issues 跟踪请求和bugs；Forum一般讨论；Stack Overflow具体问题。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q21,为指定 TensorFlow 版本打补丁的顺序是什么？,True,final,hybrid_parent,5,"[""切对应分支、应用变化解决冲突、通过测试、从源码构建pip包。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q22,要回补安全修复到某个版本，不能只 cherry-pick 就结束吧？,True,final,hybrid_parent,5,"[""切对应分支、应用变化解决冲突、通过测试、从源码构建pip包。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q23,TensorFlow 发布和安全更新公告在哪订阅？,True,final,hybrid_parent,5,"[""announce@tensorflow.org。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q24,想及时获知版本和安全消息，README 给什么订阅入口？,True,final,hybrid_parent,5,"[""announce@tensorflow.org。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q25,当前发行版与我的具体 CUDA、驱动、cuDNN 的完整兼容矩阵是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q26,如何配置多 TPU 分布式训练的完整启动参数？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q27,训练私有图像数据集的最佳学习率是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q28,这个模型转 TensorFlow Lite 的全部优化代码是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q29,我的 pip 安装日志里 DLL 加载失败的根因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+tensorflow-Q30,如何实现完整的 differential privacy 训练步骤？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tensorflow
+clickhouse-Q01,ClickHouse 是什么类型的数据库，主要面向什么任务？,True,dev,hybrid_parent,5,"[""开源列式 DBMS，用于实时分析报表。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q02,它按行还是按列存，适合做什么报表？,True,dev,hybrid_parent,5,"[""开源列式 DBMS，用于实时分析报表。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q03,README 安装指引列出了哪些操作系统？,True,dev,hybrid_parent,5,"[""Linux、macOS、FreeBSD。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q04,首页那条安装命令适用于哪些系统？,True,dev,hybrid_parent,5,"[""Linux、macOS、FreeBSD。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q05,README 展示的 ClickHouse 安装命令是什么？,True,dev,hybrid_parent,5,"[""curl https://clickhouse.com/ | sh；仅为原文命令，不在测试中执行。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q06,本机安装的那条命令怎么写？,True,dev,hybrid_parent,5,"[""curl https://clickhouse.com/ | sh；仅为原文命令，不在测试中执行。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q07,不安装本地 ClickHouse 能怎样试用？,True,dev,hybrid_parent,5,"[""可免费试用 ClickHouse Cloud。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q08,只想先试着查点数据，能用什么托管入口？,True,dev,hybrid_parent,5,"[""可免费试用 ClickHouse Cloud。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q09,小型 ClickHouse 集群的搭建查询教程入口在哪？,True,dev,hybrid_parent,5,"[""Tutorial 链接，说明搭建和查询 small ClickHouse cluster。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q10,想从小集群跑通查询，首页指向哪份教程？,True,dev,hybrid_parent,5,"[""Tutorial 链接，说明搭建和查询 small ClickHouse cluster。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q11,深入文档和产品概览分别在哪查看？,True,dev,hybrid_parent,5,"[""Official website 看概览，Documentation 看深入资料。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q12,想先了解整体再读细节，应点首页的哪些入口？,True,dev,hybrid_parent,5,"[""Official website 看概览，Documentation 看深入资料。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q13,ClickHouse 用户实时交流渠道有哪些？,True,dev,hybrid_parent,5,"[""Slack 和 Telegram。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q14,我想找其他用户聊使用问题，README 提到哪里？,True,dev,hybrid_parent,5,"[""Slack 和 Telegram。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q15,ClickHouse 博客提供哪类内容？,True,dev,hybrid_parent,5,"[""Blog 有相关文章、公告与活动报告。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q16,想看技术文章、公告和活动回顾，哪个入口合适？,True,dev,hybrid_parent,5,"[""Blog 有相关文章、公告与活动报告。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q17,如何在浏览器中带语法高亮查看 ClickHouse 源码？,True,dev,hybrid_parent,5,"[""github.dev Code Browser。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q18,不 clone 仓库，首页有在线代码浏览器吗？,True,dev,hybrid_parent,5,"[""github.dev Code Browser。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q19,怎样与 ClickHouse 专家讨论自己的用例？,True,final,hybrid_parent,5,"[""Contact us 链接用于讨论 use case。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q20,想请项目专家看看我的业务场景，README 提供什么入口？,True,final,hybrid_parent,5,"[""Contact us 链接用于讨论 use case。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q21,在哪里集中查看 ClickHouse 发布演示与视频？,True,final,hybrid_parent,5,"[""ClickHouse Theater 和 YouTube Playlist。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q22,错过发布讲解了，去哪补录像和演示？,True,final,hybrid_parent,5,"[""ClickHouse Theater 和 YouTube Playlist。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q23,想申请在 ClickHouse 活动分享，可以通过哪里？,True,final,hybrid_parent,5,"[""Upcoming Events 的 speaking apply 表单。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q24,有个主题想去 meetup 演讲，README 有没有报名入口？,True,final,hybrid_parent,5,"[""Upcoming Events 的 speaking apply 表单。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q25,怎样为三分片两副本生产集群编写完整 XML 配置？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q26,MergeTree 表的所有建表字段及分区策略该如何写？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q27,默认 HTTP 和 native 端口分别是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q28,怎样生成 TLS 证书并为用户授予最小权限？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q29,我这条 SQL 执行很慢的实际执行计划原因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+clickhouse-Q30,如何执行从某个具体旧版本到26.9的完整升级步骤？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],clickhouse
+duckdb-Q01,DuckDB 主要是什么数据库？,True,dev,hybrid_parent,5,"[""高性能分析数据库，追求快速、可靠、可移植、易用。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q02,它适合做事务还是分析，首页怎样定位？,True,dev,hybrid_parent,5,"[""高性能分析数据库，追求快速、可靠、可移植、易用。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q03,DuckDB 支持哪些复杂 SQL 能力？,True,dev,hybrid_parent,5,"[""任意及嵌套相关子查询、窗口函数、collations、arrays/structs/maps。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q04,相关子查询、窗口函数和复杂类型都支持吗？,True,dev,hybrid_parent,5,"[""任意及嵌套相关子查询、窗口函数、collations、arrays/structs/maps。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q05,DuckDB 有哪些客户端形式？,True,dev,hybrid_parent,5,"[""独立 CLI 及 Python、R、Java、Wasm 等客户端。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q06,除了终端，Python、Java 和浏览器能用吗？,True,dev,hybrid_parent,5,"[""独立 CLI 及 Python、R、Java、Wasm 等客户端。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q07,DuckDB 与哪些数据分析包深度集成？,True,dev,hybrid_parent,5,"[""pandas 和 dplyr。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q08,已经用 pandas 或 dplyr，README 提到能集成吗？,True,dev,hybrid_parent,5,"[""pandas 和 dplyr。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q09,查询 CSV 文件的示例 SQL 是什么？,True,dev,hybrid_parent,5,"[""SELECT * FROM 'myfile.csv';，FROM 引用文件。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q10,不先建表，怎么直接读取 myfile.csv？,True,dev,hybrid_parent,5,"[""SELECT * FROM 'myfile.csv';，FROM 引用文件。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q11,查询 Parquet 文件的示例 SQL 是什么？,True,dev,hybrid_parent,5,"[""SELECT * FROM 'myfile.parquet';。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q12,myfile.parquet 能直接查吗，怎么写？,True,dev,hybrid_parent,5,"[""SELECT * FROM 'myfile.parquet';。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q13,开发 DuckDB 需要哪些工具和语言标准？,True,dev,hybrid_parent,5,"[""CMake、Python 3、兼容 C++17 的编译器。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q14,想从源码编译，要先装什么版本的工具？,True,dev,hybrid_parent,5,"[""CMake、Python 3、兼容 C++17 的编译器。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q15,源码普通构建与调试构建命令是什么？,True,dev,hybrid_parent,5,"[""根目录 make，调试版 make debug。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q16,正常编译和不优化的 debug 版分别怎么构建？,True,dev,hybrid_parent,5,"[""根目录 make，调试版 make debug。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q17,修改 DuckDB 后应运行哪些单元验证命令？,True,dev,hybrid_parent,5,"[""make unit 和 make allunit。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q18,改了代码，README 要求用什么命令确认没问题？,True,dev,hybrid_parent,5,"[""make unit 和 make allunit。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q19,DuckDB 性能测试如何构建和执行？,True,final,hybrid_parent,5,"[""BUILD_BENCHMARK=1 BUILD_TPCH=1 make，根目录执行 benchmark_runner。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q20,想跑它的标准 benchmark，需要开什么构建开关？,True,final,hybrid_parent,5,"[""BUILD_BENCHMARK=1 BUILD_TPCH=1 make，根目录执行 benchmark_runner。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q21,DuckDB 安装详细步骤在哪查看？,True,final,hybrid_parent,5,"[""installation page。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q22,README 没列安装命令，它指向哪里？,True,final,hybrid_parent,5,"[""installation page。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q23,DuckDB 的支持与生命周期信息入口是什么？,True,final,hybrid_parent,5,"[""Support Options 和 endoflife.date 专页。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q24,需要支持服务或查版本停止维护时间，该点哪里？,True,final,hybrid_parent,5,"[""Support Options 和 endoflife.date 专页。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q25,完整的 S3 secret 创建语句和凭证参数是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q26,这个大型 join 该设置多少 memory_limit 和 threads？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q27,怎样为远程多用户服务配置 RBAC 和 TLS？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q28,DuckDB 在我的实际机器上处理100GB数据需要多久？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q29,我的损坏数据库文件怎样恢复所有表？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],duckdb
+duckdb-Q30,某个 Python wheel 与指定系统 ABI 是否兼容？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],duckdb
+milvus-Q01,Milvus 支持什么部署架构和硬件加速？,True,dev,hybrid_parent,5,"[""Go/C++，CPU/GPU加速，distributed K8s-native架构，可横向扩展。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q02,向量多了能横向扩展吗，CPU/GPU 都能加速吗？,True,dev,hybrid_parent,5,"[""Go/C++，CPU/GPU加速，distributed K8s-native架构，可横向扩展。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q03,Milvus 在单机和 Python 快速试用有哪些版本？,True,dev,hybrid_parent,5,"[""Standalone单机，Milvus Lite轻量Python pip快速试用。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q04,不建分布式集群，单机或轻量试用怎么选？,True,dev,hybrid_parent,5,"[""Standalone单机，Milvus Lite轻量Python pip快速试用。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q05,Milvus Python SDK 如何安装，客户端类叫什么？,True,dev,hybrid_parent,5,"[""pip install -U pymilvus，from pymilvus import MilvusClient。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q06,用 Python 接入，先安装什么，import 哪个类？,True,dev,hybrid_parent,5,"[""pip install -U pymilvus，from pymilvus import MilvusClient。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q07,Milvus Lite 怎样建立本地持久化数据库？,True,dev,hybrid_parent,5,"[""安装 pymilvus[milvus-lite]，MilvusClient(\""milvus_demo.db\"")。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q08,不连接远端，数据库写到本地文件怎么办？,True,dev,hybrid_parent,5,"[""安装 pymilvus[milvus-lite]，MilvusClient(\""milvus_demo.db\"")。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q09,连接远端 Milvus 或 Zilliz Cloud 的参数是什么？,True,dev,hybrid_parent,5,"[""MilvusClient uri 为endpoint，token 为用户密码或Cloud API key。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q10,服务器已经部署了，客户端地址和凭证传哪个字段？,True,dev,hybrid_parent,5,"[""MilvusClient uri 为endpoint，token 为用户密码或Cloud API key。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q11,Milvus 示例集合名称和向量维数是什么？,True,dev,hybrid_parent,5,"[""demo_collection，dimension=768。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q12,create_collection 那个例子怎么指定名字和维度？,True,dev,hybrid_parent,5,"[""demo_collection，dimension=768。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q13,Milvus 示例怎样插入数据？,True,dev,hybrid_parent,5,"[""client.insert(collection_name=\""demo_collection\"", data=data)。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q14,向那个 demo collection 写数据用什么调用？,True,dev,hybrid_parent,5,"[""client.insert(collection_name=\""demo_collection\"", data=data)。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q15,Milvus 查询示例支持批量吗，返回多少条和哪些字段？,True,dev,hybrid_parent,5,"[""data列表支持批量，limit=2，返回vector/text/subject。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q16,多条 query vectors 能一起查吗，topK 和 output_fields 是什么？,True,dev,hybrid_parent,5,"[""data列表支持批量，limit=2，返回vector/text/subject。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q17,Milvus 读多和写多时分别扩展哪些节点？,True,dev,hybrid_parent,5,"[""读多增加query nodes，写多增加data node。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q18,计算存储分离后，读取重和写入重该增加哪个节点？,True,dev,hybrid_parent,5,"[""读多增加query nodes，写多增加data node。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q19,Milvus 混合检索的全文和学习式稀疏表示是什么？,True,final,hybrid_parent,5,"[""原生全文BM25，学习稀疏SPLADE/BGE-M3，同集合存稀疏和稠密向量。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q20,除了dense语义搜索，还有什么全文或稀疏模型支持？,True,final,hybrid_parent,5,"[""原生全文BM25，学习稀疏SPLADE/BGE-M3，同集合存稀疏和稠密向量。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q21,Linux 编译 Milvus 对 CMake、GCC、Python 有什么要求？,True,final,hybrid_parent,5,"[""Ubuntu20.04+推荐，Go1.21+，CMake3.26.4+且<4，GCC11+，Python>3.8且<=3.11。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q22,Ubuntu 源码构建，具体工具版本范围是什么？,True,final,hybrid_parent,5,"[""Ubuntu20.04+推荐，Go1.21+，CMake3.26.4+且<4，GCC11+，Python>3.8且<=3.11。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q23,Milvus 从 clone 到构建的基本顺序是什么？,True,final,hybrid_parent,5,"[""git clone，cd milvus/，./scripts/install_deps.sh，make。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q24,拉下代码后，装依赖和编译分别执行什么？,True,final,hybrid_parent,5,"[""git clone，cd milvus/，./scripts/install_deps.sh，make。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q25,生产鉴权与 TLS 的完整配置文件是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q26,一亿个768维向量应配置多少查询节点内存？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q27,HNSW 的最佳 M、efConstruction 和 ef 参数是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q28,从指定旧版到新版集群无停机迁移的完整步骤是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q29,当前服务器所有 REST 错误码和重试规则是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],milvus
+milvus-Q30,如何配置多地域灾难恢复的完整 Helm values？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],milvus
+qdrant-Q01,Qdrant 的 point 包含哪些内容？,True,dev,hybrid_parent,5,"[""vector 加额外 payload，API 可存储、搜索、管理。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q02,它存的是纯向量，还是能附带业务数据？,True,dev,hybrid_parent,5,"[""vector 加额外 payload，API 可存储、搜索、管理。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q03,Qdrant 使用什么语言开发？,True,dev,hybrid_parent,5,"[""Rust。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q04,这个高负载向量引擎主要用什么语言写？,True,dev,hybrid_parent,5,"[""Rust。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q05,本地启动 Qdrant 的 Docker 命令是什么？,True,dev,hybrid_parent,5,"[""docker run -p 6333:6333 qdrant/qdrant。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q06,想先起个容器试试，应该映射哪个端口？,True,dev,hybrid_parent,5,"[""docker run -p 6333:6333 qdrant/qdrant。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q07,README 的简单 Docker 启动命令有什么安全注意事项？,True,dev,hybrid_parent,5,"[""无认证，开放所有网络接口，不安全；应参考 secure your instance。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q08,首页这个容器直接放生产安全吗，有没有认证？,True,dev,hybrid_parent,5,"[""无认证，开放所有网络接口，不安全；应参考 secure your instance。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q09,Python 示例怎样连接本地 Qdrant？,True,dev,hybrid_parent,5,"[""QdrantClient(url=\""http://localhost:6333\"")。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q10,容器起来后，Python client 要用哪个地址？,True,dev,hybrid_parent,5,"[""QdrantClient(url=\""http://localhost:6333\"")。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q11,生产部署前必须阅读哪两份指南？,True,dev,hybrid_parent,5,"[""installation 与 security guides。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q12,从试用切到线上前，README 提醒看什么？,True,dev,hybrid_parent,5,"[""installation 与 security guides。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q13,Qdrant Edge 和 Server 的运行方式有何区别？,True,dev,hybrid_parent,5,"[""Edge 在应用进程内运行，数据本地存储查询，可与 Server 同步。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q14,离线边缘设备是否必须连独立服务器？,True,dev,hybrid_parent,5,"[""Edge 在应用进程内运行，数据本地存储查询，可与 Server 同步。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q15,Qdrant REST 接口使用什么规范？,True,dev,hybrid_parent,5,"[""OpenAPI 3.0 specification，可生成多数语言和框架客户端。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q16,能根据 API 描述自动生成客户端吗？,True,dev,hybrid_parent,5,"[""OpenAPI 3.0 specification，可生成多数语言和框架客户端。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q17,Qdrant 稠密、稀疏和多向量各用于什么？,True,dev,hybrid_parent,5,"[""dense 语义，sparse 全文，multivector 多嵌入或 ColBERT 晚交互。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q18,语义搜索、全文搜索和 ColBERT 分别属于哪种向量支持？,True,dev,hybrid_parent,5,"[""dense 语义，sparse 全文，multivector 多嵌入或 ColBERT 晚交互。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q19,payload 过滤有哪些条件和布尔组合？,True,final,hybrid_parent,5,"[""关键词、全文、数值范围、地理位置等，结合 should/must/must_not。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q20,向量带 JSON 业务字段，怎么限制搜索范围？,True,final,hybrid_parent,5,"[""关键词、全文、数值范围、地理位置等，结合 should/must/must_not。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q21,Qdrant 分布式部署支持哪些扩缩容能力？,True,final,hybrid_parent,5,"[""分片和复制横向扩展，集合更新与调整大小零停机。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q22,集合调整大小会停机吗，如何横向扩展？,True,final,hybrid_parent,5,"[""分片和复制横向扩展，集合更新与调整大小零停机。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q23,给 Qdrant 提交 PR 应基于和目标到哪个分支？,True,final,hybrid_parent,5,"[""从 dev 建分支并向 dev 提 PR；master 目标将要求修改。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q24,我往 master 提 PR 可以吗，正确分支是哪一个？,True,final,hybrid_parent,5,"[""从 dev 建分支并向 dev 提 PR；master 目标将要求修改。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q25,如何配置生产 TLS、API key 与防火墙的完整步骤？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q26,一亿向量的最优 HNSW m 和 ef_construct 参数是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q27,完整 Kubernetes 多地域高可用 Helm values 文件是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q28,从生产备份恢复整个分布式集群的全部命令是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q29,默认写一致性因子的具体值是多少？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],qdrant
+qdrant-Q30,我的线上搜索 P99 延迟骤增的实际原因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],qdrant
+flink-Q01,Flink 的运行时同时支持什么数据处理模式？,True,dev,hybrid_parent,5,"[""streaming-first，支持批处理和流处理。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q02,它只能做实时流吗，批处理能做吗？,True,dev,hybrid_parent,5,"[""streaming-first，支持批处理和流处理。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q03,Flink DataStream API 怎样处理事件时间和乱序？,True,dev,hybrid_parent,5,"[""基于 Dataflow Model 支持 event time 与 out-of-order。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q04,数据到达顺序乱了，README 提到什么支持？,True,dev,hybrid_parent,5,"[""基于 Dataflow Model 支持 event time 与 out-of-order。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q05,Flink 窗口和时间语义有哪些形式？,True,dev,hybrid_parent,5,"[""时间、计数、会话、自定义触发器；event time、processing time。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q06,按时间、条数或会话分窗口都支持吗？,True,dev,hybrid_parent,5,"[""时间、计数、会话、自定义触发器；event time、processing time。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q07,Flink 提供什么处理容错语义？,True,dev,hybrid_parent,5,"[""exactly-once processing guarantees。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q08,发生故障以后，README 声明什么处理保证？,True,dev,hybrid_parent,5,"[""exactly-once processing guarantees。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q09,构建 Flink 的完整工具前提有哪些？,True,dev,hybrid_parent,5,"[""Unix-like 如 Linux/Mac/Cygwin/WSL，Git，Maven 3.9.16，Java 11/17/21。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q10,在 Windows 或 Linux 编译，需要哪些工具版本？,True,dev,hybrid_parent,5,"[""Unix-like 如 Linux/Mac/Cygwin/WSL，Git，Maven 3.9.16，Java 11/17/21。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q11,Java 11 构建 Flink 的命令是什么？,True,dev,hybrid_parent,5,"[""./mvnw clean package -DskipTests -Djdk11 -Pjava11-target。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q12,装的是 JDK11，需要指定什么 profile？,True,dev,hybrid_parent,5,"[""./mvnw clean package -DskipTests -Djdk11 -Pjava11-target。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q13,默认 Java 17 如何构建 Flink？,True,dev,hybrid_parent,5,"[""./mvnw clean package -DskipTests -Djdk17 -Pjava17-target。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q14,用 JDK17 编译，README 那条完整命令怎么写？,True,dev,hybrid_parent,5,"[""./mvnw clean package -DskipTests -Djdk17 -Pjava17-target。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q15,Java 21 如何构建 Flink？,True,dev,hybrid_parent,5,"[""./mvnw clean package -DskipTests -Djdk21 -Pjava21-target。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q16,使用 JDK21 时应设置哪些参数？,True,dev,hybrid_parent,5,"[""./mvnw clean package -DskipTests -Djdk21 -Pjava21-target。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q17,Flink 构建命令为何使用 wrapper 和 skipTests？,True,dev,hybrid_parent,5,"[""wrapper 保证正确 Maven 版本；skipTests 跳过测试加速。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q18,mvnw 与 -DskipTests 分别起什么作用？,True,dev,hybrid_parent,5,"[""wrapper 保证正确 Maven 版本；skipTests 跳过测试加速。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q19,Flink 编译后放在哪里，JAVA_HOME 要指向什么？,True,final,hybrid_parent,5,"[""build-target；JAVA_HOME 指向正确 JDK 版本。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q20,编完去哪里找产物，JDK 环境变量有何要求？,True,final,hybrid_parent,5,"[""build-target；JAVA_HOME 指向正确 JDK 版本。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q21,Flink 是否推荐 Eclipse Scala IDE？,True,final,hybrid_parent,5,"[""旧 Eclipse 和打包 Scala 版本存在问题，推荐 IntelliJ。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q22,用旧版 Eclipse Scala 插件开发是否有兼容风险？,True,final,hybrid_parent,5,"[""旧 Eclipse 和打包 Scala 版本存在问题，推荐 IntelliJ。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q23,多数 Flink connector 代码还在主仓库中吗？,True,final,hybrid_parent,5,"[""多数连接器外置到 Apache 的独立仓库，如 flink-connector-kafka/jdbc。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q24,想改 Kafka/JDBC 连接器，应该找主仓库还是独立仓库？,True,final,hybrid_parent,5,"[""多数连接器外置到 Apache 的独立仓库，如 flink-connector-kafka/jdbc。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q25,生产 checkpoint interval 和 timeout 应设多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q26,如何写 Kafka exactly-once sink 的完整配置代码？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q27,这个作业为何发生 back-pressure，实际日志根因是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q28,Flink 的完整 HA ZooKeeper 配置文件是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q29,指定旧版 savepoint 升级到新版的具体兼容矩阵是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],flink
+flink-Q30,我的窗口作业的最佳 taskmanager 内存参数是多少？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],flink
+tidb-Q01,TiDB 的 Ti 代表什么，数据库定位是什么？,True,dev,hybrid_parent,5,"[""Titanium，开源云原生分布式SQL，HA、横纵扩展、强一致、高性能。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q02,TiDB 是哪种数据库，名字中的 Ti 有什么含义？,True,dev,hybrid_parent,5,"[""Titanium，开源云原生分布式SQL，HA、横纵扩展、强一致、高性能。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q03,TiDB 分布式事务通过什么协议保证 ACID？,True,dev,hybrid_parent,5,"[""two-phase commit，两阶段提交保证ACID和强一致。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q04,跨多个节点的事务用什么提交方法？,True,dev,hybrid_parent,5,"[""two-phase commit，两阶段提交保证ACID和强一致。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q05,TiDB 横向与纵向扩展有何区别，会停机吗？,True,dev,hybrid_parent,5,"[""横向加节点，纵向增加现有节点资源，无停机。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q06,加机器和给旧机器加资源，都能在线完成吗？,True,dev,hybrid_parent,5,"[""横向加节点，纵向增加现有节点资源，无停机。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q07,TiDB 的计算和存储可分别调整吗？,True,dev,hybrid_parent,5,"[""计算存储分离，可独立调整。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q08,只想扩计算或只扩存储，架构允许吗？,True,dev,hybrid_parent,5,"[""计算存储分离，可独立调整。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q09,TiDB 副本提交的条件和共识协议是什么？,True,dev,hybrid_parent,5,"[""Raft，写多数副本后提交。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q10,数据要写到多少副本才提交，用哪个算法？,True,dev,hybrid_parent,5,"[""Raft，写多数副本后提交。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q11,TiKV 与 TiFlash 的存储类型分别是什么？,True,dev,hybrid_parent,5,"[""TiKV行存，TiFlash列存。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q12,做 HTAP 时，行存和列存分别由谁提供？,True,dev,hybrid_parent,5,"[""TiKV行存，TiFlash列存。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q13,TiFlash 怎样从 TiKV 同步数据，谁协调查询？,True,dev,hybrid_parent,5,"[""Multi-Raft Learner实时复制，TiDB Server协调两引擎查询。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q14,分析副本如何保持和事务数据一致，查询哪个组件调度？,True,dev,hybrid_parent,5,"[""Multi-Raft Learner实时复制，TiDB Server协调两引擎查询。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q15,Kubernetes 上哪个组件管理 TiDB，托管服务叫什么？,True,dev,hybrid_parent,5,"[""TiDB Operator自动化K8s集群操作，TiDB Cloud fully-managed。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q16,不手动管集群，有什么 Operator 或云服务？,True,dev,hybrid_parent,5,"[""TiDB Operator自动化K8s集群操作，TiDB Cloud fully-managed。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q17,TiDB 兼容哪个 MySQL 版本，迁移应用是否要重写？,True,dev,hybrid_parent,5,"[""兼容MySQL8.0，可熟悉协议框架工具；无需或只需少量修改。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q18,已有 MySQL 应用迁过去，协议工具和代码变化如何？,True,dev,hybrid_parent,5,"[""兼容MySQL8.0，可熟悉协议框架工具；无需或只需少量修改。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q19,TiDB README 推荐的免费起步方案是否要求信用卡？,True,final,hybrid_parent,5,"[""TiDB Cloud推荐，free plan，no credit card required。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q20,想先开免费测试集群，推荐云方案需要绑卡吗？,True,final,hybrid_parent,5,"[""TiDB Cloud推荐，free plan，no credit card required。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q21,与 TiDB 构建应用可用什么驱动或抽象？,True,final,hybrid_parent,5,"[""MySQL driver 或 ORM。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q22,连上数据库后，写业务时可以沿用什么客户端方式？,True,final,hybrid_parent,5,"[""MySQL driver 或 ORM。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q23,TiDB 故障排查文档入口是什么？,True,final,hybrid_parent,5,"[""Troubleshooting documentation链接。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q24,数据库出问题，首页提供哪份 troubleshooting 资料？,True,final,hybrid_parent,5,"[""Troubleshooting documentation链接。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q25,部署三地域 TiDB 的完整 TiUP topology YAML 是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q26,root 用户的默认密码是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q27,我的慢查询为何没有选择 TiFlash，实际执行计划原因是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q28,指定旧版本到当前版的全部无停机升级步骤是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q29,GC lifetime 和 region split 最优阈值应该设多少？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tidb
+tidb-Q30,如何为生产实例配置完整 TLS 与审计策略？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],tidb
+prometheus-Q01,Prometheus 数据模型如何定义时间序列？,True,dev,hybrid_parent,5,"[""metric name 和 key/value dimensions。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q02,一条时序除了指标名，还用什么维度区分？,True,dev,hybrid_parent,5,"[""metric name 和 key/value dimensions。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q03,Prometheus 主要拉取还是推送指标，批任务怎样推送？,True,dev,hybrid_parent,5,"[""HTTP pull；batch jobs 可经 intermediary gateway 推送。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q04,正常采集是 pull 吗，短批任务能 push 吗？,True,dev,hybrid_parent,5,"[""HTTP pull；batch jobs 可经 intermediary gateway 推送。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q05,Prometheus 单节点依赖分布式存储吗？,True,dev,hybrid_parent,5,"[""不依赖分布式存储，single server nodes autonomous。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q06,只起一个服务，还必须配外部分布式存储吗？,True,dev,hybrid_parent,5,"[""不依赖分布式存储，single server nodes autonomous。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q07,Prometheus 怎样发现采集目标？,True,dev,hybrid_parent,5,"[""service discovery 或 static configuration。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q08,监控目标得一个个手填吗，能自动发现吗？,True,dev,hybrid_parent,5,"[""service discovery 或 static configuration。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q09,README 推荐哪种 Prometheus 安装方式？,True,dev,hybrid_parent,5,"[""推荐最新 production release binary。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q10,想稳妥安装，首页建议源码还是发行二进制？,True,dev,hybrid_parent,5,"[""推荐最新 production release binary。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q11,本地 Prometheus 容器示例如何绑定端口？,True,dev,hybrid_parent,5,"[""docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q12,只让本机访问 9090，README 示例命令是什么？,True,dev,hybrid_parent,5,"[""docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q13,构建 Prometheus 需要哪些工具和版本要求？,True,dev,hybrid_parent,5,"[""Go 按 go.mod 或更高，Node 按 .nvmrc 或更高，npm10+。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q14,Go、Node 和 npm 应按什么版本准备？,True,dev,hybrid_parent,5,"[""Go 按 go.mod 或更高，Node 按 .nvmrc 或更高，npm10+。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q15,怎样用 go install 构建并启动指定配置？,True,dev,hybrid_parent,5,"[""go install .../cmd/...，prometheus --config.file=your_config.yml。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q16,用 Go 工具安装后，配置文件参数怎么传？,True,dev,hybrid_parent,5,"[""go install .../cmd/...，prometheus --config.file=your_config.yml。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q17,go install 构建后为什么需要在仓库根目录启动？,True,dev,hybrid_parent,5,"[""从本地 web/ui/static 读资源，需根目录启动；React UI 需 make assets 或 make build。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q18,编译成功却找不到 web 资源，README 说明什么限制？,True,dev,hybrid_parent,5,"[""从本地 web/ui/static 读资源，需根目录启动；React UI 需 make assets 或 make build。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q19,怎样构建可从任意目录启动的 Prometheus？,True,final,hybrid_parent,5,"[""make build 编译进 web assets。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q20,想把 web 资源打进二进制，不受工作目录限制怎么办？,True,final,hybrid_parent,5,"[""make build 编译进 web assets。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q21,Prometheus Makefile 的 test、test-short 和 assets 做什么？,True,final,hybrid_parent,5,"[""test 跑测试，test-short 短测试，assets 构建 React UI。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q22,普通测试、短测试、React 页面分别用哪些目标？,True,final,hybrid_parent,5,"[""test 跑测试，test-short 短测试，assets 构建 React UI。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q23,怎样去掉可选服务发现，只保留 Kubernetes 插件？,True,final,hybrid_parent,5,"[""remove_all_sd 后 enable_kubernetes_sd；file/static/http 不在可选删除中。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q24,想缩减构建里的 SD 插件，build tags 该如何设置？,True,final,hybrid_parent,5,"[""remove_all_sd 后 enable_kubernetes_sd；file/static/http 不在可选删除中。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q25,默认存储保留时长的具体值是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q26,这个十万目标环境的 scrape_interval 应该是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q27,生产 mTLS 与 basic auth 的完整 web.yml 怎么写？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q28,给磁盘告警写出适用于我公司的完整 PromQL 规则？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q29,如何为远程存储实现跨地域灾难恢复的全部配置？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],prometheus
+prometheus-Q30,我的目标 up=0 的实际网络或认证根因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],prometheus
+grafana-Q01,Grafana 对指标数据提供哪些基本能力？,True,dev,hybrid_parent,5,"[""查询、可视化、告警、理解指标，创建探索共享 dashboard。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q02,数据在别处存着，也能查询、画图、报警吗？,True,dev,hybrid_parent,5,"[""查询、可视化、告警、理解指标，创建探索共享 dashboard。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q03,Grafana panel plugins 可展示什么？,True,dev,hybrid_parent,5,"[""panel plugins 提供多种指标、日志可视化。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q04,除了普通折线图，还有扩展面板画指标和日志吗？,True,dev,hybrid_parent,5,"[""panel plugins 提供多种指标、日志可视化。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q05,Grafana 动态 dashboard 的模板变量怎样显示？,True,dev,hybrid_parent,5,"[""template variables 在顶部显示为下拉列表。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q06,怎样做能复用的看板，让用户下拉选择变量？,True,dev,hybrid_parent,5,"[""template variables 在顶部显示为下拉列表。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q07,Grafana Explore Metrics 如何比较数据？,True,dev,hybrid_parent,5,"[""ad-hoc 查询、动态钻取，split view 并排比较。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q08,想并排比较不同时间、查询和数据源，有什么能力？,True,dev,hybrid_parent,5,"[""ad-hoc 查询、动态钻取，split view 并排比较。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q09,Grafana 从指标切到日志时会保留什么？,True,dev,hybrid_parent,5,"[""保留 label filters，可快速搜索日志或实时流式查看。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q10,查完指标再查日志，标签筛选还在吗，能看实时流吗？,True,dev,hybrid_parent,5,"[""保留 label filters，可快速搜索日志或实时流式查看。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q11,Grafana 如何定义告警，通知哪些系统？,True,dev,hybrid_parent,5,"[""可视化定义规则，持续评估，通知 Slack/PagerDuty/VictorOps/OpsGenie。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q12,规则能图形化配置并自动持续判断吗？,True,dev,hybrid_parent,5,"[""可视化定义规则，持续评估，通知 Slack/PagerDuty/VictorOps/OpsGenie。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q13,Grafana 单张图能混合不同数据源吗？,True,dev,hybrid_parent,5,"[""可在同一图按 query 指定数据源，也支持自定义源。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q14,每条查询使用不同来源，甚至自定义源，行不行？,True,dev,hybrid_parent,5,"[""可在同一图按 query 指定数据源，也支持自定义源。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q15,Grafana 在哪可以先体验演示？,True,dev,hybrid_parent,5,"[""play.grafana.org。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q16,不安装先看它工作，有什么 demo 地址？,True,dev,hybrid_parent,5,"[""play.grafana.org。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q17,Grafana 贡献前和本地开发应分别读什么？,True,dev,hybrid_parent,5,"[""Contributing guide，Developer guide。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q18,想参与项目，贡献流程与环境配置入口在哪？,True,dev,hybrid_parent,5,"[""Contributing guide，Developer guide。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q19,Grafana 新手任务通过哪个标签查找？,True,final,hybrid_parent,5,"[""beginner friendly 标签的开放 issue。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q20,刚开始参与，README 给了什么新手 issue 入口？,True,final,hybrid_parent,5,"[""beginner friendly 标签的开放 issue。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q21,Grafana 具体问题与一般讨论各去哪里？,True,final,hybrid_parent,5,"[""具体问题 discussion forums，一般讨论 official Slack。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q22,有问题问论坛，还是加入 Slack，README 怎么分？,True,final,hybrid_parent,5,"[""具体问题 discussion forums，一般讨论 official Slack。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q23,Grafana 默认许可和例外说明是什么？,True,final,hybrid_parent,5,"[""AGPL-3.0-only，Apache-2.0 例外见 LICENSING.md。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q24,它整体是什么开源协议，Apache 例外在哪里看？,True,final,hybrid_parent,5,"[""AGPL-3.0-only，Apache-2.0 例外见 LICENSING.md。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q25,首次登录的默认用户名和密码是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q26,完整 provisioning datasource YAML 应该怎么写？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q27,如何配置我的公司 OIDC 服务的全部认证字段？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q28,给特定组织配置最小权限 RBAC 的全部步骤是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q29,我这个 dashboard 的具体 JSON model 是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],grafana
+grafana-Q30,从指定旧版升级到当前版的数据库迁移命令是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],grafana
+argocd-Q01,Argo CD 是什么类型的工具，目标平台是什么？,True,dev,hybrid_parent,5,"[""Kubernetes 的声明式 GitOps continuous delivery 工具。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q02,这工具负责 Kubernetes 的什么交付方式？,True,dev,hybrid_parent,5,"[""Kubernetes 的声明式 GitOps continuous delivery 工具。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q03,Argo CD 对应用定义、配置和环境提出什么原则？,True,dev,hybrid_parent,5,"[""应该声明式且版本控制。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q04,应用配置应该手改，还是声明并纳入版本管理？,True,dev,hybrid_parent,5,"[""应该声明式且版本控制。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q05,Argo CD 希望部署和生命周期管理具备什么特点？,True,dev,hybrid_parent,5,"[""自动化、可审计、易理解。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q06,发布过程应该怎么管，能追溯吗？,True,dev,hybrid_parent,5,"[""自动化、可审计、易理解。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q07,Argo CD 正式用户列表在哪个文件？,True,dev,hybrid_parent,5,"[""USERS.md。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q08,想看有哪些用户用了它，README 指向哪里？,True,dev,hybrid_parent,5,"[""USERS.md。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q09,Argo CD 的完整文档和在线 demo 分别在哪？,True,dev,hybrid_parent,5,"[""argo-cd.readthedocs.io，cd.apps.argoproj.io。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q10,详细资料去哪读，想在线体验又去哪个地址？,True,dev,hybrid_parent,5,"[""argo-cd.readthedocs.io，cd.apps.argoproj.io。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q11,Argo CD 的问答渠道是什么？,True,dev,hybrid_parent,5,"[""GitHub Discussions。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q12,遇到疑问想正式讨论，用哪个 GitHub 功能？,True,dev,hybrid_parent,5,"[""GitHub Discussions。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q13,Argo CD 即时聊天频道是什么？,True,dev,hybrid_parent,5,"[""The #argo-cd Slack channel。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q14,要和开发者实时聊，Slack 的什么频道？,True,dev,hybrid_parent,5,"[""The #argo-cd Slack channel。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q15,Argo CD 贡献者办公时间是什么频率？,True,dev,hybrid_parent,5,"[""Every Thursday。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q16,想参加 Contributors Office Hours，哪天举办？,True,dev,hybrid_parent,5,"[""Every Thursday。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q17,Argo CD 用户社区会议什么时候？,True,dev,hybrid_parent,5,"[""每月第一个星期三。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q18,用户交流会每个月哪一天？,True,dev,hybrid_parent,5,"[""每月第一个星期三。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q19,参与 Argo CD 项目遵循什么行为准则？,True,final,hybrid_parent,5,"[""CNCF Code of Conduct。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q20,加入社区要按哪个基金会的 Code of Conduct？,True,final,hybrid_parent,5,"[""CNCF Code of Conduct。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q21,Argo 相关项目和资源合集入口是什么？,True,final,hybrid_parent,5,"[""Awesome-Argo Curated List。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q22,有没有整理好的 Awesome 列表可继续学习？,True,final,hybrid_parent,5,"[""Awesome-Argo Curated List。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q23,README 列出多长的 GitOps Ninja 教程？,True,final,hybrid_parent,5,"[""90 分钟；README 只给视频链接，不包含教程内容。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q24,想看那个 GitOps 和 Argo CD 系统教程，时长是多少？,True,final,hybrid_parent,5,"[""90 分钟；README 只给视频链接，不包含教程内容。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q25,Argo CD 安装到集群的完整 kubectl 命令是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q26,完整的 Application CRD 同步策略 YAML 怎么写？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q27,如何取出首次管理员登录密码？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q28,怎样配置生产 OIDC 和 RBAC 的完整配置文件？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q29,这个 app 一直 OutOfSync 的实际 diff 根因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],argocd
+argocd-Q30,零停机升级指定旧版本到当前版的全部步骤是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],argocd
+opensearch-Q01,OpenSearch 面向什么数据和功能？,True,dev,hybrid_parent,5,"[""开源搜索与 observability suite，处理大规模非结构化数据。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q02,大量非结构化数据，能做什么搜索和观测？,True,dev,hybrid_parent,5,"[""开源搜索与 observability suite，处理大规模非结构化数据。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q03,OpenSearch 的下载入口在哪？,True,dev,hybrid_parent,5,"[""opensearch.org/downloads/。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q04,想获取安装包，首页给了什么链接？,True,dev,hybrid_parent,5,"[""opensearch.org/downloads/。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q05,OpenSearch 完整文档在哪里？,True,dev,hybrid_parent,5,"[""docs.opensearch.org。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q06,首页没展开配置，完整资料地址是什么？,True,dev,hybrid_parent,5,"[""docs.opensearch.org。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q07,OpenSearch 用户支持渠道有哪些？,True,dev,hybrid_parent,5,"[""Forums 和 Slack。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q08,需要使用帮助，README 提到论坛和什么渠道？,True,dev,hybrid_parent,5,"[""Forums 和 Slack。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q09,OpenSearch 贡献指引在哪个文件？,True,dev,hybrid_parent,5,"[""CONTRIBUTING.md。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q10,准备参与开发，该先读哪个本地指南？,True,dev,hybrid_parent,5,"[""CONTRIBUTING.md。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q11,OpenSearch 维护者和管理员职责在哪查看？,True,dev,hybrid_parent,5,"[""MAINTAINERS.md、ADMINS.md。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q12,maintainer 和 admin 的规范分别在哪？,True,dev,hybrid_parent,5,"[""MAINTAINERS.md、ADMINS.md。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q13,OpenSearch 的发布管理和测试资料在哪？,True,dev,hybrid_parent,5,"[""RELEASING.md、TESTING.md。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q14,想查发布流程与测试要求，应看哪两个文件？,True,dev,hybrid_parent,5,"[""RELEASING.md、TESTING.md。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q15,对 OpenSearch 行为准则有疑问应联系哪里？,True,dev,hybrid_parent,5,"[""conduct@opensearch.foundation。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q16,社区参与规则不清楚，README 提供什么联系地址？,True,dev,hybrid_parent,5,"[""conduct@opensearch.foundation。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q17,发现 OpenSearch 安全问题怎样报告，能公开提 issue 吗？,True,dev,hybrid_parent,5,"[""邮件 security@opensearch.org；不要公开创建 GitHub issue。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q18,怀疑有漏洞，是发公开 GitHub issue 还是私下联系？,True,dev,hybrid_parent,5,"[""邮件 security@opensearch.org；不要公开创建 GitHub issue。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q19,OpenSearch 使用什么许可？,True,final,hybrid_parent,5,"[""Apache v2.0 License，LICENSE.txt。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q20,这个项目按什么开源协议分发？,True,final,hybrid_parent,5,"[""Apache v2.0 License，LICENSE.txt。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q21,OpenSearch 的版权归属和详细声明在哪？,True,final,hybrid_parent,5,"[""OpenSearch Contributors；NOTICE.txt。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q22,版权标给谁，NOTICE 是哪个文件？,True,final,hybrid_parent,5,"[""OpenSearch Contributors；NOTICE.txt。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q23,OpenSearch 商标归谁所有？,True,final,hybrid_parent,5,"[""LF Projects, LLC。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q24,OpenSearch 注册商标属于哪家公司或组织？,True,final,hybrid_parent,5,"[""LF Projects, LLC。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q25,生产三节点集群的完整 opensearch.yml 怎么写？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q26,默认管理员用户名和密码是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q27,如何设置 TLS 证书和最小权限角色的完整 JSON？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q28,索引五亿条日志的最佳分片数量是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q29,我的 red cluster 的实际 allocation 故障原因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],opensearch
+opensearch-Q30,从某个 Elasticsearch 版本迁移的完整兼容步骤是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],opensearch
+temporal-Q01,Temporal server 执行什么逻辑单元，怎样面对间歇故障？,True,dev,hybrid_parent,5,"[""以 Workflows 执行应用逻辑，处理间歇故障并重试失败操作。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q02,任务执行中偶尔失败，它有什么自动处理？,True,dev,hybrid_parent,5,"[""以 Workflows 执行应用逻辑，处理间歇故障并重试失败操作。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q03,Temporal 项目起源于什么，由谁开发？,True,dev,hybrid_parent,5,"[""源自 Uber Cadence 的 fork，由 Cadence 创作者的 Temporal Technologies 开发。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q04,它与 Uber Cadence 有什么关系？,True,dev,hybrid_parent,5,"[""源自 Uber Cadence 的 fork，由 Cadence 创作者的 Temporal Technologies 开发。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q05,README 的本地安装和启动命令是什么？,True,dev,hybrid_parent,5,"[""brew install temporal，然后 temporal server start-dev。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q06,第一次在本机起开发服务器，两条命令是什么？,True,dev,hybrid_parent,5,"[""brew install temporal，然后 temporal server start-dev。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q07,更多 Temporal 安装方式在哪查看？,True,dev,hybrid_parent,5,"[""Temporal CLI installation 文档入口。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q08,不是用 brew 安装，可以到哪里找其他方案？,True,dev,hybrid_parent,5,"[""Temporal CLI installation 文档入口。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q09,Temporal 示例有哪些语言，运行时配合哪个服务器？,True,dev,hybrid_parent,5,"[""samples-go、samples-java，配合本地 Temporal server。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q10,Go 和 Java 的例子去哪拿，用远端还是本地服务器跑？,True,dev,hybrid_parent,5,"[""samples-go、samples-java，配合本地 Temporal server。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q11,Go 和 Java 的 Temporal 示例集合相同吗？,True,dev,hybrid_parent,5,"[""目前不同，包含 HelloWorld 和较高级场景。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q12,两个语言的教程是不是一一相同？,True,dev,hybrid_parent,5,"[""目前不同，包含 HelloWorld 和较高级场景。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q13,Temporal CLI 怎样列出 namespace？,True,dev,hybrid_parent,5,"[""temporal operator namespace list。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q14,命名空间有哪些，命令行怎么查？,True,dev,hybrid_parent,5,"[""temporal operator namespace list。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q15,Temporal CLI 怎样列出 workflow？,True,dev,hybrid_parent,5,"[""temporal workflow list。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q16,已经运行的工作流，命令行怎么查看列表？,True,dev,hybrid_parent,5,"[""temporal workflow list。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q17,Temporal Web UI 的本地地址和用途是什么？,True,dev,hybrid_parent,5,"[""http://localhost:8233，查看执行中的 sample workflows。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q18,在哪里用浏览器看示例工作流执行？,True,dev,hybrid_parent,5,"[""http://localhost:8233，查看执行中的 sample workflows。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q19,这个 Temporal 仓库是否就是业务 Workers 的实现仓库？,True,final,hybrid_parent,5,"[""此仓库是 Temporal server 源码，业务实现使用受支持语言。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q20,想写自己的 Workflow、Activity、Worker，README 怎样区分？,True,final,hybrid_parent,5,"[""此仓库是 Temporal server 源码，业务实现使用受支持语言。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q21,Temporal 本地源码构建与测试实践分别去哪查？,True,final,hybrid_parent,5,"[""CONTRIBUTING.md，docs/development/testing.md。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q22,从源码开发和跑测试的资料入口在哪？,True,final,hybrid_parent,5,"[""CONTRIBUTING.md，docs/development/testing.md。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q23,Temporal 的新功能提案和架构资料入口分别是什么？,True,final,hybrid_parent,5,"[""temporalio/proposals 与 docs/architecture/README.md。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q24,想了解架构并提设计方案，该查看哪些链接？,True,final,hybrid_parent,5,"[""temporalio/proposals 与 docs/architecture/README.md。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q25,生产 PostgreSQL persistence 的完整配置文件是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q26,同一 workflow execution history 的大小上限具体是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q27,如何配置跨地域复制和故障切换的完整步骤？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q28,Worker concurrency 应按我的任务量设为多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q29,我的 activity 总是超时的真实根因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],temporal
+temporal-Q30,完整的 mTLS 和 namespace 授权配置是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],temporal
+supabase-Q01,Supabase 是否与 Firebase 一对一完全映射？,True,dev,hybrid_parent,5,"[""不是一对一映射，目标是用开源工具提供类似开发体验。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q02,能把它理解成完全相同的开源 Firebase 吗？,True,dev,hybrid_parent,5,"[""不是一对一映射，目标是用开源工具提供类似开发体验。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q03,Supabase 支持托管、自托管和本地开发吗？,True,dev,hybrid_parent,5,"[""托管可免安装注册使用；也可 self-host 与 develop locally。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q04,一定要自己安装服务器吗，能用云平台或本地开发吗？,True,dev,hybrid_parent,5,"[""托管可免安装注册使用；也可 self-host 与 develop locally。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q05,Supabase Realtime 如何传递数据库变化？,True,dev,hybrid_parent,5,"[""Elixir server 监听 PostgreSQL变化，轮询内置replication，转JSON，以websockets广播给授权客户端。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q06,数据库新增、修改、删除，浏览器怎么实时收到？,True,dev,hybrid_parent,5,"[""Elixir server 监听 PostgreSQL变化，轮询内置replication，转JSON，以websockets广播给授权客户端。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q07,Supabase 哪个组件把 PostgreSQL 变成 REST API？,True,dev,hybrid_parent,5,"[""PostgREST。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q08,不手写接口，哪个服务直接把数据库暴露成 REST？,True,dev,hybrid_parent,5,"[""PostgREST。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q09,Supabase 的注册、登录与 session 由什么组件负责？,True,dev,hybrid_parent,5,"[""GoTrue，JWT-based authentication API。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q10,身份认证底层使用什么，基于哪个令牌机制？,True,dev,hybrid_parent,5,"[""GoTrue，JWT-based authentication API。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q11,Supabase Storage 文件和权限分别由什么处理？,True,dev,hybrid_parent,5,"[""RESTful API 管理 S3 文件，Postgres 管理权限。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q12,文件放哪里，访问权限由数据库还是存储服务管理？,True,dev,hybrid_parent,5,"[""RESTful API 管理 S3 文件，Postgres 管理权限。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q13,Supabase 通过哪个 PostgreSQL 扩展提供 GraphQL？,True,dev,hybrid_parent,5,"[""pg_graphql。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q14,除了 REST，哪个扩展可暴露 GraphQL API？,True,dev,hybrid_parent,5,"[""pg_graphql。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q15,Supabase postgres-meta 有什么管理能力？,True,dev,hybrid_parent,5,"[""postgres-meta 管理 Postgres，获取表、加角色、运行查询等。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q16,要获取表、加角色和运行查询，用哪个 REST 管理服务？,True,dev,hybrid_parent,5,"[""postgres-meta 管理 Postgres，获取表、加角色、运行查询等。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q17,Supabase 架构里的 Envoy 是什么？,True,dev,hybrid_parent,5,"[""云原生高性能 edge and service proxy。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q18,README 中 Envoy 负责哪类代理功能？,True,dev,hybrid_parent,5,"[""云原生高性能 edge and service proxy。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q19,Supabase client libraries 的模块组织原则是什么？,True,final,hybrid_parent,5,"[""模块化，每个子库独立实现单个外部系统，支持已有工具。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q20,客户端是全都绑一起还是每个外部系统独立实现？,True,final,hybrid_parent,5,"[""模块化，每个子库独立实现单个外部系统，支持已有工具。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q21,Supabase 使用帮助与 bug 应分别走什么入口？,True,final,hybrid_parent,5,"[""Community Forum帮助开发和数据库实践，GitHub Issues报bugs/errors。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q22,开发过程中需要帮助和发现错误，README 怎样区分渠道？,True,final,hybrid_parent,5,"[""Community Forum帮助开发和数据库实践，GitHub Issues报bugs/errors。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q23,Supabase 数据库基础设施问题与分享应用分别去哪？,True,final,hybrid_parent,5,"[""Email Support处理数据库基础设施问题，Discord分享应用和社区交流。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q24,数据库出问题想找支持，或者展示作品，分别去哪？,True,final,hybrid_parent,5,"[""Email Support处理数据库基础设施问题，Discord分享应用和社区交流。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q25,完整自托管 docker-compose.yml 和所有必填 env 是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q26,怎样写允许某用户读取某表的完整 RLS SQL policy？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q27,本地 JWT secret 的默认值是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q28,如何完成生产 Postgres 数据恢复的全部命令？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q29,我的 Realtime 事件收不到的实际根因是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],supabase
+supabase-Q30,多个地域部署时最优连接池大小是多少？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],supabase
+airflow-Q01,Airflow 更适合哪种变化频率的 workflow？,True,dev,hybrid_parent,5,"[""主要静态、缓慢变化，Dag结构运行间相似。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q02,工作流结构每次都大变，还是基本稳定时更适合它？,True,dev,hybrid_parent,5,"[""主要静态、缓慢变化，Dag结构运行间相似。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q03,Airflow 对任务幂等性有什么建议？,True,dev,hybrid_parent,5,"[""理想任务应幂等，结果相同且不产生重复目的数据。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q04,任务重跑能否造成目的端重复数据？,True,dev,hybrid_parent,5,"[""理想任务应幂等，结果相同且不产生重复目的数据。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q05,Airflow 任务之间应传大量数据吗，XCom 用来传什么？,True,dev,hybrid_parent,5,"[""不应传大量数据，可XCom传元数据；大量密集工作委托专业外部服务。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q06,大文件直接从一个task交给下一个合适吗？,True,dev,hybrid_parent,5,"[""不应传大量数据，可XCom传元数据；大量密集工作委托专业外部服务。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q07,Airflow 是流处理方案吗？,True,dev,hybrid_parent,5,"[""不是streaming solution，可按批从stream拉数据。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q08,能把它当实时 streaming engine 直接持续处理流吗？,True,dev,hybrid_parent,5,"[""不是streaming solution，可按批从stream拉数据。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q09,Airflow 动态 DAG 与模板定制怎样实现？,True,dev,hybrid_parent,5,"[""代码定义动态dag/参数化，Jinja模板定制。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q10,流水线能动态生成吗，模板引擎是什么？,True,dev,hybrid_parent,5,"[""代码定义动态dag/参数化，Jinja模板定制。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q11,Airflow 推荐 MariaDB 吗？,True,dev,hybrid_parent,5,"[""MariaDB不受测试或推荐。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q12,已有 MariaDB，首页说它受测试和推荐吗？,True,dev,hybrid_parent,5,"[""MariaDB不受测试或推荐。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q13,Airflow SQLite 可用于生产吗，本地推荐什么？,True,dev,hybrid_parent,5,"[""测试用，不要生产用；本地推荐SQLite最新稳定版。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q14,演示用 SQLite，正式上线也能沿用吗？,True,dev,hybrid_parent,5,"[""测试用，不要生产用；本地推荐SQLite最新稳定版。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q15,Windows 开发 Airflow 有什么方式，生产环境要求什么？,True,dev,hybrid_parent,5,"[""Windows用WSL2或Linux Containers；生产仅支持Linux distros。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q16,直接原生 Windows 运行受支持吗，生产能用哪个系统？,True,dev,hybrid_parent,5,"[""Windows用WSL2或Linux Containers；生产仅支持Linux distros。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q17,为什么直接 pip install apache-airflow 可能失败或不可用？,True,dev,hybrid_parent,5,"[""依赖尽量开放，简单pipinstall可能失败或产生不可用安装。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q18,不锁约束直接装包，README 指出什么问题？,True,dev,hybrid_parent,5,"[""依赖尽量开放，简单pipinstall可能失败或产生不可用安装。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q19,Airflow 可复现安装的 constraints URL 要匹配哪些版本？,True,final,hybrid_parent,5,"[""按Python major/minor分开，URL指定正确Airflow tag/version/branch及Python版本。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q20,约束文件能随便选吗，要和哪些版本对上？,True,final,hybrid_parent,5,"[""按Python major/minor分开，URL指定正确Airflow tag/version/branch及Python版本。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q21,哪些安装工具受 Airflow 官方支持，Poetry 怎样处理？,True,final,hybrid_parent,5,"[""目前仅pip、uv官方支持；Poetry/pip-tools不支持，需转换constraints格式工作流。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q22,能用 Poetry 或 pip-tools 按官方工作流安装吗？,True,final,hybrid_parent,5,"[""目前仅pip、uv官方支持；Poetry/pip-tools不支持，需转换constraints格式工作流。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q23,Airflow 正式源码发行与 PyPI/Docker 便利包有什么区别？,True,final,hybrid_parent,5,"[""正式源码由release manager签名；便利包不是ASF定义正式release，用正式源码准备。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q24,PyPI包和镜像都算ASF正式release吗，正式源码怎样签名？,True,final,hybrid_parent,5,"[""正式源码由release manager签名；便利包不是ASF定义正式release，用正式源码准备。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q25,完整的生产 CeleryExecutor broker 和 result backend 配置是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q26,我的 DAG 长时间 queued 的实际 scheduler 日志根因是什么？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q27,如何为公司 OIDC 配置完整的认证管理器？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q28,这个集群的最优 parallelism 与 worker concurrency 是多少？,False,dev,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q29,怎样编写完整的跨任务加密敏感数据传输代码？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],airflow
+airflow-Q30,从私有损坏 metadata 数据库恢复 DAG 状态的全部 SQL 是什么？,False,final,hybrid_parent,5,"[""当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。""]",unverified,,not_run,model_not_configured,,[],airflow

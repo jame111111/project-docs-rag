@@ -1,0 +1,17 @@
+{
+  "id": "airflow",
+  "repository": "apache/airflow",
+  "category": "任务调度平台",
+  "repository_url": "https://github.com/apache/airflow",
+  "commit": "508267cda9b510013f1a8b83541472cef09ef9a1",
+  "source_path": "README.md",
+  "source_url": "https://github.com/apache/airflow/blob/508267cda9b510013f1a8b83541472cef09ef9a1/README.md",
+  "collected_at": "2026-10-07T08:09:18.106519+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE",
+    "NOTICE"
+  ],
+  "sha256": "ed42ef8038420c3e20116e40cb38751989aa90fd69632e200d3766e21aab00a0",
+  "bytes": 41637
+}

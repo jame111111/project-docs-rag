@@ -1,0 +1,651 @@
+{
+  "version": 3,
+  "product_id": "readme-flink",
+  "corpus_commit": "a47e4bf9b9ef287d5ff7f5783df993e4cef2dd1a",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "flink-Q01",
+      "question": "Flink 的运行时同时支持什么数据处理模式？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F01",
+      "reference_points": [
+        "streaming-first，支持批处理和流处理。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* A streaming-first runtime that supports both batch processing and data streaming programs",
+          "start": 230,
+          "end": 321,
+          "section": "Apache Flink / Features"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q02",
+      "question": "它只能做实时流吗，批处理能做吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F01",
+      "reference_points": [
+        "streaming-first，支持批处理和流处理。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* A streaming-first runtime that supports both batch processing and data streaming programs",
+          "start": 230,
+          "end": 321,
+          "section": "Apache Flink / Features"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q03",
+      "question": "Flink DataStream API 怎样处理事件时间和乱序？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F02",
+      "reference_points": [
+        "基于 Dataflow Model 支持 event time 与 out-of-order。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Support for *event time* and *out-of-order* processing in the DataStream API, based on the *Dataflow Model*",
+          "start": 445,
+          "end": 554,
+          "section": "Apache Flink / Features"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q04",
+      "question": "数据到达顺序乱了，README 提到什么支持？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F02",
+      "reference_points": [
+        "基于 Dataflow Model 支持 event time 与 out-of-order。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Support for *event time* and *out-of-order* processing in the DataStream API, based on the *Dataflow Model*",
+          "start": 445,
+          "end": 554,
+          "section": "Apache Flink / Features"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q05",
+      "question": "Flink 窗口和时间语义有哪些形式？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F03",
+      "reference_points": [
+        "时间、计数、会话、自定义触发器；event time、processing time。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Flexible windowing (time, count, sessions, custom triggers) across different time semantics (event time, processing time)",
+          "start": 556,
+          "end": 679,
+          "section": "Apache Flink / Features"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q06",
+      "question": "按时间、条数或会话分窗口都支持吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F03",
+      "reference_points": [
+        "时间、计数、会话、自定义触发器；event time、processing time。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Flexible windowing (time, count, sessions, custom triggers) across different time semantics (event time, processing time)",
+          "start": 556,
+          "end": 679,
+          "section": "Apache Flink / Features"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q07",
+      "question": "Flink 提供什么处理容错语义？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F04",
+      "reference_points": [
+        "exactly-once processing guarantees。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Fault-tolerance with *exactly-once* processing guarantees",
+          "start": 681,
+          "end": 740,
+          "section": "Apache Flink / Features"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q08",
+      "question": "发生故障以后，README 声明什么处理保证？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F04",
+      "reference_points": [
+        "exactly-once processing guarantees。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Fault-tolerance with *exactly-once* processing guarantees",
+          "start": 681,
+          "end": 740,
+          "section": "Apache Flink / Features"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q09",
+      "question": "构建 Flink 的完整工具前提有哪些？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F05",
+      "reference_points": [
+        "Unix-like 如 Linux/Mac/Cygwin/WSL，Git，Maven 3.9.16，Java 11/17/21。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Unix-like environment (we use Linux, Mac OS X, Cygwin, WSL)\n* Git\n* Maven (we require version 3.9.16)\n* Java (version 11, 17, or 21)",
+          "start": 3388,
+          "end": 3522,
+          "section": "Apache Flink / Building Apache Flink from Source"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q10",
+      "question": "在 Windows 或 Linux 编译，需要哪些工具版本？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F05",
+      "reference_points": [
+        "Unix-like 如 Linux/Mac/Cygwin/WSL，Git，Maven 3.9.16，Java 11/17/21。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Unix-like environment (we use Linux, Mac OS X, Cygwin, WSL)\n* Git\n* Maven (we require version 3.9.16)\n* Java (version 11, 17, or 21)",
+          "start": 3388,
+          "end": 3522,
+          "section": "Apache Flink / Building Apache Flink from Source"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q11",
+      "question": "Java 11 构建 Flink 的命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F06",
+      "reference_points": [
+        "./mvnw clean package -DskipTests -Djdk11 -Pjava11-target。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "./mvnw clean package -DskipTests -Djdk11 -Pjava11-target",
+          "start": 3751,
+          "end": 3807,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q12",
+      "question": "装的是 JDK11，需要指定什么 profile？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F06",
+      "reference_points": [
+        "./mvnw clean package -DskipTests -Djdk11 -Pjava11-target。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "./mvnw clean package -DskipTests -Djdk11 -Pjava11-target",
+          "start": 3751,
+          "end": 3807,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q13",
+      "question": "默认 Java 17 如何构建 Flink？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F07",
+      "reference_points": [
+        "./mvnw clean package -DskipTests -Djdk17 -Pjava17-target。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "**For Java 17 (Default)**",
+          "start": 3813,
+          "end": 3838,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "./mvnw clean package -DskipTests -Djdk17 -Pjava17-target",
+          "start": 3844,
+          "end": 3900,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q14",
+      "question": "用 JDK17 编译，README 那条完整命令怎么写？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F07",
+      "reference_points": [
+        "./mvnw clean package -DskipTests -Djdk17 -Pjava17-target。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "**For Java 17 (Default)**",
+          "start": 3813,
+          "end": 3838,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "./mvnw clean package -DskipTests -Djdk17 -Pjava17-target",
+          "start": 3844,
+          "end": 3900,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q15",
+      "question": "Java 21 如何构建 Flink？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F08",
+      "reference_points": [
+        "./mvnw clean package -DskipTests -Djdk21 -Pjava21-target。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "./mvnw clean package -DskipTests -Djdk21 -Pjava21-target",
+          "start": 3927,
+          "end": 3983,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q16",
+      "question": "使用 JDK21 时应设置哪些参数？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F08",
+      "reference_points": [
+        "./mvnw clean package -DskipTests -Djdk21 -Pjava21-target。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "./mvnw clean package -DskipTests -Djdk21 -Pjava21-target",
+          "start": 3927,
+          "end": 3983,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q17",
+      "question": "Flink 构建命令为何使用 wrapper 和 skipTests？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "flink-F09",
+      "reference_points": [
+        "wrapper 保证正确 Maven 版本；skipTests 跳过测试加速。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* The build command uses Maven wrapper (mvnw) which ensures the correct Maven version is used",
+          "start": 4192,
+          "end": 4285,
+          "section": "Apache Flink / Building Apache Flink from Source / Notes"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* The -DskipTests flag skips running tests to speed up the build process",
+          "start": 4286,
+          "end": 4358,
+          "section": "Apache Flink / Building Apache Flink from Source / Notes"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q18",
+      "question": "mvnw 与 -DskipTests 分别起什么作用？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "flink-F09",
+      "reference_points": [
+        "wrapper 保证正确 Maven 版本；skipTests 跳过测试加速。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* The build command uses Maven wrapper (mvnw) which ensures the correct Maven version is used",
+          "start": 4192,
+          "end": 4285,
+          "section": "Apache Flink / Building Apache Flink from Source / Notes"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* The -DskipTests flag skips running tests to speed up the build process",
+          "start": 4286,
+          "end": 4358,
+          "section": "Apache Flink / Building Apache Flink from Source / Notes"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q19",
+      "question": "Flink 编译后放在哪里，JAVA_HOME 要指向什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "flink-F10",
+      "reference_points": [
+        "build-target；JAVA_HOME 指向正确 JDK 版本。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "Flink will be installed in `build-target`.",
+          "start": 4055,
+          "end": 4097,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Make sure your JAVA_HOME environment variable points to the correct JDK version",
+          "start": 4110,
+          "end": 4191,
+          "section": "Apache Flink / Building Apache Flink from Source / Notes"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q20",
+      "question": "编完去哪里找产物，JDK 环境变量有何要求？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "flink-F10",
+      "reference_points": [
+        "build-target；JAVA_HOME 指向正确 JDK 版本。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "Flink will be installed in `build-target`.",
+          "start": 4055,
+          "end": 4097,
+          "section": "Apache Flink / Building Apache Flink from Source / Basic Build Instructions"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* Make sure your JAVA_HOME environment variable points to the correct JDK version",
+          "start": 4110,
+          "end": 4191,
+          "section": "Apache Flink / Building Apache Flink from Source / Notes"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q21",
+      "question": "Flink 是否推荐 Eclipse Scala IDE？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "flink-F11",
+      "reference_points": [
+        "旧 Eclipse 和打包 Scala 版本存在问题，推荐 IntelliJ。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "**NOTE:** From our experience, this setup does not work with Flink\ndue to deficiencies of the old Eclipse version bundled with Scala IDE 3.0.3 or\ndue to version incompatibilities with the bundled Scala version in Scala IDE 4.4.1.",
+          "start": 5201,
+          "end": 5430,
+          "section": "Apache Flink / Developing Flink / Eclipse Scala IDE"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "**We recommend to use IntelliJ instead (see above)**",
+          "start": 5432,
+          "end": 5484,
+          "section": "Apache Flink / Developing Flink / Eclipse Scala IDE"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q22",
+      "question": "用旧版 Eclipse Scala 插件开发是否有兼容风险？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "flink-F11",
+      "reference_points": [
+        "旧 Eclipse 和打包 Scala 版本存在问题，推荐 IntelliJ。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "**NOTE:** From our experience, this setup does not work with Flink\ndue to deficiencies of the old Eclipse version bundled with Scala IDE 3.0.3 or\ndue to version incompatibilities with the bundled Scala version in Scala IDE 4.4.1.",
+          "start": 5201,
+          "end": 5430,
+          "section": "Apache Flink / Developing Flink / Eclipse Scala IDE"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "**We recommend to use IntelliJ instead (see above)**",
+          "start": 5432,
+          "end": 5484,
+          "section": "Apache Flink / Developing Flink / Eclipse Scala IDE"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q23",
+      "question": "多数 Flink connector 代码还在主仓库中吗？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "flink-F12",
+      "reference_points": [
+        "多数连接器外置到 Apache 的独立仓库，如 flink-connector-kafka/jdbc。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "Most Flink connectors have been externalized to individual repos under the [Apache Software Foundation](https://github.com/apache):",
+          "start": 6301,
+          "end": 6432,
+          "section": "Apache Flink / Externalized Connectors"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* [flink-connector-jdbc](https://github.com/apache/flink-connector-jdbc)",
+          "start": 6912,
+          "end": 6984,
+          "section": "Apache Flink / Externalized Connectors"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* [flink-connector-kafka](https://github.com/apache/flink-connector-kafka)",
+          "start": 6985,
+          "end": 7059,
+          "section": "Apache Flink / Externalized Connectors"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q24",
+      "question": "想改 Kafka/JDBC 连接器，应该找主仓库还是独立仓库？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "flink-F12",
+      "reference_points": [
+        "多数连接器外置到 Apache 的独立仓库，如 flink-connector-kafka/jdbc。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "Most Flink connectors have been externalized to individual repos under the [Apache Software Foundation](https://github.com/apache):",
+          "start": 6301,
+          "end": 6432,
+          "section": "Apache Flink / Externalized Connectors"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* [flink-connector-jdbc](https://github.com/apache/flink-connector-jdbc)",
+          "start": 6912,
+          "end": 6984,
+          "section": "Apache Flink / Externalized Connectors"
+        },
+        {
+          "doc_id": "readme-flink-doc",
+          "quote": "* [flink-connector-kafka](https://github.com/apache/flink-connector-kafka)",
+          "start": 6985,
+          "end": 7059,
+          "section": "Apache Flink / Externalized Connectors"
+        }
+      ]
+    },
+    {
+      "id": "flink-Q25",
+      "question": "生产 checkpoint interval 和 timeout 应设多少？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "flink-Q26",
+      "question": "如何写 Kafka exactly-once sink 的完整配置代码？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "flink-Q27",
+      "question": "这个作业为何发生 back-pressure，实际日志根因是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "flink-Q28",
+      "question": "Flink 的完整 HA ZooKeeper 配置文件是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "flink-Q29",
+      "question": "指定旧版 savepoint 升级到新版的具体兼容矩阵是什么？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "flink-Q30",
+      "question": "我的窗口作业的最佳 taskmanager 内存参数是多少？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

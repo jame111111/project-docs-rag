@@ -1,0 +1,193 @@
+﻿id,question,split,answerable,mode,top_k,complete_evidence_covered,context_chars,retrieval_ms
+Q01,本地开发后端需要哪些工具？,dev,True,vector_child,1,False,349,24.765
+Q01,本地开发后端需要哪些工具？,dev,True,hybrid_child,1,False,349,25.614
+Q01,本地开发后端需要哪些工具？,dev,True,hybrid_parent,1,False,690,25.453
+Q01,本地开发后端需要哪些工具？,dev,True,vector_child,5,False,1543,25.514
+Q01,本地开发后端需要哪些工具？,dev,True,hybrid_child,5,False,1543,26.201
+Q01,本地开发后端需要哪些工具？,dev,True,hybrid_parent,5,False,1773,27.255
+Q02,第一次启动后端，要先启动哪些配套服务？用什么命令？,dev,True,vector_child,1,False,292,26.362
+Q02,第一次启动后端，要先启动哪些配套服务？用什么命令？,dev,True,hybrid_child,1,False,292,26.96
+Q02,第一次启动后端，要先启动哪些配套服务？用什么命令？,dev,True,hybrid_parent,1,False,293,26.638
+Q02,第一次启动后端，要先启动哪些配套服务？用什么命令？,dev,True,vector_child,5,False,1652,25.745
+Q02,第一次启动后端，要先启动哪些配套服务？用什么命令？,dev,True,hybrid_child,5,False,1652,27.019
+Q02,第一次启动后端，要先启动哪些配套服务？用什么命令？,dev,True,hybrid_parent,5,True,1747,27.101
+Q03,后端安装依赖、准备数据库和启动服务的顺序是什么？,dev,True,vector_child,1,False,292,23.966
+Q03,后端安装依赖、准备数据库和启动服务的顺序是什么？,dev,True,hybrid_child,1,False,292,22.696
+Q03,后端安装依赖、准备数据库和启动服务的顺序是什么？,dev,True,hybrid_parent,1,False,293,22.845
+Q03,后端安装依赖、准备数据库和启动服务的顺序是什么？,dev,True,vector_child,5,False,1447,21.173
+Q03,后端安装依赖、准备数据库和启动服务的顺序是什么？,dev,True,hybrid_child,5,False,1447,22.536
+Q03,后端安装依赖、准备数据库和启动服务的顺序是什么？,dev,True,hybrid_parent,5,True,1316,22.548
+Q04,后端起来以后，接口和 Swagger 文档在哪里打开？,dev,True,vector_child,1,False,90,16.68
+Q04,后端起来以后，接口和 Swagger 文档在哪里打开？,dev,True,hybrid_child,1,False,312,17.727
+Q04,后端起来以后，接口和 Swagger 文档在哪里打开？,dev,True,hybrid_parent,1,False,313,17.308
+Q04,后端起来以后，接口和 Swagger 文档在哪里打开？,dev,True,vector_child,5,False,1094,16.229
+Q04,后端起来以后，接口和 Swagger 文档在哪里打开？,dev,True,hybrid_child,5,False,1180,16.378
+Q04,后端起来以后，接口和 Swagger 文档在哪里打开？,dev,True,hybrid_parent,5,False,1585,16.248
+Q05,我想改数据表和接口代码，分别应该看哪些目录？,dev,True,vector_child,1,False,249,13.327
+Q05,我想改数据表和接口代码，分别应该看哪些目录？,dev,True,hybrid_child,1,False,249,14.465
+Q05,我想改数据表和接口代码，分别应该看哪些目录？,dev,True,hybrid_parent,1,False,641,14.809
+Q05,我想改数据表和接口代码，分别应该看哪些目录？,dev,True,vector_child,5,False,1282,12.488
+Q05,我想改数据表和接口代码，分别应该看哪些目录？,dev,True,hybrid_child,5,False,1282,14.313
+Q05,我想改数据表和接口代码，分别应该看哪些目录？,dev,True,hybrid_parent,5,False,2861,15.146
+Q06,后端命令应该在哪个目录执行，编辑器使用哪个解释器？,dev,True,vector_child,1,False,258,12.413
+Q06,后端命令应该在哪个目录执行，编辑器使用哪个解释器？,dev,True,hybrid_child,1,False,258,12.351
+Q06,后端命令应该在哪个目录执行，编辑器使用哪个解释器？,dev,True,hybrid_parent,1,False,527,12.323
+Q06,后端命令应该在哪个目录执行，编辑器使用哪个解释器？,dev,True,vector_child,5,False,1256,11.353
+Q06,后端命令应该在哪个目录执行，编辑器使用哪个解释器？,dev,True,hybrid_child,5,False,1256,13.321
+Q06,后端命令应该在哪个目录执行，编辑器使用哪个解释器？,dev,True,hybrid_parent,5,False,1546,12.76
+Q07,如何运行后端测试？测试文件放在哪里？,dev,True,vector_child,1,False,239,15.468
+Q07,如何运行后端测试？测试文件放在哪里？,dev,True,hybrid_child,1,False,239,14.21
+Q07,如何运行后端测试？测试文件放在哪里？,dev,True,hybrid_parent,1,False,239,14.247
+Q07,如何运行后端测试？测试文件放在哪里？,dev,True,vector_child,5,False,1328,13.176
+Q07,如何运行后端测试？测试文件放在哪里？,dev,True,hybrid_child,5,False,1328,13.782
+Q07,如何运行后端测试？测试文件放在哪里？,dev,True,hybrid_parent,5,False,1625,13.735
+Q08,服务已经在 Docker 里跑了，怎么跑测试并遇到第一个错误就停止？,dev,True,vector_child,1,False,297,16.307
+Q08,服务已经在 Docker 里跑了，怎么跑测试并遇到第一个错误就停止？,dev,True,hybrid_child,1,False,297,16.586
+Q08,服务已经在 Docker 里跑了，怎么跑测试并遇到第一个错误就停止？,dev,True,hybrid_parent,1,False,782,16.512
+Q08,服务已经在 Docker 里跑了，怎么跑测试并遇到第一个错误就停止？,dev,True,vector_child,5,False,1248,15.74
+Q08,服务已经在 Docker 里跑了，怎么跑测试并遇到第一个错误就停止？,dev,True,hybrid_child,5,False,1196,16.372
+Q08,服务已经在 Docker 里跑了，怎么跑测试并遇到第一个错误就停止？,dev,True,hybrid_parent,5,False,1773,16.362
+Q09,测试覆盖率报告去哪看？,dev,True,vector_child,1,True,239,12.141
+Q09,测试覆盖率报告去哪看？,dev,True,hybrid_child,1,True,239,12.611
+Q09,测试覆盖率报告去哪看？,dev,True,hybrid_parent,1,True,239,12.491
+Q09,测试覆盖率报告去哪看？,dev,True,vector_child,5,True,1285,11.7
+Q09,测试覆盖率报告去哪看？,dev,True,hybrid_child,5,True,1285,12.507
+Q09,测试覆盖率报告去哪看？,dev,True,hybrid_parent,5,True,1366,14.239
+Q10,给模型添加字段后，如何生成并应用迁移？哪些文件需要提交？,dev,True,vector_child,1,False,240,17.064
+Q10,给模型添加字段后，如何生成并应用迁移？哪些文件需要提交？,dev,True,hybrid_child,1,False,240,16.484
+Q10,给模型添加字段后，如何生成并应用迁移？哪些文件需要提交？,dev,True,hybrid_parent,1,False,649,16.285
+Q10,给模型添加字段后，如何生成并应用迁移？哪些文件需要提交？,dev,True,vector_child,5,False,1467,14.797
+Q10,给模型添加字段后，如何生成并应用迁移？哪些文件需要提交？,dev,True,hybrid_child,5,False,1467,16.394
+Q10,给模型添加字段后，如何生成并应用迁移？哪些文件需要提交？,dev,True,hybrid_parent,5,True,2140,16.355
+Q11,本地把前后端一起跑起来，需要哪些步骤？,dev,True,vector_child,1,False,352,15.477
+Q11,本地把前后端一起跑起来，需要哪些步骤？,dev,True,hybrid_child,1,False,352,13.283
+Q11,本地把前后端一起跑起来，需要哪些步骤？,dev,True,hybrid_parent,1,False,917,13.165
+Q11,本地把前后端一起跑起来，需要哪些步骤？,dev,True,vector_child,5,False,1468,12.316
+Q11,本地把前后端一起跑起来，需要哪些步骤？,dev,True,hybrid_child,5,False,1468,13.484
+Q11,本地把前后端一起跑起来，需要哪些步骤？,dev,True,hybrid_parent,5,False,2111,13.416
+Q12,我要切到 Docker Compose 启动，为什么先关掉本地后端？,dev,True,vector_child,1,False,292,15.968
+Q12,我要切到 Docker Compose 启动，为什么先关掉本地后端？,dev,True,hybrid_child,1,False,279,16.126
+Q12,我要切到 Docker Compose 启动，为什么先关掉本地后端？,dev,True,hybrid_parent,1,False,337,15.852
+Q12,我要切到 Docker Compose 启动，为什么先关掉本地后端？,dev,True,vector_child,5,False,1538,15.244
+Q12,我要切到 Docker Compose 启动，为什么先关掉本地后端？,dev,True,hybrid_child,5,False,1306,15.686
+Q12,我要切到 Docker Compose 启动，为什么先关掉本地后端？,dev,True,hybrid_parent,5,False,1117,15.609
+Q13,修改了环境变量之后，还需要做什么？,dev,True,vector_child,1,True,186,14.072
+Q13,修改了环境变量之后，还需要做什么？,dev,True,hybrid_child,1,True,186,14.623
+Q13,修改了环境变量之后，还需要做什么？,dev,True,hybrid_parent,1,True,186,14.874
+Q13,修改了环境变量之后，还需要做什么？,dev,True,vector_child,5,True,1113,13.864
+Q13,修改了环境变量之后，还需要做什么？,dev,True,hybrid_child,5,True,1113,14.797
+Q13,修改了环境变量之后，还需要做什么？,dev,True,hybrid_parent,5,True,1515,15.811
+Q14,前端开发时怎么连远程 API？,dev,True,vector_child,1,False,258,12.962
+Q14,前端开发时怎么连远程 API？,dev,True,hybrid_child,1,False,258,13.14
+Q14,前端开发时怎么连远程 API？,dev,True,hybrid_parent,1,True,527,12.982
+Q14,前端开发时怎么连远程 API？,dev,True,vector_child,5,True,1405,11.91
+Q14,前端开发时怎么连远程 API？,dev,True,hybrid_child,5,True,1400,12.888
+Q14,前端开发时怎么连远程 API？,dev,True,hybrid_parent,5,True,2882,12.837
+Q15,前端怎么启动，后端和数据库要先满足什么条件？,dev,True,vector_child,1,False,264,13.595
+Q15,前端怎么启动，后端和数据库要先满足什么条件？,dev,True,hybrid_child,1,False,264,13.068
+Q15,前端怎么启动，后端和数据库要先满足什么条件？,dev,True,hybrid_parent,1,False,1585,12.986
+Q15,前端怎么启动，后端和数据库要先满足什么条件？,dev,True,vector_child,5,False,1393,12.213
+Q15,前端怎么启动，后端和数据库要先满足什么条件？,dev,True,hybrid_child,5,False,1393,12.933
+Q15,前端怎么启动，后端和数据库要先满足什么条件？,dev,True,hybrid_parent,5,False,2464,13.175
+Q16,想让 FastAPI 直接提供前端页面，怎么构建？改完前端要做什么？,dev,True,vector_child,1,False,299,16.131
+Q16,想让 FastAPI 直接提供前端页面，怎么构建？改完前端要做什么？,dev,True,hybrid_child,1,False,152,17.351
+Q16,想让 FastAPI 直接提供前端页面，怎么构建？改完前端要做什么？,dev,True,hybrid_parent,1,False,842,17.829
+Q16,想让 FastAPI 直接提供前端页面，怎么构建？改完前端要做什么？,dev,True,vector_child,5,False,1192,17.193
+Q16,想让 FastAPI 直接提供前端页面，怎么构建？改完前端要做什么？,dev,True,hybrid_child,5,False,919,17.512
+Q16,想让 FastAPI 直接提供前端页面，怎么构建？改完前端要做什么？,dev,True,hybrid_parent,5,False,1701,17.419
+Q17,如何自动重新生成前端 API 客户端？,dev,True,vector_child,1,False,238,13.054
+Q17,如何自动重新生成前端 API 客户端？,dev,True,hybrid_child,1,False,299,13.662
+Q17,如何自动重新生成前端 API 客户端？,dev,True,hybrid_parent,1,False,770,13.558
+Q17,如何自动重新生成前端 API 客户端？,dev,True,vector_child,5,False,1357,12.692
+Q17,如何自动重新生成前端 API 客户端？,dev,True,hybrid_child,5,False,1335,13.535
+Q17,如何自动重新生成前端 API 客户端？,dev,True,hybrid_parent,5,False,1734,14.668
+Q18,手动生成前端客户端之前需要哪些准备？之后执行什么命令？,dev,True,vector_child,1,False,239,13.228
+Q18,手动生成前端客户端之前需要哪些准备？之后执行什么命令？,dev,True,hybrid_child,1,False,239,14.795
+Q18,手动生成前端客户端之前需要哪些准备？之后执行什么命令？,dev,True,hybrid_parent,1,False,239,12.766
+Q18,手动生成前端客户端之前需要哪些准备？之后执行什么命令？,dev,True,vector_child,5,False,1420,11.163
+Q18,手动生成前端客户端之前需要哪些准备？之后执行什么命令？,dev,True,hybrid_child,5,False,1420,12.529
+Q18,手动生成前端客户端之前需要哪些准备？之后执行什么命令？,dev,True,hybrid_parent,5,False,1136,12.477
+Q19,做纯 API 项目时，移除前端还要修改哪些配置？,dev,True,vector_child,1,False,292,14.142
+Q19,做纯 API 项目时，移除前端还要修改哪些配置？,dev,True,hybrid_child,1,False,299,14.112
+Q19,做纯 API 项目时，移除前端还要修改哪些配置？,dev,True,hybrid_parent,1,False,770,13.995
+Q19,做纯 API 项目时，移除前端还要修改哪些配置？,dev,True,vector_child,5,False,1390,12.631
+Q19,做纯 API 项目时，移除前端还要修改哪些配置？,dev,True,hybrid_child,5,False,1169,14.093
+Q19,做纯 API 项目时，移除前端还要修改哪些配置？,dev,True,hybrid_parent,5,False,2009,14.739
+Q20,FastAPI Cloud 部署要求哪些普通环境变量和秘密配置？,dev,True,vector_child,1,False,358,14.516
+Q20,FastAPI Cloud 部署要求哪些普通环境变量和秘密配置？,dev,True,hybrid_child,1,False,300,14.794
+Q20,FastAPI Cloud 部署要求哪些普通环境变量和秘密配置？,dev,True,hybrid_parent,1,False,651,14.908
+Q20,FastAPI Cloud 部署要求哪些普通环境变量和秘密配置？,dev,True,vector_child,5,False,1527,14.767
+Q20,FastAPI Cloud 部署要求哪些普通环境变量和秘密配置？,dev,True,hybrid_child,5,False,1471,14.716
+Q20,FastAPI Cloud 部署要求哪些普通环境变量和秘密配置？,dev,True,hybrid_parent,5,False,2108,14.634
+Q21,云部署工作流做什么？数据库有什么网络前提？,dev,True,vector_child,1,False,290,13.968
+Q21,云部署工作流做什么？数据库有什么网络前提？,dev,True,hybrid_child,1,False,290,14.168
+Q21,云部署工作流做什么？数据库有什么网络前提？,dev,True,hybrid_parent,1,False,1585,14.089
+Q21,云部署工作流做什么？数据库有什么网络前提？,dev,True,vector_child,5,False,1345,12.724
+Q21,云部署工作流做什么？数据库有什么网络前提？,dev,True,hybrid_child,5,False,1345,14.024
+Q21,云部署工作流做什么？数据库有什么网络前提？,dev,True,hybrid_parent,5,False,3157,15.389
+Q22,自己的服务器用 Docker Compose 部署，开始前要准备什么？,dev,True,vector_child,1,False,292,13.681
+Q22,自己的服务器用 Docker Compose 部署，开始前要准备什么？,dev,True,hybrid_child,1,False,201,14.275
+Q22,自己的服务器用 Docker Compose 部署，开始前要准备什么？,dev,True,hybrid_parent,1,False,201,14.219
+Q22,自己的服务器用 Docker Compose 部署，开始前要准备什么？,dev,True,vector_child,5,False,1240,12.47
+Q22,自己的服务器用 Docker Compose 部署，开始前要准备什么？,dev,True,hybrid_child,5,False,1032,13.76
+Q22,自己的服务器用 Docker Compose 部署，开始前要准备什么？,dev,True,hybrid_parent,5,False,1003,13.798
+Q23,正式 Docker 部署为什么显式指定两个 Compose 文件？服务器还要安装 Bun 吗？,dev,True,vector_child,1,False,241,15.952
+Q23,正式 Docker 部署为什么显式指定两个 Compose 文件？服务器还要安装 Bun 吗？,dev,True,hybrid_child,1,False,241,15.866
+Q23,正式 Docker 部署为什么显式指定两个 Compose 文件？服务器还要安装 Bun 吗？,dev,True,hybrid_parent,1,True,660,15.762
+Q23,正式 Docker 部署为什么显式指定两个 Compose 文件？服务器还要安装 Bun 吗？,dev,True,vector_child,5,False,1273,14.174
+Q23,正式 Docker 部署为什么显式指定两个 Compose 文件？服务器还要安装 Bun 吗？,dev,True,hybrid_child,5,False,1200,16.371
+Q23,正式 Docker 部署为什么显式指定两个 Compose 文件？服务器还要安装 Bun 吗？,dev,True,hybrid_parent,5,True,1198,16.217
+Q24,外部贡献者可以直接改依赖文件吗？想加依赖怎么办？,dev,True,vector_child,1,False,249,12.909
+Q24,外部贡献者可以直接改依赖文件吗？想加依赖怎么办？,dev,True,hybrid_child,1,False,249,13.892
+Q24,外部贡献者可以直接改依赖文件吗？想加依赖怎么办？,dev,True,hybrid_parent,1,False,641,13.825
+Q24,外部贡献者可以直接改依赖文件吗？想加依赖怎么办？,dev,True,vector_child,5,False,1337,13.313
+Q24,外部贡献者可以直接改依赖文件吗？想加依赖怎么办？,dev,True,hybrid_child,5,False,1337,13.788
+Q24,外部贡献者可以直接改依赖文件吗？想加依赖怎么办？,dev,True,hybrid_parent,5,False,1909,13.75
+U01,这个项目如何接入支付宝支付和自动退款？,dev,False,vector_child,1,,406,14.136
+U01,这个项目如何接入支付宝支付和自动退款？,dev,False,hybrid_child,1,,406,14.452
+U01,这个项目如何接入支付宝支付和自动退款？,dev,False,hybrid_parent,1,,649,14.382
+U01,这个项目如何接入支付宝支付和自动退款？,dev,False,vector_child,5,,1440,13.644
+U01,这个项目如何接入支付宝支付和自动退款？,dev,False,hybrid_child,5,,1440,14.36
+U01,这个项目如何接入支付宝支付和自动退款？,dev,False,hybrid_parent,5,,1938,15.397
+U02,支撑一百万并发用户，需要多少台服务器？,dev,False,vector_child,1,,238,13.073
+U02,支撑一百万并发用户，需要多少台服务器？,dev,False,hybrid_child,1,,238,14.529
+U02,支撑一百万并发用户，需要多少台服务器？,dev,False,hybrid_parent,1,,802,13.985
+U02,支撑一百万并发用户，需要多少台服务器？,dev,False,vector_child,5,,1303,12.751
+U02,支撑一百万并发用户，需要多少台服务器？,dev,False,hybrid_child,5,,1303,13.691
+U02,支撑一百万并发用户，需要多少台服务器？,dev,False,hybrid_parent,5,,1452,13.616
+U03,管理员忘记密码后，怎样直接修改数据库重置密码？,dev,False,vector_child,1,,118,16.051
+U03,管理员忘记密码后，怎样直接修改数据库重置密码？,dev,False,hybrid_child,1,,118,13.887
+U03,管理员忘记密码后，怎样直接修改数据库重置密码？,dev,False,hybrid_parent,1,,405,13.745
+U03,管理员忘记密码后，怎样直接修改数据库重置密码？,dev,False,vector_child,5,,1301,12.494
+U03,管理员忘记密码后，怎样直接修改数据库重置密码？,dev,False,hybrid_child,5,,1301,14.179
+U03,管理员忘记密码后，怎样直接修改数据库重置密码？,dev,False,hybrid_parent,5,,1771,14.19
+U04,如何配置微信扫码登录的 appid 和回调地址？,dev,False,vector_child,1,,234,12.58
+U04,如何配置微信扫码登录的 appid 和回调地址？,dev,False,hybrid_child,1,,234,13.014
+U04,如何配置微信扫码登录的 appid 和回调地址？,dev,False,hybrid_parent,1,,596,12.682
+U04,如何配置微信扫码登录的 appid 和回调地址？,dev,False,vector_child,5,,1341,13.005
+U04,如何配置微信扫码登录的 appid 和回调地址？,dev,False,hybrid_child,5,,1341,12.892
+U04,如何配置微信扫码登录的 appid 和回调地址？,dev,False,hybrid_parent,5,,1517,12.902
+U05,请给出 AWS Lambda 的完整部署配置。,dev,False,vector_child,1,,283,14.224
+U05,请给出 AWS Lambda 的完整部署配置。,dev,False,hybrid_child,1,,283,13.669
+U05,请给出 AWS Lambda 的完整部署配置。,dev,False,hybrid_parent,1,,586,13.563
+U05,请给出 AWS Lambda 的完整部署配置。,dev,False,vector_child,5,,1282,12.499
+U05,请给出 AWS Lambda 的完整部署配置。,dev,False,hybrid_child,5,,1282,13.561
+U05,请给出 AWS Lambda 的完整部署配置。,dev,False,hybrid_parent,5,,2233,14.772
+U06,这个固定版本的最低 Python 版本具体是多少？,dev,False,vector_child,1,,267,11.461
+U06,这个固定版本的最低 Python 版本具体是多少？,dev,False,hybrid_child,1,,253,11.001
+U06,这个固定版本的最低 Python 版本具体是多少？,dev,False,hybrid_parent,1,,1585,11.611
+U06,这个固定版本的最低 Python 版本具体是多少？,dev,False,vector_child,5,,1250,11.21
+U06,这个固定版本的最低 Python 版本具体是多少？,dev,False,hybrid_child,5,,1279,11.512
+U06,这个固定版本的最低 Python 版本具体是多少？,dev,False,hybrid_parent,5,,2406,11.429
+U07,怎么把前端打包成安卓 APK？,dev,False,vector_child,1,,239,12.046
+U07,怎么把前端打包成安卓 APK？,dev,False,hybrid_child,1,,239,11.346
+U07,怎么把前端打包成安卓 APK？,dev,False,hybrid_parent,1,,239,11.32
+U07,怎么把前端打包成安卓 APK？,dev,False,vector_child,5,,1117,10.812
+U07,怎么把前端打包成安卓 APK？,dev,False,hybrid_child,5,,1117,11.291
+U07,怎么把前端打包成安卓 APK？,dev,False,hybrid_parent,5,,1131,11.301
+U08,如何迁移到 SQLite 并在生产部署？,dev,False,vector_child,1,,281,14.277
+U08,如何迁移到 SQLite 并在生产部署？,dev,False,hybrid_child,1,,281,14.71
+U08,如何迁移到 SQLite 并在生产部署？,dev,False,hybrid_parent,1,,801,14.674
+U08,如何迁移到 SQLite 并在生产部署？,dev,False,vector_child,5,,1524,14.571
+U08,如何迁移到 SQLite 并在生产部署？,dev,False,hybrid_child,5,,1524,14.68
+U08,如何迁移到 SQLite 并在生产部署？,dev,False,hybrid_parent,5,,1887,14.986

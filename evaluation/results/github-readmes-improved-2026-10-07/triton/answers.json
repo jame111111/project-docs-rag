@@ -1,0 +1,790 @@
+{
+  "metadata": {
+    "product_id": "readme-triton",
+    "product_name": "triton-inference-server/server README 测试",
+    "corpus_commit": "920fc893d21019ada670624623ffc0b7a47442bb",
+    "dataset_sha256": "f225ab031c9374000d3ccacaab1ff629a0df5a780aab6f1222309646b2d22c75",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "11d499da2a150685e1403ed30822218d0fb1f4837726ea3512ccab9fd9d3a198",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "triton",
+    "repository": "triton-inference-server/server",
+    "index": {
+      "documents": 1,
+      "parents": 50,
+      "children": 121,
+      "fingerprint": "11d499da2a150685e1403ed30822218d0fb1f4837726ea3512ccab9fd9d3a198"
+    }
+  },
+  "results": [
+    {
+      "id": "triton-Q01",
+      "question": "Triton 可服务哪些框架的模型？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "支持 TensorRT、PyTorch、ONNX、OpenVINO、Python、RAPIDS FIL 等。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "multiple deep learning and machine learning frameworks, including TensorRT,\nPyTorch, ONNX, OpenVINO, Python, RAPIDS FIL, and more.",
+          "start": 2153,
+          "end": 2283,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q02",
+      "question": "PyTorch、ONNX 和 TensorRT 模型能交给它部署吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "支持 TensorRT、PyTorch、ONNX、OpenVINO、Python、RAPIDS FIL 等。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "multiple deep learning and machine learning frameworks, including TensorRT,\nPyTorch, ONNX, OpenVINO, Python, RAPIDS FIL, and more.",
+          "start": 2153,
+          "end": 2283,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q03",
+      "question": "Triton 支持哪些硬件和部署环境？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "云、数据中心、边缘、嵌入式；NVIDIA GPU、x86/ARM CPU、AWS Inferentia。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "Inference Server supports inference across cloud, data center, edge and embedded\ndevices on NVIDIA GPUs, x86 and ARM CPU, or AWS Inferentia.",
+          "start": 2291,
+          "end": 2431,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q04",
+      "question": "只在 NVIDIA GPU 上能用，还是 CPU、边缘设备也支持？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "云、数据中心、边缘、嵌入式；NVIDIA GPU、x86/ARM CPU、AWS Inferentia。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "Inference Server supports inference across cloud, data center, edge and embedded\ndevices on NVIDIA GPUs, x86 and ARM CPU, or AWS Inferentia.",
+          "start": 2291,
+          "end": 2431,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q05",
+      "question": "Triton 对有状态模型提供哪些机制？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Sequence batching 和 implicit state management。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- [Sequence batching](docs/user_guide/batcher.md#sequence-batcher) and\n  [implicit state management](docs/user_guide/architecture.md#implicit-state-management)\n  for stateful models",
+          "start": 3286,
+          "end": 3467,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q06",
+      "question": "模型需要保持状态时，有什么批处理和状态管理能力？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Sequence batching 和 implicit state management。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- [Sequence batching](docs/user_guide/batcher.md#sequence-batcher) and\n  [implicit state management](docs/user_guide/architecture.md#implicit-state-management)\n  for stateful models",
+          "start": 3286,
+          "end": 3467,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q07",
+      "question": "怎样扩展 Triton 后端及前后处理？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Backend API 可添加自定义后端和前后处理。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- Provides [Backend API](https://github.com/triton-inference-server/backend) that\n  allows adding custom backends and pre/post processing operations",
+          "start": 3468,
+          "end": 3616,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q08",
+      "question": "有自定义模型和前处理，README 指向哪种扩展接口？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Backend API 可添加自定义后端和前后处理。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- Provides [Backend API](https://github.com/triton-inference-server/backend) that\n  allows adding custom backends and pre/post processing operations",
+          "start": 3468,
+          "end": 3616,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q09",
+      "question": "Triton 模型流水线有哪些组织方式？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Ensembling 或 Business Logic Scripting BLS。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- Model pipelines using\n  [Ensembling](docs/user_guide/architecture.md#ensemble-models) or [Business\n  Logic Scripting\n  (BLS)](https://github.com/triton-inference-server/python_backend#business-logic-scripting)",
+          "start": 3811,
+          "end": 4022,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q10",
+      "question": "多个模型串起来，README 说支持哪两种方法？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Ensembling 或 Business Logic Scripting BLS。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- Model pipelines using\n  [Ensembling](docs/user_guide/architecture.md#ensemble-models) or [Business\n  Logic Scripting\n  (BLS)](https://github.com/triton-inference-server/python_backend#business-logic-scripting)",
+          "start": 3811,
+          "end": 4022,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q11",
+      "question": "Triton 网络推理协议基于什么标准？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "HTTP/REST、GRPC，基于 KServe protocol。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- [HTTP/REST and GRPC inference\n  protocols](docs/customization_guide/inference_protocols.md) based on the community\n  developed [KServe\n  protocol](https://github.com/kserve/kserve/tree/master/docs/predict-api/v2)",
+          "start": 4023,
+          "end": 4237,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q12",
+      "question": "用 HTTP 或 gRPC 调用模型，README 提到哪个社区协议？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "HTTP/REST、GRPC，基于 KServe protocol。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- [HTTP/REST and GRPC inference\n  protocols](docs/customization_guide/inference_protocols.md) based on the community\n  developed [KServe\n  protocol](https://github.com/kserve/kserve/tree/master/docs/predict-api/v2)",
+          "start": 4023,
+          "end": 4237,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q13",
+      "question": "能把 Triton 直接嵌入应用进程吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "C API 和 Java API 可直接链接进应用。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- A [C API](docs/customization_guide/inprocess_c_api.md) and\n  [Java API](docs/customization_guide/inprocess_java_api.md)\n  allow Triton to link directly into your application for edge and other in-process use cases",
+          "start": 4238,
+          "end": 4453,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q14",
+      "question": "边缘设备不想单独起服务器，有什么进程内 API？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "C API 和 Java API 可直接链接进应用。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- A [C API](docs/customization_guide/inprocess_c_api.md) and\n  [Java API](docs/customization_guide/inprocess_java_api.md)\n  allow Triton to link directly into your application for edge and other in-process use cases",
+          "start": 4238,
+          "end": 4453,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q15",
+      "question": "Triton 的 Metrics 可观察哪些指标？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "GPU 利用率、服务器吞吐和延迟等。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- [Metrics](docs/user_guide/metrics.md) indicating GPU utilization, server\n  throughput, server latency, and more",
+          "start": 4454,
+          "end": 4567,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q16",
+      "question": "想看显卡利用率、延迟和吞吐，README 支持吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "GPU 利用率、服务器吞吐和延迟等。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "- [Metrics](docs/user_guide/metrics.md) indicating GPU utilization, server\n  throughput, server latency, and more",
+          "start": 4454,
+          "end": 4567,
+          "section": "Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q17",
+      "question": "快速示例如何准备模型仓库？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "clone r26.09，进入 server/docs/examples，执行 fetch_models.sh。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "git clone -b r26.09 https://github.com/triton-inference-server/server.git\ncd server/docs/examples\n./fetch_models.sh",
+          "start": 5223,
+          "end": 5338,
+          "section": "Triton Inference Server / Serve a Model in 3 Easy Steps"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q18",
+      "question": "第一次跑示例，需要拉哪个分支并执行什么脚本？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "clone r26.09，进入 server/docs/examples，执行 fetch_models.sh。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "git clone -b r26.09 https://github.com/triton-inference-server/server.git\ncd server/docs/examples\n./fetch_models.sh",
+          "start": 5223,
+          "end": 5338,
+          "section": "Triton Inference Server / Serve a Model in 3 Easy Steps"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q19",
+      "question": "快速示例启动服务时挂载什么目录，加载什么模型？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "model_repository 挂 /models，模型仓库 /models，explicit 模式加载 densenet_onnx。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "docker run --gpus=1 --rm --net=host -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:26.09-py3 tritonserver --model-repository=/models --model-control-mode explicit --load-model densenet_onnx",
+          "start": 5394,
+          "end": 5599,
+          "section": "Triton Inference Server / Serve a Model in 3 Easy Steps"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q20",
+      "question": "那条 docker 命令把模型映射到哪里，实际加载哪个模型？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "model_repository 挂 /models，模型仓库 /models，explicit 模式加载 densenet_onnx。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "docker run --gpus=1 --rm --net=host -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:26.09-py3 tritonserver --model-repository=/models --model-control-mode explicit --load-model densenet_onnx",
+          "start": 5394,
+          "end": 5599,
+          "section": "Triton Inference Server / Serve a Model in 3 Easy Steps"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q21",
+      "question": "README 推荐怎样构建和使用 Triton？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "推荐 Docker images。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "The recommended way to build and use Triton Inference Server is with Docker\nimages.",
+          "start": 7090,
+          "end": 7173,
+          "section": "Triton Inference Server / Documentation / Build and Deploy"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q22",
+      "question": "源码部署和 Docker 部署，首页推荐哪个方式？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "推荐 Docker images。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "The recommended way to build and use Triton Inference Server is with Docker\nimages.",
+          "start": 7090,
+          "end": 7173,
+          "section": "Triton Inference Server / Documentation / Build and Deploy"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q23",
+      "question": "自己的模型交给 Triton 前需要准备什么？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "模型放进 model repository；按模型类型和能力需要可能建立 model configuration。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "The first step in using Triton to serve your models is to place one or\nmore models into a [model repository](docs/user_guide/model_repository.md). Depending on\nthe type of the model and on what Triton capabilities you want to enable for\nthe model, you may need to create a [model\nconfiguration](docs/user_guide/model_configuration.md) for the model.",
+          "start": 7976,
+          "end": 8325,
+          "section": "Triton Inference Server / Documentation / Using Triton / Preparing Models for Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q24",
+      "question": "不是官方例子，部署模型前先放哪里，还可能要建什么配置？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "模型放进 model repository；按模型类型和能力需要可能建立 model configuration。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-triton-doc",
+          "quote": "The first step in using Triton to serve your models is to place one or\nmore models into a [model repository](docs/user_guide/model_repository.md). Depending on\nthe type of the model and on what Triton capabilities you want to enable for\nthe model, you may need to create a [model\nconfiguration](docs/user_guide/model_configuration.md) for the model.",
+          "start": 7976,
+          "end": 8325,
+          "section": "Triton Inference Server / Documentation / Using Triton / Preparing Models for Triton Inference Server"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q25",
+      "question": "这个示例模型的完整 config.pbtxt 每个字段是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q26",
+      "question": "如何配置生产 TLS 和身份认证网关的完整文件？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q27",
+      "question": "8张A100服务私有70B模型的最佳动态拼批参数是多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q28",
+      "question": "我上传的 ONNX 权重是否与当前 Triton 版本兼容？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q29",
+      "question": "完整的 Kubernetes 多租户资源隔离 YAML 是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    },
+    {
+      "id": "triton-Q30",
+      "question": "在我公司的网络下推理请求的 P99 延迟是多少？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "triton"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

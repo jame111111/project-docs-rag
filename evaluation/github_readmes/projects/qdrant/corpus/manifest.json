@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-qdrant",
+  "product": "qdrant/qdrant README 测试",
+  "commit": "016542aa5deb6c66380bb137badf73d54f742bde",
+  "documents": [
+    {
+      "id": "readme-qdrant-doc",
+      "title": "qdrant/qdrant README",
+      "category": "向量搜索",
+      "source_url": "https://github.com/qdrant/qdrant/blob/016542aa5deb6c66380bb137badf73d54f742bde/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:04:14.600204+00:00",
+      "version": "016542aa5deb6c66380bb137badf73d54f742bde",
+      "sha256": "f1455d12252bf40235ad0128d8e98b2cd6d42583e441ac832b01f4daf08df2e4"
+    }
+  ]
+}

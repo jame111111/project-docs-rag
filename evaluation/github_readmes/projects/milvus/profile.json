@@ -1,0 +1,10 @@
+{
+  "id": "readme-milvus",
+  "name": "milvus-io/milvus README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/milvus-io/milvus/blob/0f34d4d512d0a08e7ad297e0d4d5396943420048/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

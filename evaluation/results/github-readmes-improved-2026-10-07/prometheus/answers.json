@@ -1,0 +1,846 @@
+{
+  "metadata": {
+    "product_id": "readme-prometheus",
+    "product_name": "prometheus/prometheus README 测试",
+    "corpus_commit": "97541926b9e99ce298c285e67e71ebf993e9f2ff",
+    "dataset_sha256": "fb17dbb9848d536fd9e73e3633cd626895708bda811b31d00a3f4c58eaf17182",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "2c6b0fee765017e3c18e3722cb8adacd1092d3d1b69d9d3738623982731e49a8",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "prometheus",
+    "repository": "prometheus/prometheus",
+    "index": {
+      "documents": 1,
+      "parents": 22,
+      "children": 68,
+      "fingerprint": "2c6b0fee765017e3c18e3722cb8adacd1092d3d1b69d9d3738623982731e49a8"
+    }
+  },
+  "results": [
+    {
+      "id": "prometheus-Q01",
+      "question": "Prometheus 数据模型如何定义时间序列？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "metric name 和 key/value dimensions。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* A **multi-dimensional** data model (time series defined by metric name and set of key/value dimensions)",
+          "start": 1964,
+          "end": 2069,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q02",
+      "question": "一条时序除了指标名，还用什么维度区分？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "metric name 和 key/value dimensions。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* A **multi-dimensional** data model (time series defined by metric name and set of key/value dimensions)",
+          "start": 1964,
+          "end": 2069,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q03",
+      "question": "Prometheus 主要拉取还是推送指标，批任务怎样推送？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "HTTP pull；batch jobs 可经 intermediary gateway 推送。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* An HTTP **pull model** for time series collection",
+          "start": 2234,
+          "end": 2285,
+          "section": "正文"
+        },
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* **Pushing time series** is supported via an intermediary gateway for batch jobs",
+          "start": 2286,
+          "end": 2367,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q04",
+      "question": "正常采集是 pull 吗，短批任务能 push 吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "HTTP pull；batch jobs 可经 intermediary gateway 推送。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* An HTTP **pull model** for time series collection",
+          "start": 2234,
+          "end": 2285,
+          "section": "正文"
+        },
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* **Pushing time series** is supported via an intermediary gateway for batch jobs",
+          "start": 2286,
+          "end": 2367,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q05",
+      "question": "Prometheus 单节点依赖分布式存储吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不依赖分布式存储，single server nodes autonomous。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* No dependency on distributed storage; **single server nodes are autonomous**",
+          "start": 2155,
+          "end": 2233,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q06",
+      "question": "只起一个服务，还必须配外部分布式存储吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不依赖分布式存储，single server nodes autonomous。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* No dependency on distributed storage; **single server nodes are autonomous**",
+          "start": 2155,
+          "end": 2233,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q07",
+      "question": "Prometheus 怎样发现采集目标？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "service discovery 或 static configuration。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* Targets are discovered via **service discovery** or **static configuration**",
+          "start": 2368,
+          "end": 2446,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q08",
+      "question": "监控目标得一个个手填吗，能自动发现吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "service discovery 或 static configuration。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* Targets are discovered via **service discovery** or **static configuration**",
+          "start": 2368,
+          "end": 2446,
+          "section": "正文"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q09",
+      "question": "README 推荐哪种 Prometheus 安装方式？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "推荐最新 production release binary。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "on [prometheus.io](https://prometheus.io). Using the latest production release binary\nis the recommended way to install Prometheus.",
+          "start": 2857,
+          "end": 2988,
+          "section": "Install / Precompiled binaries"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q10",
+      "question": "想稳妥安装，首页建议源码还是发行二进制？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "推荐最新 production release binary。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "on [prometheus.io](https://prometheus.io). Using the latest production release binary\nis the recommended way to install Prometheus.",
+          "start": 2857,
+          "end": 2988,
+          "section": "Install / Precompiled binaries"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q11",
+      "question": "本地 Prometheus 容器示例如何绑定端口？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus",
+          "start": 3352,
+          "end": 3422,
+          "section": "Install / Docker images"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q12",
+      "question": "只让本机访问 9090，README 示例命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus",
+          "start": 3352,
+          "end": 3422,
+          "section": "Install / Docker images"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q13",
+      "question": "构建 Prometheus 需要哪些工具和版本要求？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Go 按 go.mod 或更高，Node 按 .nvmrc 或更高，npm10+。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* Go: Version specified in [go.mod](./go.mod) or greater.\n* NodeJS: Version specified in [.nvmrc](./web/ui/.nvmrc) or greater.\n* npm: Version 10 or greater",
+          "start": 3566,
+          "end": 3721,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q14",
+      "question": "Go、Node 和 npm 应按什么版本准备？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Go 按 go.mod 或更高，Node 按 .nvmrc 或更高，npm10+。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* Go: Version specified in [go.mod](./go.mod) or greater.\n* NodeJS: Version specified in [.nvmrc](./web/ui/.nvmrc) or greater.\n* npm: Version 10 or greater",
+          "start": 3566,
+          "end": 3721,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q15",
+      "question": "怎样用 go install 构建并启动指定配置？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "go install .../cmd/...，prometheus --config.file=your_config.yml。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "go install github.com/prometheus/prometheus/cmd/...\nprometheus --config.file=your_config.yml",
+          "start": 4021,
+          "end": 4113,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q16",
+      "question": "用 Go 工具安装后，配置文件参数怎么传？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "go install .../cmd/...，prometheus --config.file=your_config.yml。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "go install github.com/prometheus/prometheus/cmd/...\nprometheus --config.file=your_config.yml",
+          "start": 4021,
+          "end": 4113,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q17",
+      "question": "go install 构建后为什么需要在仓库根目录启动？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "从本地 web/ui/static 读资源，需根目录启动；React UI 需 make assets 或 make build。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "*However*, when using `go install` to build Prometheus, Prometheus will expect to be able to\nread its web assets from local filesystem directories under `web/ui/static`. In order for\nthese assets to be found, you will have to run Prometheus from the root of the cloned\nrepository. Note also that this directory does not include the React UI unless it has been\nbuilt explicitly using `make assets` or `make build`.",
+          "start": 4119,
+          "end": 4532,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q18",
+      "question": "编译成功却找不到 web 资源，README 说明什么限制？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "从本地 web/ui/static 读资源，需根目录启动；React UI 需 make assets 或 make build。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "*However*, when using `go install` to build Prometheus, Prometheus will expect to be able to\nread its web assets from local filesystem directories under `web/ui/static`. In order for\nthese assets to be found, you will have to run Prometheus from the root of the cloned\nrepository. Note also that this directory does not include the React UI unless it has been\nbuilt explicitly using `make assets` or `make build`.",
+          "start": 4119,
+          "end": 4532,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q19",
+      "question": "怎样构建可从任意目录启动的 Prometheus？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "make build 编译进 web assets。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "You can also build using `make build`, which will compile in the web assets so that\nPrometheus can be run from anywhere:",
+          "start": 4689,
+          "end": 4809,
+          "section": "Install / Building from source"
+        },
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "make build\n./prometheus --config.file=your_config.yml",
+          "start": 4819,
+          "end": 4872,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q20",
+      "question": "想把 web 资源打进二进制，不受工作目录限制怎么办？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "make build 编译进 web assets。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "You can also build using `make build`, which will compile in the web assets so that\nPrometheus can be run from anywhere:",
+          "start": 4689,
+          "end": 4809,
+          "section": "Install / Building from source"
+        },
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "make build\n./prometheus --config.file=your_config.yml",
+          "start": 4819,
+          "end": 4872,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q21",
+      "question": "Prometheus Makefile 的 test、test-short 和 assets 做什么？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "test 跑测试，test-short 短测试，assets 构建 React UI。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* *test*: run the tests\n* *test-short*: run the short tests",
+          "start": 5024,
+          "end": 5083,
+          "section": "Install / Building from source"
+        },
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* *assets*: build the React UI",
+          "start": 5168,
+          "end": 5198,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q22",
+      "question": "普通测试、短测试、React 页面分别用哪些目标？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "test 跑测试，test-short 短测试，assets 构建 React UI。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* *test*: run the tests\n* *test-short*: run the short tests",
+          "start": 5024,
+          "end": 5083,
+          "section": "Install / Building from source"
+        },
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* *assets*: build the React UI",
+          "start": 5168,
+          "end": 5198,
+          "section": "Install / Building from source"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q23",
+      "question": "怎样去掉可选服务发现，只保留 Kubernetes 插件？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "remove_all_sd 后 enable_kubernetes_sd；file/static/http 不在可选删除中。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "go build -tags \"remove_all_sd,enable_kubernetes_sd\" ./cmd/prometheus",
+          "start": 5828,
+          "end": 5896,
+          "section": "Install / Service discovery plugins"
+        },
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* `remove_all_sd` - Exclude all optional service discoveries (keeps file_sd, static_sd, and http_sd)",
+          "start": 5924,
+          "end": 6024,
+          "section": "Install / Service discovery plugins"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q24",
+      "question": "想缩减构建里的 SD 插件，build tags 该如何设置？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "remove_all_sd 后 enable_kubernetes_sd；file/static/http 不在可选删除中。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "go build -tags \"remove_all_sd,enable_kubernetes_sd\" ./cmd/prometheus",
+          "start": 5828,
+          "end": 5896,
+          "section": "Install / Service discovery plugins"
+        },
+        {
+          "doc_id": "readme-prometheus-doc",
+          "quote": "* `remove_all_sd` - Exclude all optional service discoveries (keeps file_sd, static_sd, and http_sd)",
+          "start": 5924,
+          "end": 6024,
+          "section": "Install / Service discovery plugins"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q25",
+      "question": "默认存储保留时长的具体值是多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q26",
+      "question": "这个十万目标环境的 scrape_interval 应该是多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q27",
+      "question": "生产 mTLS 与 basic auth 的完整 web.yml 怎么写？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q28",
+      "question": "给磁盘告警写出适用于我公司的完整 PromQL 规则？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q29",
+      "question": "如何为远程存储实现跨地域灾难恢复的全部配置？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    },
+    {
+      "id": "prometheus-Q30",
+      "question": "我的目标 up=0 的实际网络或认证根因是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "prometheus"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

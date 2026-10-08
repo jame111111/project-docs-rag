@@ -1,0 +1,30 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+backend/.env
+data/runtime/
+data/uploads/
+frontend/node_modules/
+frontend/dist/
+*.tmp.json
+evaluation/results/run-*/
+# 旧产品的官方全文及未接入的下载资料仅留本地，不纳入 GitHub。
+data/corpus/
+products/vscode/
+evaluation/dataset.json
+evaluation/results/baseline-2026-10-05/
+scripts/snapshot.py
+scripts/build_dataset.py
+scripts/build_report.py
+scripts/verify_artifacts.py
+docs/verification.json
+docs/screenshots/
+.env
+.env.*
+!**/.env.example
+artifacts/
+# 历史场景保留本地，默认知识库和 GitHub 交付不包含历史语料。
+products/wechat/
+docs/wechat/
+evaluation/results/wechat-2026-10-05/

@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-airflow",
+  "product": "apache/airflow README 测试",
+  "commit": "508267cda9b510013f1a8b83541472cef09ef9a1",
+  "documents": [
+    {
+      "id": "readme-airflow-doc",
+      "title": "apache/airflow README",
+      "category": "任务调度平台",
+      "source_url": "https://github.com/apache/airflow/blob/508267cda9b510013f1a8b83541472cef09ef9a1/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:09:18.106519+00:00",
+      "version": "508267cda9b510013f1a8b83541472cef09ef9a1",
+      "sha256": "ed42ef8038420c3e20116e40cb38751989aa90fd69632e200d3766e21aab00a0"
+    }
+  ]
+}

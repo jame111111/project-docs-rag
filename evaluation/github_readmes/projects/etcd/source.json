@@ -1,0 +1,16 @@
+{
+  "id": "etcd",
+  "repository": "etcd-io/etcd",
+  "category": "分布式一致性存储",
+  "repository_url": "https://github.com/etcd-io/etcd",
+  "commit": "76d58e32b30d57a540821c9c5bbcb651fd89994c",
+  "source_path": "README.md",
+  "source_url": "https://github.com/etcd-io/etcd/blob/76d58e32b30d57a540821c9c5bbcb651fd89994c/README.md",
+  "collected_at": "2026-10-07T08:02:36.400582+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE"
+  ],
+  "sha256": "d78b5f4555f76984a161a824a06722f8ed5b00e7cf9d845a75ccda1d134deae1",
+  "bytes": 10197
+}

@@ -1,0 +1,25 @@
+{
+  "selection_basis": "选择分布式系统、数据库、机器学习与云原生领域的复杂项目；是有意选样，不是复杂度排行榜。只使用根目录 Markdown README，不跟随链接采集其他文档。",
+  "projects": [
+    {"id":"kubernetes","repository":"kubernetes/kubernetes","category":"容器编排"},
+    {"id":"etcd","repository":"etcd-io/etcd","category":"分布式一致性存储"},
+    {"id":"spark","repository":"apache/spark","category":"分布式计算"},
+    {"id":"triton","repository":"triton-inference-server/server","category":"模型推理服务"},
+    {"id":"vllm","repository":"vllm-project/vllm","category":"大模型推理"},
+    {"id":"pytorch","repository":"pytorch/pytorch","category":"深度学习框架"},
+    {"id":"tensorflow","repository":"tensorflow/tensorflow","category":"机器学习框架"},
+    {"id":"clickhouse","repository":"ClickHouse/ClickHouse","category":"分析数据库"},
+    {"id":"duckdb","repository":"duckdb/duckdb","category":"嵌入式分析数据库"},
+    {"id":"milvus","repository":"milvus-io/milvus","category":"向量数据库"},
+    {"id":"qdrant","repository":"qdrant/qdrant","category":"向量搜索"},
+    {"id":"flink","repository":"apache/flink","category":"流式计算"},
+    {"id":"tidb","repository":"pingcap/tidb","category":"分布式 SQL 数据库"},
+    {"id":"prometheus","repository":"prometheus/prometheus","category":"监控系统"},
+    {"id":"grafana","repository":"grafana/grafana","category":"可观测性平台"},
+    {"id":"argocd","repository":"argoproj/argo-cd","category":"GitOps 持续交付"},
+    {"id":"opensearch","repository":"opensearch-project/OpenSearch","category":"分布式搜索"},
+    {"id":"temporal","repository":"temporalio/temporal","category":"持久化工作流"},
+    {"id":"supabase","repository":"supabase/supabase","category":"后端服务平台"},
+    {"id":"airflow","repository":"apache/airflow","category":"任务调度平台"}
+  ]
+}

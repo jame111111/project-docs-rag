@@ -1,0 +1,10 @@
+{
+  "id": "readme-argocd",
+  "name": "argoproj/argo-cd README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/argoproj/argo-cd/blob/2f3711241f94959924650c9ef554f58a7fbd4d26/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

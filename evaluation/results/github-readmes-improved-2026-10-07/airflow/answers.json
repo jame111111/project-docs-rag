@@ -1,0 +1,860 @@
+{
+  "metadata": {
+    "product_id": "readme-airflow",
+    "product_name": "apache/airflow README 测试",
+    "corpus_commit": "508267cda9b510013f1a8b83541472cef09ef9a1",
+    "dataset_sha256": "40be4055237dda9369b6ad3f3672ffb8667bcdb813825a57578ccfc76b654eec",
+    "embedding_model": "BAAI/bge-small-zh-v1.5",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "index_fingerprint": "44d5fdc3290008f4a2d2abaa1a13c92378b1e3d1b6f835c2de464cc8149b174e",
+    "context_budget": 4000,
+    "candidates_per_route": 10,
+    "rrf_k": 60,
+    "split": "all",
+    "question_count": 30,
+    "answerable_count": 24,
+    "project": "airflow",
+    "repository": "apache/airflow",
+    "index": {
+      "documents": 1,
+      "parents": 70,
+      "children": 273,
+      "fingerprint": "44d5fdc3290008f4a2d2abaa1a13c92378b1e3d1b6f835c2de464cc8149b174e"
+    }
+  },
+  "results": [
+    {
+      "id": "airflow-Q01",
+      "question": "Airflow 更适合哪种变化频率的 workflow？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "主要静态、缓慢变化，Dag结构运行间相似。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "Airflow works best with workflows that are mostly static and slowly changing. When the Dag structure is similar from one run to the next, it clarifies the unit of work and continuity.",
+          "start": 8177,
+          "end": 8360,
+          "section": "Apache Airflow / Project Focus"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q02",
+      "question": "工作流结构每次都大变，还是基本稳定时更适合它？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "主要静态、缓慢变化，Dag结构运行间相似。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "Airflow works best with workflows that are mostly static and slowly changing. When the Dag structure is similar from one run to the next, it clarifies the unit of work and continuity.",
+          "start": 8177,
+          "end": 8360,
+          "section": "Apache Airflow / Project Focus"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q03",
+      "question": "Airflow 对任务幂等性有什么建议？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "理想任务应幂等，结果相同且不产生重复目的数据。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "tasks should ideally be idempotent (i.e., results of the task will be the same, and will not create duplicated data in a destination system)",
+          "start": 9212,
+          "end": 9352,
+          "section": "Apache Airflow / Project Focus"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q04",
+      "question": "任务重跑能否造成目的端重复数据？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "理想任务应幂等，结果相同且不产生重复目的数据。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "tasks should ideally be idempotent (i.e., results of the task will be the same, and will not create duplicated data in a destination system)",
+          "start": 9212,
+          "end": 9352,
+          "section": "Apache Airflow / Project Focus"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q05",
+      "question": "Airflow 任务之间应传大量数据吗，XCom 用来传什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不应传大量数据，可XCom传元数据；大量密集工作委托专业外部服务。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "and should not pass large quantities of data from one task to the next (though tasks can pass metadata using Airflow's [XCom feature](https://airflow.apache.org/docs/apache-airflow/stable/concepts/xcoms.html)). For high-volume, data-intensive tasks, a best practice is to delegate to external services specializing in that type of work.",
+          "start": 9354,
+          "end": 9690,
+          "section": "Apache Airflow / Project Focus"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q06",
+      "question": "大文件直接从一个task交给下一个合适吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不应传大量数据，可XCom传元数据；大量密集工作委托专业外部服务。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "and should not pass large quantities of data from one task to the next (though tasks can pass metadata using Airflow's [XCom feature](https://airflow.apache.org/docs/apache-airflow/stable/concepts/xcoms.html)). For high-volume, data-intensive tasks, a best practice is to delegate to external services specializing in that type of work.",
+          "start": 9354,
+          "end": 9690,
+          "section": "Apache Airflow / Project Focus"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q07",
+      "question": "Airflow 是流处理方案吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不是streaming solution，可按批从stream拉数据。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "Airflow is not a streaming solution, but it is often used to process real-time data, pulling data off streams in batches.",
+          "start": 9692,
+          "end": 9813,
+          "section": "Apache Airflow / Project Focus"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q08",
+      "question": "能把它当实时 streaming engine 直接持续处理流吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "不是streaming solution，可按批从stream拉数据。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "Airflow is not a streaming solution, but it is often used to process real-time data, pulling data off streams in batches.",
+          "start": 9692,
+          "end": 9813,
+          "section": "Apache Airflow / Project Focus"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q09",
+      "question": "Airflow 动态 DAG 与模板定制怎样实现？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "代码定义动态dag/参数化，Jinja模板定制。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "- **Dynamic**: Pipelines are defined in code, enabling dynamic dag generation and parameterization.",
+          "start": 9830,
+          "end": 9929,
+          "section": "Apache Airflow / Principles"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "- **Flexible**: Airflow leverages the [**Jinja**](https://jinja.palletsprojects.com) templating engine, allowing rich customizations.",
+          "start": 10053,
+          "end": 10186,
+          "section": "Apache Airflow / Principles"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q10",
+      "question": "流水线能动态生成吗，模板引擎是什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "代码定义动态dag/参数化，Jinja模板定制。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "- **Dynamic**: Pipelines are defined in code, enabling dynamic dag generation and parameterization.",
+          "start": 9830,
+          "end": 9929,
+          "section": "Apache Airflow / Principles"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "- **Flexible**: Airflow leverages the [**Jinja**](https://jinja.palletsprojects.com) templating engine, allowing rich customizations.",
+          "start": 10053,
+          "end": 10186,
+          "section": "Apache Airflow / Principles"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q11",
+      "question": "Airflow 推荐 MariaDB 吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "MariaDB不受测试或推荐。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "**Note**: MariaDB is not tested/recommended.",
+          "start": 11356,
+          "end": 11400,
+          "section": "Apache Airflow / Requirements"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q12",
+      "question": "已有 MariaDB，首页说它受测试和推荐吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "MariaDB不受测试或推荐。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "**Note**: MariaDB is not tested/recommended.",
+          "start": 11356,
+          "end": 11400,
+          "section": "Apache Airflow / Requirements"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q13",
+      "question": "Airflow SQLite 可用于生产吗，本地推荐什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "测试用，不要生产用；本地推荐SQLite最新稳定版。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "**Note**: SQLite is used in Airflow tests. Do not use it in production. We recommend\nusing the latest stable version of SQLite for local development.",
+          "start": 11402,
+          "end": 11551,
+          "section": "Apache Airflow / Requirements"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q14",
+      "question": "演示用 SQLite，正式上线也能沿用吗？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "测试用，不要生产用；本地推荐SQLite最新稳定版。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "**Note**: SQLite is used in Airflow tests. Do not use it in production. We recommend\nusing the latest stable version of SQLite for local development.",
+          "start": 11402,
+          "end": 11551,
+          "section": "Apache Airflow / Requirements"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q15",
+      "question": "Windows 开发 Airflow 有什么方式，生产环境要求什么？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Windows用WSL2或Linux Containers；生产仅支持Linux distros。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "On Windows you can run it via WSL2 (Windows Subsystem for Linux 2) or via Linux Containers.",
+          "start": 11731,
+          "end": 11822,
+          "section": "Apache Airflow / Requirements"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "You should only use Linux-based distros as \"Production\" execution environment\nas this is the only environment that is supported.",
+          "start": 11959,
+          "end": 12087,
+          "section": "Apache Airflow / Requirements"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q16",
+      "question": "直接原生 Windows 运行受支持吗，生产能用哪个系统？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "Windows用WSL2或Linux Containers；生产仅支持Linux distros。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "On Windows you can run it via WSL2 (Windows Subsystem for Linux 2) or via Linux Containers.",
+          "start": 11731,
+          "end": 11822,
+          "section": "Apache Airflow / Requirements"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "You should only use Linux-based distros as \"Production\" execution environment\nas this is the only environment that is supported.",
+          "start": 11959,
+          "end": 12087,
+          "section": "Apache Airflow / Requirements"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q17",
+      "question": "为什么直接 pip install apache-airflow 可能失败或不可用？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "依赖尽量开放，简单pipinstall可能失败或产生不可用安装。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "We decided to keep\nour dependencies as open as possible (in `pyproject.toml`) so users can install different versions of libraries\nif needed. This means that `pip install apache-airflow` will not work from time to time or will\nproduce unusable Airflow installation.",
+          "start": 13891,
+          "end": 14156,
+          "section": "Apache Airflow / Installing from PyPI"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q18",
+      "question": "不锁约束直接装包，README 指出什么问题？",
+      "answerable": true,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "依赖尽量开放，简单pipinstall可能失败或产生不可用安装。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "We decided to keep\nour dependencies as open as possible (in `pyproject.toml`) so users can install different versions of libraries\nif needed. This means that `pip install apache-airflow` will not work from time to time or will\nproduce unusable Airflow installation.",
+          "start": 13891,
+          "end": 14156,
+          "section": "Apache Airflow / Installing from PyPI"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q19",
+      "question": "Airflow 可复现安装的 constraints URL 要匹配哪些版本？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "按Python major/minor分开，URL指定正确Airflow tag/version/branch及Python版本。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "constraints files separately per major/minor Python version.\nYou can use them as constraint files when installing Airflow from PyPI. Note that you have to specify\ncorrect Airflow tag/version/branch and Python versions in the URL.",
+          "start": 14357,
+          "end": 14586,
+          "section": "Apache Airflow / Installing from PyPI"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q20",
+      "question": "约束文件能随便选吗，要和哪些版本对上？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "按Python major/minor分开，URL指定正确Airflow tag/version/branch及Python版本。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "constraints files separately per major/minor Python version.\nYou can use them as constraint files when installing Airflow from PyPI. Note that you have to specify\ncorrect Airflow tag/version/branch and Python versions in the URL.",
+          "start": 14357,
+          "end": 14586,
+          "section": "Apache Airflow / Installing from PyPI"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q21",
+      "question": "哪些安装工具受 Airflow 官方支持，Poetry 怎样处理？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "目前仅pip、uv官方支持；Poetry/pip-tools不支持，需转换constraints格式工作流。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "> Note: Only `pip` and `uv` installation is currently officially supported.",
+          "start": 14617,
+          "end": 14692,
+          "section": "Apache Airflow / Installing from PyPI"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "Installing via `Poetry` or `pip-tools` is not currently supported.",
+          "start": 14953,
+          "end": 15019,
+          "section": "Apache Airflow / Installing from PyPI"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "If you wish to install Airflow using those tools, you should use the constraint files and convert\nthem to the appropriate format and workflow that your tool requires.",
+          "start": 15021,
+          "end": 15187,
+          "section": "Apache Airflow / Installing from PyPI"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q22",
+      "question": "能用 Poetry 或 pip-tools 按官方工作流安装吗？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "目前仅pip、uv官方支持；Poetry/pip-tools不支持，需转换constraints格式工作流。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "> Note: Only `pip` and `uv` installation is currently officially supported.",
+          "start": 14617,
+          "end": 14692,
+          "section": "Apache Airflow / Installing from PyPI"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "Installing via `Poetry` or `pip-tools` is not currently supported.",
+          "start": 14953,
+          "end": 15019,
+          "section": "Apache Airflow / Installing from PyPI"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "If you wish to install Airflow using those tools, you should use the constraint files and convert\nthem to the appropriate format and workflow that your tool requires.",
+          "start": 15021,
+          "end": 15187,
+          "section": "Apache Airflow / Installing from PyPI"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q23",
+      "question": "Airflow 正式源码发行与 PyPI/Docker 便利包有什么区别？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "正式源码由release manager签名；便利包不是ASF定义正式release，用正式源码准备。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "- Are cryptographically signed by the release manager",
+          "start": 16433,
+          "end": 16486,
+          "section": "Apache Airflow / Official source code"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "All those artifacts are not official releases, but they are prepared using officially released sources.",
+          "start": 17969,
+          "end": 18072,
+          "section": "Apache Airflow / Convenience packages"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q24",
+      "question": "PyPI包和镜像都算ASF正式release吗，正式源码怎样签名？",
+      "answerable": true,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "正式源码由release manager签名；便利包不是ASF定义正式release，用正式源码准备。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "- Are cryptographically signed by the release manager",
+          "start": 16433,
+          "end": 16486,
+          "section": "Apache Airflow / Official source code"
+        },
+        {
+          "doc_id": "readme-airflow-doc",
+          "quote": "All those artifacts are not official releases, but they are prepared using officially released sources.",
+          "start": 17969,
+          "end": 18072,
+          "section": "Apache Airflow / Convenience packages"
+        }
+      ],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q25",
+      "question": "完整的生产 CeleryExecutor broker 和 result backend 配置是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q26",
+      "question": "我的 DAG 长时间 queued 的实际 scheduler 日志根因是什么？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q27",
+      "question": "如何为公司 OIDC 配置完整的认证管理器？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q28",
+      "question": "这个集群的最优 parallelism 与 worker concurrency 是多少？",
+      "answerable": false,
+      "split": "dev",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q29",
+      "question": "怎样编写完整的跨任务加密敏感数据传输代码？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    },
+    {
+      "id": "airflow-Q30",
+      "question": "从私有损坏 metadata 数据库恢复 DAG 状态的全部 SQL 是什么？",
+      "answerable": false,
+      "split": "final",
+      "mode": "hybrid_parent",
+      "top_k": 5,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "review": "unverified",
+      "review_notes": "",
+      "run_status": "not_run",
+      "reason": "model_not_configured",
+      "answer": "",
+      "citations": [],
+      "project": "airflow"
+    }
+  ],
+  "answer_accuracy": "unverified"
+}

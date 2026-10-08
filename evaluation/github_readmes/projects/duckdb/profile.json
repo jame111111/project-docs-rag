@@ -1,0 +1,10 @@
+{
+  "id": "readme-duckdb",
+  "name": "duckdb/duckdb README 测试",
+  "description": "独立 README 测试快照",
+  "source_label": "GitHub 固定提交的根目录 README",
+  "source_url": "https://github.com/duckdb/duckdb/blob/fa93ada028b1258926e827be7af3627979093d47/README.md",
+  "corpus": "corpus",
+  "evaluation": "evaluation/dataset.json",
+  "examples": []
+}

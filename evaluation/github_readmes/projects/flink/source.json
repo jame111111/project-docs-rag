@@ -1,0 +1,17 @@
+{
+  "id": "flink",
+  "repository": "apache/flink",
+  "category": "流式计算",
+  "repository_url": "https://github.com/apache/flink",
+  "commit": "a47e4bf9b9ef287d5ff7f5783df993e4cef2dd1a",
+  "source_path": "README.md",
+  "source_url": "https://github.com/apache/flink/blob/a47e4bf9b9ef287d5ff7f5783df993e4cef2dd1a/README.md",
+  "collected_at": "2026-10-07T08:04:22.410695+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE",
+    "NOTICE"
+  ],
+  "sha256": "84511d5b71efe7add88d8282928b0026cfa3b8283e51e4c5ba4adcecee604493",
+  "bytes": 7662
+}

@@ -1,0 +1,15 @@
+{
+  "commit": "84c5a9e11a9e58262599e3d772f5386924e02ca7",
+  "collected_at": "2026-10-05",
+  "files": [
+    "README.md",
+    "development.md",
+    "deployment.md",
+    "backend/README.md",
+    "frontend/README.md",
+    "CONTRIBUTING.md",
+    "deployment-docker-compose.md"
+  ],
+  "repository": "https://github.com/fastapi/full-stack-fastapi-template",
+  "release": "0.12.0"
+}

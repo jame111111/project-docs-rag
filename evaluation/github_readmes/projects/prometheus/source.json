@@ -1,0 +1,17 @@
+{
+  "id": "prometheus",
+  "repository": "prometheus/prometheus",
+  "category": "监控系统",
+  "repository_url": "https://github.com/prometheus/prometheus",
+  "commit": "97541926b9e99ce298c285e67e71ebf993e9f2ff",
+  "source_path": "README.md",
+  "source_url": "https://github.com/prometheus/prometheus/blob/97541926b9e99ce298c285e67e71ebf993e9f2ff/README.md",
+  "collected_at": "2026-10-07T08:04:58.558839+00:00",
+  "license_spdx": "Apache-2.0",
+  "license_files": [
+    "LICENSE",
+    "NOTICE"
+  ],
+  "sha256": "0d2f3f6f3d19ed74c6302168f95d18f12a7e1041e89dcceadca6f2de860f828d",
+  "bytes": 9689
+}

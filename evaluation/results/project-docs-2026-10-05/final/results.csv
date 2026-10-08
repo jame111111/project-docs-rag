@@ -1,0 +1,49 @@
+﻿id,question,split,answerable,mode,top_k,complete_evidence_covered,context_chars,retrieval_ms
+Q25,大功能变更和修正错别字，提交贡献之前的流程有何区别？,final,True,vector_child,1,False,249,15.247
+Q25,大功能变更和修正错别字，提交贡献之前的流程有何区别？,final,True,hybrid_child,1,False,249,465.962
+Q25,大功能变更和修正错别字，提交贡献之前的流程有何区别？,final,True,hybrid_parent,1,False,641,465.8
+Q25,大功能变更和修正错别字，提交贡献之前的流程有何区别？,final,True,vector_child,5,False,1462,14.467
+Q25,大功能变更和修正错别字，提交贡献之前的流程有何区别？,final,True,hybrid_child,5,False,1462,466.442
+Q25,大功能变更和修正错别字，提交贡献之前的流程有何区别？,final,True,hybrid_parent,5,False,1610,466.155
+Q26,修改功能后提交 PR，有哪些检查和说明要求？,final,True,vector_child,1,False,249,16.164
+Q26,修改功能后提交 PR，有哪些检查和说明要求？,final,True,hybrid_child,1,False,249,15.715
+Q26,修改功能后提交 PR，有哪些检查和说明要求？,final,True,hybrid_parent,1,False,641,16.26
+Q26,修改功能后提交 PR，有哪些检查和说明要求？,final,True,vector_child,5,True,1250,13.824
+Q26,修改功能后提交 PR，有哪些检查和说明要求？,final,True,hybrid_child,5,False,1218,14.964
+Q26,修改功能后提交 PR，有哪些检查和说明要求？,final,True,hybrid_parent,5,True,1577,14.959
+Q27,后端改了 OpenAPI，前端需要跟着做什么？,final,True,vector_child,1,False,239,12.274
+Q27,后端改了 OpenAPI，前端需要跟着做什么？,final,True,hybrid_child,1,False,301,12.62
+Q27,后端改了 OpenAPI，前端需要跟着做什么？,final,True,hybrid_parent,1,True,544,12.567
+Q27,后端改了 OpenAPI，前端需要跟着做什么？,final,True,vector_child,5,False,1199,11.86
+Q27,后端改了 OpenAPI，前端需要跟着做什么？,final,True,hybrid_child,5,True,1377,13.386
+Q27,后端改了 OpenAPI，前端需要跟着做什么？,final,True,hybrid_parent,5,True,1076,12.549
+Q28,Cloud 应用目录设在哪里？PostgreSQL 连接串怎么配置？,final,True,vector_child,1,False,482,14.012
+Q28,Cloud 应用目录设在哪里？PostgreSQL 连接串怎么配置？,final,True,hybrid_child,1,False,482,14.511
+Q28,Cloud 应用目录设在哪里？PostgreSQL 连接串怎么配置？,final,True,hybrid_parent,1,True,651,14.487
+Q28,Cloud 应用目录设在哪里？PostgreSQL 连接串怎么配置？,final,True,vector_child,5,True,1703,13.991
+Q28,Cloud 应用目录设在哪里？PostgreSQL 连接串怎么配置？,final,True,hybrid_child,5,True,1408,14.59
+Q28,Cloud 应用目录设在哪里？PostgreSQL 连接串怎么配置？,final,True,hybrid_parent,5,True,1343,14.583
+Q29,部署工作流使用自托管 runner，需要注意什么？,final,True,vector_child,1,False,335,13.754
+Q29,部署工作流使用自托管 runner，需要注意什么？,final,True,hybrid_child,1,False,335,12.841
+Q29,部署工作流使用自托管 runner，需要注意什么？,final,True,hybrid_parent,1,False,813,12.727
+Q29,部署工作流使用自托管 runner，需要注意什么？,final,True,vector_child,5,False,1684,11.634
+Q29,部署工作流使用自托管 runner，需要注意什么？,final,True,hybrid_child,5,True,1880,12.654
+Q29,部署工作流使用自托管 runner，需要注意什么？,final,True,hybrid_parent,5,True,1791,12.615
+Q30,本地测试邮件会真的发给用户吗？怎么查看它们？,final,True,vector_child,1,False,249,12.349
+Q30,本地测试邮件会真的发给用户吗？怎么查看它们？,final,True,hybrid_child,1,False,249,12.865
+Q30,本地测试邮件会真的发给用户吗？怎么查看它们？,final,True,hybrid_parent,1,False,1585,12.787
+Q30,本地测试邮件会真的发给用户吗？怎么查看它们？,final,True,vector_child,5,False,1153,13.047
+Q30,本地测试邮件会真的发给用户吗？怎么查看它们？,final,True,hybrid_child,5,False,1153,12.777
+Q30,本地测试邮件会真的发给用户吗？怎么查看它们？,final,True,hybrid_parent,5,False,2125,12.727
+U09,数据库自动备份的周期和保留天数是多少？,final,False,vector_child,1,,290,12.495
+U09,数据库自动备份的周期和保留天数是多少？,final,False,hybrid_child,1,,290,13.179
+U09,数据库自动备份的周期和保留天数是多少？,final,False,hybrid_parent,1,,801,13.293
+U09,数据库自动备份的周期和保留天数是多少？,final,False,vector_child,5,,1360,12.54
+U09,数据库自动备份的周期和保留天数是多少？,final,False,hybrid_child,5,,1360,13.074
+U09,数据库自动备份的周期和保留天数是多少？,final,False,hybrid_parent,5,,1450,13.995
+U10,Windows 不装 Docker，怎样按文档启动原生 PostgreSQL？,final,False,vector_child,1,,403,11.769
+U10,Windows 不装 Docker，怎样按文档启动原生 PostgreSQL？,final,False,hybrid_child,1,,277,11.989
+U10,Windows 不装 Docker，怎样按文档启动原生 PostgreSQL？,final,False,hybrid_parent,1,,586,11.889
+U10,Windows 不装 Docker，怎样按文档启动原生 PostgreSQL？,final,False,vector_child,5,,1368,11.024
+U10,Windows 不装 Docker，怎样按文档启动原生 PostgreSQL？,final,False,hybrid_child,5,,1411,11.878
+U10,Windows 不装 Docker，怎样按文档启动原生 PostgreSQL？,final,False,hybrid_parent,5,,1556,12.17

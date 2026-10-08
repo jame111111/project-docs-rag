@@ -1,0 +1,609 @@
+{
+  "version": 3,
+  "product_id": "readme-temporal",
+  "corpus_commit": "e161e3bc28d4e86ce76ae5f83d12c2443e76cb8d",
+  "offset_unit": "unicode_codepoint",
+  "questions": [
+    {
+      "id": "temporal-Q01",
+      "question": "Temporal server 执行什么逻辑单元，怎样面对间歇故障？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F01",
+      "reference_points": [
+        "以 Workflows 执行应用逻辑，处理间歇故障并重试失败操作。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "The Temporal server executes units of application logic called Workflows in a resilient manner that automatically handles intermittent failures, and retries failed operations.",
+          "start": 1422,
+          "end": 1597,
+          "section": "Temporal—durable execution platform / Introduction"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q02",
+      "question": "任务执行中偶尔失败，它有什么自动处理？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F01",
+      "reference_points": [
+        "以 Workflows 执行应用逻辑，处理间歇故障并重试失败操作。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "The Temporal server executes units of application logic called Workflows in a resilient manner that automatically handles intermittent failures, and retries failed operations.",
+          "start": 1422,
+          "end": 1597,
+          "section": "Temporal—durable execution platform / Introduction"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q03",
+      "question": "Temporal 项目起源于什么，由谁开发？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F02",
+      "reference_points": [
+        "源自 Uber Cadence 的 fork，由 Cadence 创作者的 Temporal Technologies 开发。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "Temporal is a mature technology that originated as a fork of Uber's Cadence.",
+          "start": 1599,
+          "end": 1675,
+          "section": "Temporal—durable execution platform / Introduction"
+        },
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "It is developed by [Temporal Technologies](https://temporal.io/), a startup by the creators of Cadence.",
+          "start": 1676,
+          "end": 1779,
+          "section": "Temporal—durable execution platform / Introduction"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q04",
+      "question": "它与 Uber Cadence 有什么关系？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F02",
+      "reference_points": [
+        "源自 Uber Cadence 的 fork，由 Cadence 创作者的 Temporal Technologies 开发。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "Temporal is a mature technology that originated as a fork of Uber's Cadence.",
+          "start": 1599,
+          "end": 1675,
+          "section": "Temporal—durable execution platform / Introduction"
+        },
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "It is developed by [Temporal Technologies](https://temporal.io/), a startup by the creators of Cadence.",
+          "start": 1676,
+          "end": 1779,
+          "section": "Temporal—durable execution platform / Introduction"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q05",
+      "question": "README 的本地安装和启动命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F03",
+      "reference_points": [
+        "brew install temporal，然后 temporal server start-dev。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "brew install temporal\ntemporal server start-dev",
+          "start": 2109,
+          "end": 2156,
+          "section": "Temporal—durable execution platform / Getting Started / Download and Start Temporal Server Locally"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q06",
+      "question": "第一次在本机起开发服务器，两条命令是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F03",
+      "reference_points": [
+        "brew install temporal，然后 temporal server start-dev。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "brew install temporal\ntemporal server start-dev",
+          "start": 2109,
+          "end": 2156,
+          "section": "Temporal—durable execution platform / Getting Started / Download and Start Temporal Server Locally"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q07",
+      "question": "更多 Temporal 安装方式在哪查看？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F04",
+      "reference_points": [
+        "Temporal CLI installation 文档入口。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "Refer to [Temporal CLI](https://docs.temporal.io/cli/#installation) documentation for more installation options.",
+          "start": 2162,
+          "end": 2274,
+          "section": "Temporal—durable execution platform / Getting Started / Download and Start Temporal Server Locally"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q08",
+      "question": "不是用 brew 安装，可以到哪里找其他方案？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F04",
+      "reference_points": [
+        "Temporal CLI installation 文档入口。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "Refer to [Temporal CLI](https://docs.temporal.io/cli/#installation) documentation for more installation options.",
+          "start": 2162,
+          "end": 2274,
+          "section": "Temporal—durable execution platform / Getting Started / Download and Start Temporal Server Locally"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q09",
+      "question": "Temporal 示例有哪些语言，运行时配合哪个服务器？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F05",
+      "reference_points": [
+        "samples-go、samples-java，配合本地 Temporal server。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "Clone or download samples for [Go](https://github.com/temporalio/samples-go) or [Java](https://github.com/temporalio/samples-java) and run them with the local Temporal server.",
+          "start": 2297,
+          "end": 2472,
+          "section": "Temporal—durable execution platform / Getting Started / Run the Samples"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q10",
+      "question": "Go 和 Java 的例子去哪拿，用远端还是本地服务器跑？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F05",
+      "reference_points": [
+        "samples-go、samples-java，配合本地 Temporal server。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "Clone or download samples for [Go](https://github.com/temporalio/samples-go) or [Java](https://github.com/temporalio/samples-java) and run them with the local Temporal server.",
+          "start": 2297,
+          "end": 2472,
+          "section": "Temporal—durable execution platform / Getting Started / Run the Samples"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q11",
+      "question": "Go 和 Java 的 Temporal 示例集合相同吗？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F06",
+      "reference_points": [
+        "目前不同，包含 HelloWorld 和较高级场景。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "We have a number of [HelloWorld type scenarios](https://github.com/temporalio/samples-java#helloworld) available, as well as more advanced ones. Note that the sets of samples are currently different between Go and Java.",
+          "start": 2473,
+          "end": 2692,
+          "section": "Temporal—durable execution platform / Getting Started / Run the Samples"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q12",
+      "question": "两个语言的教程是不是一一相同？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F06",
+      "reference_points": [
+        "目前不同，包含 HelloWorld 和较高级场景。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "We have a number of [HelloWorld type scenarios](https://github.com/temporalio/samples-java#helloworld) available, as well as more advanced ones. Note that the sets of samples are currently different between Go and Java.",
+          "start": 2473,
+          "end": 2692,
+          "section": "Temporal—durable execution platform / Getting Started / Run the Samples"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q13",
+      "question": "Temporal CLI 怎样列出 namespace？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F07",
+      "reference_points": [
+        "temporal operator namespace list。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "temporal operator namespace list",
+          "start": 2812,
+          "end": 2844,
+          "section": "Temporal—durable execution platform / Getting Started / Use CLI"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q14",
+      "question": "命名空间有哪些，命令行怎么查？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F07",
+      "reference_points": [
+        "temporal operator namespace list。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "temporal operator namespace list",
+          "start": 2812,
+          "end": 2844,
+          "section": "Temporal—durable execution platform / Getting Started / Use CLI"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q15",
+      "question": "Temporal CLI 怎样列出 workflow？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F08",
+      "reference_points": [
+        "temporal workflow list。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "temporal workflow list",
+          "start": 2845,
+          "end": 2867,
+          "section": "Temporal—durable execution platform / Getting Started / Use CLI"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q16",
+      "question": "已经运行的工作流，命令行怎么查看列表？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F08",
+      "reference_points": [
+        "temporal workflow list。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "temporal workflow list",
+          "start": 2845,
+          "end": 2867,
+          "section": "Temporal—durable execution platform / Getting Started / Use CLI"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q17",
+      "question": "Temporal Web UI 的本地地址和用途是什么？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "direct",
+      "fact_group": "temporal-F09",
+      "reference_points": [
+        "http://localhost:8233，查看执行中的 sample workflows。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "Try [Temporal Web UI](https://docs.temporal.io/web-ui) by opening [http://localhost:8233](http://localhost:8233) for viewing your sample workflows executing on Temporal.",
+          "start": 2898,
+          "end": 3067,
+          "section": "Temporal—durable execution platform / Getting Started / Use Temporal Web UI"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q18",
+      "question": "在哪里用浏览器看示例工作流执行？",
+      "answerable": true,
+      "split": "dev",
+      "kind": "colloquial",
+      "fact_group": "temporal-F09",
+      "reference_points": [
+        "http://localhost:8233，查看执行中的 sample workflows。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "Try [Temporal Web UI](https://docs.temporal.io/web-ui) by opening [http://localhost:8233](http://localhost:8233) for viewing your sample workflows executing on Temporal.",
+          "start": 2898,
+          "end": 3067,
+          "section": "Temporal—durable execution platform / Getting Started / Use Temporal Web UI"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q19",
+      "question": "这个 Temporal 仓库是否就是业务 Workers 的实现仓库？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "temporal-F10",
+      "reference_points": [
+        "此仓库是 Temporal server 源码，业务实现使用受支持语言。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "This repository contains the source code of the Temporal server. To implement Workflows, Activities and Workers, use one of the [supported languages](https://docs.temporal.io/dev-guide/).",
+          "start": 3084,
+          "end": 3271,
+          "section": "Temporal—durable execution platform / Repository"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q20",
+      "question": "想写自己的 Workflow、Activity、Worker，README 怎样区分？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "temporal-F10",
+      "reference_points": [
+        "此仓库是 Temporal server 源码，业务实现使用受支持语言。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "This repository contains the source code of the Temporal server. To implement Workflows, Activities and Workers, use one of the [supported languages](https://docs.temporal.io/dev-guide/).",
+          "start": 3084,
+          "end": 3271,
+          "section": "Temporal—durable execution platform / Repository"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q21",
+      "question": "Temporal 本地源码构建与测试实践分别去哪查？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "temporal-F11",
+      "reference_points": [
+        "CONTRIBUTING.md，docs/development/testing.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "- [learn how to build and run the Temporal Server locally](./CONTRIBUTING.md)",
+          "start": 3526,
+          "end": 3603,
+          "section": "Temporal—durable execution platform / Contributing"
+        },
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "- [learn about Temporal Server testing tools and best practices](./docs/development/testing.md)",
+          "start": 3604,
+          "end": 3699,
+          "section": "Temporal—durable execution platform / Contributing"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q22",
+      "question": "从源码开发和跑测试的资料入口在哪？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "temporal-F11",
+      "reference_points": [
+        "CONTRIBUTING.md，docs/development/testing.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "- [learn how to build and run the Temporal Server locally](./CONTRIBUTING.md)",
+          "start": 3526,
+          "end": 3603,
+          "section": "Temporal—durable execution platform / Contributing"
+        },
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "- [learn about Temporal Server testing tools and best practices](./docs/development/testing.md)",
+          "start": 3604,
+          "end": 3699,
+          "section": "Temporal—durable execution platform / Contributing"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q23",
+      "question": "Temporal 的新功能提案和架构资料入口分别是什么？",
+      "answerable": true,
+      "split": "final",
+      "kind": "direct",
+      "fact_group": "temporal-F12",
+      "reference_points": [
+        "temporalio/proposals 与 docs/architecture/README.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "- [work on or propose a new feature](https://github.com/temporalio/proposals)",
+          "start": 3368,
+          "end": 3445,
+          "section": "Temporal—durable execution platform / Contributing"
+        },
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "- [learn about the Temporal Server architecture](./docs/architecture/README.md)",
+          "start": 3446,
+          "end": 3525,
+          "section": "Temporal—durable execution platform / Contributing"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q24",
+      "question": "想了解架构并提设计方案，该查看哪些链接？",
+      "answerable": true,
+      "split": "final",
+      "kind": "colloquial",
+      "fact_group": "temporal-F12",
+      "reference_points": [
+        "temporalio/proposals 与 docs/architecture/README.md。"
+      ],
+      "evidence": [
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "- [work on or propose a new feature](https://github.com/temporalio/proposals)",
+          "start": 3368,
+          "end": 3445,
+          "section": "Temporal—durable execution platform / Contributing"
+        },
+        {
+          "doc_id": "readme-temporal-doc",
+          "quote": "- [learn about the Temporal Server architecture](./docs/architecture/README.md)",
+          "start": 3446,
+          "end": 3525,
+          "section": "Temporal—durable execution platform / Contributing"
+        }
+      ]
+    },
+    {
+      "id": "temporal-Q25",
+      "question": "生产 PostgreSQL persistence 的完整配置文件是什么？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "temporal-Q26",
+      "question": "同一 workflow execution history 的大小上限具体是多少？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "temporal-Q27",
+      "question": "如何配置跨地域复制和故障切换的完整步骤？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "temporal-Q28",
+      "question": "Worker concurrency 应按我的任务量设为多少？",
+      "answerable": false,
+      "split": "dev",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "temporal-Q29",
+      "question": "我的 activity 总是超时的真实根因是什么？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    },
+    {
+      "id": "temporal-Q30",
+      "question": "完整的 mTLS 和 namespace 授权配置是什么？",
+      "answerable": false,
+      "split": "final",
+      "kind": "unsupported",
+      "fact_group": null,
+      "reference_points": [
+        "当前 README 缺少该题要求的完整细节或用户环境证据，应明确依据不足。"
+      ],
+      "evidence": [],
+      "negative_basis": "只检查本地根目录 README；未采集链接指向的文档，不代表产品不支持该能力。"
+    }
+  ],
+  "notes": "依据已读取快照编写；原文位置自动校验；独立人工复核待完成。两种措辞共享事实，事实组不跨开发/最终集；未按检索结果改题。"
+}

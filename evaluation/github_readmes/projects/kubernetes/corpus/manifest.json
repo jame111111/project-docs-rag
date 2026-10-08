@@ -1,0 +1,18 @@
+{
+  "product_id": "readme-kubernetes",
+  "product": "kubernetes/kubernetes README 测试",
+  "commit": "803a939a87ba8afc927a46bca983b856b03febf0",
+  "documents": [
+    {
+      "id": "readme-kubernetes-doc",
+      "title": "kubernetes/kubernetes README",
+      "category": "容器编排",
+      "source_url": "https://github.com/kubernetes/kubernetes/blob/803a939a87ba8afc927a46bca983b856b03febf0/README.md",
+      "source_path": "README.md",
+      "snapshot_file": "README.md",
+      "collected_at": "2026-10-07T08:02:36.461128+00:00",
+      "version": "803a939a87ba8afc927a46bca983b856b03febf0",
+      "sha256": "0c1159ea384aa0855eaad87f4595da8fd776553830297f3a7c43db81c7708fbd"
+    }
+  ]
+}
